@@ -2260,7 +2260,6 @@ WaveSchedule
 		T_TFBot_Demoman_Stickybomber
 		{
 			Class Demoman
-			Name Demoman
 			Skill Easy
 			ClassIcon demo_sticky
 			Attributes HoldFireUntilFullReload
@@ -2268,7 +2267,7 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName "TF_WEAPON_GRENADELAUNCHER"
-				"is_passive_weapon" 1
+				"is_passive_weapon" 1						// Makes Stickybomb launcher use GL animations
 				"override projectile type" 15
 				"faster reload rate" 1.2
 			}

@@ -124,7 +124,7 @@
 //T_TFGateBot_Demo_Charger_Expert 							// Similar to Charger Demo, but very rapidly charging.
 //T_TFGateBot_Demo_Loch										// Demobot with Loch-N-Load, this bot is dangerous.
 //T_TFGateBot_Demo_Loosecannon								// Demobot with Loose Cannon, can cause knockback damage.
-//T_TFGateBot_Demo_Knight_Fire 								// Demoknight causes fire damage per hit.
+//T_TFGateBot_Demoman_Stickybomber							// Demobot that uses Sticky Launcher.
 //T_TFGateBot_Demo_Caber									// Demobot equipped with Ullapool Caber.
 //T_TFGateBot_Demo_Caber_Hard 								// Uses Boots and Shield to gain advantage. 
 //T_TFGateBot_Demo_Caber_Rapid 								// Similar to Caber Hard but rapidly charges.
@@ -5221,6 +5221,172 @@ WaveSchedule
 						ItemName	"the splendid screen"
 						"charge recharge rate increased"	8.0
 						"charge impact damage increased"	2.0
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Demo_Loch
+		{
+			Class Demoman
+			Name "Loch-N-Load Demo"
+			ClassIcon demo_loch
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Demoman"
+					Skill Expert
+					Item	"the loch-n-load"
+					ItemAttributes
+					{
+						ItemName	"the loch-n-load"
+						"damage bonus"	1.5
+						"Projectile speed increased"	1.0
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Demoman"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Demoman"
+						"item style override" 1
+					}
+					Skill Expert
+					Item	"the loch-n-load"
+					ItemAttributes
+					{
+						ItemName	"the loch-n-load"
+						"damage bonus"	1.5
+						"Projectile speed increased"	1.0
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Demo_Loosecannon
+		{
+			Class Demoman
+			Name "Loose Cannon Demo"
+			ClassIcon demo_loosecannon
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Demoman"
+					Skill Hard
+					Item	"the loose cannon"
+					ItemAttributes
+					{
+						ItemName	"the loose cannon"
+						"grenade launcher mortar mode"	0 // dont know if its -2
+						"damage causes airblast"	1
+						"damage bonus"	1.35
+						"fire rate penalty" 1.2
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Demoman"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Demoman"
+						"item style override" 1
+					}
+					Skill Hard
+					Item	"the loose cannon"
+					ItemAttributes
+					{
+						ItemName	"the loose cannon"
+						"grenade launcher mortar mode"	0 // dont know if its -2
+						"damage causes airblast"	1
+						"damage bonus"	1.35
+						"fire rate penalty" 1.2
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Demoman_Stickybomber
+		{
+			Class Demoman
+			ClassIcon demo_sticky
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Demoman"
+					Skill Easy
+					Attributes HoldFireUntilFullReload
+					WeaponRestrictions SecondaryOnly
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"is_passive_weapon" 1						// Makes Stickybomb launcher use GL animations
+						"override projectile type" 15
+						"faster reload rate" 1.2
+					}
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_PIPEBOMBLAUNCHER"
+						"stickybomb charge rate" -1
+						"sticky arm time bonus" 2
+						"fire rate bonus" 0.85
+						"projectile spread angle penalty" 5
+						"max pipebombs increased" -7
+						"mod max primary clip override" 4
+						"faster reload rate" 0.5
+						"self dmg push force decreased" 0.01
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Demoman"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Demoman"
+						"item style override" 1
+					}
+					Skill Easy
+					Attributes HoldFireUntilFullReload
+					WeaponRestrictions SecondaryOnly
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"is_passive_weapon" 1						// Makes Stickybomb launcher use GL animations
+						"override projectile type" 15
+						"faster reload rate" 1.2
+					}
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_PIPEBOMBLAUNCHER"
+						"stickybomb charge rate" -1
+						"sticky arm time bonus" 2
+						"fire rate bonus" 0.85
+						"projectile spread angle penalty" 5
+						"max pipebombs increased" -7
+						"mod max primary clip override" 4
+						"faster reload rate" 0.5
+						"self dmg push force decreased" 0.01
 					}
 				}
 			}
