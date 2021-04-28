@@ -125,6 +125,7 @@
 //T_TFGateBot_Demo_Loch										// Demobot with Loch-N-Load, this bot is dangerous.
 //T_TFGateBot_Demo_Loosecannon								// Demobot with Loose Cannon, can cause knockback damage.
 //T_TFGateBot_Demoman_Stickybomber							// Demobot that uses Sticky Launcher.
+//T_TFGateBot_Demoknight
 //T_TFGateBot_Demo_Caber									// Demobot equipped with Ullapool Caber.
 //T_TFGateBot_Demo_Caber_Hard 								// Uses Boots and Shield to gain advantage. 
 //T_TFGateBot_Demo_Caber_Rapid 								// Similar to Caber Hard but rapidly charges.
@@ -5387,6 +5388,219 @@ WaveSchedule
 						"mod max primary clip override" 4
 						"faster reload rate" 0.5
 						"self dmg push force decreased" 0.01
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Demoknight
+		{
+			Class Demoman
+			Name "Demoknight"
+			ClassIcon demoknight
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Demoman"
+					Skill Hard
+					Item "The Chargin' Targe"
+					Item "The Eyelander"
+					WeaponRestrictions MeleeOnly
+					ItemAttributes
+					{
+						ItemName "The Eyelander"
+						"critboost on kill" 3
+						"max health additive penalty" -0
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Demoman"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Demoman"
+						"item style override" 1
+					}
+					Skill Hard
+					Item "The Chargin' Targe"
+					Item "The Eyelander"
+					WeaponRestrictions MeleeOnly
+					ItemAttributes
+					{
+						ItemName "The Eyelander"
+						"critboost on kill" 3
+						"max health additive penalty" -0
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Demo_Caber
+		{
+			Class Demoman
+			Name "Caber Demo"
+			ClassIcon demo_caber
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Demoman"
+					Skill Easy
+					WeaponRestrictions	MeleeOnly
+					Item	"the ullapool caber"
+					ItemAttributes
+					{
+						ItemName	"the ullapool caber"
+						"blast dmg to self increased"	3.0
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Demoman"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Demoman"
+						"item style override" 1
+					}
+					Skill Easy
+					WeaponRestrictions	MeleeOnly
+					Item	"the ullapool caber"
+					ItemAttributes
+					{
+						ItemName	"the ullapool caber"
+						"blast dmg to self increased"	3.0
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Demo_Caber_Hard
+		{
+			Class Demoman
+			Name "Caber Demo"
+			ClassIcon demo_caber
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Demoman"
+					Skill Hard
+					WeaponRestrictions	MeleeOnly
+					Item	"the ullapool caber"
+					Item	"ali baba's wee booties"
+					Item	"the chargin' targe"
+					ItemAttributes
+					{
+						ItemName	"the ullapool caber"
+						"blast dmg to self increased"	3.0
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Demoman"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Demoman"
+						"item style override" 1
+					}
+					Skill Hard
+					WeaponRestrictions	MeleeOnly
+					Item	"the ullapool caber"
+					Item	"ali baba's wee booties"
+					Item	"the chargin' targe"
+					ItemAttributes
+					{
+						ItemName	"the ullapool caber"
+						"blast dmg to self increased"	3.0
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Demo_Caber_Rapid
+		{
+			Class Demoman
+			Name "Caber Demo"
+			ClassIcon demo_rapidcaber
+			Health 125
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Demoman"
+					Skill Expert
+					WeaponRestrictions	MeleeOnly
+					Item	"the ullapool caber"
+					Item	"ali baba's wee booties"
+					Item	"the chargin' targe"
+					ItemAttributes
+					{
+						ItemName	"the ullapool caber"
+						"damage bonus"	3.5 // Was 100
+						"blast dmg to self increased"	100
+					}
+					ItemAttributes
+					{
+						ItemName	"the chargin' targe"
+						"charge recharge rate increased"	8.0
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	2.0
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Demoman"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Demoman"
+						"item style override" 1
+					}
+					Skill Expert
+					WeaponRestrictions	MeleeOnly
+					Item	"the ullapool caber"
+					Item	"ali baba's wee booties"
+					Item	"the chargin' targe"
+					ItemAttributes
+					{
+						ItemName	"the ullapool caber"
+						"damage bonus"	3.5 // Was 100
+						"blast dmg to self increased"	100
+					}
+					ItemAttributes
+					{
+						ItemName	"the chargin' targe"
+						"charge recharge rate increased"	8.0
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	2.0
 					}
 				}
 			}
