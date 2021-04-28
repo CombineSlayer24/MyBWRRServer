@@ -114,7 +114,6 @@
 //T_TFBot_Demo_Loosecannon								// Demobot with Loose Cannon, can cause knockback damage.
 //T_TFBot_Demoman_Stickybomber							// Demobot that uses Sticky Launcher.
 //T_TFBot_Demoknight_Persian 							// Used in Rottenburg but no template exists.
-//T_TFBot_Demoknight_Fire 								// Demoknight causes fire damage per hit.
 //T_TFBot_Demo_Caber									// Demobot equipped with Ullapool Caber.
 //T_TFBot_Demo_Caber_Hard 								// Uses Boots and Shield to gain advantage. 
 //T_TFBot_Demo_Caber_Rapid 								// Similar to Caber Hard but rapidly charges.
@@ -2310,27 +2309,6 @@ WaveSchedule
 				ItemName "The Splendid Screen"
 				"Attack not cancel charge" 1
 			}		
-		}
-		
-		T_TFBot_Demoknight_Fire //NEW
-		{
-			Class Demoman
-			Name "Flaming Demoknight"
-			ClassIcon demoknight_fire
-			Skill Hard
-			Health 150
-			WeaponRestrictions MeleeOnly
-			Item "The Chargin' Targe"
-			Item "The Eyelander"
-			Item "The Warsworn Helmet"
-			ItemAttributes
-			{
-				ItemName "The Eyelander"
-				"max health additive penalty" -0
-				"Set DamageType Ignite"	1
-				"damage penalty"		0.8
-				"attach particle effect" 2
-			}
 		}
 		
 		T_TFBot_Demo_Caber
