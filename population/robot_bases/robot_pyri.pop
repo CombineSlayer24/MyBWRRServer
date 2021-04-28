@@ -2517,7 +2517,7 @@ WaveSchedule
 		T_TFBot_Giant_Demo_Nuker //Miniture form of Sir Nukesalot but less beefy.
 		{
 			Class Demoman
-			Name "Giant Sir Nukesalot"
+			Name "Giant Nuke Lobber"
 			ClassIcon demo_atomic_giant
 			Skill Expert
 			Health 4200
