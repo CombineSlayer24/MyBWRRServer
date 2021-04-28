@@ -2577,7 +2577,7 @@ WaveSchedule
 			ClassIcon heavy_crit
 			Skill Expert
 			Health 300
-			Attributes	"AlwaysCrit"
+			Attributes	AlwaysCrit
 			Item	"Upgradeable TF_WEAPON_MINIGUN"
 			ItemAttributes
 			{
@@ -2614,7 +2614,6 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName	"the brass beast"
-				//"damage bonus"	1.2
 				"turn to gold"	1				
 				"fire rate bonus"	0.9
 			}
@@ -2624,10 +2623,10 @@ WaveSchedule
 				"set item tint RGB"		15185211
 				"attach particle effect"	16
 			}
-			CharacterAttributes
-			{
-				"move speed penalty"	0.8
-			}
+			//CharacterAttributes
+			//{
+				//"move speed penalty"	0.8
+			//}
 		}
 		
 		T_TFBot_Heavy_Deflector //Uses in Mannworks but Template isn't in the Official robot.pop.
