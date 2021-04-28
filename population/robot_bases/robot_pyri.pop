@@ -3454,7 +3454,7 @@ WaveSchedule
 		T_TFBot_Sniper_Gauntlet
 		{
 			Class Sniper
-			Name Sniper
+			Name "Bulky Sniper"
 			ClassIcon sniper_tanky
 			Skill Hard
 			Health 900
