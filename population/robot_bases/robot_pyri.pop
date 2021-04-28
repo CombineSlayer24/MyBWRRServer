@@ -2377,7 +2377,7 @@ WaveSchedule
 		T_TFBot_Giant_Demo_Spammer //Improved variant to the original Giant counterpart.
 		{
 			Class Demoman
-			Name "Giant Rapid Fire Demo"
+			Name "Giant Spammer Demoman"
 			ClassIcon demo_spammer_giant
 			Skill Expert
 			Health 3300
