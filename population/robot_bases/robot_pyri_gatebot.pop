@@ -4860,6 +4860,7 @@ WaveSchedule
 					Tag bot_giant
 					Skill Expert
 					WeaponRestrictions	PrimaryOnly
+					Item "the hurt locher"
 					Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
 					ItemAttributes
 					{
@@ -4883,6 +4884,7 @@ WaveSchedule
 					}
 					Skill Expert
 					WeaponRestrictions	PrimaryOnly
+					Item "the hurt locher"
 					Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
 					ItemAttributes
 					{
@@ -4921,7 +4923,6 @@ WaveSchedule
 					Skill Expert
 					WeaponRestrictions	PrimaryOnly
 					Attributes	HoldFireUntilFullReload
-					Item "the hurt locher"
 					Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
 					ItemAttributes
 					{
@@ -4946,7 +4947,6 @@ WaveSchedule
 					Skill Expert
 					WeaponRestrictions	PrimaryOnly
 					Attributes	HoldFireUntilFullReload
-					Item "the hurt locher"
 					Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
 					ItemAttributes
 					{
