@@ -6265,3 +6265,135 @@ WaveSchedule
 				}
 			}
 		}
+		
+		T_TFGateBot_Heavy_Deflector
+		{
+			Class Heavyweapons
+			Name "Deflector Heavy"
+			ClassIcon heavy_deflector_normal
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Heavy"
+					Skill Hard
+					MaxVisionRange	1200
+					WeaponRestrictions	PrimaryOnly
+					Item	"deflector"
+					Item	"the u-clank-a"
+					ItemAttributes
+					{
+						ItemName	deflector
+						"attack projectiles"	1
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Heavy"
+						"item style override" 1
+					}
+					Skill Hard
+					MaxVisionRange	1200
+					WeaponRestrictions	PrimaryOnly
+					Item	"deflector"
+					Item	"the u-clank-a"
+					ItemAttributes
+					{
+						ItemName	deflector
+						"attack projectiles"	1
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Heavy_Deflector_Healonkill
+		{
+			Class Heavyweapons
+			Name "Deflector Heavy"
+			ClassIcon heavy_deflector_healonkill_normal
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Heavy"
+					Skill Expert
+					MaxVisionRange	1200
+					Item	"deflector"
+					Item	"the tungsten toque"
+					ItemAttributes
+					{
+						ItemName	deflector
+						"attack projectiles"	2
+						"damage bonus"	1.5
+						"heal on kill"	300
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Heavy"
+						"set item tint RGB"	13595446
+						"item style override" 1
+					}
+					Skill Expert
+					MaxVisionRange	1200
+					Item	"deflector"
+					Item	"the tungsten toque"
+					ItemAttributes
+					{
+						ItemName	deflector
+						"attack projectiles"	2
+						"damage bonus"	1.5
+						"heal on kill"	300
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Engineer_Battle
+		{
+			Class Engineer
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Engineer"
+					WeaponRestrictions PrimaryOnly
+					Skill Hard
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Engineer"
+						"item style override" 1
+					}
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+				}
+			}
+		}
