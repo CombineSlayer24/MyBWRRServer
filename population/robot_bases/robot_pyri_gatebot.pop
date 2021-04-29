@@ -171,16 +171,22 @@
 //T_TFGateBot_Giant_Heavy_Booster							// Gaint Heavy Booster, but more deadly, with +20% Damage bonus.
 //T_TFGateBot_Giant_Heavy_Rocket							// Rocket Heavy, +400% damage, and faster fire rate than smaller.
 
+//Engineer
+//T_TFGateBot_Engineer_Battle								// Pair this bot in a squad (Squad leader must not be engie). Engineer with a PrimaryOnly restriction.
+
 // Sniper
 //T_TFGateBot_Sniper_Bushwacka								// Sniper as Melee With Bushwacka 
-//T_TFGateBot_Sniper_Jarate_Master							// An unused Sniper Template that VALVe made, but disabled.
+//T_TFGateBot_Sniper_Jarate_Master_SlowCharge				// An unused Sniper Template that VALVe made, but disabled, Jarate slow recharge
+//T_TFGateBot_Sniper_Jarate_Master							// An unused Sniper Template that VALVe made, but disabled, Jarate instant recharge
 //T_TFGateBot_Sniper_SMG									// Sniper with SMG.
 //T_TFGateBot_Sniper_Huntsman_Crit							// Crit version of Bowman.
 //T_TFGateBot_Sniper_Huntsman_Bleed 						// More dangerous variant of the Bowman.
 
+//T_TFGateBot_Giant_Sniper_AllFire							// Giant Sniper that shoots Sniper while uncontrollably moving.
 //T_TFGateBot_Giant_Sniper_Huntsman 						// Similar to the Small counterpart.
 //T_TFGateBot_Giant_Sniper_Huntsman_Bleed					// More dangerous variant of the Bowman
 //T_TFGateBot_Giant_Sniper_SMG								// Giant Sniper with SMG.
+//T_TFGateBot_Giant_Sniper_Jarate							// Giant Sniper with Jarate.
 WaveSchedule
 {
 	Templates
@@ -7354,9 +7360,165 @@ WaveSchedule
 			}
 		}
 		
+		T_TFGateBot_Giant_Heavy_Booster
+		{
+			Class Heavyweapons
+			Name "Giant Booster Heavy"
+			ClassIcon heavy_booster_giant
+			Health 5000
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Heavy"
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					MaxVisionRange 1200
+					Attributes MiniBoss
+					Item "Tough Guy's Toque"
+					Item "Upgradeable TF_WEAPON_MINIGUN"
+					ItemAttributes
+					{
+						ItemName "Upgradeable TF_WEAPON_MINIGUN"
+						"damage bonus"	1.2
+						"critboost on kill" 5
+						"heal on kill" 800 // Was 1000
+						"speed_boost_on_kill" 5
+					}
+					CharacterAttributes
+					{
+						"airblast vulnerability multiplier" 0.3
+						"damage force reduction" 0.3
+						"move speed bonus" 0.5
+						"override footstep sound set" 2
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Heavy"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					MaxVisionRange 1200
+					Attributes MiniBoss
+					Item "Tough Guy's Toque"
+					Item "Upgradeable TF_WEAPON_MINIGUN"
+					ItemAttributes
+					{
+						ItemName "Upgradeable TF_WEAPON_MINIGUN"
+						"damage bonus"	1.2
+						"critboost on kill" 5
+						"heal on kill" 800 // Was 1000
+						"speed_boost_on_kill" 5
+					}
+					CharacterAttributes
+					{
+						"airblast vulnerability multiplier" 0.3
+						"damage force reduction" 0.3
+						"move speed bonus" 0.5
+						"override footstep sound set" 2
+					}
+				}
+			}
+		}
 		
-		
-		
+		T_TFGateBot_Giant_Heavy_Rocket
+		{
+			Class Heavyweapons
+			Name "Giant Rocket Heavy"
+			ClassIcon heavy_rocket_giant
+			Health 5000
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Heavy"
+					Tag bot_giant
+					Skill Easy
+					WeaponRestrictions PrimaryOnly
+					MaxVisionRange 1200
+					Attributes MiniBoss
+					Item	"commissar's coat"
+					Item	"the eliminators safeguard" 
+					Item	"Upgradeable TF_WEAPON_MINIGUN"
+					ItemAttributes
+					{
+						ItemName	"Upgradeable TF_WEAPON_MINIGUN"
+						"damage bonus"	5.0
+						"override projectile type"	2
+						"fire rate penalty"	2.0
+					}
+					ItemAttributes
+					{
+						ItemName	"the eliminators safeguard"
+						"item style override"	1
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"damage force reduction"	0.3
+						"airblast vulnerability multiplier"	0.3
+						"override footstep sound set"	2
+						"no self blast dmg"	1
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Heavy"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Easy
+					WeaponRestrictions PrimaryOnly
+					MaxVisionRange 1200
+					Attributes MiniBoss
+					Item	"commissar's coat"
+					Item	"the eliminators safeguard" 
+					Item	"Upgradeable TF_WEAPON_MINIGUN"
+					ItemAttributes
+					{
+						ItemName	"Upgradeable TF_WEAPON_MINIGUN"
+						"damage bonus"	5.0
+						"override projectile type"	2
+						"fire rate penalty"	2.0
+					}
+					ItemAttributes
+					{
+						ItemName	"the eliminators safeguard"
+						"item style override"	0
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"damage force reduction"	0.5
+						"airblast vulnerability multiplier"	0.3
+						"override footstep sound set"	2
+						"no self blast dmg"	1
+					}
+				}
+			}
+		}
 		
 		T_TFGateBot_Engineer_Battle
 		{
@@ -7388,3 +7550,598 @@ WaveSchedule
 				}
 			}
 		}
+		
+		T_TFGateBot_Sniper_Bushwacka
+		{
+			Class Sniper
+			Name "Bushwacka Sniper"
+			ClassIcon sniper_bushwacka
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Skill Hard
+					WeaponRestrictions MeleeOnly
+					Item "Darwin's Danger Shield"
+					Item "Ol' Snaggletooth"
+					Item "The Bushwacka"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Skill Hard
+					WeaponRestrictions MeleeOnly
+					Item "Darwin's Danger Shield"
+					Item "Ol' Snaggletooth"
+					Item "The Bushwacka"
+				}
+			}
+		}
+
+		T_TFGateBot_Sniper_Jarate_Master_SlowCharge
+		{
+			Class Sniper
+			Name "Jarate Master"
+			ClassIcon sniper_jarate
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Skill Easy
+					WeaponRestrictions SecondaryOnly
+					Item "Jarate"
+					Item "The Bushwacka"
+					CharacterAttributes
+					{
+						"effect bar recharge rate increased" 0.25
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Skill Easy
+					WeaponRestrictions SecondaryOnly
+					Item "Jarate"
+					Item "The Bushwacka"
+					CharacterAttributes
+					{
+						"effect bar recharge rate increased" 0.25
+					}
+				}
+			}
+		}
+
+		T_TFGateBot_Sniper_Jarate_Master
+		{
+			Class Sniper
+			Name "Jarate Master"
+			ClassIcon sniper_jarate
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Skill Easy
+					WeaponRestrictions SecondaryOnly
+					Attributes	AlwaysFireWeapon
+					Item "Jarate"
+					Item "The Bushwacka"
+					CharacterAttributes
+					{
+						"effect bar recharge rate increased" 0.05
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Skill Easy
+					WeaponRestrictions SecondaryOnly
+					Attributes	AlwaysFireWeapon
+					Item "Jarate"
+					Item "The Bushwacka"
+					CharacterAttributes
+					{
+						"effect bar recharge rate increased" 0.05
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Sniper_SMG
+		{
+			Class Sniper
+			Name "SMG Sniper"
+			ClassIcon sniper_smg
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Skill Hard
+					WeaponRestrictions SecondaryOnly
+					Item	"Upgradeable TF_WEAPON_SMG"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Skill Hard
+					WeaponRestrictions SecondaryOnly
+					Item	"Upgradeable TF_WEAPON_SMG"
+				}
+			}
+		}
+		
+		T_TFGateBot_Sniper_Huntsman
+		{
+			Class Sniper
+			Name "Bowman"
+			ClassIcon sniper_bow
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+					Item "The Huntsman"
+					ItemAttributes
+					{
+						ItemName "The Huntsman"
+						"damage bonus" 0.5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+					Item "The Huntsman"
+					ItemAttributes
+					{
+						ItemName "The Huntsman"
+						"damage bonus" 0.5
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Sniper_Huntsman_Crit
+		{
+			Class Sniper
+			Name "Bowman"
+			ClassIcon sniper_bow_crit
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+					Attributes	AlwaysCrit
+					Item "The Huntsman"
+					ItemAttributes
+					{
+						ItemName "The Huntsman"
+						"damage bonus" 0.5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+					Attributes	AlwaysCrit
+					Item "The Huntsman"
+					ItemAttributes
+					{
+						ItemName "The Huntsman"
+						"damage bonus" 0.5
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Sniper_Huntsman_Bleed
+		{
+			Class Sniper
+			Name "Bleed Bowman"
+			ClassIcon sniper_huntsman_bleed
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+					Item "The Huntsman"
+					ItemAttributes
+					{
+						ItemName "The Huntsman"
+						"damage penalty" 0.5
+						"bleeding duration" 3
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+					Item "The Huntsman"
+					ItemAttributes
+					{
+						ItemName "The Huntsman"
+						"damage penalty" 0.5
+						"bleeding duration" 3
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Giant_Sniper_Huntsman
+		{
+			Class Sniper
+			Name "Giant Bowman"
+			ClassIcon sniper_bow_giant
+			Health 3000
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Attributes	MiniBoss
+					Item	"the huntsman"
+					ItemAttributes
+					{
+						ItemName	"the huntsman"
+						"fire rate bonus"	0.6
+						"damage bonus"	1.5
+						"projectile penetration" 1
+					}
+					CharacterAttributes
+					{
+						"head scale"	0.7
+						"airblast vulnerability multiplier" 0.6
+						"damage force reduction" 0.6
+						"move speed penalty" 0.6
+						"override footstep sound set" 6
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Attributes	MiniBoss
+					Item	"the huntsman"
+					ItemAttributes
+					{
+						ItemName	"the huntsman"
+						"fire rate bonus"	0.6
+						"damage bonus"	1.5
+						"projectile penetration" 1
+					}
+					CharacterAttributes
+					{
+						"head scale"	0.7
+						"airblast vulnerability multiplier" 0.6
+						"damage force reduction" 0.6
+						"move speed penalty" 0.6
+						"override footstep sound set" 6
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Giant_Sniper_Huntsman_Bleed
+		{
+			Class Sniper
+			Name "Giant Bowman"
+			ClassIcon sniper_huntsman_bleed_giant
+			Health 3000
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Attributes	MiniBoss
+					Item	"the huntsman"
+					ItemAttributes
+					{
+						ItemName "The Huntsman"
+						"fire rate bonus" 0.6
+						"bleeding duration" 5
+						"damage bonus"	1.5
+						"slow enemy on hit major" 5
+						"projectile penetration" 1
+					}
+					CharacterAttributes
+					{
+						"head scale"	0.7
+						"airblast vulnerability multiplier" 0.6
+						"damage force reduction" 0.6
+						"move speed penalty" 0.6
+						"override footstep sound set" 6
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Attributes	MiniBoss
+					Item	"the huntsman"
+					ItemAttributes
+					{
+						ItemName "The Huntsman"
+						"fire rate bonus" 0.6
+						"bleeding duration" 5
+						"damage bonus"	1.5
+						"slow enemy on hit major" 5
+						"projectile penetration" 1
+					}
+					CharacterAttributes
+					{
+						"head scale"	0.7
+						"airblast vulnerability multiplier" 0.6
+						"damage force reduction" 0.6
+						"move speed penalty" 0.6
+						"override footstep sound set" 6
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Giant_Sniper_SMG
+		{
+			Class Sniper
+			Name "Giant SMG Sniper"
+			ClassIcon sniper_smg_giant
+			Health 3000
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions SecondaryOnly
+					Attributes	MiniBoss
+					Item	"Upgradeable TF_WEAPON_SMG"
+					ItemAttributes
+					{
+						ItemName "Upgradeable TF_WEAPON_SMG"
+						"fire rate bonus" 0.47
+						"damage bonus" 1.4
+						"clip size bonus" 2.44		// 61 Clip size (Tried to get it around 60, need more tinkering)
+						"spread penalty" 1.15
+					}
+					CharacterAttributes
+					{
+						"head scale"	0.7
+						"airblast vulnerability multiplier" 0.6
+						"damage force reduction" 0.6
+						"move speed penalty" 0.7
+						"override footstep sound set" 6
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions SecondaryOnly
+					Attributes	MiniBoss
+					Item	"Upgradeable TF_WEAPON_SMG"
+					ItemAttributes
+					{
+						ItemName "Upgradeable TF_WEAPON_SMG"
+						"fire rate bonus" 0.47
+						"damage bonus" 1.4
+						"clip size bonus" 2.44		// 61 Clip size (Tried to get it around 60, need more tinkering)
+						"spread penalty" 1.15
+					}
+					CharacterAttributes
+					{
+						"head scale"	0.7
+						"airblast vulnerability multiplier" 0.6
+						"damage force reduction" 0.6
+						"move speed penalty" 0.7
+						"override footstep sound set" 6
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Giant_Sniper_Jarate
+		{
+			Class Sniper
+			Name "Giant Jarate Warrior"
+			ClassIcon sniper_jarate_giant
+			Health 2400
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions SecondaryOnly
+					Attributes	MiniBoss
+					Item	"Upgradeable TF_WEAPON_SMG"
+					ItemAttributes
+					{
+						ItemName "Upgradeable TF_WEAPON_SMG"
+						"fire rate bonus" 0.47
+						"damage bonus" 1.4
+						"clip size bonus" 2.44		// 61 Clip size (Tried to get it around 60, need more tinkering)
+						"spread penalty" 1.15
+					}
+					CharacterAttributes
+					{
+						"head scale"	0.7
+						"airblast vulnerability multiplier" 0.6
+						"damage force reduction" 0.6
+						"move speed penalty" 0.7
+						"override footstep sound set" 6
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions SecondaryOnly
+					Attributes	MiniBoss
+					Item	"Upgradeable TF_WEAPON_SMG"
+					ItemAttributes
+					{
+						ItemName "Upgradeable TF_WEAPON_SMG"
+						"fire rate bonus" 0.47
+						"damage bonus" 1.4
+						"clip size bonus" 2.44		// 61 Clip size (Tried to get it around 60, need more tinkering)
+						"spread penalty" 1.15
+					}
+					CharacterAttributes
+					{
+						"head scale"	0.7
+						"airblast vulnerability multiplier" 0.6
+						"damage force reduction" 0.6
+						"move speed penalty" 0.7
+						"override footstep sound set" 6
+					}
+				}
+			}
+		}
+	}
+}

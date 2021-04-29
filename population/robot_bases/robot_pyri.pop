@@ -175,7 +175,8 @@
 //T_TFBot_Sniper_Gauntlet								// (THIS IS MEANT FOR ADV/EXPERT) Armored Sniper with 900 health, 2500 vision.
 //T_TFBot_Sniper_Bushwacka								// Sniper as Melee With Bushwacka 
 //T_TFBot_Sniper_Camper 								// Sniper able to regen health. Used in Missions only!
-//T_TFBot_Sniper_Jarate_Master							// An unused Sniper Template that VALVe made, but disabled.
+//T_TFBot_Sniper_Jarate_Master_SlowCharge				// An unused Sniper Template that VALVe made, but disabled, Jarate slow recharge
+//T_TFBot_Sniper_Jarate_Master							// An unused Sniper Template that VALVe made, but disabled, Jarate instant recharge
 //T_TFBot_Sniper_SMG									// Sniper with SMG.
 //T_TFBot_Sniper_Huntsman_Crit							// Crit version of Bowman.
 //T_TFBot_Sniper_Huntsman_Bleed 						// More dangerous variant of the Bowman.
@@ -3016,7 +3017,7 @@ WaveSchedule
 			Class Heavyweapons
 			Name "Giant Rocket Heavy"
 			ClassIcon heavy_rocket_giant
-			Skill Expert
+			Skill Easy						// Makes the AI more unpredictable when aiming.
 			Health 5000
 			MaxVisionRange	1200
 			WeaponRestrictions	PrimaryOnly
@@ -3496,6 +3497,23 @@ WaveSchedule
 			Health 125
 			MaxVisionRange 2500
 			Item "The Cozy Camper"
+		}
+		
+		T_TFBot_Sniper_Jarate_Master_SlowCharge
+		{
+			Class Sniper
+			Name "Jarate Master"
+			Skill Easy
+			ClassIcon sniper_jarate
+			Item "Jarate"
+			Item "The Bushwacka"
+			Item "Desert Marauder"
+			WeaponRestrictions SecondaryOnly
+			Attributes	AlwaysFireWeapon
+			CharacterAttributes
+			{
+				"effect bar recharge rate increased" 0.25
+			}
 		}
 		
 		T_TFBot_Sniper_Jarate_Master
