@@ -182,7 +182,6 @@
 //T_TFGateBot_Sniper_Huntsman_Crit							// Crit version of Bowman.
 //T_TFGateBot_Sniper_Huntsman_Bleed 						// More dangerous variant of the Bowman.
 
-//T_TFGateBot_Giant_Sniper_AllFire							// Giant Sniper that shoots Sniper while uncontrollably moving.
 //T_TFGateBot_Giant_Sniper_Huntsman 						// Similar to the Small counterpart.
 //T_TFGateBot_Giant_Sniper_Huntsman_Bleed					// More dangerous variant of the Bowman
 //T_TFGateBot_Giant_Sniper_SMG								// Giant Sniper with SMG.
