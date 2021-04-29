@@ -2751,14 +2751,14 @@ WaveSchedule
 			Skill Hard
 			Health 300
 			WeaponRestrictions	MeleeOnly
+			Item	"warrior's spirit"
+			Item	"big chief"
 			ItemAttributes
 			{
 				ItemName	"warrior's spirit"
 				"damage bonus"	2.0
 				"fire rate bonus"	0.6
 			}
-			Item	"warrior's spirit"
-			Item	"big chief"
 		}
 		
 		T_TFBot_Heavy_Bearfist
@@ -2770,15 +2770,15 @@ WaveSchedule
 			Scale 1.5
 			Health 900
 			WeaponRestrictions	MeleeOnly
+			//Item	"the buffalo steak sandvich"
+			Item	"warrior's spirit"
+			Item	"the warsworn helmet"
 			ItemAttributes
 			{
 				ItemName	"warrior's spirit"
 				"damage bonus"	2.0
 				"fire rate bonus"	0.6
 			}
-			//Item	"the buffalo steak sandvich"
-			Item	"warrior's spirit"
-			Item	"the warsworn helmet"
 		}		
 		T_TFBot_Heavy_ApocoFist
 		{
