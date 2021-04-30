@@ -4,8 +4,10 @@
 //Custom icons that are made by me, are marked with (*)
 
 // Valve's bots that aren't gatebots
+//T_TFGateBot_Scout_Bonk
 //T_TFGateBot_Scout_Shortstop
 //T_TFGateBot_Giant_Scout
+//T_TFGateBot_Giant_Scout_Bonk
 //T_TFGateBot_Giant_Scout_Fast
 //T_TFGateBot_Soldier_Extended_Buff_Banner
 //T_TFGateBot_Giant_Soldier_Extended_Buff_Banner
@@ -28,6 +30,7 @@
 //T_TFGateBot_Scout_Easy									// Easy Difficulty Scout.
 //T_TFGateBot_Scout_Crit									// Scout with Crits, 1200 max vision.
 //T_TFGateBot_Scout_Pistol									// Secondary restricted Scout, welds Pistol.
+//T_TFGateBot_Scout_Bonk									// Scout with Bonk.
 //T_TFGateBot_Scout_FAN_NoAttributes 						// Stock FAN attributes.
 //T_TFGateBot_Scout_RapidFire								// Rapid Fire Scattergun Scout.
 //T_TFGateBot_Scout_Baseball_Armored_Small					// Same as Giant Armored Sandman, but normal size, 1.7x health.
@@ -36,14 +39,22 @@
 //T_TFGateBot_Scout_MiniCrit_Scattergun						// Scout with Crit-A-Cola, uses Scattergun.
 //T_TFGateBot_Scout_MiniCrit								// Scout with Crit-A-Cola, uses Soda Popper.
 //T_TFGateBot_Scout_MiniCrit_Melee							// Scout with Crit-A-Cola, Melee restricted.
+//T_TFGateBot_Scout_MiniCrit_Stun							// Scout with Crit-A-Cola, Uses Sandman.
+//T_TFGateBot_Scout_MiniCrit_Stun_FastCharge				// Scout with Crit-A-Cola, Uses Sandman, fast recharge on Sandman
+//T_TFGateBot_Scout_Bonk_Stun								// Scout with Bonk, Uses Sandman.
+//T_TFGateBot_Scout_Bonk_Stun_FastCharge					// Scout with Bonk, Uses Sandman.
 //T_TFGateBot_Scout_Cleaver 								// A Scout welding a Clever.
 //T_TFGateBot_Scout_Shortstop								// VALVe bot in gatebot
 
 //T_TFGateBot_Giant_Scout									// VALVe bot in gatebot
+//T_TFGateBot_Giant_Scout_Bonk								// VALVe bot in gatebot
 //T_TFGateBot_Giant_Scout_Fast								// VALVe bot in gatebot
 //T_TFGateBot_Giant_Scout_FAN_Armored						// Armored version of FAN, 3000HP, slower movement speed.
 //T_TFGateBot_Giant_Scout_RapidFire							// On steroids, beefy version of normal Rapid Fire Scout.
 //T_TFGateBot_Giant_Scout_Minicrit							// Giant form of MiniCrit Scout, PrimaryOnly, 1600HP.
+//T_TFGateBot_Giant_Scout_Minicrit_Melee					// Giant form of MiniCrit Scout, MeleeOnly, 1600HP.
+//T_TFGateBot_Giant_Scout_Minicrit_Stun						// Giant from of MiniCrit Stun Scout, MeleeOnly, 1600HP.
+//T_TFGateBot_Giant_Scout_Bonk_Stun							// Giant from of Bonk Stun Scout, MeleeOnly, 1600HP.
 
 // Soldier
 //T_TFGateBot_Soldier_Expert								// Expert Difficulty Soldier
@@ -143,6 +154,7 @@
 // Heavy
 //T_TFGateBot_Heavy_Expert									// Expert Difficulty Heavy
 //T_TFGateBot_Heavy_Crit									// Ghost Town variant
+//T_TFGateBot_Heavy_Natascha_Easy							// Slowy slows Red players in the process, but doesn't grab them.
 //T_TFGateBot_Heavy_Natascha 								// Slowy grabbs Red Players, slowing them in the process.
 //T_TFGateBot_Heavy_Brassbeast								// Uses Brassbeast, gold statue ragdoll effect.
 //T_TFGateBot_Heavy_Deflector 								// Uses in Mannworks but Template is disabled for unknown reasons.
@@ -158,6 +170,7 @@
 //T_TFGateBot_Heavyweapons_Heavyweight_Champ				// Heavy Champ gatebot
 //T_TFGateBot_Heavyweapons_Heavyweight_Champ_Fast			// Heavy Champ gatebot
 //T_TFGateBot_Heavyweapons_Heavyweight_Mega_Champ			// Steel Gauntlet Heavy Champ
+//T_TFGateBot_Heavyweapons_Steel_Conch						// Steel Gauntlet equipped with Concheror.
 //T_TFGateBot_Heavyweapons_MinorFist 						// As normal Steel Gauntlet, but smaller, and less Healthpool
 //T_TFGateBot_Heavy_Gnome_Fixed 							// Used in Decoy but template remains disabled.
 //T_TFGateBot_Heavy_Shotgun_NoAttributes 					// Stock attributes.
@@ -168,11 +181,15 @@
 //T_TFGateBot_Giant_Heavy_GRU								// Giant version of Fast Heavyweight Champ.
 //T_TFGateBot_Giant_Heavy_Steel								// Giant Heavy Gauntlet. 10,000HP, Minor Chief boss. Walking Tank, literally.
 //T_TFGateBot_Giant_Heavy_Natascha							// Gaint Natascha Heavy can Grab players more efficiently than small ones.
+//T_TFGateBot_Giant_Heavy_Deflector_Airblast				// Giant Deflector Heavy that pushes people away per attack.
 //T_TFGateBot_Giant_Heavy_Booster							// Gaint Heavy Booster, but more deadly, with +20% Damage bonus.
 //T_TFGateBot_Giant_Heavy_Rocket							// Rocket Heavy, +400% damage, and faster fire rate than smaller.
 
 //Engineer
-//T_TFGateBot_Engineer_Battle								// Pair this bot in a squad (Squad leader must not be engie). Engineer with a PrimaryOnly restriction.
+//T_TFGateBot_Engineer_Battle_Shotgun						// Pair this bot in a squad (Squad leader must not be engie). Engineer with a PrimaryOnly restriction.
+//T_TFGateBot_Engineer_Widowmaker							// Uses Widowmaker. Pair this bot in a squad (Squad leader must not be engie). Engineer with a PrimaryOnly restriction.
+//T_TFGateBot_Engineer_Conch								// Pair this bot in a squad (Squad leader must not be engie). Engineer with a PrimaryOnly restriction, uses Conch.
+//T_TFGateBot_Engineer_Buff_Banner							// Pair this bot in a squad (Squad leader must not be engie). Engineer with a PrimaryOnly restriction, uses Buff Banner.
 
 // Sniper
 //T_TFGateBot_Sniper_Bushwacka								// Sniper as Melee With Bushwacka 
@@ -325,6 +342,40 @@ WaveSchedule
 			}
 		}
 		
+		T_TFGateBot_Scout_Bonk
+		{
+			Class Scout
+			Skill Hard
+			ClassIcon scout_bonk
+			
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				
+					Tag nav_prefer_gate1_flank		
+					BehaviorModifiers push			
+					Attributes IgnoreFlag 
+					Skill Hard
+					Item "MvM GateBot Light Scout"
+					WeaponRestrictions	MeleeOnly
+					Item "Bonk! Atomic Punch"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					WeaponRestrictions	MeleeOnly
+					Item "Bonk! Atomic Punch"
+					Skill Hard
+				}
+			}
+		}
+		
 		T_TFGateBot_Scout_FAN_NoAttributes
 		{
 			Class Scout
@@ -341,7 +392,6 @@ WaveSchedule
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Scout"
-					Item 	"The Bolt Boy"
 					Item 	"The Force-a-Nature"
 					WeaponRestrictions PrimaryOnly
 					Skill Hard
@@ -355,7 +405,6 @@ WaveSchedule
 						ItemName "MvM GateBot Light Scout"
 						"item style override" 1
 					}
-					Item 	"The Bolt Boy"
 					Item 	"The Force-a-Nature"
 					WeaponRestrictions PrimaryOnly
 					Skill Hard
@@ -432,17 +481,11 @@ WaveSchedule
 					Item "MvM GateBot Light Scout"
 					Skill Expert
 					WeaponRestrictions MeleeOnly
-					Item 	"Batter's Helmet"
 					Item	"the sandman"
 					CharacterAttributes
 					{
 						"move speed penalty"	0.95
 						"damage force reduction" 0.8
-					}
-					ItemAttributes
-					{
-						ItemName "Batter's Helmet"
-						"set item tint RGB" 8289918
 					}
 				}
 				RevertGateBotsBehavior
@@ -455,17 +498,11 @@ WaveSchedule
 					}
 					Skill Expert
 					WeaponRestrictions MeleeOnly
-					Item 	"Batter's Helmet"
 					Item	"the sandman"
 					CharacterAttributes
 					{
 						"move speed penalty"	0.95
 						"damage force reduction" 0.8
-					}
-					ItemAttributes
-					{
-						ItemName "Batter's Helmet"
-						"set item tint RGB" 8289918
 					}
 				}
 			}
@@ -492,17 +529,11 @@ WaveSchedule
 					Skill Expert
 					Tag bot_giant
 					WeaponRestrictions MeleeOnly
-					Item 	"Batter's Helmet"
 					Item	"the sandman"
 					CharacterAttributes
 					{
-						"move speed penalty"	0.95
-						"damage force reduction" 0.8
-					}
-					ItemAttributes
-					{
-						ItemName "Batter's Helmet"
-						"set item tint RGB" 8289918
+						"move speed penalty"	0.75
+						"damage force reduction" 0.65
 					}
 				}
 				RevertGateBotsBehavior
@@ -516,17 +547,11 @@ WaveSchedule
 					Skill Expert
 					Tag bot_giant
 					WeaponRestrictions MeleeOnly
-					Item 	"Batter's Helmet"
 					Item	"the sandman"
 					CharacterAttributes
 					{
 						"move speed penalty"	0.75
 						"damage force reduction" 0.65
-					}
-					ItemAttributes
-					{
-						ItemName "Batter's Helmet"
-						"set item tint RGB" 8289918
 					}
 				}
 			}
@@ -553,22 +578,16 @@ WaveSchedule
 					Tag bot_giant
 					Skill Expert
 					WeaponRestrictions MeleeOnly
-					Item 	"Batter's Helmet"
 					Item	"the sandman"
 					CharacterAttributes
 					{
-						"move speed penalty"	0.95
-						"damage force reduction" 0.8
+						"move speed penalty"	0.75
+						"damage force reduction" 0.65
 					}
 					ItemAttributes
 					{
 						ItemName	"the sandman"
 						"effect bar recharge rate increased"	0.05
-					}
-					ItemAttributes
-					{
-						ItemName "Batter's Helmet"
-						"set item tint RGB" 8289918
 					}
 				}
 				RevertGateBotsBehavior
@@ -582,7 +601,6 @@ WaveSchedule
 					Skill Expert
 					Tag bot_giant
 					WeaponRestrictions MeleeOnly
-					Item 	"Batter's Helmet"
 					Item	"the sandman"
 					CharacterAttributes
 					{
@@ -593,11 +611,6 @@ WaveSchedule
 					{
 						ItemName	"the sandman"
 						"effect bar recharge rate increased"	0.05
-					}
-					ItemAttributes
-					{
-						ItemName "Batter's Helmet"
-						"set item tint RGB" 8289918
 					}
 				}
 			}
@@ -621,7 +634,6 @@ WaveSchedule
 					Item "MvM GateBot Light Scout"
 					Skill Hard
 					Item	"crit-a-cola"
-					Item	"The Bolt Boy"
 					CharacterAttributes
 					{
 						"effect bar recharge rate increased"	0.5
@@ -636,7 +648,6 @@ WaveSchedule
 						"item style override" 1
 					}
 					Item	"crit-a-cola"
-					Item	"The Bolt Boy"
 					CharacterAttributes
 					{
 						"effect bar recharge rate increased"	0.5
@@ -664,7 +675,6 @@ WaveSchedule
 					Item "MvM GateBot Light Scout"
 					Skill Expert
 					Item	"crit-a-cola"
-					Item	"The Bolt Boy"
 					Item	"The Soda Popper"
 					CharacterAttributes
 					{
@@ -681,7 +691,6 @@ WaveSchedule
 					}
 					Item	"crit-a-cola"
 					Item	"The Soda Popper"
-					Item	"The Bolt Boy"
 					CharacterAttributes
 					{
 						"effect bar recharge rate increased"	0.5
@@ -709,7 +718,6 @@ WaveSchedule
 					Item "MvM GateBot Light Scout"
 					Skill Hard
 					Item	"crit-a-cola"
-					Item	"The Bolt Boy"
 					WeaponRestrictions MeleeOnly
 					CharacterAttributes
 					{
@@ -725,13 +733,196 @@ WaveSchedule
 						"item style override" 1
 					}
 					Item	"crit-a-cola"
-					Item	"The Bolt Boy"
 					CharacterAttributes
 					{
 						"effect bar recharge rate increased"	0.5
 					}
 					Skill Hard
 					WeaponRestrictions MeleeOnly
+				}
+			}
+		}
+		
+		T_TFGateBot_Scout_MiniCrit_Stun
+		{
+			Class Scout
+			Name "Mini Crit Minor Stun Scout"
+			ClassIcon scout_stun_cola
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Skill Hard
+					Item	"crit-a-cola"
+					WeaponRestrictions MeleeOnly
+					Item	"the sandman"
+					CharacterAttributes
+					{
+						"effect bar recharge rate increased"	0.5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					Skill Hard
+					Item	"crit-a-cola"
+					WeaponRestrictions MeleeOnly
+					Item	"the sandman"
+					CharacterAttributes
+					{
+						"effect bar recharge rate increased"	0.5
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Scout_MiniCrit_Stun_FastCharge
+		{
+			Class Scout
+			Name "Mini Crit Hyper Stun Scout"
+			ClassIcon scout_stun_cola
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Skill Hard
+					Item	"crit-a-cola"
+					WeaponRestrictions MeleeOnly
+					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName	"the sandman"
+						"effect bar recharge rate increased"	0.25
+					}
+					CharacterAttributes
+					{
+						"effect bar recharge rate increased"	0.5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					Skill Hard
+					Item	"crit-a-cola"
+					WeaponRestrictions MeleeOnly
+					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName	"the sandman"
+						"effect bar recharge rate increased"	0.25
+					}
+					CharacterAttributes
+					{
+						"effect bar recharge rate increased"	0.5
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Scout_Bonk_Stun
+		{
+			Class Scout
+			Name	"Bonk Minor Stun Scout"
+			ClassIcon	scout_stun_bonk
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Skill	Hard
+					WeaponRestrictions	MeleeOnly
+					Item	"bonk! atomic punch"
+					Item	"the sandman"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					Skill	Hard
+					WeaponRestrictions	MeleeOnly
+					Item	"bonk! atomic punch"
+					Item	"the sandman"
+				}
+			}
+		}
+		
+		T_TFGateBot_Scout_Bonk_Stun_FastCharge
+		{
+			Class Scout
+			Name	"Bonk Hyper Stun Scout"
+			ClassIcon	scout_stun_bonk
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Skill	Hard
+					WeaponRestrictions	MeleeOnly
+					Item	"bonk! atomic punch"
+					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName	"the sandman"
+						"effect bar recharge rate increased"	0.25
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					Skill	Hard
+					WeaponRestrictions	MeleeOnly
+					Item	"bonk! atomic punch"
+					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName	"the sandman"
+						"effect bar recharge rate increased"	0.25
+					}
 				}
 			}
 		}
@@ -831,6 +1022,60 @@ WaveSchedule
 			}
 		}
 		
+		T_TFGateBot_Giant_Scout_Bonk
+		{
+			Class Scout
+			Name "Giant Bonk Scout"
+			ClassIcon scout_bonk_giant
+			Health 1600
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Tag bot_giant
+					Skill Easy
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					Item "Bonk! Atomic Punch"
+					CharacterAttributes
+					{
+						"damage force reduction" 0.7
+						"airblast vulnerability multiplier" 0.7
+						"override footstep sound set" 5
+						"effect bar recharge rate increased" 99
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Easy
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					Item "Bonk! Atomic Punch"
+					CharacterAttributes
+					{
+						"damage force reduction" 0.7
+						"airblast vulnerability multiplier" 0.7
+						"override footstep sound set" 5
+						"effect bar recharge rate increased" 99
+					}
+				}
+			}
+		}
+		
 		T_TFGateBot_Giant_Scout_Fast
 		{
 			Class Scout
@@ -848,7 +1093,6 @@ WaveSchedule
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Scout"
-					Item "The Bolt Boy"
 					Item "The Holy Mackerel"
 					Tag bot_giant
 					Skill Easy
@@ -871,7 +1115,6 @@ WaveSchedule
 						"item style override" 1
 					}
 					Tag bot_giant
-					Item "The Bolt Boy"
 					Item "The Holy Mackerel"
 					Skill Easy
 					Attributes MiniBoss
@@ -904,7 +1147,6 @@ WaveSchedule
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Scout"
-					Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					Tag bot_giant
 					Skill Expert
@@ -936,7 +1178,6 @@ WaveSchedule
 						ItemName "MvM GateBot Light Scout"
 						"item style override" 1
 					}
-					Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					Tag bot_giant
 					Skill Expert
@@ -1032,8 +1273,8 @@ WaveSchedule
 		T_TFGateBot_Giant_Scout_Minicrit
 		{
 			Class Scout
-			Name "Giant Scout"
-			ClassIcon scout_giant
+			Name "Giant Mini Crit Scout"
+			ClassIcon scout_pop_giant
 			Health 1600
 
 			EventChangeAttributes
@@ -1052,7 +1293,6 @@ WaveSchedule
 					MaxVisionRange 1800
 					Item	"crit-a-cola"
 					Item	"The Soda Popper"
-					Item	"The Bolt Boy"
 					ItemAttributes
 					{
 						ItemName	"the soda popper"
@@ -1084,7 +1324,6 @@ WaveSchedule
 					MaxVisionRange 1800
 					Item	"crit-a-cola"
 					Item	"The Soda Popper"
-					Item	"The Bolt Boy"
 					ItemAttributes
 					{
 						ItemName	"the soda popper"
@@ -1100,6 +1339,204 @@ WaveSchedule
 						"airblast vulnerability multiplier"	0.7
 						"override footstep sound set"	5
 						"effect bar recharge rate increased"	0.55
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Giant_Scout_Minicrit_Melee
+		{
+			Class Scout
+			Name "Giant Mini Crit Scout"
+			ClassIcon scout_cola_giant
+			Health 1600
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Tag bot_giant
+					Skill Normal
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					Item	"crit-a-cola"
+					ItemAttributes
+					{
+						ItemName	tf_weapon_bat
+						"fire rate bonus"	0.75
+						"damage bonus"	1.25
+					}
+					CharacterAttributes
+					{
+						"damage force reduction"	0.7
+						"airblast vulnerability multiplier"	0.7
+						"override footstep sound set"	5
+						"effect bar recharge rate increased"	0.35
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Normal
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					Item	"crit-a-cola"
+					ItemAttributes
+					{
+						ItemName	tf_weapon_bat
+						"fire rate bonus"	0.75
+						"damage bonus"	1.25
+					}
+					CharacterAttributes
+					{
+						"damage force reduction"	0.7
+						"airblast vulnerability multiplier"	0.7
+						"override footstep sound set"	5
+						"effect bar recharge rate increased"	0.35
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Giant_Scout_Minicrit_Stun
+		{
+			Class Scout
+			Name "Giant Mini Crit Stun Scout"
+			ClassIcon scout_stun_cola_giant
+			Health 1600
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Tag bot_giant
+					Skill Normal
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					Item	"crit-a-cola"
+					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName	"the sandman"
+						"effect bar recharge rate increased"	0.4
+					}
+					CharacterAttributes
+					{
+						"damage force reduction"	0.7
+						"airblast vulnerability multiplier"	0.7
+						"override footstep sound set"	5
+						"effect bar recharge rate increased"	0.5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Normal
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					Item	"crit-a-cola"
+					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName	"the sandman"
+						"effect bar recharge rate increased"	0.4
+					}
+					CharacterAttributes
+					{
+						"damage force reduction"	0.7
+						"airblast vulnerability multiplier"	0.7
+						"override footstep sound set"	5
+						"effect bar recharge rate increased"	0.5
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Giant_Scout_Bonk_Stun
+		{
+			Class Scout
+			Name "Giant Bonk Stun Scout"
+			ClassIcon scout_stun_bonk_giant
+			Health 1600
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Tag bot_giant
+					Skill Normal
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					Item 	"Bonk! Atomic Punch"
+					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName	"the sandman"
+						"effect bar recharge rate increased"	0.25
+					}
+					CharacterAttributes
+					{
+						"damage force reduction" 0.7
+						"airblast vulnerability multiplier" 0.7
+						"override footstep sound set" 5
+						"effect bar recharge rate increased" 99
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Normal
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					Item 	"Bonk! Atomic Punch"
+					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName	"the sandman"
+						"effect bar recharge rate increased"	0.25
+					}
+					CharacterAttributes
+					{
+						"damage force reduction" 0.7
+						"airblast vulnerability multiplier" 0.7
+						"override footstep sound set" 5
+						"effect bar recharge rate increased" 99
 					}
 				}
 			}
@@ -1182,7 +1619,7 @@ WaveSchedule
 		{
 			Class Soldier
 			Name "Shotgun Soldier"
-			ClassIcon shotgun
+			ClassIcon shotgun_nys
 
 			EventChangeAttributes
 			{
@@ -1215,7 +1652,7 @@ WaveSchedule
 		{
 			Class Soldier
 			Name "Shotgun Soldier"
-			ClassIcon shotgun
+			ClassIcon shotgun_nys
 
 			EventChangeAttributes
 			{
@@ -2334,7 +2771,7 @@ WaveSchedule
 			Class Soldier
 			Name "Giant Charged Soldier"
 			Health 3800
-			ClassIcon soldier_crt
+			ClassIcon soldier_crit
 
 			EventChangeAttributes
 			{
@@ -2951,7 +3388,7 @@ WaveSchedule
 		{
 			Class Soldier
 			Name "Giant Shotgun Soldier"
-			ClassIcon	shotgun_giant
+			ClassIcon	shotgun_nys_giant
 			Health 3800
 
 			EventChangeAttributes
@@ -4316,7 +4753,7 @@ WaveSchedule
 		{
 			Class Pyro
 			Name "Shotgun Pyro"
-			ClassIcon shotgun
+			ClassIcon shotgun_nys
 
 			EventChangeAttributes
 			{
@@ -4349,7 +4786,7 @@ WaveSchedule
 		{
 			Class Pyro
 			Name "Shotgun Pyro"
-			ClassIcon shotgun
+			ClassIcon shotgun_nys
 
 			EventChangeAttributes
 			{
@@ -4688,7 +5125,7 @@ WaveSchedule
 
 			Class Pyro
 			Name "Giant Shotgun Pyro"
-			ClassIcon shotgun_giant
+			ClassIcon shotgun_nys_giant
 			Health 3300
 
 			EventChangeAttributes
@@ -6168,11 +6605,44 @@ WaveSchedule
 			}
 		}
 		
+		T_TFGateBot_Heavy_Natascha_Easy
+		{
+			Class Heavyweapons
+			Name "Natascha Heavy"
+			ClassIcon heavy_natascha_nys
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Heavy"
+					Skill Normal
+					Item	"natascha"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Heavy"
+						"item style override" 1
+					}
+					Skill Normal
+					Item	"natascha"
+				}
+			}
+		}
+		
 		T_TFGateBot_Heavy_Natascha
 		{
 			Class Heavyweapons
 			Name "Natascha Heavy"
-			ClassIcon heavy_grapple
+			ClassIcon heavy_natascha_grapple_nys
 
 			EventChangeAttributes
 			{
@@ -6743,7 +7213,7 @@ WaveSchedule
 					}
 				}
 			}
-		}		
+		}
 		
 		T_TFGateBot_Heavyweapons_Melee
 		{
@@ -6906,6 +7376,65 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"damage force reduction"	0.35
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Heavyweapons_Steel_Conch
+		{
+			Class Heavyweapons
+			Name "Steel Gauntlet Concheror"
+			ClassIcon heavy_steelfist_conch
+			Scale 1.6
+			Health 900
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Heavy"
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions	MeleeOnly
+					Attributes SpawnWithFullCharge
+					Item "Fists of Steel"
+					Item "The Concheror"
+					CharacterAttributes
+					{
+						"increase buff duration"	9.0
+						"damage force reduction" 0.5
+						"airblast vulnerability multiplier" 0.4
+						"move speed bonus"	0.8
+						"deploy time increased" 0.5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Heavy"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions	MeleeOnly
+					Attributes SpawnWithFullCharge
+					Item "Fists of Steel"
+					Item "The Concheror"
+					CharacterAttributes
+					{
+						"increase buff duration"	9.0
+						"damage force reduction" 0.5
+						"airblast vulnerability multiplier" 0.4
+						"move speed bonus"	0.8
+						"deploy time increased" 0.5
 					}
 				}
 			}
@@ -7359,6 +7888,92 @@ WaveSchedule
 			}
 		}
 		
+		T_TFGateBot_Giant_Heavy_Deflector_Airblast
+		{
+			Class Heavyweapons
+			Name "Giant Natascha Heavy"
+			ClassIcon heavy_grapple_giant
+			Health 5000
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Heavy"
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					MaxVisionRange 1200
+					Attributes MiniBoss
+					Item	"deflector"
+					Item	"the u-clank-a"
+					ItemAttributes
+					{
+						ItemName	deflector
+						"attack projectiles"	1
+						"damage bonus"	1.5
+						"apply look velocity on damage"	100
+						"apply z velocity on damage"	100
+					}
+					ItemAttributes
+					{
+						ItemName	"the u-clank-a"
+						"set item tint RGB"	15185211
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"override footstep sound set"	2
+						"airblast vulnerability multiplier"	0.3
+						"airblast vertical vulnerability multiplier"	0.3
+						"damage force reduction"	0.3
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Heavy"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					MaxVisionRange 1200
+					Attributes MiniBoss
+					Item	"deflector"
+					Item	"the u-clank-a"
+					ItemAttributes
+					{
+						ItemName	deflector
+						"attack projectiles"	1
+						"damage bonus"	1.5
+						"apply look velocity on damage"	100
+						"apply z velocity on damage"	100
+					}
+					ItemAttributes
+					{
+						ItemName	"the u-clank-a"
+						"set item tint RGB"	15185211
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"override footstep sound set"	2
+						"airblast vulnerability multiplier"	0.3
+						"airblast vertical vulnerability multiplier"	0.3
+						"damage force reduction"	0.3
+					}
+				}
+			}
+		}
+		
 		T_TFGateBot_Giant_Heavy_Booster
 		{
 			Class Heavyweapons
@@ -7519,9 +8134,10 @@ WaveSchedule
 			}
 		}
 		
-		T_TFGateBot_Engineer_Battle
+		T_TFGateBot_Engineer_Battle_Shotgun
 		{
 			Class Engineer
+			Health 250
 
 			EventChangeAttributes
 			{
@@ -7546,6 +8162,141 @@ WaveSchedule
 					}
 					Skill Hard
 					WeaponRestrictions PrimaryOnly
+				}
+			}
+		}
+		
+		T_TFGateBot_Engineer_Widowmaker
+		{
+			Class Engineer
+			ClassIcon	engineer_widowmaker
+			Health	275
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Engineer"
+					WeaponRestrictions PrimaryOnly
+					Skill Hard
+					Item	"the widowmaker"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Engineer"
+						"item style override" 1
+					}
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+					Item	"the widowmaker"
+				}
+			}
+		}
+		
+		T_TFGateBot_Engineer_Conch
+		{
+			Class Engineer
+			ClassIcon engineer_shotgun_conch
+			Name "Concheror Engineer"
+			Health 250
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Engineer"
+					WeaponRestrictions PrimaryOnly
+					Skill Hard
+					Attributes SpawnWithFullCharge
+					Item "The Concheror"
+					CharacterAttributes
+					{
+						"increase buff duration"	9.0
+						"move speed bonus"	0.8
+						"deploy time increased" 0.5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Engineer"
+						"item style override" 1
+					}
+					WeaponRestrictions PrimaryOnly
+					Skill Hard
+					Attributes SpawnWithFullCharge
+					Item "The Concheror"
+					CharacterAttributes
+					{
+						"increase buff duration"	9.0
+						"move speed bonus"	0.8
+						"deploy time increased" 0.5
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Engineer_Buff_Banner
+		{
+			Class Engineer
+			ClassIcon engineer_shotgun_buff
+			Name "Buff Banner Engineer"
+			Health 250
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Engineer"
+					WeaponRestrictions PrimaryOnly
+					Skill Hard
+					Attributes SpawnWithFullCharge
+					Item	"the buff banner"
+					CharacterAttributes
+					{
+						"increase buff duration"	9.0
+						"move speed bonus"	0.8
+						"deploy time increased" 0.5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Engineer"
+						"item style override" 1
+					}
+					WeaponRestrictions PrimaryOnly
+					Skill Hard
+					Attributes SpawnWithFullCharge
+					Item	"the buff banner"
+					CharacterAttributes
+					{
+						"increase buff duration"	9.0
+						"move speed bonus"	0.8
+						"deploy time increased" 0.5
+					}
 				}
 			}
 		}
