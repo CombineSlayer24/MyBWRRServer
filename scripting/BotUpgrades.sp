@@ -18,23 +18,23 @@ public Action Timer_AddAttribsToActiveWep(Handle timer) {
 			TF2Attrib_SetByName(wep, "dmg taken from crit reduced", 0.6);
 			//TF2Attrib_SetByName(wep, "dmg taken from blast reduced", 0.80);
 			TF2Attrib_SetByName(wep, "damage force reduction", 0.8);
-			TF2Attrib_SetByName(wep, "max health additive bonus", 100.0);
+			TF2Attrib_SetByName(wep, "max health additive bonus", 50.0);
 			TF2Attrib_SetByName(wep, "move speed bonus", 1.12);
 			TF2Attrib_SetByName(wep, "damage bonus", 3.25);
 			TF2Attrib_SetByName(wep, "ammo regen", 1.5);
 			TF2Attrib_SetByName(wep, "clip size bonus upgrade", 1.5);
-			TF2Attrib_SetByName(wep, "fire rate bonus", 0.75);
+			TF2Attrib_SetByName(wep, "fire rate bonus", 0.85);
 			TF2Attrib_SetByName(wep, "mod rage on hit bonus", 1000.0);
-			TF2Attrib_SetByName(wep, "Reload time decreased", 0.5);
-			TF2Attrib_SetByName(wep, "heal on kill", 50.0);
-			TF2Attrib_SetByName(wep, "health regen", 20.0);
+			TF2Attrib_SetByName(wep, "Reload time decreased", 0.75);
+			TF2Attrib_SetByName(wep, "heal on kill", 25.0);
+			TF2Attrib_SetByName(wep, "health regen", 5.0);
 			TF2Attrib_SetByName(wep, "maxammo primary increased", 5.0);
 			TF2Attrib_SetByName(wep, "increased jump height", 1.15);
 
 			switch (TF2_GetPlayerClass(i)) {
 				case TFClass_Pyro: {
 					TF2Attrib_SetByName(wep, "airblast pushback scale", 1.25);
-					TF2Attrib_SetByName(wep, "mult airblast refire time", 0.9);
+					TF2Attrib_SetByName(wep, "mult airblast refire time", 0.9);		// pyro spams airblast, leaving this in, it's funny. Should've been +10%
 				}
 				case TFClass_Engineer: {
 					TF2Attrib_SetByName(wep, "engy sentry fire rate increased", 0.9);
