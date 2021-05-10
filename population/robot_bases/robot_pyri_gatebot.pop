@@ -3466,8 +3466,8 @@ WaveSchedule
 		T_TFGateBot_Giant_Soldier_Escapeplan
 		{
 			Class Soldier
-			Name "Giant Equalizer Soldier"
-			ClassIcon soldier_equalizer_giant
+			Name "Giant Escape Plan Soldier"
+			ClassIcon soldier_escape_giant
 			Health 3800
 
 			EventChangeAttributes
