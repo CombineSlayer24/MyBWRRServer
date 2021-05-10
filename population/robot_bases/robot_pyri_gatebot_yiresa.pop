@@ -216,7 +216,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -257,7 +257,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -308,7 +308,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -353,7 +353,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				
-					Tag nav_prefer_gate1_flank		
+					Tag nav_prefer_gate_flank		
 					BehaviorModifiers push			
 					Attributes IgnoreFlag 
 					Skill Hard
@@ -387,7 +387,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -424,7 +424,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -474,7 +474,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -521,7 +521,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -570,7 +570,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -627,7 +627,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -668,7 +668,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -711,7 +711,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -754,7 +754,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -799,7 +799,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -854,7 +854,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -891,7 +891,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -938,7 +938,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -985,7 +985,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Scout"
@@ -1035,7 +1035,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Scout"
@@ -1089,7 +1089,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Scout"
@@ -1143,7 +1143,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Scout"
@@ -1217,7 +1217,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Scout"
@@ -1283,7 +1283,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Scout"
@@ -1357,7 +1357,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Scout"
@@ -1423,7 +1423,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Scout"
@@ -1489,7 +1489,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Scout"
@@ -1560,7 +1560,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -1591,7 +1591,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -1635,7 +1635,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -1668,7 +1668,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -1719,7 +1719,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -1752,7 +1752,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -1797,7 +1797,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -1841,7 +1841,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -1885,7 +1885,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -1931,7 +1931,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -1994,7 +1994,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -2059,7 +2059,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -2126,7 +2126,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -2203,7 +2203,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -2248,7 +2248,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -2301,7 +2301,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -2344,7 +2344,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -2393,7 +2393,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -2444,7 +2444,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -2491,7 +2491,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -2542,7 +2542,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -2609,7 +2609,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Soldier"
@@ -2666,7 +2666,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -2726,7 +2726,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -2786,7 +2786,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -2856,7 +2856,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -2934,7 +2934,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3014,7 +3014,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3092,7 +3092,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3170,7 +3170,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3250,7 +3250,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3334,7 +3334,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3404,7 +3404,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3475,7 +3475,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3539,7 +3539,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3601,7 +3601,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3630,7 +3630,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3661,7 +3661,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3714,7 +3714,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3769,7 +3769,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3814,7 +3814,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3865,7 +3865,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3914,7 +3914,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -3961,7 +3961,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4010,7 +4010,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4065,7 +4065,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4122,7 +4122,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4175,7 +4175,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4222,7 +4222,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4269,7 +4269,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4338,7 +4338,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4407,7 +4407,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4478,7 +4478,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4511,7 +4511,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4558,7 +4558,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4605,7 +4605,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4652,7 +4652,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4705,7 +4705,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4768,7 +4768,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4801,7 +4801,7 @@ WaveSchedule
 				Default
 				{
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
@@ -4853,7 +4853,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -4919,7 +4919,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -4984,7 +4984,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -5051,7 +5051,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -5140,7 +5140,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -5209,7 +5209,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5240,7 +5240,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5298,7 +5298,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5360,7 +5360,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5422,7 +5422,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5510,7 +5510,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5563,7 +5563,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5622,7 +5622,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5655,7 +5655,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5700,7 +5700,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5745,7 +5745,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5793,7 +5793,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5866,7 +5866,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5915,7 +5915,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -5960,7 +5960,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -6010,7 +6010,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -6080,7 +6080,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -6146,7 +6146,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -6214,7 +6214,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -6312,7 +6312,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -6382,7 +6382,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -6464,7 +6464,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Demoman"
@@ -6549,7 +6549,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -6580,7 +6580,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -6625,7 +6625,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -6658,7 +6658,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -6703,7 +6703,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -6764,7 +6764,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -6813,7 +6813,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -6864,7 +6864,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -6917,7 +6917,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -6970,7 +6970,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7019,7 +7019,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7072,7 +7072,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7123,7 +7123,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7176,7 +7176,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7235,7 +7235,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7268,7 +7268,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7305,7 +7305,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7344,7 +7344,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7403,7 +7403,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7460,7 +7460,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7495,7 +7495,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7529,7 +7529,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7563,7 +7563,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7627,7 +7627,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7699,7 +7699,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7767,7 +7767,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7839,7 +7839,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7909,7 +7909,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -7995,7 +7995,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -8069,7 +8069,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Heavy"
@@ -8153,7 +8153,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Engineer"
@@ -8186,7 +8186,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Engineer"
@@ -8222,7 +8222,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Engineer"
@@ -8272,7 +8272,7 @@ WaveSchedule
 				{
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag			// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
 					Item "MvM GateBot Light Engineer"
@@ -8319,7 +8319,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -8358,7 +8358,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -8403,7 +8403,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -8450,7 +8450,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -8485,7 +8485,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -8530,7 +8530,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -8577,7 +8577,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -8625,7 +8625,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -8695,7 +8695,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -8769,7 +8769,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
@@ -8841,7 +8841,7 @@ WaveSchedule
 			{
 				Default
 				{
-					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag nav_prefer_gate_flank	// having these will cause bots to run towards gates
 					Tag bot_gatebot				// having these will cause bots to run towards gates
 					BehaviorModifiers push		// having these will cause bots to run towards gates
 					Attributes IgnoreFlag		// having these will cause bots to run towards gates
