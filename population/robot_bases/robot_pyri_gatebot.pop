@@ -2719,7 +2719,7 @@ WaveSchedule
 			Class Soldier
 			Name "Giant Battalion Soldier"
 			Health 3800
-			ClassIcon soldier_backup
+			ClassIcon soldier_backup_giant
 
 			EventChangeAttributes
 			{
@@ -8779,14 +8779,13 @@ WaveSchedule
 					Skill Expert
 					WeaponRestrictions SecondaryOnly
 					Attributes	MiniBoss
-					Item	"Upgradeable TF_WEAPON_SMG"
+					Item	"Jarate"
+					Item 	"The Bushwacka"
 					ItemAttributes
 					{
-						ItemName "Upgradeable TF_WEAPON_SMG"
-						"fire rate bonus" 0.47
-						"damage bonus" 1.4
-						"clip size bonus" 2.44		// 61 Clip size (Tried to get it around 60, need more tinkering)
-						"spread penalty" 1.15
+						ItemName "Jarate"
+						"effect bar recharge rate increased" 0.1
+						"applies snare effect" 0.5
 					}
 					CharacterAttributes
 					{
@@ -8809,14 +8808,13 @@ WaveSchedule
 					Skill Expert
 					WeaponRestrictions SecondaryOnly
 					Attributes	MiniBoss
-					Item	"Upgradeable TF_WEAPON_SMG"
+					Item	"Jarate"
+					Item 	"The Bushwacka"
 					ItemAttributes
 					{
-						ItemName "Upgradeable TF_WEAPON_SMG"
-						"fire rate bonus" 0.47
-						"damage bonus" 1.4
-						"clip size bonus" 2.44		// 61 Clip size (Tried to get it around 60, need more tinkering)
-						"spread penalty" 1.15
+						ItemName "Jarate"
+						"effect bar recharge rate increased" 0.1
+						"applies snare effect" 0.5
 					}
 					CharacterAttributes
 					{

@@ -4488,6 +4488,54 @@ WaveSchedule
 			}
 			Item	"traffic cone"
 		}
+		T_TFBot_Chief_Pyro_PyriBot
+		{
+			ClassIcon	pyro_manmelter_giant
+			Health	28000
+			Name	"P-Y-R-I // B.O.T // 1.0.0.2"
+			Scale	1.9
+			Class	Pyro
+			Skill	Normal
+			WeaponRestrictions	SecondaryOnly
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			ItemAttributes
+			{
+				ItemName	"the manmelter"
+				"fire rate penalty"	1.5
+				"projectile spread angle penalty"	3
+				"damage causes airblast" 	1
+				//"apply look velocity on damage"	100
+				//"apply z velocity on damage"	100
+				//"damage penalty"	0.05
+				"set item tint RGB"	5801378
+				"Projectile speed decreased"	0.35
+				"override projectile type"		13
+				"energy weapon penetration" 	1
+			}
+			CharacterAttributes
+			{
+				"dmg taken from fire reduced"	0.001
+				"dmg taken from blast reduced"	0.65
+				"dmg taken from crit reduced"	0.95
+				"dmg from melee increased"	3.5
+				"move speed penalty"	0.32
+				"override footstep sound set"	2
+				"airblast vulnerability multiplier"	0.4
+				"airblast vertical vulnerability multiplier"	0.25
+				"rage giving scale"	0.1
+			}
+			ItemAttributes
+			{
+				ItemName	"Bedouin Bandana"
+				"set item tint RGB"	5801378
+			}
+			Item	"the manmelter"
+			Item	"The Hot Case"
+			Item	"Bedouin Bandana"
+			//Item	"the soot suit"
+			//Item	"the federal casemaker"
+		}
 		
 		T_TFBot_Chief_Scout_Buckshot
 		{
@@ -4592,6 +4640,47 @@ WaveSchedule
 				"rage giving scale" 0.1
 				"move speed bonus" 0.3
 			}
+		}
+		
+		T_TFBot_Chief_Soldier_Capt_Luanch
+		{
+			ClassIcon	soldier_major_crits
+			Health	32500
+			Name	"Captain Launch-a-Lard"
+			Scale	1.9
+			Class	Soldier
+			Skill	Normal
+			WeaponRestrictions	PrimaryOnly
+			Tag	bot_giant
+			Attributes	AlwaysCrit
+			Attributes	HoldFireUntilFullReload
+			Attributes	MiniBoss
+			Attributes	UseBossHealthBar
+			ItemAttributes
+			{
+				ItemName	"gold botkiller rocket launcher mk.ii"
+				"damage penalty"	0.01
+				"clip size upgrade atomic"	44.0
+				"fire rate bonus"	0.18
+				"faster reload rate"	0.2
+				"projectile spread angle penalty"	5
+				"Projectile speed decreased"	0.7
+				"apply z velocity on damage"	300
+				"apply look velocity on damage"	300
+			}
+			CharacterAttributes
+			{
+				"move speed penalty"	0.35
+				"health regen"	25
+				"damage force reduction"	0.6
+				"airblast vulnerability multiplier"	0.4
+				"airblast vertical vulnerability multiplier"	0.25
+				"override footstep sound set"	3
+				"rage giving scale"	0.1
+			}
+			Item	"gold botkiller rocket launcher mk.ii"
+			Item	"full metal drill hat"
+			Item	"the patriot's pouches"
 		}
 		
 		T_TFBot_Chief_Demoman_Generic
