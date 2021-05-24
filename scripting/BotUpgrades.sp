@@ -25,9 +25,9 @@ public Action Timer_AddAttribsToActiveWep(Handle timer) {
 			TF2Attrib_SetByName(wep, "clip size bonus upgrade", 1.5);
 			TF2Attrib_SetByName(wep, "fire rate bonus", 0.75);
 			TF2Attrib_SetByName(wep, "mod rage on hit bonus", 1000.0);
-			TF2Attrib_SetByName(wep, "Reload time decreased", 0.5);
-			TF2Attrib_SetByName(wep, "heal on kill", 32.0);
-			TF2Attrib_SetByName(wep, "health regen", 12.0);
+			TF2Attrib_SetByName(wep, "Reload time decreased", 0.75);
+			TF2Attrib_SetByName(wep, "heal on kill", 20.0);
+			TF2Attrib_SetByName(wep, "health regen", 10.0);
 			TF2Attrib_SetByName(wep, "maxammo primary increased", 5.0);
 			TF2Attrib_SetByName(wep, "increased jump height", 1.15);
 
@@ -44,7 +44,7 @@ public Action Timer_AddAttribsToActiveWep(Handle timer) {
 					TF2Attrib_SetByName(wep, "metal regen", 200.0);
 					TF2Attrib_SetByName(wep, "maxammo metal increased", 1.5);
 					TF2Attrib_SetByName(wep, "bidirectional teleport", 1.0);
-					TF2Attrib_SetByName(wep, "mod sentry killed revenge", 1.0);	// Give engineer crits when Sentrygun is destroyed
+					TF2Attrib_SetByName(wep, "mod sentry killed revenge", 1.0);	// Give engineer crits when Sentrygun is destroyed (IDK if this works)
 				}
 				case TFClass_Medic: {
 					TF2Attrib_SetByName(wep, "ubercharge rate bonus", 1.25);
@@ -60,7 +60,7 @@ public Action Timer_AddAttribsToActiveWep(Handle timer) {
 					TF2Attrib_SetByName(wep, "critboost on kill", 1.0);
 					//TF2Attrib_SetByName(wep, "armor piercing", 3.0);
 					//TF2Attrib_SetByName(wep, "robo sapper", 3.0);
-					TF2Attrib_SetByName(wep, "cloak consume rate decreased", 0.75);
+					TF2Attrib_SetByName(wep, "cloak consume rate decreased", 0.75);	// +25% slower consume rate for invis watch
 				}
 				case TFClass_Soldier: {
 					TF2Attrib_SetByName(wep, "rocket specialist", 1.0);
@@ -75,20 +75,20 @@ public Action Timer_AddAttribsToActiveWep(Handle timer) {
 				case TFClass_Heavy: {
 					TF2Attrib_SetByName(wep, "projectile penetration heavy", 1.0);
 					TF2Attrib_SetByName(wep, "attack projectiles", 1.0);
-					TF2Attrib_SetByName(wep, "minigun spinup time decreased", 0.9);
+					TF2Attrib_SetByName(wep, "minigun spinup time decreased", 0.9);	// Good idea???
 				}
 				case TFClass_Scout: {
 					TF2Attrib_SetByName(wep, "bullets per shot bonus", 1.65);		// +65% extra bullets per shot, finale stack should be [idfk, sue me]
 					TF2Attrib_SetByName(wep, "scattergun knockback mult", 1.15);	// +15% knockback on a scattergun pellet, final stack should be +45%
 					TF2Attrib_SetByName(wep, "move speed bonus", 1.25);			// +25% starting move speed, final stack should be %75 max speed. shet
 					TF2Attrib_SetByName(wep, "heal on hit for rapidfire", 5);		// Scout will gain 5 HP per hit, final stack should be 15 HP per hit.
-					TF2Attrib_SetByName(wep, "drop health pack on kill", 1);		// Robots killed by Scout will drop a small health pack, 100%.
+					//TF2Attrib_SetByName(wep, "drop health pack on kill", 1);		// Robots killed by Scout will drop a small health pack, 100%. (DISABLE THIS NOW)
 				}
 				case TFClass_Sniper: {
 					TF2Attrib_SetByName(wep, "explosive sniper shot", 1.0);
 					TF2Attrib_SetByName(wep, "projectile penetration", 1.0);
 					TF2Attrib_SetByName(wep, "SRifle Charge rate increased", 1.20);
-					//TF2Attrib_SetByName(wep, "sniper fires tracer", 1.0);
+					//TF2Attrib_SetByName(wep, "sniper fires tracer", 1.0);	// was used for testing if sniper bots actually fired
 				}
 			}
 		}
