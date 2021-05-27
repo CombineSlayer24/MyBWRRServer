@@ -446,7 +446,8 @@ WaveSchedule
 			Item	"The Bolt Boy"
 			CharacterAttributes
 			{
-				"effect bar recharge rate increased"	0.5
+				"effect bar recharge rate increased"	0.35
+				"mod_mark_attacker_for_death" 0
 			}
 		}
 		
@@ -463,7 +464,8 @@ WaveSchedule
 			Item	"The Bolt Boy"
 			CharacterAttributes
 			{
-				"effect bar recharge rate increased"	0.5
+				"effect bar recharge rate increased"	0.35
+				"mod_mark_attacker_for_death" 0
 			}
 		}
 		
@@ -498,7 +500,8 @@ WaveSchedule
 			Item	"the sandman"
 			CharacterAttributes
 			{
-				"effect bar recharge rate increased"	0.5
+				"effect bar recharge rate increased"	0.35
+				"mod_mark_attacker_for_death" 0
 			}
 		}
 		
@@ -521,7 +524,8 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
-				"effect bar recharge rate increased"	0.5
+				"effect bar recharge rate increased"	0.35
+				"mod_mark_attacker_for_death" 0
 			}
 		}
 		
@@ -761,6 +765,7 @@ WaveSchedule
 				"airblast vulnerability multiplier"	0.7
 				"override footstep sound set"	5
 				"effect bar recharge rate increased"	0.55
+				"mod_mark_attacker_for_death" 0
 			}
 		}
 		
@@ -787,7 +792,8 @@ WaveSchedule
 				"damage force reduction"	0.7
 				"airblast vulnerability multiplier"	0.7
 				"override footstep sound set"	5
-				"effect bar recharge rate increased"	0.35
+				"effect bar recharge rate increased"	0.25
+				"mod_mark_attacker_for_death" 0
 			}
 		}
 		
@@ -815,6 +821,7 @@ WaveSchedule
 				"airblast vulnerability multiplier"	0.7
 				"override footstep sound set"	5
 				"effect bar recharge rate increased"	0.5
+				"mod_mark_attacker_for_death" 0
 			}
 		}
 		
@@ -2970,7 +2977,8 @@ WaveSchedule
 				"damage bonus"	2.0
 				"fire rate bonus"	0.6
 			}
-		}		
+		}
+		
 		T_TFBot_Heavy_ApocoFist
 		{
 			Class Heavyweapons

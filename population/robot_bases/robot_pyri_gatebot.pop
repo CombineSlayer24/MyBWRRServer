@@ -7,14 +7,14 @@
 //T_TFGateBot_Scout_Bonk
 //T_TFGateBot_Scout_Shortstop
 //T_TFGateBot_Giant_Scout
-//T_TFGateBot_Giant_Scout_Bonk
+//T_TFGateBot_Giant_Scout_Bonk								// Made this bot use Bonk only once
 //T_TFGateBot_Giant_Scout_Fast
 //T_TFGateBot_Soldier_Extended_Buff_Banner
 //T_TFGateBot_Giant_Soldier_Extended_Buff_Banner
 //T_TFGateBot_Giant_Soldier_Extended_Battalion
 //T_TFGateBot_Giant_Soldier_Crit
-//T_TFGateBot_Pyro_ScorchShot
-//T_TFGateBot_Pyro_ScorchShot_Fast
+//T_TFGateBot_Pyro_ScorchShot								// Uses custom icon
+//T_TFGateBot_Pyro_ScorchShot_Fast							// Uses custom icon
 //T_TFGateBot_Giant_Pyro_Flare_Spammer						// Renamed to Giant Detonator Pyro, with icon change
 //T_TFGateBot_Giant_Pyro_Flare_Spammer_ScorchShot			// Renamed to Giant ScorchShot Pyro, with icon change
 //T_TFGateBot_Demoknight
@@ -636,7 +636,8 @@ WaveSchedule
 					Item	"crit-a-cola"
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased"	0.5
+						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 				}
 				RevertGateBotsBehavior
@@ -650,7 +651,8 @@ WaveSchedule
 					Item	"crit-a-cola"
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased"	0.5
+						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 					Skill Hard
 				}
@@ -678,7 +680,8 @@ WaveSchedule
 					Item	"The Soda Popper"
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased"	0.5
+						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 				}
 				RevertGateBotsBehavior
@@ -693,7 +696,8 @@ WaveSchedule
 					Item	"The Soda Popper"
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased"	0.5
+						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 					Skill Expert
 				}
@@ -721,7 +725,8 @@ WaveSchedule
 					WeaponRestrictions MeleeOnly
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased"	0.5
+						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 				}
 				RevertGateBotsBehavior
@@ -735,7 +740,8 @@ WaveSchedule
 					Item	"crit-a-cola"
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased"	0.5
+						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 					Skill Hard
 					WeaponRestrictions MeleeOnly
@@ -765,7 +771,8 @@ WaveSchedule
 					Item	"the sandman"
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased"	0.5
+						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 				}
 				RevertGateBotsBehavior
@@ -782,7 +789,8 @@ WaveSchedule
 					Item	"the sandman"
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased"	0.5
+						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 				}
 			}
@@ -815,7 +823,8 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased"	0.5
+						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 				}
 				RevertGateBotsBehavior
@@ -837,7 +846,8 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased"	0.5
+						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 				}
 			}
@@ -1308,6 +1318,7 @@ WaveSchedule
 						"airblast vulnerability multiplier"	0.7
 						"override footstep sound set"	5
 						"effect bar recharge rate increased"	0.55
+						"mod_mark_attacker_for_death" 0
 					}
 				}
 				RevertGateBotsBehavior
@@ -1339,6 +1350,7 @@ WaveSchedule
 						"airblast vulnerability multiplier"	0.7
 						"override footstep sound set"	5
 						"effect bar recharge rate increased"	0.55
+						"mod_mark_attacker_for_death" 0
 					}
 				}
 			}
@@ -1378,6 +1390,7 @@ WaveSchedule
 						"airblast vulnerability multiplier"	0.7
 						"override footstep sound set"	5
 						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 				}
 				RevertGateBotsBehavior
@@ -1405,6 +1418,7 @@ WaveSchedule
 						"airblast vulnerability multiplier"	0.7
 						"override footstep sound set"	5
 						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 				}
 			}
@@ -1443,7 +1457,8 @@ WaveSchedule
 						"damage force reduction"	0.7
 						"airblast vulnerability multiplier"	0.7
 						"override footstep sound set"	5
-						"effect bar recharge rate increased"	0.5
+						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 				}
 				RevertGateBotsBehavior
@@ -1470,7 +1485,8 @@ WaveSchedule
 						"damage force reduction"	0.7
 						"airblast vulnerability multiplier"	0.7
 						"override footstep sound set"	5
-						"effect bar recharge rate increased"	0.5
+						"effect bar recharge rate increased"	0.35
+						"mod_mark_attacker_for_death" 0
 					}
 				}
 			}
@@ -3588,35 +3604,6 @@ WaveSchedule
 						"airblast vulnerability multiplier"	0.4
 						"override footstep sound set"	3
 					}
-				}
-			}
-		}
-		
-		T_TFGateBot_Pyro_Easy
-		{
-			Class Pyro
-
-			EventChangeAttributes
-			{
-				Default
-				{
-					Tag bot_gatebot 				// having these will cause bots to run towards gates
-					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
-					BehaviorModifiers push			// having these will cause bots to run towards gates
-					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
-
-					Item "MvM GateBot Light Pyro"
-					Skill Easy
-				}
-				RevertGateBotsBehavior
-				{
-					Item "MvM GateBot Light Pyro"
-					ItemAttributes               // turn off light hat
-					{
-						ItemName "MvM GateBot Light Pyro"
-						"item style override" 1
-					}
-					Skill Easy
 				}
 			}
 		}
@@ -7690,8 +7677,6 @@ WaveSchedule
 			Name "Giant Heavyweight Champ"
 			ClassIcon heavy_gru_giant
 			Health 5000
-			
-			
 
 			EventChangeAttributes
 			{
