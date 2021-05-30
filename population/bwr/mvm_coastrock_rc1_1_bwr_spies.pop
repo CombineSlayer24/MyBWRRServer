@@ -66,7 +66,7 @@ population
 		Checkpoint	Yes
 		StartWaveOutput
 		{
-			Target	wave_start_relay_ironman
+			Target	wave_start_relay
 			Action	Trigger
 		}
 		DoneOutput
@@ -236,7 +236,9 @@ population
 			WaitBeforeStarting	5
 			WaitBetweenSpawns	1
 			Support 1
-			Where	spawnbot_all
+			Where	spawnbot
+			Where	spawnbot_tunnel
+			Where	spawnbot_parachute
 			RandomChoice
 			{
 				TFBot
