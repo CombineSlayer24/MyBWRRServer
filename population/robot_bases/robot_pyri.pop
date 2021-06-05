@@ -3220,8 +3220,8 @@ WaveSchedule
 				ItemName	deflector
 				"attack projectiles"	1
 				"damage bonus"	1.5
-				"apply look velocity on damage"	100
-				"apply z velocity on damage"	100
+				"apply look velocity on damage"	150
+				"apply z velocity on damage"	150
 			}
 			ItemAttributes
 			{
