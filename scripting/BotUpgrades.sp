@@ -41,7 +41,7 @@ public Action Timer_AddAttribsToActiveWep(Handle timer) {
 					TF2Attrib_SetByName(wep, "engy building health bonus", 1.25);
 					TF2Attrib_SetByName(wep, "engineer sentry build rate multiplier", 1.5);
 					TF2Attrib_SetByName(wep, "engy dispenser radius increased", 1.6);
-					TF2Attrib_SetByName(wep, "metal regen", 200.0);
+					TF2Attrib_SetByName(wep, "metal regen", 50.0);
 					TF2Attrib_SetByName(wep, "maxammo metal increased", 1.5);
 					TF2Attrib_SetByName(wep, "bidirectional teleport", 1.0);
 					TF2Attrib_SetByName(wep, "mod sentry killed revenge", 1.0);	// Give engineer crits when Sentrygun is destroyed (IDK if this works)
