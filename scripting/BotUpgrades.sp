@@ -35,7 +35,7 @@ public Action Timer_AddAttribsToWeapons(Handle timer) {
 			TF2Attrib_AddCustomPlayerAttribute(i, "dmg taken from fire reduced", 0.5);				// +50% Dmg resistances from Fire
 			TF2Attrib_AddCustomPlayerAttribute(i, "dmg taken from crit reduced", 0.1);				// +90% Dmg resistances from Critical Hits
 			TF2Attrib_AddCustomPlayerAttribute(i, "dmg taken from blast reduced", 0.75);			// +75% Dmg resistances from Blast
-			TF2Attrib_AddCustomPlayerAttribute(i, "max health additive bonus", 25.0);				// +25 Additional health
+			TF2Attrib_AddCustomPlayerAttribute(i, "max health additive bonus", 50.0);				// +50 Additional health
 			TF2Attrib_AddCustomPlayerAttribute(i, "ammo regen", 0.25);								// +25% Ammo regen
 			
 			switch (TF2_GetPlayerClass(i)) {
@@ -281,8 +281,8 @@ public Action Timer_AddAttribsToWeapons(Handle timer) {
 			{
 				if (i == GetEntPropEnt(GasPasser, Prop_Data, "m_hOwnerEntity"))
 				{
-					TF2Attrib_SetByName(GasPasser, "effect bar recharge rate increased", 0.6);		// +40% Faster recharge rate
-					TF2Attrib_SetByName(GasPasser, "explode_on_ignite", 1.0);						// Explodes enemies upon ignition
+					TF2Attrib_SetByName(GasPasser, "item_meter_charge_rate", 15.0);					// +15 Seconds recharge
+					TF2Attrib_SetByName(GasPasser, "weapon burn dmg increased", 1.5);				// +50% Afterburn Damage
 				}
 			}
 			/** CowMangler = Well, you know */
@@ -291,7 +291,8 @@ public Action Timer_AddAttribsToWeapons(Handle timer) {
 			{
 				if (i == GetEntPropEnt(CowMangler, Prop_Data, "m_hOwnerEntity"))
 				{
-					TF2Attrib_SetByName(Primary, "damage bonus", 2.0);								// +100% Damage bonus
+					TF2Attrib_SetByName(CowMangler, "damage bonus", 2.0);							// +100% Damage bonus
+					TF2Attrib_SetByName(CowMangler, "Set DamageType Ignite", 2.0);					// Deals fire damage per hit
 					TF2Attrib_SetByName(CowMangler, "clip size bonus upgrade", 3.0);				// +200% Clip size bonus
 					TF2Attrib_SetByName(CowMangler, "heal on kill", 100.0);							// +100 HP per kill
 					TF2Attrib_SetByName(CowMangler, "fire rate bonus", 0.6);						// +40% Faster fire rate
