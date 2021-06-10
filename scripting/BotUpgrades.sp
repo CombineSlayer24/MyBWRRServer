@@ -55,7 +55,7 @@ public Action Timer_AddAttribsToWeapons(Handle timer) {
 					/** Scout Secondary Attributes */
 					TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
 					TF2Attrib_SetByName(Secondary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
-					TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 point of Projectile Penetration
+					TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 Point of Projectile Penetration
 					TF2Attrib_SetByName(Secondary, "heal on kill", 100.0);							// +100 HP per kill
 					TF2Attrib_SetByName(Secondary, "fire rate bonus", 0.6);							// +40% Faster fire rate
 				}
@@ -67,7 +67,7 @@ public Action Timer_AddAttribsToWeapons(Handle timer) {
 					TF2Attrib_SetByName(Primary, "heal on kill", 50.0);								// +50 HP per kill
 					TF2Attrib_SetByName(Primary, "maxammo primary increased", 2.5);					// +150% Maximum Ammo
 					/** Soldier Special Attributes */
-					TF2Attrib_SetByName(Primary, "rocket specialist", 2.0);							// +2 points of Rocket Specialist
+					TF2Attrib_SetByName(Primary, "rocket specialist", 2.0);							// +2 Points of Rocket Specialist
 					TF2Attrib_SetByName(Primary, "clip size upgrade atomic", 8.0);					// +8 Rockets (12 total)
 					TF2Attrib_SetByName(Primary, "Projectile speed increased", 1.2);				// +20% Faster projectile speed
 					/** Soldier Secondary Attributes */
@@ -119,13 +119,13 @@ public Action Timer_AddAttribsToWeapons(Handle timer) {
 					TF2Attrib_SetByName(Primary, "heal on kill", 50.0);								// +50 HP per kill
 					TF2Attrib_SetByName(Primary, "maxammo primary increased", 2.5);					// +150% Maximum Ammo
 					/** HeavyWeapons Special Attributes */
-					TF2Attrib_SetByName(Primary, "attack projectiles", 2.0);						// +2 points of Attack projectiles
-					TF2Attrib_SetByName(Primary, "projectile penetration heavy", 2.0);				// +2 points of Projectiles penetration
+					TF2Attrib_SetByName(Primary, "attack projectiles", 2.0);						// +2 Points of Attack projectiles
+					TF2Attrib_SetByName(Primary, "projectile penetration heavy", 2.0);				// +2 Points of Projectiles penetration
 					TF2Attrib_SetByName(Primary, "minigun spinup time decreased", 0.8);				// +20% Faster minigun spin
 					/** HeavyWEapons Secondary Attributes */
 					TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
 					TF2Attrib_SetByName(Secondary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
-					TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 point of Projectile Penetration
+					TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 Point of Projectile Penetration
 					TF2Attrib_SetByName(Secondary, "heal on kill", 100.0);							// +100 HP per kill
 					TF2Attrib_SetByName(Secondary, "fire rate bonus", 0.6);							// +40% Faster fire rate
 					TF2Attrib_SetByName(Secondary, "faster reload rate", 0.4);						// +60% Faster reloading
@@ -141,7 +141,7 @@ public Action Timer_AddAttribsToWeapons(Handle timer) {
 					/** Engineer Secondary Attributes */
 					TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
 					TF2Attrib_SetByName(Secondary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
-					TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 point of Projectile Penetration
+					TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 Point of Projectile Penetration
 					TF2Attrib_SetByName(Secondary, "heal on kill", 100.0);							// +100 HP per kill
 					TF2Attrib_SetByName(Secondary, "fire rate bonus", 0.6);							// +40% Faster fire rate
 					/** Engineer Melee Attributes */
@@ -177,14 +177,14 @@ public Action Timer_AddAttribsToWeapons(Handle timer) {
 					TF2Attrib_SetByName(Primary, "damage bonus", 1.75);								// +75% Damage bonus
 					TF2Attrib_SetByName(Primary, "heal on kill", 50.0);								// +50 HP per kill
 					TF2Attrib_SetByName(Primary, "maxammo primary increased", 2.5);					// +150% Maximum Ammo
-					TF2Attrib_SetByName(Primary, "projectile penetration", 1.0);					// +1 point of Projectile Penetration
+					TF2Attrib_SetByName(Primary, "projectile penetration", 1.0);					// +1 Point of Projectile Penetration
 					/** Sniper Special Attributes */
 					TF2Attrib_SetByName(Primary, "explosive sniper shot", 3.0);						// +3 Points of Explosive Headshots
 					TF2Attrib_SetByName(Primary, "SRifle Charge rate increased", 1.5);				// +50% Faster scope charge
 					/** Sniper Secondary Attributes */
 					TF2Attrib_SetByName(Secondary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
 					TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 3.0);					// +200% Clip size bonus
-					TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 point of Projectile Penetration
+					TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 Point of Projectile Penetration
 					TF2Attrib_SetByName(Secondary, "heal on kill", 100.0);							// +100 HP per kill
 					TF2Attrib_SetByName(Secondary, "fire rate bonus", 0.6);							// +40% Faster fire rate
 				}
@@ -192,7 +192,7 @@ public Action Timer_AddAttribsToWeapons(Handle timer) {
 					/** Spy Primary Attributes */
 					TF2Attrib_SetByName(Primary, "damage bonus", 1.2);								// +20% Damage bonus
 					TF2Attrib_SetByName(Primary, "fire rate bonus", 0.75);							// +25% Faster fire rate
-					TF2Attrib_SetByName(Primary, "projectile penetration", 1.0);					// +1 point of Projectile Penetration
+					TF2Attrib_SetByName(Primary, "projectile penetration", 1.0);					// +1 Point of Projectile Penetration
 					TF2Attrib_SetByName(Primary, "heal on kill", 50.0);								// +50 HP per kill
 					TF2Attrib_SetByName(Primary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
 					TF2Attrib_SetByName(Primary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
@@ -292,7 +292,7 @@ public Action Timer_AddAttribsToWeapons(Handle timer) {
 				if (i == GetEntPropEnt(CowMangler, Prop_Data, "m_hOwnerEntity"))
 				{
 					TF2Attrib_SetByName(CowMangler, "damage bonus", 2.0);							// +100% Damage bonus
-					TF2Attrib_SetByName(CowMangler, "Set DamageType Ignite", 2.0);					// Deals fire damage per hit
+					TF2Attrib_SetByName(CowMangler, "Set DamageType Ignite", 1.0);					// Deals fire damage per hit
 					TF2Attrib_SetByName(CowMangler, "clip size bonus upgrade", 3.0);				// +200% Clip size bonus
 					TF2Attrib_SetByName(CowMangler, "heal on kill", 100.0);							// +100 HP per kill
 					TF2Attrib_SetByName(CowMangler, "fire rate bonus", 0.6);						// +40% Faster fire rate
