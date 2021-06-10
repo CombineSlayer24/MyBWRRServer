@@ -27,14 +27,14 @@ public Action Timer_AddAttribsToWeapons(Handle timer) {
 			/** Universal Attributes */
 			TF2Attrib_SetByName(Melee, "critboost on kill", 4.0);									// Gain 4 seconds of Critical Hits after kill
 			TF2Attrib_SetByName(Melee, "melee attack rate bonus", 0.6);								// +40% Faster swing speed
-			TF2Attrib_SetByName(Melee, "heal on kill", 75.0);										// +75 HP per kill
-			TF2Attrib_AddCustomPlayerAttribute(i, "health regen", 4.0);								// +4 Health regen per second
+			TF2Attrib_SetByName(Melee, "heal on kill", 100.0);										// +100 HP per kill
+			TF2Attrib_AddCustomPlayerAttribute(i, "health regen", 10.0);							// +4 Health regen per second
 			TF2Attrib_AddCustomPlayerAttribute(i, "move speed bonus", 1.3);							// +30% Faster movement speed
 			TF2Attrib_AddCustomPlayerAttribute(i, "increased jump height", 1.2);					// +20% Higher jump
 			TF2Attrib_AddCustomPlayerAttribute(i, "dmg taken from bullets reduced", 0.25);			// +75% Dmg resistances from Bullets
 			TF2Attrib_AddCustomPlayerAttribute(i, "dmg taken from fire reduced", 0.5);				// +50% Dmg resistances from Fire
 			TF2Attrib_AddCustomPlayerAttribute(i, "dmg taken from crit reduced", 0.1);				// +90% Dmg resistances from Critical Hits
-			TF2Attrib_AddCustomPlayerAttribute(i, "dmg taken from blast reduced", 0.50);			// +50% Dmg resistances from Blast
+			TF2Attrib_AddCustomPlayerAttribute(i, "dmg taken from blast reduced", 0.75);			// +75% Dmg resistances from Blast
 			TF2Attrib_AddCustomPlayerAttribute(i, "max health additive bonus", 25.0);				// +25 Additional health
 			TF2Attrib_AddCustomPlayerAttribute(i, "ammo regen", 0.25);								// +25% Ammo regen
 			
