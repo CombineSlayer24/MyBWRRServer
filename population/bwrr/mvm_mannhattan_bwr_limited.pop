@@ -1,0 +1,179 @@
+#base robot_giant.pop
+#base robot_standard.pop
+#base robot_gatebot.pop
+#base robot_mayhemdp.pop
+//#base robot_pyri.pop				
+
+population
+{
+	StartingCurrency	6000
+	RespawnWaveTime	1
+	CanBotsAttackWhileInSpawnRoom	no
+	Templates
+	{
+		T_TFBot_Sniper_Pro
+		{
+			Class Sniper
+			Name Sniper
+			ClassIcon sniper
+			Skill Hard
+			//Skill Expert
+			Health 125
+			MaxVisionRange 3000
+			Item	"villain's veil"
+			Item	"The AWPer Hand"
+			Item	"the snow scoper"
+			ItemAttributes
+			{
+				ItemName	"The AWPer Hand"
+				"damage bonus"	1.5
+			}
+		}
+	}
+	
+	Mission
+	{
+		Objective Sniper
+
+		InitialCooldown 45
+		Where	spawnbot_main1
+		Where	spawnbot_main2
+		Where	spawnbot_upper0
+		BeginAtWave 1
+		RunForThisManyWaves 1
+		CooldownTime 60
+		DesiredCount 3
+	    TFBot
+	    {
+	        Template T_TFBot_Sniper_Pro
+	        Skill Hard
+	    }
+	}
+
+	Wave
+	{
+		WaitWhenDone 60
+		Sound "Announcer.IncomingMob"
+		Checkpoint Yes
+
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		InitWaveOutput
+		{
+			Target holograms_3way_relay
+			Action Trigger
+		}
+		
+		WaveSpawn
+		{
+			TotalCurrency	75
+			TotalCount	50
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	9999
+			WaitBetweenSpawns	9999
+			Where	spawnbot
+			Where	spawnbot_giant
+			Squad
+			{
+				TFBot
+				{
+					Class Scout
+					WeaponRestrictions	MeleeOnly
+					ClassIcon scout_bonk
+				}
+			}
+		}
+		
+		WaveSpawn
+		{
+			TotalCurrency	75
+			TotalCount	50
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	9999
+			WaitBetweenSpawns	9999
+			Where	spawnbot
+			Where	spawnbot_giant
+			Squad
+			{
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier
+					ClassIcon soldier_sergeant_crits
+				}
+			}
+		}
+		WaveSpawn
+		{
+			TotalCurrency	2000
+			TotalCount	500
+			MaxActive 5
+			SpawnCount	1
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	1
+			Support 1
+			Where	spawnbot_main0
+			Where	spawnbot_main1_slow
+			Where	spawnbot_main1
+			Where	spawnbot_main2
+			
+			Template	T_WaveSpawn_CalamityNormal_Generic
+		}
+		WaveSpawn
+		{
+			TotalCurrency	2000
+			TotalCount	500
+			MaxActive 2
+			SpawnCount	1
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	1
+			Support 1
+			Where	spawnbot_main0
+			Where	spawnbot_main1_slow
+			Where	spawnbot_main1
+			Where	spawnbot_main2
+			Where	spawnbot_upper0
+			
+			Template	T_WaveSpawn_CalamityNormal_Gatebot
+		}
+		WaveSpawn
+		{
+			TotalCurrency	2000
+			TotalCount	500
+			MaxActive 3
+			SpawnCount	2
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	1
+			Support 1
+			Where	spawnbot_main0
+			Where	spawnbot_main1_slow
+			Where	spawnbot_main1
+			Where	spawnbot_main2
+			Where	spawnbot_upper0
+			FirstSpawnWarningSound	"misc/happy_birthday_tf_23.wav"
+			
+			Template	T_WaveSpawn_CalamityNormal_Super
+		}
+		WaveSpawn
+		{
+			TotalCurrency	2000
+			TotalCount	500
+			MaxActive	3
+			SpawnCount	1
+			WaitBeforeStarting	45
+			WaitBetweenSpawns	30
+			Support 1
+			Where	spawnbot_main0
+			Where	spawnbot_main1_slow
+			Where	spawnbot_main1
+			Where	spawnbot_main2
+			Where	spawnbot_upper0
+			
+			Template	T_WaveSpawn_CalamityGiant_Gatebot
+		}
+	}
+}
