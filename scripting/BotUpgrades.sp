@@ -4,7 +4,7 @@
 #include <sourcemod>
 #include <tf2_stocks> // TF2_stocks already includes tf2 and sdktools
 #define REQUIRE_PLUGIN 
-#include <tf2attributes> // Requires nosoop's Attributes https://github.com/nosoop/tf2attributes
+#include <tf2attributes> // Requires nosoop's Attributes ( https://github.com/nosoop/tf2attributes )
 #include <tf2wearables> // use tf2 wearables API for getting weapon entity index ( https://github.com/nosoop/sourcemod-tf2wearables/ )
 
 public Plugin myinfo = 
@@ -18,6 +18,8 @@ public Plugin myinfo =
 
 public void OnPluginStart() {
 	HookEvent("post_inventory_application", Event_PostInventory, EventHookMode_Post);
+	HookEvent("mvm_begin_wave", Event_WaveStart, EventHookMode_Post);
+	HookEvent("player_spawn", Event_PlayerSpawn, EventHookMode_Post);
 }
 
 /** 
@@ -31,6 +33,34 @@ public Action Event_PostInventory(Event event, const char[] name, bool dontBroad
 	ApplyAttributesToClient(client);
 
 	return Plugin_Continue;
+}
+
+/** 
+* Reapply upgrades when the wave starts
+**/
+public Action Event_WaveStart(Event event, const char[] name, bool dontBroadcast)
+{
+	for(int i = 1;i <= MaxClients;i++)
+	{
+		ApplyAttributesToClient(i); // this function already validate clients
+	}
+
+	return Plugin_Continue;
+}
+
+/** 
+* Reapply upgrades when the player spawns with a delay
+**/
+public Action Event_PlayerSpawn(Event event, const char[] name, bool dontBroadcast)
+{
+	CreateTimer(5.0, Timer_PlayerSpawn, event.GetInt("userid"), TIMER_FLAG_NO_MAPCHANGE);
+	return Plugin_Continue;
+}
+
+public Action Timer_PlayerSpawn(Handle timer, int userid)
+{
+	ApplyAttributesToClient(GetClientOfUserId(userid));
+	return Plugin_Stop;
 }
 
 // This function will apply the attributes to the bots
@@ -160,6 +190,7 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(Secondary, "faster reload rate", 0.4);						// +60% Faster reloading
 		}
 		case TFClass_Engineer: {
+			TF2Attrib_SetByName(client, "metal regen", 25.0);								// +25 Metal regen per 5 seconds
 			/** Engineer Primary Attributes */
 			TF2Attrib_SetByName(Primary, "projectile penetration", 1.0);					// +1 point of Projectile Penetration
 			TF2Attrib_SetByName(Primary, "fire rate bonus", 0.6);							// +40% Faster fire rate
@@ -184,7 +215,6 @@ void ApplyAttributesToClient(int client)
 				TF2Attrib_SetByName(iPDA, "engy building health bonus", 4.0);				// +300% Engy building health
 				TF2Attrib_SetByName(iPDA, "engineer sentry build rate multiplier", 1.5);	// +50% Faster sentry setup
 				TF2Attrib_SetByName(iPDA, "engy dispenser radius increased", 4.0);			// +300% Dispenser Range
-				TF2Attrib_SetByName(iPDA, "metal regen", 20.0);								// +20 Metal regen per 5 seconds
 				TF2Attrib_SetByName(iPDA, "maxammo metal increased", 2.0);					// +100% Max Metal
 				TF2Attrib_SetByName(iPDA, "bidirectional teleport", 1.0);					// 2-way Teleporter
 			}
@@ -258,50 +288,6 @@ void ApplyAttributesToClient(int client)
 		}
 	}
 	
-	/** Drink = Crit-a-Cola or Bonk! Atomic Punch */
-	//int Drink = -1;
-	//while ((Sandman = FindEntityByClassname(Drink, "TF_WEAPON_LUNCHBOX_DRINK")) != -1)
-	//{
-		//if (client == GetEntPropEnt(Drink, Prop_Data, "m_hOwnerEntity"))
-		//{
-			//TF2Attrib_SetByName(Drink, "effect bar recharge rate increased", 0.25);		// +75% Faster recharge rate
-		//}
-	//}
-	
-	/** LunchBox = Heavy's Secondary editbles */
-	//int LunchBox = -1;
-	//while ((LunchBox = FindEntityByClassname(LunchBox, "TF_WEAPON_LUNCHBOX")) != -1)
-	//{
-		//if (client == GetEntPropEnt(LunchBox, Prop_Data, "m_hOwnerEntity"))
-		//{
-			//TF2Attrib_SetByName(LunchBox, "effect bar recharge rate increased", 0.35);	// +65% Faster recharge rate
-		//}
-	//}
-	
-	/** Flaregun = Well, you know */
-	//int Flaregun = -1;
-	//while ((Flaregun = FindEntityByClassname(Flaregun, "TF_WEAPON_FLAREGUN")) != -1)
-	//{
-		//if (client == GetEntPropEnt(Flaregun, Prop_Data, "m_hOwnerEntity"))
-		//{
-			//TF2Attrib_SetByName(Flaregun, "maxammo secondary increased", 2.5);			// +150% Maximum Ammo
-			//TF2Attrib_SetByName(Flaregun, "heal on kill", 100.0);							// +100 HP per kill
-			//TF2Attrib_SetByName(Flaregun, "fire rate bonus", 0.6);						// +40% Faster fire rate
-			//TF2Attrib_SetByName(Flaregun, "faster reload rate", 0.4);						// +60% Faster reloading
-		//}
-	//}
-	
-	/** DemoShield = Demoman's Shields */
-	//int DemoShield = -1;
-	//while ((DemoShield = FindEntityByClassname(DemoShield, "TF_WEARABLE_DEMOSHIELD")) != -1)
-	//{
-		//if (client == GetEntPropEnt(DemoShield, Prop_Data, "m_hOwnerEntity"))
-		//{
-			//TF2Attrib_SetByName(DemoShield, "damage force reduction", 0.1);				// +90% Push force when charging
-			//TF2Attrib_SetByName(DemoShield, "charge recharge rate increased", 4.0);		// +300% Shield recharge rate
-		//}
-	//}
-	
 	/** BuffBanner = Well, you know */
 	int BuffBanner = -1;
 	while ((BuffBanner = FindEntityByClassname(BuffBanner, "TF_WEAPON_BUFF_ITEM")) != -1)
@@ -365,4 +351,47 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(CowMangler, "faster reload rate", 0.4);						// +60% Faster reloading
 		}
 	}
+	/** Drink = Crit-a-Cola or Bonk! Atomic Punch */
+	//int Drink = -1;
+	//while ((Sandman = FindEntityByClassname(Drink, "TF_WEAPON_LUNCHBOX_DRINK")) != -1)
+	//{
+		//if (client == GetEntPropEnt(Drink, Prop_Data, "m_hOwnerEntity"))
+		//{
+			//TF2Attrib_SetByName(Drink, "effect bar recharge rate increased", 0.25);		// +75% Faster recharge rate
+		//}
+	//}
+	
+	/** LunchBox = Heavy's Secondary editbles */
+	//int LunchBox = -1;
+	//while ((LunchBox = FindEntityByClassname(LunchBox, "TF_WEAPON_LUNCHBOX")) != -1)
+	//{
+		//if (client == GetEntPropEnt(LunchBox, Prop_Data, "m_hOwnerEntity"))
+		//{
+			//TF2Attrib_SetByName(LunchBox, "effect bar recharge rate increased", 0.35);	// +65% Faster recharge rate
+		//}
+	//}
+	
+	/** Flaregun = Well, you know */
+	//int Flaregun = -1;
+	//while ((Flaregun = FindEntityByClassname(Flaregun, "TF_WEAPON_FLAREGUN")) != -1)
+	//{
+		//if (client == GetEntPropEnt(Flaregun, Prop_Data, "m_hOwnerEntity"))
+		//{
+			//TF2Attrib_SetByName(Flaregun, "maxammo secondary increased", 2.5);			// +150% Maximum Ammo
+			//TF2Attrib_SetByName(Flaregun, "heal on kill", 100.0);							// +100 HP per kill
+			//TF2Attrib_SetByName(Flaregun, "fire rate bonus", 0.6);						// +40% Faster fire rate
+			//TF2Attrib_SetByName(Flaregun, "faster reload rate", 0.4);						// +60% Faster reloading
+		//}
+	//}
+	
+	/** DemoShield = Demoman's Shields */
+	//int DemoShield = -1;
+	//while ((DemoShield = FindEntityByClassname(DemoShield, "TF_WEARABLE_DEMOSHIELD")) != -1)
+	//{
+		//if (client == GetEntPropEnt(DemoShield, Prop_Data, "m_hOwnerEntity"))
+		//{
+			//TF2Attrib_SetByName(DemoShield, "damage force reduction", 0.1);				// +90% Push force when charging
+			//TF2Attrib_SetByName(DemoShield, "charge recharge rate increased", 4.0);		// +300% Shield recharge rate
+		//}
+	//}
 }
