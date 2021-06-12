@@ -1015,7 +1015,7 @@ WaveSchedule
 			Name "Rapid Fire Soldier"
 			ClassIcon soldier_spammer_normal
 			Skill Expert
-			Scale 1.5
+			Scale 1.3
 			Health 750
 			Attributes	HoldFireUntilFullReload
 			WeaponRestrictions PrimaryOnly
@@ -1039,7 +1039,7 @@ WaveSchedule
 			Name "Burst Fire Soldier"
 			ClassIcon soldier_burstfire_normal
 			Skill Expert
-			Scale 1.5
+			Scale 1.3
 			Health 900 // Was 850
 			Attributes	HoldFireUntilFullReload
 			WeaponRestrictions PrimaryOnly
@@ -1064,7 +1064,7 @@ WaveSchedule
 			Name "Burst Fire Soldier"
 			ClassIcon soldier_burstfire_normal
 			Skill Expert
-			Scale 1.5
+			Scale 1.3
 			Health 900 // Was 850
 			Attributes	HoldFireUntilFullReload
 			WeaponRestrictions PrimaryOnly
@@ -1090,7 +1090,7 @@ WaveSchedule
 			Name "Burst Fire Soldier"
 			ClassIcon soldier_burstfire_backup
 			Skill Expert
-			Scale 1.5
+			Scale 1.3
 			Health 900 // Was 850
 			Attributes	HoldFireUntilFullReload
 			Attributes	SpawnWithFullCharge
@@ -1271,7 +1271,7 @@ WaveSchedule
 			ClassIcon soldier_samurai
 			Skill Expert
 			Health 750
-			Scale 1.5
+			Scale 1.3
 			Item "The Half-Zatoichi"
 			Item "Soldier Samurai Hat"
 			WeaponRestrictions MeleeOnly
@@ -1299,7 +1299,7 @@ WaveSchedule
 			ClassIcon soldier_samurai
 			Skill Expert
 			Health 750
-			Scale 1.5
+			Scale 1.3
 			Item "The Half-Zatoichi"
 			Item "Soldier Samurai Hat"
 			WeaponRestrictions MeleeOnly
@@ -2258,7 +2258,7 @@ WaveSchedule
 			Name "Spammer Demo"
 			ClassIcon demo_spammer
 			Skill Expert
-			Scale 1.5
+			Scale 1.3
 			Health 650
 			WeaponRestrictions	PrimaryOnly
 			Item "scotch bonnet"
@@ -2282,7 +2282,7 @@ WaveSchedule
 			Name "Spammer Demo"
 			ClassIcon demo_spammer
 			Skill Expert
-			Scale 1.5
+			Scale 1.3
 			Health 650
 			Attributes	HoldFireUntilFullReload
 			WeaponRestrictions	PrimaryOnly
@@ -2308,7 +2308,7 @@ WaveSchedule
 			Name "Barrage Demo"
 			ClassIcon demo_scatter
 			Skill Expert
-			Scale 1.65
+			Scale 1.45
 			Health 750
 			Attributes	HoldFireUntilFullReload
 			WeaponRestrictions	PrimaryOnly
