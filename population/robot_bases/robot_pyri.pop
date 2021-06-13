@@ -90,7 +90,7 @@
 //T_TFBot_Pyro_Dragon_Hard 								// Pyro w/ Dragon's Fury, more damage, more fire rate.
 //T_TFBot_Pyro_Gaspasser 								// Pyro w/ Gas-Passer.
 //T_TFBot_Pyro_Gaspasser_FastCharge 					// NEW, Recharges faster. (*)
-//T_TFBot_Pyro_Gaspasser_Explosive 		--WARNING!--	// DO NOT OVERUSE. Will Instantly kill.
+//T_TFBot_Pyro_Gaspasser_Explosive 						// Reworked (keeping the name same as Explosive)
 //T_TFBot_Pyro_Melee									// Pyro melee restricted.
 //T_TFBot_Pyro_Powerjack								// Powerjacks have +35% Damage bonus.
 //T_TFBot_Pyro_Powerjack_Big							// 900HP Powerjack Pyro, +50 Damage bonus.
@@ -1901,10 +1901,10 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Pyro_Gaspasser_Explosive //NEW, DO NOT OVERUSE THIS variant.
+		T_TFBot_Pyro_Gaspasser_Explosive //Reworked
 		{
 			Class Pyro
-			Name "Explosive Gas Pyro"
+			Name "Volatile Gas Pyro"
 			ClassIcon pyro_gascann_explode
 			Skill Expert
 			Health 175
@@ -1915,8 +1915,12 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName "The Gas Passer"
-				"item_meter_charge_rate"	20
-				"explode_on_ignite" 1
+				//"item_meter_charge_rate"	20			// Old stats
+				//"explode_on_ignite" 1					// Old stats
+				"item_meter_charge_rate"	4
+				"weapon burn time increased" 0.01
+				"weapon burn dmg increased" 15
+				"fire rate penalty" 4.0
 			}
 			ItemAttributes
 			{

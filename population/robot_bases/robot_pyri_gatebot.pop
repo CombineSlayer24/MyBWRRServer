@@ -4387,7 +4387,7 @@ WaveSchedule
 		T_TFGateBot_Pyro_Gaspasser_Explosive
 		{
 			Class Pyro
-			Name "Explosive Gas Pyro"
+			Name "Volatile Gas Pyro"
 			ClassIcon pyro_gascann_explode
 
 			EventChangeAttributes
@@ -4407,8 +4407,12 @@ WaveSchedule
 					ItemAttributes
 					{
 						ItemName "The Gas Passer"
-						"item_meter_charge_rate"	20
-						"explode_on_ignite" 1
+						//"item_meter_charge_rate"	20			// Old stats
+						//"explode_on_ignite" 1					// Old stats
+						"item_meter_charge_rate"	4
+						"weapon burn time increased" 0.01
+						"weapon burn dmg increased" 15
+						"fire rate penalty" 4.0
 					}
 					ItemAttributes
 					{
@@ -4441,8 +4445,12 @@ WaveSchedule
 					ItemAttributes
 					{
 						ItemName "The Gas Passer"
-						"item_meter_charge_rate"	20
-						"explode_on_ignite" 1
+						//"item_meter_charge_rate"	20			// Old stats
+						//"explode_on_ignite" 1					// Old stats
+						"item_meter_charge_rate"	4
+						"weapon burn time increased" 0.01
+						"weapon burn dmg increased" 15
+						"fire rate penalty" 4.0
 					}
 					ItemAttributes
 					{
