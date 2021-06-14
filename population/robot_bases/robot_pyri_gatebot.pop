@@ -2888,7 +2888,7 @@ WaveSchedule
 					{
 						ItemName	"the original"
 						"faster reload rate"	2
-						"fire rate bonus"	2
+						"fire rate penalty"		2.6
 						"Projectile speed decreased"	0.5
 						"damage bonus"	5
 						"damage causes airblast"	1
