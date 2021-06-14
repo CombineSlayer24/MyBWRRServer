@@ -1423,6 +1423,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes HoldFireUntilFullReload
 			Attributes AlwaysCrit
+			Item	"full metal drill hat"
 			ItemAttributes
 			{
 				ItemName "TF_WEAPON_ROCKETLAUNCHER"
