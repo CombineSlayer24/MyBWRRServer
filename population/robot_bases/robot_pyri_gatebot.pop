@@ -83,6 +83,8 @@
 //T_TFGateBot_Giant_Soldier_Extended_Buff_Banner			// VALVe bot in gatebot
 //T_TFGateBot_Giant_Soldier_Extended_Battalion				// VALVe bot in gatebot
 //T_TFGateBot_Giant_Soldier_Crit							// VALVe bot in gatebot
+//T_TFGateBot_Giant_Soldier_Stun							// Giant Soldier that stuns players.
+//T_TGateFBot_Giant_Soldier_Stun_Spammer					// Giant Soldier that stuns players while shooting faster
 //T_TFGateBot_Giant_Soldier_Nuke							// Beefier version of Giant Charged Soldier
 //T_TFGateBot_Giant_Soldier_ChargedBarrage					// Charged variant of Colonel Barrage.
 //T_TFGateBot_Giant_Soldier_Barrage							// Giant Soldier that fires a barrage of rockets, Minor variant to Colonel Barrage/Major.
@@ -2861,6 +2863,170 @@ WaveSchedule
 			}
 		}
 		
+		T_TFGateBot_Giant_Soldier_Stun
+		{					
+			Class Soldier
+			Name "Giant Stunner Soldier"
+			ClassIcon soldier_stun_giant
+			Health 3800
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
+
+					WeaponRestrictions PrimaryOnly
+		        	Attributes HoldFireUntilFullReload
+		        	Attributes MiniBoss
+			        Item "The Lucky Shot"
+					//Item "MvM GateBot Light Soldier"
+					ItemAttributes
+					{
+						ItemName "The Lucky Shot"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					Skill Expert
+					Tag bot_giant
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_ROCKETLAUNCHER"
+		        		"faster reload rate" 0.75
+			        	"rocket specialist" 1
+		         		"damage bonus" 1.2
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"override footstep sound set" 3
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					WeaponRestrictions PrimaryOnly
+					
+		        	Attributes HoldFireUntilFullReload
+		        	Attributes MiniBoss
+			        Item "The Lucky Shot"
+					//Item "MvM GateBot Light Soldier"
+					Skill Expert
+					Tag bot_giant
+					ItemAttributes
+					{
+						ItemName "The Lucky Shot"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_ROCKETLAUNCHER"
+		        		"faster reload rate" 0.75
+			        	"rocket specialist" 1
+		         		"damage bonus" 1.2
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"override footstep sound set" 3
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Giant_Soldier_Stun_Spammer
+		{					
+			Class Soldier
+			Name "Giant Stunner Soldier"
+			ClassIcon soldier_stun_spammer_giant
+			Health 4000
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
+
+					WeaponRestrictions PrimaryOnly
+		        	Attributes HoldFireUntilFullReload
+		        	Attributes MiniBoss
+			        Item "The Lucky Shot"
+					//Item "MvM GateBot Light Soldier"
+					ItemAttributes
+					{
+						ItemName "The Lucky Shot"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					Skill Expert
+					Tag bot_giant
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_ROCKETLAUNCHER"
+						"damage bonus" 0.75
+						"fire rate bonus" 0.45
+						"clip size upgrade atomic" 5
+						"faster reload rate" 0.2
+						"rocket specialist" 4
+						"Projectile speed increased" 0.75
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"override footstep sound set" 3
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"airblast vertical vulnerability multiplier" 0.1
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					WeaponRestrictions PrimaryOnly
+					
+		        	Attributes HoldFireUntilFullReload
+		        	Attributes MiniBoss
+			        Item "The Lucky Shot"
+					//Item "MvM GateBot Light Soldier"
+					Skill Expert
+					Tag bot_giant
+					ItemAttributes
+					{
+						ItemName "The Lucky Shot"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_ROCKETLAUNCHER"
+						"damage bonus" 0.75
+						"fire rate bonus" 0.45
+						"clip size upgrade atomic" 5
+						"faster reload rate" 0.2
+						"rocket specialist" 4
+						"Projectile speed increased" 0.75
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"override footstep sound set" 3
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"airblast vertical vulnerability multiplier" 0.1
+					}
+				}
+			}
+		}
+		
 		T_TFGateBot_Giant_Soldier_Nuke
 		{
 			Class Soldier
@@ -2939,7 +3105,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFGateBot_Giant_Soldier_Nuke
+		T_TFGateBot_Giant_Soldier_ChargedBarrage
 		{
 			Class Soldier
 			ClassIcon	soldier_barrage_hyper

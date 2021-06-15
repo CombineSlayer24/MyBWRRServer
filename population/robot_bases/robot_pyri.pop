@@ -63,6 +63,8 @@
 //T_TFBot_Soldier_Samurai								// Soldier w/ Half-Zatoichi
 //T_TFBot_Soldier_Samurai_NoJump						// Soldier w/ Half-Zatoichi, but doesn't jump.
 
+//T_TFBot_Giant_Soldier_Stun							// Giant Soldier that stuns players.
+//T_TFBot_Giant_Soldier_Stun_Spammer					// Giant Soldier that stuns players while shooting faster
 //T_TFBot_Giant_Soldier_Nuke							// Beefier version of Giant Charged Soldier
 //T_TFBot_Giant_Soldier_ChargedBarrage					// Charged variant of Colonel Barrage.
 //T_TFBot_Giant_Soldier_Barrage							// Giant Soldier that fires a barrage of rockets, Minor variant to Colonel Barrage/Major.
@@ -1317,6 +1319,63 @@ WaveSchedule
 		}
 		
 		//Giant Soldier Templates
+		T_TFBot_Giant_Soldier_Stun
+		{
+			Class Soldier
+			Name "Giant Stunner Soldier"
+			ClassIcon soldier_stun_giant
+			Skill Expert
+			Health 3800
+			WeaponRestrictions PrimaryOnly
+			Attributes HoldFireUntilFullReload
+			Attributes MiniBoss
+			Item "The Lucky Shot"
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_ROCKETLAUNCHER"
+				"faster reload rate" 0.75
+				"rocket specialist" 1
+				"damage bonus" 1.2
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.4
+				"airblast vulnerability multiplier" 0.4
+				"override footstep sound set" 3
+			}
+		}
+		T_TFBot_Giant_Soldier_Stun_Spammer
+		{
+			Class Soldier
+			Skill Expert
+			WeaponRestrictions PrimaryOnly
+			ClassIcon soldier_stun_spammer_giant
+			Attributes MiniBoss
+			Attributes HoldFireUntilFullReload
+			Name "Giant Rapid Stunner Soldier"
+			Item "The Lucky Shot"
+			Health 4000
+
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_ROCKETLAUNCHER"
+				"damage bonus" 0.75
+				"fire rate bonus" 0.45
+				"clip size upgrade atomic" 5
+				"faster reload rate" 0.2
+				"rocket specialist" 4
+				"Projectile speed increased" 0.75
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"override footstep sound set" 3
+				"damage force reduction" 0.4
+				"airblast vulnerability multiplier" 0.4
+				"airblast vertical vulnerability multiplier" 0.1
+			}
+		}
 		T_TFBot_Giant_Soldier_Nuke
 		{
 			Class Soldier
