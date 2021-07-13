@@ -27,6 +27,7 @@
 //T_TFBot_Scout_Elf 									// Similar to Gnome Heavy.
 //T_TFBot_Scout_Elf_Expert 								// Similar to Gnome Heavy, but has +50% Speed bonus.
 //T_TFBot_Scout_Cleaver 								// A Scout welding a Clever.
+//T_TFBot_Scout_Fast									// Giant version of Super Scout.
 
 //T_TFBot_Giant_Scout_FAN_Armored						// Armored version of FAN, 3000HP, slower movement speed.
 //T_TFBot_Giant_Scout_RapidFire							// On steroids, beefy version of normal Rapid Fire Scout.
@@ -62,6 +63,7 @@
 //T_TFBot_Soldier_Paratrooper							// Soldier from Coastrock, bot jumps. just like Samurai Demo. (This won't likely be used)
 //T_TFBot_Soldier_Samurai								// Soldier w/ Half-Zatoichi
 //T_TFBot_Soldier_Samurai_NoJump						// Soldier w/ Half-Zatoichi, but doesn't jump.
+//T_TFBot_Soldier_Warbox_Backup							// Soldier w/ Black Box, Backup, 350HP
 
 //T_TFBot_Giant_Soldier_Stun							// Giant Soldier that stuns players.
 //T_TFBot_Giant_Soldier_Stun_Spammer					// Giant Soldier that stuns players while shooting faster
@@ -660,6 +662,28 @@ WaveSchedule
 				"effect bar recharge rate increased"	0.05
 			}
 			Item	"the flying guillotine"
+		}
+		
+		T_TFBot_Scout_Fast
+		{
+			ClassIcon	scout_fast
+			Health	175
+			Name	"Fast Scout"
+			Class	Scout
+			Skill	Hard
+			WeaponRestrictions	MeleeOnly
+			Item	"the holy mackerel"
+			Item	"bonk boy"
+			ItemAttributes
+			{
+				ItemName	"the holy mackerel"
+				"damage bonus"	1.5
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	1.6
+				"dmg taken from bullets increased"	1.25
+			}
 		}
 		
 		//Giant Scout Templates
@@ -1315,6 +1339,34 @@ WaveSchedule
 			CharacterAttributes
 			{
 				"move speed bonus" 1.35
+			}
+		}
+		
+		T_TFBot_Soldier_Warbox_Backup
+		{
+			ClassIcon	soldier_backup
+			Health	350
+			Name	"Warbox Soldier"
+			Class	Soldier
+			Skill	Hard
+			MaxVisionRange	750
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"SpawnWithFullCharge"
+			Attributes	"HoldFireUntilFullReload"
+			Item	"the black box"
+			Item	"the battalion's backup"
+			Item	"the grenadier's softcap"
+			ItemAttributes
+			{
+				ItemName	"the black box"
+				"damage bonus"	1.2
+				"faster reload rate"	0.25
+				"projectile spread angle penalty"	2
+				"Projectile speed increased"	1.1
+			}
+			CharacterAttributes
+			{
+				"increase buff duration"	2.5
 			}
 		}
 		
@@ -2890,6 +2942,8 @@ WaveSchedule
 			Skill Hard
 			Health 300
 			Item	"natascha"
+			Item	"the gridiron guardian"
+			Item	"the titanium towel"
 			ItemAttributes
 			{
 				ItemName	"natascha"
@@ -2991,6 +3045,7 @@ WaveSchedule
 			Health 300
 			MaxVisionRange	1200
 			WeaponRestrictions	PrimaryOnly
+			Item 	"MvM GateBot Light Heavy"		// Added Gatebot hat to tell if it's Expert.
 			Item	"the tungsten toque"
 			Item	"Upgradeable TF_WEAPON_MINIGUN"
 			ItemAttributes
@@ -3200,7 +3255,7 @@ WaveSchedule
 			WeaponRestrictions SecondaryOnly
 		}
 		
-		T_TFBot_Heavy_Shotgun_Scout // Heavy w/ Shotgun, +100% movement speed.
+		T_TFBot_Heavy_Shotgun_Scout // Heavy w/ Shotgun, +60% movement speed.
 		{
 			ClassIcon	heavy_shotgun
 			Health	225
@@ -3216,7 +3271,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
-				"move speed bonus"	2.0
+				"move speed bonus"	1.6
 			}
 		}
 		
@@ -3617,19 +3672,17 @@ WaveSchedule
 		{
 			Class Medic
 			Name "Battle Medic"
-			ClassIcon medic_needle
+			ClassIcon medic_battle
 			Skill Hard
 			Health 150
 			WeaponRestrictions	PrimaryOnly
-			Attributes	AlwaysFireWeapon
-			Item	"berliner's bucket helm"
-			//Item	"the virus doctor"
-			Item	"the byte'd beak"
+			Item	"Berlin Brain Bowl"
+			Item	"Bunnyhopper's Ballistics Vest"
 			ItemAttributes
 			{
 				ItemName	tf_weapon_syringegun_medic
 				"mad milk syringes"	1
-				"fire rate bonus"   0.75
+				"fire rate bonus"   1.2
 			}
 		}
 		
