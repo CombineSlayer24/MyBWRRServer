@@ -173,7 +173,7 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(Primary, "Projectile speed increased", 1.1);				// +10% Faster projectile speed
 			/** DemoMan Secondary Attributes */
 			TF2Attrib_SetByName(Secondary, "max pipebombs increased", 4.0);					// Additional +4 stickybomb placement for Sticky Launcher
-			TF2Attrib_SetByName(Secondary, "damage bonus", 1.8);							// +80% Damage bonus
+			TF2Attrib_SetByName(Secondary, "damage bonus", 2.2);							// +120% Damage bonus
 			TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
 			TF2Attrib_SetByName(Secondary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
 			TF2Attrib_SetByName(Secondary, "heal on kill", 100.0);							// +100 HP per kill
