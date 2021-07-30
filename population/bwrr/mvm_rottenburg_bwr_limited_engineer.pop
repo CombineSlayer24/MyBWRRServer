@@ -124,7 +124,7 @@ population
 		{
 			TotalCurrency	2000
 			TotalCount	500
-			MaxActive 4
+			MaxActive 6
 			SpawnCount	1
 			WaitBeforeStarting	5
 			WaitBetweenSpawns	1
@@ -153,7 +153,7 @@ population
 			Name	w1_giant
 			TotalCurrency	2000
 			TotalCount	500
-			MaxActive	6
+			MaxActive	4
 			SpawnCount	1
 			WaitBeforeStarting	0
 			WaitBetweenSpawns	1

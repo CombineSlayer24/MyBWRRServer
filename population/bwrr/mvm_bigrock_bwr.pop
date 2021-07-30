@@ -99,7 +99,7 @@ population
 			MaxActive 6
 			SpawnCount	3
 			WaitBeforeStarting	18.6
-			WaitBetweenSpawns	6
+			WaitBetweenSpawns	15
 			Support 1
 			Where	spawnbot
 			FirstSpawnWarningSound	"vo/announcer_alert.mp3"
@@ -110,10 +110,10 @@ population
 		{
 			TotalCurrency	1500
 			TotalCount	100
-			MaxActive 3
+			MaxActive 2
 			SpawnCount	1
 			WaitBeforeStarting	20
-			WaitBetweenSpawns	45
+			WaitBetweenSpawns	60
 			Support 1
 			Where	spawnbot
 			FirstSpawnWarningSound	"vo/announcer_mvm_engbots_arrive02.mp3"
