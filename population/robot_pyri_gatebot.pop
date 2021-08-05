@@ -7,6 +7,7 @@
 //T_TFGateBot_Scout_Bonk
 //T_TFGateBot_Scout_Shortstop
 //T_TFGateBot_Giant_Scout
+//T_TFGateBot_Giant_Scout_Melee								// Melee restricted giant scout
 //T_TFGateBot_Giant_Scout_Bonk								// Made this bot use Bonk only once
 //T_TFGateBot_Giant_Scout_Fast
 //T_TFGateBot_Soldier_Extended_Buff_Banner
@@ -44,9 +45,11 @@
 //T_TFGateBot_Scout_Bonk_Stun								// Scout with Bonk, Uses Sandman.
 //T_TFGateBot_Scout_Bonk_Stun_FastCharge					// Scout with Bonk, Uses Sandman.
 //T_TFGateBot_Scout_Cleaver 								// A Scout welding a Clever.
+//T_TFGsteBot_Scout_Fast									// Giant version of Super Scout.
 //T_TFGateBot_Scout_Shortstop								// VALVe bot in gatebot
 
 //T_TFGateBot_Giant_Scout									// VALVe bot in gatebot
+//T_TFGateBot_Giant_Scout_Melee								// Melee restricted Giant Scout.
 //T_TFGateBot_Giant_Scout_Bonk								// VALVe bot in gatebot
 //T_TFGateBot_Giant_Scout_Fast								// VALVe bot in gatebot
 //T_TFGateBot_Giant_Scout_FAN_Armored						// Armored version of FAN, 3000HP, slower movement speed.
@@ -79,11 +82,13 @@
 //T_TFGateBot_Soldier_Bison									// Soldier w/ Bison, +20% Damage bonus.
 //T_TFGateBot_Soldier_Samurai								// Soldier w/ Half-Zatoichi
 //T_TFGateBot_Soldier_Samurai_NoJump						// Soldier w/ Half-Zatoichi, but doesn't jump.
+//T_TFGateBot_Soldier_Warbox_Backup							// Soldier w/ Black Box, Backup, 350HP
 
 //T_TFGateBot_Giant_Soldier_Extended_Buff_Banner			// VALVe bot in gatebot
 //T_TFGateBot_Giant_Soldier_Extended_Battalion				// VALVe bot in gatebot
 //T_TFGateBot_Giant_Soldier_Crit							// VALVe bot in gatebot
-//T_TFGateBot_Giant_Soldier_Incendiary						// Stock Giant Soldier, but more deadly with Fire attacks
+//T_TFGateBot_Giant_Soldier_Stun							// Giant Soldier that stuns players.
+//T_TGateFBot_Giant_Soldier_Stun_Spammer					// Giant Soldier that stuns players while shooting faster
 //T_TFGateBot_Giant_Soldier_Nuke							// Beefier version of Giant Charged Soldier
 //T_TFGateBot_Giant_Soldier_ChargedBarrage					// Charged variant of Colonel Barrage.
 //T_TFGateBot_Giant_Soldier_Barrage							// Giant Soldier that fires a barrage of rockets, Minor variant to Colonel Barrage/Major.
@@ -984,6 +989,107 @@ WaveSchedule
 			}
 		}
 		
+		T_TFGateBot_Scout_Fast
+		{
+			Class Scout
+			ClassIcon	scout_fast
+			Name	"Fast Scout"
+			Health	175
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Skill Hard
+					WeaponRestrictions	MeleeOnly
+					Item	"the holy mackerel"
+					Item	"bonk boy"
+					ItemAttributes
+					{
+						ItemName	"the holy mackerel"
+						"damage bonus"	1.5
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	1.6
+						"dmg taken from bullets increased"	1.25
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					Skill Hard
+					WeaponRestrictions	MeleeOnly
+					Item	"the holy mackerel"
+					Item	"bonk boy"
+					ItemAttributes
+					{
+						ItemName	"the holy mackerel"
+						"damage bonus"	1.5
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	1.6
+						"dmg taken from bullets increased"	1.25
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Scout_Shortstop
+		{
+			Class Scout
+			ClassIcon scout_shortstop
+			Name "Shortstop Scout"
+			Health 650
+			Scale 1.4
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Skill Normal
+					CharacterAttributes
+					{
+						"head scale" 0.7
+						"move speed bonus" 1.25
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					CharacterAttributes
+					{
+						"head scale" 0.7
+						"move speed bonus" 1.25
+					}
+					Skill Normal
+				}
+			}
+		}
+		
 		T_TFGateBot_Giant_Scout
 		{
 			Class Scout
@@ -1007,6 +1113,7 @@ WaveSchedule
 					WeaponRestrictions PrimaryOnly
 					CharacterAttributes
 					{
+						"move speed bonus"	0.8
 						"damage force reduction" 0.7
 						"airblast vulnerability multiplier" 0.7
 						"override footstep sound set" 5
@@ -1026,6 +1133,59 @@ WaveSchedule
 					WeaponRestrictions PrimaryOnly
 					CharacterAttributes
 					{
+						"move speed bonus"	0.8
+						"damage force reduction" 0.7
+						"airblast vulnerability multiplier" 0.7
+						"override footstep sound set" 5
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Giant_Scout_Melee
+		{
+			Class Scout
+			Name "Giant Scout"
+			ClassIcon scout_giant
+			Health 1600
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Tag bot_giant
+					Skill Expert
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					CharacterAttributes
+					{
+						"move speed bonus"	0.8
+						"damage force reduction" 0.7
+						"airblast vulnerability multiplier" 0.7
+						"override footstep sound set" 5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					CharacterAttributes
+					{
+						"move speed bonus"	0.8
 						"damage force reduction" 0.7
 						"airblast vulnerability multiplier" 0.7
 						"override footstep sound set" 5
@@ -2672,6 +2832,83 @@ WaveSchedule
 			}
 		}
 		
+		T_TFGateBot_Soldier_Warbox_Backup
+		{
+			Class Soldier
+			ClassIcon	soldier_backup
+			Health	350
+			Name	"Warbox Soldier"
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					//Item "MvM GateBot Light Soldier"
+					ItemAttributes
+					{
+						ItemName "the grenadier's softcap"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					Skill Expert
+					MaxVisionRange	750
+					WeaponRestrictions	PrimaryOnly
+					Attributes	"SpawnWithFullCharge"
+					Attributes	"HoldFireUntilFullReload"
+					Item	"the black box"
+					Item	"the battalion's backup"
+					Item	"the grenadier's softcap"
+					ItemAttributes
+					{
+						ItemName	"the black box"
+						"damage bonus"	1.2
+						"faster reload rate"	0.25
+						"projectile spread angle penalty"	2
+						"Projectile speed increased"	1.1
+					}
+					CharacterAttributes
+					{
+						"increase buff duration"	2.5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					//Item "MvM GateBot Light Soldier"
+					ItemAttributes
+					{
+						ItemName "the grenadier's softcap"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					WeaponRestrictions	PrimaryOnly
+					Attributes	"SpawnWithFullCharge"
+					Attributes	"HoldFireUntilFullReload"
+					Item	"the black box"
+					Item	"the battalion's backup"
+					Item	"the grenadier's softcap"
+					ItemAttributes
+					{
+						ItemName	"the black box"
+						"damage bonus"	1.2
+						"faster reload rate"	0.25
+						"projectile spread angle penalty"	2
+						"Projectile speed increased"	1.1
+					}
+					CharacterAttributes
+					{
+						"increase buff duration"	2.5
+					}
+					Skill Expert
+					MaxVisionRange	750
+				}
+			}
+		}
+		
 		T_TFGateBot_Giant_Soldier_Extended_Buff_Banner
 		{
 			Class Soldier
@@ -2862,13 +3099,13 @@ WaveSchedule
 			}
 		}
 		
-		T_TFGateBot_Giant_Soldier_Incendiary
-		{
+		T_TFGateBot_Giant_Soldier_Stun
+		{					
 			Class Soldier
-			Name "Giant Incendiary Soldier"
-			ClassIcon soldier_incendiary_nys_giant
+			Name "Giant Stunner Soldier"
+			ClassIcon soldier_stun_giant
 			Health 3800
-			
+
 			EventChangeAttributes
 			{
 				Default
@@ -2878,22 +3115,25 @@ WaveSchedule
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
-					Item "MvM GateBot Light Soldier"
-					Tag bot_giant
-					Skill Expert
 					WeaponRestrictions PrimaryOnly
-					Attributes HoldFireUntilFullReload
-					Attributes MiniBoss
-					Item	"concealedkiller_rocketlauncher_sandcannon"
+		        	Attributes HoldFireUntilFullReload
+		        	Attributes MiniBoss
+			        Item "The Lucky Shot"
+					//Item "MvM GateBot Light Soldier"
 					ItemAttributes
 					{
-						ItemName	"concealedkiller_rocketlauncher_sandcannon"
-						"set_item_texture_wear" 0.2		// Factory New
-						"attach particle effect" 2		// Fire effect
-						"Set DamageType Ignite"	1
-						"weapon burn dmg reduced"	0.6
-						"weapon burn time increased" 1.5
-						"slow enemy on hit major" 5
+						ItemName "The Lucky Shot"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					Skill Expert
+					Tag bot_giant
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_ROCKETLAUNCHER"
+		        		"faster reload rate" 0.75
+			        	"rocket specialist" 1
+		         		"damage bonus" 1.2
 					}
 					CharacterAttributes
 					{
@@ -2905,27 +3145,26 @@ WaveSchedule
 				}
 				RevertGateBotsBehavior
 				{
-					Item "MvM GateBot Light Soldier"
-					ItemAttributes               // turn off light hat
-					{
-						ItemName "MvM GateBot Light Soldier"
-						"item style override" 1
-					}
-					Tag bot_giant
-					Skill Expert
 					WeaponRestrictions PrimaryOnly
-					Attributes HoldFireUntilFullReload
-					Attributes MiniBoss
-					Item	"concealedkiller_rocketlauncher_sandcannon"
+					
+		        	Attributes HoldFireUntilFullReload
+		        	Attributes MiniBoss
+			        Item "The Lucky Shot"
+					//Item "MvM GateBot Light Soldier"
+					Skill Expert
+					Tag bot_giant
 					ItemAttributes
 					{
-						ItemName	"concealedkiller_rocketlauncher_sandcannon"
-						"set_item_texture_wear" 0.2		// Factory New
-						"attach particle effect" 2		// Fire effect
-						"Set DamageType Ignite"	1
-						"weapon burn dmg reduced"	0.6
-						"weapon burn time increased" 1.5
-						"slow enemy on hit major" 5
+						ItemName "The Lucky Shot"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_ROCKETLAUNCHER"
+		        		"faster reload rate" 0.75
+			        	"rocket specialist" 1
+		         		"damage bonus" 1.2
 					}
 					CharacterAttributes
 					{
@@ -2936,7 +3175,93 @@ WaveSchedule
 					}
 				}
 			}
-		}			
+		}
+		
+		T_TFGateBot_Giant_Soldier_Stun_Spammer
+		{					
+			Class Soldier
+			Name "Giant Stunner Soldier"
+			ClassIcon soldier_stun_spammer_giant
+			Health 4000
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
+
+					WeaponRestrictions PrimaryOnly
+		        	Attributes HoldFireUntilFullReload
+		        	Attributes MiniBoss
+			        Item "The Lucky Shot"
+					//Item "MvM GateBot Light Soldier"
+					ItemAttributes
+					{
+						ItemName "The Lucky Shot"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					Skill Expert
+					Tag bot_giant
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_ROCKETLAUNCHER"
+						"damage bonus" 0.75
+						"fire rate bonus" 0.45
+						"clip size upgrade atomic" 5
+						"faster reload rate" 0.2
+						"rocket specialist" 4
+						"Projectile speed increased" 0.75
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"override footstep sound set" 3
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"airblast vertical vulnerability multiplier" 0.1
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					WeaponRestrictions PrimaryOnly
+					
+		        	Attributes HoldFireUntilFullReload
+		        	Attributes MiniBoss
+			        Item "The Lucky Shot"
+					//Item "MvM GateBot Light Soldier"
+					Skill Expert
+					Tag bot_giant
+					ItemAttributes
+					{
+						ItemName "The Lucky Shot"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_ROCKETLAUNCHER"
+						"damage bonus" 0.75
+						"fire rate bonus" 0.45
+						"clip size upgrade atomic" 5
+						"faster reload rate" 0.2
+						"rocket specialist" 4
+						"Projectile speed increased" 0.75
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"override footstep sound set" 3
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"airblast vertical vulnerability multiplier" 0.1
+					}
+				}
+			}
+		}
 		
 		T_TFGateBot_Giant_Soldier_Nuke
 		{
@@ -3016,7 +3341,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFGateBot_Giant_Soldier_Nuke
+		T_TFGateBot_Giant_Soldier_ChargedBarrage
 		{
 			Class Soldier
 			ClassIcon	soldier_barrage_hyper
@@ -7001,6 +7326,12 @@ WaveSchedule
 					Item	"Upgradeable TF_WEAPON_MINIGUN"
 					ItemAttributes
 					{
+						ItemName "MvM GateBot Light Heavy"
+						//"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					ItemAttributes
+					{
 						ItemName	"Upgradeable TF_WEAPON_MINIGUN"
 						"critboost on kill" 5
 						"heal on kill" 150  // Was 300
@@ -7010,10 +7341,11 @@ WaveSchedule
 				RevertGateBotsBehavior
 				{
 					Item "MvM GateBot Light Heavy"
-					ItemAttributes               // turn off light hat
+					ItemAttributes
 					{
 						ItemName "MvM GateBot Light Heavy"
-						"item style override" 1
+						//"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
 					}
 					Skill Expert
 					MaxVisionRange	1200
@@ -7608,6 +7940,15 @@ WaveSchedule
 					Item "MvM GateBot Light Heavy"
 					Skill Hard
 					WeaponRestrictions SecondaryOnly
+					ItemAttributes
+					{
+						ItemName tf_weapon_shotgun_hwg
+						"faster reload rate" 0.5
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	1.6
+					}
 				}
 				RevertGateBotsBehavior
 				{
@@ -7619,6 +7960,15 @@ WaveSchedule
 					}
 					Skill Hard
 					WeaponRestrictions SecondaryOnly
+					ItemAttributes
+					{
+						ItemName tf_weapon_shotgun_hwg
+						"faster reload rate" 0.5
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	1.6
+					}
 				}
 			}
 		}
