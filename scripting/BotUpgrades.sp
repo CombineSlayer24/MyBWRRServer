@@ -94,7 +94,7 @@ void ApplyAttributesToClient(int client)
 	TF2Attrib_SetByName(Melee, "critboost on kill", 4.0);									// Gain 4 seconds of Critical Hits after kill
 	TF2Attrib_SetByName(Melee, "melee attack rate bonus", 0.6);								// +40% Faster swing speed
 	TF2Attrib_SetByName(Melee, "heal on kill", 100.0);										// +100 HP per kill
-	TF2Attrib_SetByName(Melee, "damage bonus", 1.25);											// +20% Damage bonus
+	TF2Attrib_SetByName(Melee, "damage bonus", 1.30);											// +30% Damage bonus
 	TF2Attrib_SetByName(client, "health regen", 10.0);										// +10 Health regen per second
 	TF2Attrib_SetByName(client, "move speed bonus", 1.3);									// +30% Faster movement speed
 	TF2Attrib_SetByName(client, "increased jump height", 1.25);								// +25% Higher jump
@@ -198,7 +198,7 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(Secondary, "faster reload rate", 0.4);						// +60% Faster reloading
 		}
 		case TFClass_Engineer: {
-			TF2Attrib_SetByName(client, "metal regen", 25.0);								// +25 Metal regen per 5 seconds
+			TF2Attrib_SetByName(client, "metal regen", 30.0);								// +30 Metal regen per 5 seconds
 			/** Engineer Primary Attributes */
 			TF2Attrib_SetByName(Primary, "projectile penetration", 1.0);						// +1 point of Projectile Penetration
 			TF2Attrib_SetByName(Primary, "fire rate bonus", 0.6);							// +40% Faster fire rate
