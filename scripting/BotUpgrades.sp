@@ -77,8 +77,8 @@ void ApplyAttributesToClient(int client)
 	if(!IsClientInGame(client))																	// Checks if the client is In-Game
 		return;
 
-	if(!IsFakeClient(client))																		// Checks if the client is a Bot
-		return;
+	//if(!IsFakeClient(client))																		// Checks if the client is a Bot
+		//return;
 
 	if(TF2_GetClientTeam(client) != TFTeam_Red)													// Checks if the client are on RED Team
 		return;
@@ -177,7 +177,7 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
 			TF2Attrib_SetByName(Secondary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
 			TF2Attrib_SetByName(Secondary, "heal on kill", 100.0);							// +100 HP per kill
-			TF2Attrib_SetByName(Secondary, "fire rate bonus", 0.75);						// +25% Faster fire rate
+			TF2Attrib_SetByName(Secondary, "fire rate bonus", 0.7);						// +30% Faster fire rate
 			TF2Attrib_SetByName(Secondary, "faster reload rate", 0.4);						// +60% Faster reloading
 		}
 		case TFClass_Heavy: {
@@ -220,7 +220,7 @@ void ApplyAttributesToClient(int client)
 				TF2Attrib_SetByName(iPDA, "engy building health bonus", 4.0);					// +300% Engy building health
 				TF2Attrib_SetByName(iPDA, "engineer sentry build rate multiplier", 1.5);		// +50% Faster sentry setup
 				TF2Attrib_SetByName(iPDA, "engy dispenser radius increased", 4.0);			// +300% Dispenser Range
-				TF2Attrib_SetByName(iPDA, "maxammo metal increased", 2.0);					// +100% Max Metal
+				TF2Attrib_SetByName(iPDA, "maxammo metal increased", 3.0);					// +200% Max Metal
 				TF2Attrib_SetByName(iPDA, "bidirectional teleport", 1.0);						// 2-way Teleporter
 			}
 		}
@@ -348,7 +348,6 @@ void ApplyAttributesToClient(int client)
 	{
 		if (client == GetEntPropEnt(GasPasser, Prop_Data, "m_hOwnerEntity"))
 		{
-			//TF2Attrib_SetByName(GasPasser, "item_meter_charge_rate", 15.0);			// +15 Seconds recharge
 			TF2Attrib_SetByName(GasPasser, "mult_item_meter_charge_rate", 0.4);				// +60% Recharge rate
 			TF2Attrib_SetByName(GasPasser, "weapon burn dmg increased", 2.5);				// +150% Afterburn Damage
 		}
