@@ -97,7 +97,7 @@ void ApplyAttributesToClient(int client)
 	TF2Attrib_SetByName(Melee, "damage bonus", 1.30);											// +30% Damage bonus
 	TF2Attrib_SetByName(client, "health regen", 10.0);										// +10 Health regen per second
 	TF2Attrib_SetByName(client, "move speed bonus", 1.3);									// +30% Faster movement speed
-	TF2Attrib_SetByName(client, "increased jump height", 1.25);								// +25% Higher jump
+	TF2Attrib_SetByName(client, "increased jump height", 1.40);								// +40% Higher jump
 	TF2Attrib_SetByName(client, "dmg taken from bullets reduced", 0.25);					// +75% Dmg resistances from Bullets
 	TF2Attrib_SetByName(client, "dmg taken from fire reduced", 0.5);						// +50% Dmg resistances from Fire
 	TF2Attrib_SetByName(client, "dmg taken from crit reduced", 0.1);						// +90% Dmg resistances from Critical Hits
@@ -117,7 +117,7 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(Primary, "projectile penetration", 1.0);					// +1 point of Projectile Penetration
 			/** Scout Special Attributes */
 			TF2Attrib_SetByName(Primary, "bullets per shot bonus", 1.5);					// +50% Extra bullets
-			TF2Attrib_SetByName(Primary, "scattergun knockback mult", 1.6);					// +60% Knockback force
+			TF2Attrib_SetByName(Primary, "scattergun knockback mult", 1.75);					// +75% Knockback force
 			TF2Attrib_SetByName(Primary, "heal on hit for rapidfire", 5.0);					// Gain 5 HP per hit w/ primary
 			/** Scout Secondary Attributes */
 			TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
