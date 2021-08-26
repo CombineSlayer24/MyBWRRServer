@@ -7,6 +7,8 @@
 #include <tf2attributes> // Requires nosoop's Attributes ( https://github.com/nosoop/tf2attributes )
 #include <tf2wearables> // use tf2 wearables API for getting weapon entity index ( https://github.com/nosoop/sourcemod-tf2wearables/ )
 
+bool playing_mvm = false;
+
 public Plugin myinfo = 
 {
 	name = "[TF2] MvM Bot Upgrades",
@@ -20,6 +22,13 @@ public void OnPluginStart() {
 	HookEvent("post_inventory_application", Event_PostInventory, EventHookMode_Post);
 	HookEvent("mvm_begin_wave", Event_WaveStart, EventHookMode_Post);
 	HookEvent("player_spawn", Event_PlayerSpawn, EventHookMode_Post);
+}
+/** 
+* Checks if the map is Mann Vs Machine.
+* If not, then the plugin will not load.
+**/
+public void OnMapStart() {
+	playing_mvm = GameRules_GetProp("m_bPlayingMannVsMachine") ? true : false;
 }
 
 /** 
@@ -81,6 +90,9 @@ void ApplyAttributesToClient(int client)
 		//return;
 
 	if(TF2_GetClientTeam(client) != TFTeam_Red)													// Checks if the client are on RED Team
+		return;
+		
+	if(!playing_mvm)																				// Checks if the level is a Mann Vs Machine Map 
 		return;
 
 	int Primary = TF2_GetPlayerLoadoutSlot(client, TF2LoadoutSlot_Primary, true);			// Sets attributes for Primary Weapons
