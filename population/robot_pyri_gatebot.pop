@@ -88,7 +88,7 @@
 //T_TFGateBot_Giant_Soldier_Extended_Battalion				// VALVe bot in gatebot
 //T_TFGateBot_Giant_Soldier_Crit							// VALVe bot in gatebot
 //T_TFGateBot_Giant_Soldier_Stun							// Giant Soldier that stuns players.
-//T_TGateFBot_Giant_Soldier_Stun_Spammer					// Giant Soldier that stuns players while shooting faster
+//T_TFGateBot_Giant_Soldier_Stun_Spammer					// Giant Soldier that stuns players while shooting faster
 //T_TFGateBot_Giant_Soldier_Nuke							// Beefier version of Giant Charged Soldier
 //T_TFGateBot_Giant_Soldier_ChargedBarrage					// Charged variant of Colonel Barrage.
 //T_TFGateBot_Giant_Soldier_Barrage							// Giant Soldier that fires a barrage of rockets, Minor variant to Colonel Barrage/Major.
@@ -1307,7 +1307,7 @@ WaveSchedule
 			Class Scout
 			Name "Armored FAN Super Scout"
  			ClassIcon scout_fan_armored_giant
-			Health 6000
+			Health 3500
 
 			EventChangeAttributes
 			{
@@ -8791,7 +8791,7 @@ WaveSchedule
 					Item "The Bushwacka"
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased" 0.25
+						"effect bar recharge rate increased" 0.2
 					}
 				}
 				RevertGateBotsBehavior
@@ -8808,7 +8808,7 @@ WaveSchedule
 					Item "The Bushwacka"
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased" 0.25
+						"effect bar recharge rate increased" 0.2
 					}
 				}
 			}

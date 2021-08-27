@@ -27,6 +27,7 @@
 //T_TFBot_Scout_Elf 									// Similar to Gnome Heavy.
 //T_TFBot_Scout_Elf_Expert 								// Similar to Gnome Heavy, but has +50% Speed bonus.
 //T_TFBot_Scout_Cleaver 								// A Scout welding a Clever.
+//T_TFBot_Scout_Fast									// Giant version of Super Scout.
 
 //T_TFBot_Giant_Scout_FAN_Armored						// Armored version of FAN, 3000HP, slower movement speed.
 //T_TFBot_Giant_Scout_RapidFire							// On steroids, beefy version of normal Rapid Fire Scout.
@@ -62,8 +63,10 @@
 //T_TFBot_Soldier_Paratrooper							// Soldier from Coastrock, bot jumps. just like Samurai Demo. (This won't likely be used)
 //T_TFBot_Soldier_Samurai								// Soldier w/ Half-Zatoichi
 //T_TFBot_Soldier_Samurai_NoJump						// Soldier w/ Half-Zatoichi, but doesn't jump.
+//T_TFBot_Soldier_Warbox_Backup							// Soldier w/ Black Box, Backup, 350HP
 
-//T_TFBot_Giant_Soldier_Incendiary						// Stock Giant Soldier, but more deadly with Fire attacks
+//T_TFBot_Giant_Soldier_Stun							// Giant Soldier that stuns players.
+//T_TFBot_Giant_Soldier_Stun_Spammer					// Giant Soldier that stuns players while shooting faster
 //T_TFBot_Giant_Soldier_Nuke							// Beefier version of Giant Charged Soldier
 //T_TFBot_Giant_Soldier_ChargedBarrage					// Charged variant of Colonel Barrage.
 //T_TFBot_Giant_Soldier_Barrage							// Giant Soldier that fires a barrage of rockets, Minor variant to Colonel Barrage/Major.
@@ -181,6 +184,7 @@
 //T_TFBot_Medic_Battle 									// Can be used as Battle robot.
 //T_TFBot_Medic_Crossbow 								// Can be used as a Battle/Support robot.
 //T_TFBot_Medic_Crossbow_Big 							// Can be used as a Battle/Support robot.
+//T_TFBot_Medic_Uber_QuickFlash							// Medic that gains uber rapidly quick, but only 4 seconds long.
 
 //T_TFBot_Giant_Medic_Battle
 //T_TFBot_Giant_Medic_Uber								// Giant Über Medic able to deploy a ÜberCharge
@@ -189,6 +193,7 @@
 //T_TFBot_Giant_Medic_Kritzkrieg						// Giant Kritz Medic that can give 100% Critical ÜberCharge to Robots.
 //T_TFBot_Giant_Medic_Kritzkrieg_Quickheal				// Giant Kritz Medic that can give 100% Critical UberCharge to Robots, and heal their heal buddy quickly like a regular Giant Medic. 
 //T_TFBot_Giant_Medic_Shield							// Giant Medic with shield, QuickFix.
+
 
 // Sniper
 //T_TFBot_Sniper_Expert 								// Sniper with Difficulty to Expert, 3000 Vision. Used in Missions only!
@@ -659,6 +664,28 @@ WaveSchedule
 				"effect bar recharge rate increased"	0.05
 			}
 			Item	"the flying guillotine"
+		}
+		
+		T_TFBot_Scout_Fast
+		{
+			ClassIcon	scout_fast
+			Health	175
+			Name	"Fast Scout"
+			Class	Scout
+			Skill	Hard
+			WeaponRestrictions	MeleeOnly
+			Item	"the holy mackerel"
+			Item	"bonk boy"
+			ItemAttributes
+			{
+				ItemName	"the holy mackerel"
+				"damage bonus"	1.5
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	1.6
+				"dmg taken from bullets increased"	1.25
+			}
 		}
 		
 		//Giant Scout Templates
@@ -1270,10 +1297,11 @@ WaveSchedule
 		{
 			Class Soldier
 			Name "Samurai Soldier"
-			ClassIcon soldier_samurai
+			ClassIcon demoknight_samurai
 			Skill Expert
 			Health 750
 			Scale 1.3
+			Attributes AutoJump
 			Item "The Half-Zatoichi"
 			Item "Soldier Samurai Hat"
 			WeaponRestrictions MeleeOnly
@@ -1298,7 +1326,7 @@ WaveSchedule
 		{
 			Class Soldier
 			Name "Samurai Soldier"
-			ClassIcon soldier_samurai
+			ClassIcon demoknight_samurai
 			Skill Expert
 			Health 750
 			Scale 1.3
@@ -1317,25 +1345,52 @@ WaveSchedule
 			}
 		}
 		
+		T_TFBot_Soldier_Warbox_Backup
+		{
+			ClassIcon	soldier_backup
+			Health	350
+			Name	"Warbox Soldier"
+			Class	Soldier
+			Skill	Hard
+			MaxVisionRange	750
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"SpawnWithFullCharge"
+			Attributes	"HoldFireUntilFullReload"
+			Item	"the black box"
+			Item	"the battalion's backup"
+			Item	"the grenadier's softcap"
+			ItemAttributes
+			{
+				ItemName	"the black box"
+				"damage bonus"	1.2
+				"faster reload rate"	0.25
+				"projectile spread angle penalty"	2
+				"Projectile speed increased"	1.1
+			}
+			CharacterAttributes
+			{
+				"increase buff duration"	2.5
+			}
+		}
+		
 		//Giant Soldier Templates
-		T_TFBot_Giant_Soldier_Incendiary
+		T_TFBot_Giant_Soldier_Stun
 		{
 			Class Soldier
-			Name "Giant Incendiary Soldier"
-			ClassIcon soldier_incendiary_nys_giant
+			Name "Giant Stunner Soldier"
+			ClassIcon soldier_stun_giant
 			Skill Expert
 			Health 3800
 			WeaponRestrictions PrimaryOnly
 			Attributes HoldFireUntilFullReload
 			Attributes MiniBoss
-			Item	"concealedkiller_rocketlauncher_sandcannon"
+			Item "The Lucky Shot"
 			ItemAttributes
 			{
-				ItemName	"concealedkiller_rocketlauncher_sandcannon"
-				"set_item_texture_wear" 0.2		// Factory New
-				"attach particle effect" 2		// Fire effect
-				"Set DamageType Ignite"	1
-				"weapon burn dmg increased"	1.25
+				ItemName "TF_WEAPON_ROCKETLAUNCHER"
+				"faster reload rate" 0.75
+				"rocket specialist" 1
+				"damage bonus" 1.2
 			}
 			CharacterAttributes
 			{
@@ -1343,6 +1398,37 @@ WaveSchedule
 				"damage force reduction" 0.4
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
+			}
+		}
+		T_TFBot_Giant_Soldier_Stun_Spammer
+		{
+			Class Soldier
+			Skill Expert
+			WeaponRestrictions PrimaryOnly
+			ClassIcon soldier_stun_spammer_giant
+			Attributes MiniBoss
+			Attributes HoldFireUntilFullReload
+			Name "Giant Rapid Stunner Soldier"
+			Item "The Lucky Shot"
+			Health 4000
+
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_ROCKETLAUNCHER"
+				"damage bonus" 0.75
+				"fire rate bonus" 0.45
+				"clip size upgrade atomic" 5
+				"faster reload rate" 0.2
+				"rocket specialist" 4
+				"Projectile speed increased" 0.75
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"override footstep sound set" 3
+				"damage force reduction" 0.4
+				"airblast vulnerability multiplier" 0.4
+				"airblast vertical vulnerability multiplier" 0.1
 			}
 		}
 		T_TFBot_Giant_Soldier_Nuke
@@ -1980,7 +2066,7 @@ WaveSchedule
 				//"item_meter_charge_rate"	20			// Old stats
 				//"explode_on_ignite" 1					// Old stats
 				"item_meter_charge_rate"	4
-				"weapon burn time increased" 0.01
+				"weapon burn time increased" 0.1
 				"weapon burn dmg increased" 15
 				"fire rate penalty" 4.0
 			}
@@ -2435,6 +2521,8 @@ WaveSchedule
 			Health 175
 			WeaponRestrictions PrimaryOnly
 			Attributes HoldFireUntilFullReload
+			Item "hazard headgear"
+			Item "blast blocker"
 			Item	"Upgradeable TF_WEAPON_GRENADELAUNCHER"
 			ItemAttributes
 			{
@@ -2517,6 +2605,7 @@ WaveSchedule
 			Class Demoman
 			Skill Easy
 			ClassIcon demo_sticky
+			Name "Stickybomber Demo"
 			Attributes HoldFireUntilFullReload
 			WeaponRestrictions SecondaryOnly
 			ItemAttributes
@@ -2859,6 +2948,8 @@ WaveSchedule
 			Skill Hard
 			Health 300
 			Item	"natascha"
+			Item	"the gridiron guardian"
+			Item	"the titanium towel"
 			ItemAttributes
 			{
 				ItemName	"natascha"
@@ -2960,11 +3051,13 @@ WaveSchedule
 			Health 300
 			MaxVisionRange	1200
 			WeaponRestrictions	PrimaryOnly
+			Item 	"MvM GateBot Light Heavy"		// Added Gatebot hat to tell if it's Expert.
 			Item	"the tungsten toque"
 			Item	"Upgradeable TF_WEAPON_MINIGUN"
 			ItemAttributes
 			{
 				ItemName	"Upgradeable TF_WEAPON_MINIGUN"
+				"damage bonus" 1.1
 				"critboost on kill" 5
 				"heal on kill" 150  // Was 300
 				"speed_boost_on_kill" 5
@@ -3169,7 +3262,7 @@ WaveSchedule
 			WeaponRestrictions SecondaryOnly
 		}
 		
-		T_TFBot_Heavy_Shotgun_Scout // Heavy w/ Shotgun, +100% movement speed.
+		T_TFBot_Heavy_Shotgun_Scout // Heavy w/ Shotgun, +60% movement speed.
 		{
 			ClassIcon	heavy_shotgun
 			Health	225
@@ -3185,7 +3278,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
-				"move speed bonus"	2.0
+				"move speed bonus"	1.6
 			}
 		}
 		
@@ -3586,19 +3679,17 @@ WaveSchedule
 		{
 			Class Medic
 			Name "Battle Medic"
-			ClassIcon medic_needle
+			ClassIcon medic_battle
 			Skill Hard
 			Health 150
 			WeaponRestrictions	PrimaryOnly
-			Attributes	AlwaysFireWeapon
-			Item	"berliner's bucket helm"
-			//Item	"the virus doctor"
-			Item	"the byte'd beak"
+			Item	"Berlin Brain Bowl"
+			Item	"Bunnyhopper's Ballistics Vest"
 			ItemAttributes
 			{
 				ItemName	tf_weapon_syringegun_medic
 				"mad milk syringes"	1
-				"fire rate bonus"   0.75
+				"fire rate bonus"   1.2
 			}
 		}
 		
@@ -3643,6 +3734,37 @@ WaveSchedule
 				"fire rate bonus"	0.5
 				"faster reload rate"	0.5
 			}
+		}
+		
+		T_TFBot_Medic_Uber_QuickFlash
+		{
+			ClassIcon	medic_uber
+			Health	150
+			Attributes	SpawnWithFullCharge
+			Name	"Quick Flash Uber"
+			Class	Medic
+			Skill	Easy
+			ItemAttributes
+			{
+				ItemName	tf_weapon_syringegun_medic
+				"damage penalty"	0.1
+			}
+			ItemAttributes
+			{
+				ItemName	tf_weapon_medigun
+				"uber duration bonus"	-6
+				"ubercharge rate bonus"	14
+			}
+			ItemAttributes
+			{
+				ItemName	"the weather master"
+				"attach particle effect"	17
+			}
+			CharacterAttributes
+			{
+				"heal rate bonus"	0.1
+			}
+			Item	"the weather master"
 		}
 		
 		//Giant Medic Templates
@@ -3959,7 +4081,7 @@ WaveSchedule
 			Attributes	AlwaysFireWeapon
 			CharacterAttributes
 			{
-				"effect bar recharge rate increased" 0.25
+				"effect bar recharge rate increased" 0.2
 			}
 		}
 		
