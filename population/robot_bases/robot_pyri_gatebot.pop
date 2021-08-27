@@ -7,6 +7,7 @@
 //T_TFGateBot_Scout_Bonk
 //T_TFGateBot_Scout_Shortstop
 //T_TFGateBot_Giant_Scout
+//T_TFGateBot_Giant_Scout_Melee								// Melee restricted giant scout
 //T_TFGateBot_Giant_Scout_Bonk								// Made this bot use Bonk only once
 //T_TFGateBot_Giant_Scout_Fast
 //T_TFGateBot_Soldier_Extended_Buff_Banner
@@ -48,6 +49,7 @@
 //T_TFGateBot_Scout_Shortstop								// VALVe bot in gatebot
 
 //T_TFGateBot_Giant_Scout									// VALVe bot in gatebot
+//T_TFGateBot_Giant_Scout_Melee								// Melee restricted Giant Scout.
 //T_TFGateBot_Giant_Scout_Bonk								// VALVe bot in gatebot
 //T_TFGateBot_Giant_Scout_Fast								// VALVe bot in gatebot
 //T_TFGateBot_Giant_Scout_FAN_Armored						// Armored version of FAN, 3000HP, slower movement speed.
@@ -86,7 +88,7 @@
 //T_TFGateBot_Giant_Soldier_Extended_Battalion				// VALVe bot in gatebot
 //T_TFGateBot_Giant_Soldier_Crit							// VALVe bot in gatebot
 //T_TFGateBot_Giant_Soldier_Stun							// Giant Soldier that stuns players.
-//T_TGateFBot_Giant_Soldier_Stun_Spammer					// Giant Soldier that stuns players while shooting faster
+//T_TFGateBot_Giant_Soldier_Stun_Spammer					// Giant Soldier that stuns players while shooting faster
 //T_TFGateBot_Giant_Soldier_Nuke							// Beefier version of Giant Charged Soldier
 //T_TFGateBot_Giant_Soldier_ChargedBarrage					// Charged variant of Colonel Barrage.
 //T_TFGateBot_Giant_Soldier_Barrage							// Giant Soldier that fires a barrage of rockets, Minor variant to Colonel Barrage/Major.
@@ -1111,6 +1113,7 @@ WaveSchedule
 					WeaponRestrictions PrimaryOnly
 					CharacterAttributes
 					{
+						"move speed bonus"	0.8
 						"damage force reduction" 0.7
 						"airblast vulnerability multiplier" 0.7
 						"override footstep sound set" 5
@@ -1130,6 +1133,59 @@ WaveSchedule
 					WeaponRestrictions PrimaryOnly
 					CharacterAttributes
 					{
+						"move speed bonus"	0.8
+						"damage force reduction" 0.7
+						"airblast vulnerability multiplier" 0.7
+						"override footstep sound set" 5
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Giant_Scout_Melee
+		{
+			Class Scout
+			Name "Giant Scout"
+			ClassIcon scout_giant
+			Health 1600
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Tag bot_giant
+					Skill Expert
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					CharacterAttributes
+					{
+						"move speed bonus"	0.8
+						"damage force reduction" 0.7
+						"airblast vulnerability multiplier" 0.7
+						"override footstep sound set" 5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					CharacterAttributes
+					{
+						"move speed bonus"	0.8
 						"damage force reduction" 0.7
 						"airblast vulnerability multiplier" 0.7
 						"override footstep sound set" 5
@@ -1251,7 +1307,7 @@ WaveSchedule
 			Class Scout
 			Name "Armored FAN Super Scout"
  			ClassIcon scout_fan_armored_giant
-			Health 6000
+			Health 3500
 
 			EventChangeAttributes
 			{
@@ -8735,7 +8791,7 @@ WaveSchedule
 					Item "The Bushwacka"
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased" 0.25
+						"effect bar recharge rate increased" 0.2
 					}
 				}
 				RevertGateBotsBehavior
@@ -8752,7 +8808,7 @@ WaveSchedule
 					Item "The Bushwacka"
 					CharacterAttributes
 					{
-						"effect bar recharge rate increased" 0.25
+						"effect bar recharge rate increased" 0.2
 					}
 				}
 			}
