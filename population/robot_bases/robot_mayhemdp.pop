@@ -104,6 +104,7 @@
 #base robot_standard.pop
 #base robot_gatebot.pop
 #base robot_pyri.pop
+#base robot_pyri_gatebot.pop
 WaveSchedule
 {
 	Templates
@@ -2720,6 +2721,1094 @@ WaveSchedule
 					Skill Expert
 					ClassIcon support_normal
 				}
+				///
+				//PYRI'S CUSTOM BOTS
+				///
+				TFBot
+				{
+					Template T_TFBot_Scout_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Crit
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_Crit
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_Pistol
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Pistol
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_Pistol
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_Melee_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Melee_Crit
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_Melee_Crit
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_Baseball_Armored
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Baseball_Armored
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_Baseball_Armored
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Scattergun
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Scattergun
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_MiniCrit_Scattergun
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_MiniCrit
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Melee
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Melee
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_MiniCrit_Melee
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Stun
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Stun
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_MiniCrit_Stun
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Stun_FastCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Stun_FastCharge
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_MiniCrit_Stun_FastCharge
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_Bonk_Stun
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Bonk_Stun
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_Bonk_Stun
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_Bonk_Stun_FastCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Bonk_Stun_FastCharge
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_Bonk_Stun_FastCharge
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Shotgun_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Shotgun_Expert
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Soldier_Shotgun_Expert
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Directhit_Normal
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Directhit_Normal
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Soldier_Directhit_Normal
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Directhit_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Directhit_Expert
+					ClassIcon support_normal
+				}
+				// TFBot
+				// {
+					// Template T_TFBot_Soldier_Directhit_Expert
+					// ClassIcon support_normal
+				// }
+				TFBot
+				{
+					Template T_TFBot_Soldier_Spammer
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Spammer
+					ClassIcon support_normal
+				}
+				// TFBot
+				// {
+					// Template T_TFBot_Soldier_Spammer
+					// ClassIcon support_normal
+				// }
+				TFBot
+				{
+					Template T_TFBot_Soldier_Burst
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Burst
+					ClassIcon support_normal
+				}
+				// TFBot
+				// {
+					// Template T_TFBot_Soldier_Burst
+					// ClassIcon support_normal
+				// }
+				TFBot
+				{
+					Template T_TFBot_Soldier_Escapeplan
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Escapeplan
+					ClassIcon support_normal
+				}
+				// TFBot
+				// {
+					// Template T_TFBot_Soldier_Escapeplan
+					// ClassIcon support_normal
+				// }
+				TFBot
+				{
+					Template T_TFBot_Soldier_Equalizer
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Equalizer
+					ClassIcon support_normal
+				}
+				// TFBot
+				// {
+					// Template T_TFBot_Soldier_Equalizer
+					// ClassIcon support_normal
+				// }
+				TFBot
+				{
+					Template T_TFBot_Soldier_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Crit
+					ClassIcon support_normal
+				}
+				// TFBot
+				// {
+					// Template T_TFBot_Soldier_Crit
+					// ClassIcon support_normal
+				// }
+				TFBot
+				{
+					Template T_TFBot_Soldier_Charged
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Charged
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Mangler
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Mangler
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Bison
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Bison
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Samurai
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Samurai
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Samurai_NoJump
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Samurai_NoJump
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Warbox_Backup
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Warbox_Backup
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Crit_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Crit_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Detonator
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Detonator
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Phlog
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Phlog
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Phlog_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Phlog_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Phlog_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Phlog_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Manmelter
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Manmelter
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Dragon_Hard
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Dragon_Hard
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Gaspasser
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Gaspasser
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Gaspasser_FastCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Gaspasser_FastCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Gaspasser_Explosive
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Gaspasser_Explosive
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Powerjack
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Powerjack
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Powerjack_Big
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Powerjack_Big
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Volcano
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Volcano
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Shotgun_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Shotgun_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoman_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoman_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoman_Spammer
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoman_Spammer
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoman_Spammer_Reload
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoman_Spammer_Reload
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Barrage
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Barrage
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Burst_IronBomber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Burst_IronBomber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Blast
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Blast
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Charger
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Charger
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Charger_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Charger_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Loch
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Loch
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Loosecannon
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Loosecannon
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoman_Stickybomber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoman_Stickybomber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoknight_Persian
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoknight_Persian
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Caber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Caber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Caber_Hard
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Caber_Hard
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Caber_Rapid
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Caber_Rapid
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Natascha_Easy
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Natascha_Easy
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Natascha
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Natascha
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Brassbeast
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Brassbeast
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Deflector_Healonkill
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Deflector_Healonkill
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Booster_Easy
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Booster_Easy
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Booster_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Booster_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Heater
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Heater
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Rocket
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Rocket
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Bearweight
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Bearweight
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Bearfist
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Bearfist
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_ApocoFist
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_ApocoFist
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavyweapons_Heavyweight_Mega_Champ
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavyweapons_Heavyweight_Mega_Champ
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavyweapons_Steel_Conch
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavyweapons_Steel_Conch
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavyweapons_MinorFist
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavyweapons_MinorFist
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Gnome_Fixed
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Gnome_Fixed
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Shotgun_Scout
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Shotgun_Scout
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Kritzkrieg
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Kritzkrieg
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Shield_Quickfix
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Shield_Quickfix
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Shield_Uber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Shield_Uber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Battle
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Battle
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Crossbow
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Crossbow
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Crossbow_Big
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Crossbow_Big
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Uber_QuickFlash
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Uber_QuickFlash
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Bushwacka
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Bushwacka
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Jarate_Master_SlowCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Jarate_Master_SlowCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Jarate_Master
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Jarate_Master
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_SMG_Critboost
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_SMG_Critboost
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman_Bleed
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman_Bleed
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Enforcer
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Enforcer
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Enforcer_Revolver
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Enforcer_Revolver
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Ninja
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Ninja
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Revolver
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Revolver
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Ambassador
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Ambassador
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Fireproof
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Fireproof
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Sapper
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Sapper
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Sapper_EMP
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Sapper_EMP
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoknight_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoknight_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Australium
+					ClassIcon support_normal
+				}
 			}
 		}
 		
@@ -3837,6 +4926,939 @@ WaveSchedule
 					Skill Expert
 					ClassIcon support_normal
 				}
+				///
+				//PYRI'S CUSTOM BOTS
+				///
+				TFBot
+				{
+					Template T_TFBot_Scout_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Crit
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_Crit
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_Pistol
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Pistol
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_Pistol
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_Melee_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Melee_Crit
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_Melee_Crit
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Scattergun
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Scattergun
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_MiniCrit_Scattergun
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_MiniCrit
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Melee
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Melee
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_MiniCrit_Melee
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Stun
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Stun
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_MiniCrit_Stun
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Stun_FastCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_MiniCrit_Stun_FastCharge
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_MiniCrit_Stun_FastCharge
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_Bonk_Stun
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Bonk_Stun
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_Bonk_Stun
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Scout_Bonk_Stun_FastCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Bonk_Stun_FastCharge
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Scout_Bonk_Stun_FastCharge
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Shotgun_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Shotgun_Expert
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Soldier_Shotgun_Expert
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Directhit_Normal
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Directhit_Normal
+					ClassIcon support_normal
+				}
+				//TFBot
+				//{
+					//Template T_TFBot_Soldier_Directhit_Normal
+					//ClassIcon support_normal
+				//}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Directhit_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Directhit_Expert
+					ClassIcon support_normal
+				}
+				// TFBot
+				// {
+					// Template T_TFBot_Soldier_Directhit_Expert
+					// ClassIcon support_normal
+				// }
+				TFBot
+				{
+					Template T_TFBot_Soldier_Escapeplan
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Escapeplan
+					ClassIcon support_normal
+				}
+				// TFBot
+				// {
+					// Template T_TFBot_Soldier_Escapeplan
+					// ClassIcon support_normal
+				// }
+				TFBot
+				{
+					Template T_TFBot_Soldier_Equalizer
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Equalizer
+					ClassIcon support_normal
+				}
+				// TFBot
+				// {
+					// Template T_TFBot_Soldier_Equalizer
+					// ClassIcon support_normal
+				// }
+				TFBot
+				{
+					Template T_TFBot_Soldier_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Crit
+					ClassIcon support_normal
+				}
+				// TFBot
+				// {
+					// Template T_TFBot_Soldier_Crit
+					// ClassIcon support_normal
+				// }
+				TFBot
+				{
+					Template T_TFBot_Soldier_Charged
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Charged
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Mangler
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Mangler
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Bison
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Bison
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Samurai
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Samurai
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Warbox_Backup
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Warbox_Backup
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Crit_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Crit_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Detonator
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Detonator
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Phlog
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Phlog
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Phlog_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Phlog_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Phlog_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Phlog_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Manmelter
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Manmelter
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Dragon_Hard
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Dragon_Hard
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Gaspasser
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Gaspasser
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Gaspasser_FastCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Gaspasser_FastCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Gaspasser_Explosive
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Gaspasser_Explosive
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Powerjack
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Powerjack
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Shotgun_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Shotgun_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoman_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoman_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Burst_IronBomber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Burst_IronBomber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Blast
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Blast
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Charger
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Charger
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Charger_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Charger_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Loch
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Loch
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Loosecannon
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Loosecannon
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoman_Stickybomber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoman_Stickybomber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoknight_Persian
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoknight_Persian
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Caber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Caber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Caber_Hard
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Caber_Hard
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Caber_Rapid
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Caber_Rapid
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Natascha_Easy
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Natascha_Easy
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Natascha
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Natascha
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Brassbeast
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Brassbeast
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Deflector_Healonkill
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Deflector_Healonkill
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Booster_Easy
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Booster_Easy
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Booster_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Booster_Expert
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Heater
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Heater
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Rocket
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Rocket
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Bearweight
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Bearweight
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavyweapons_MinorFist
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavyweapons_MinorFist
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Gnome_Fixed
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Gnome_Fixed
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Shotgun_Scout
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Shotgun_Scout
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Kritzkrieg
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Kritzkrieg
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Shield_Quickfix
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Shield_Quickfix
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Shield_Uber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Shield_Uber
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Battle
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Battle
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Crossbow
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Crossbow
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Uber_QuickFlash
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Medic_Uber_QuickFlash
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Bushwacka
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Bushwacka
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Jarate_Master_SlowCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Jarate_Master_SlowCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Jarate_Master
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Jarate_Master
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_SMG_Critboost
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_SMG_Critboost
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman_Bleed
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman_Bleed
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Enforcer
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Enforcer
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Enforcer_Revolver
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Enforcer_Revolver
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Ninja
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Ninja
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Revolver
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Revolver
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Ambassador
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Ambassador
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Fireproof
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Fireproof
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Sapper
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Sapper
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Sapper_EMP
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Spy_Sapper_EMP
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demo_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoknight_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Demoknight_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Australium
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Heavy_Australium
+					ClassIcon support_normal
+				}
 			}
 		}
 		
@@ -3857,125 +5879,6 @@ WaveSchedule
 			/////////////////////////////////
 			RandomChoice
 			{
-				// TFBot
-				// {
-					// Template T_TFBot_Scout_Melee
-					// Name "Bat Scout"
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Scout_Melee
-					// Name "Bat Scout"
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Scout_Melee
-					// Name "Bat Scout"
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Scout_Sandman
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Scout_Sandman
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Scout_Sandman
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Heavyweapons_Heavyweight_Champ
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Heavyweapons_Heavyweight_Champ
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Heavyweapons_Heavyweight_Champ
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Heavyweapons_Heavyweight_Champ_Fast
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Heavyweapons_Heavyweight_Champ_Fast
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Heavyweapons_Heavyweight_Champ_Fast
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Heavyweapons_Gnome
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Heavyweapons_Gnome
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Heavyweapons_Gnome
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Demoman_Knight
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Demoman_Knight
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Demoman_Knight
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Scout_Bonk
-					// Name "Bonk Scout"
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Scout_Wrap_Assassin
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Scout_Wrap_Assassin
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Scout_Wrap_Assassin
-					// ClassIcon support_normal
-				// }
-				// TFBot
-				// {
-					// Template T_TFBot_Scout_Sandman_FastCharge
-					// ClassIcon support_normal
-				// }
 				TFBot
 				{
 					Class Scout
@@ -4976,6 +6879,1084 @@ WaveSchedule
 					Template T_TFGateBot_Heavy_IronFist_Crit
 					ClassIcon support_gatebot
 				}
+				///
+				//PYRI'S CUSTOM BOTS
+				///
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Crit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Crit
+					ClassIcon support_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Scout_Crit
+					//ClassIcon support_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Pistol
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Pistol
+					ClassIcon support_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Scout_Pistol
+					//ClassIcon support_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Melee_Crit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Melee_Crit
+					ClassIcon support_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Scout_Melee_Crit
+					//ClassIcon support_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Baseball_Armored
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Baseball_Armored
+					ClassIcon support_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Scout_Baseball_Armored
+					//ClassIcon support_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_MiniCrit_Scattergun
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_MiniCrit_Scattergun
+					ClassIcon support_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Scout_MiniCrit_Scattergun
+					//ClassIcon support_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_MiniCrit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_MiniCrit
+					ClassIcon support_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Scout_MiniCrit
+					//ClassIcon support_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_MiniCrit_Melee
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_MiniCrit_Melee
+					ClassIcon support_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Scout_MiniCrit_Melee
+					//ClassIcon support_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_MiniCrit_Stun
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_MiniCrit_Stun
+					ClassIcon support_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Scout_MiniCrit_Stun
+					//ClassIcon support_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_MiniCrit_Stun_FastCharge
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_MiniCrit_Stun_FastCharge
+					ClassIcon support_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Scout_MiniCrit_Stun_FastCharge
+					//ClassIcon support_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Bonk_Stun
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Bonk_Stun
+					ClassIcon support_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Scout_Bonk_Stun
+					//ClassIcon support_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Bonk_Stun_FastCharge
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Bonk_Stun_FastCharge
+					ClassIcon support_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Scout_Bonk_Stun_FastCharge
+					//ClassIcon support_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Shotgun_Expert
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Shotgun_Expert
+					ClassIcon support_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Soldier_Shotgun_Expert
+					//ClassIcon support_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Directhit_Normal
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Directhit_Normal
+					ClassIcon support_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Soldier_Directhit_Normal
+					//ClassIcon support_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Directhit_Expert
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Directhit_Expert
+					ClassIcon support_gatebot
+				}
+				// TFBot
+				// {
+					// Template T_TFGateBot_Soldier_Directhit_Expert
+					// ClassIcon support_gatebot
+				// }
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Spammer
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Spammer
+					ClassIcon support_gatebot
+				}
+				// TFBot
+				// {
+					// Template T_TFGateBot_Soldier_Spammer
+					// ClassIcon support_gatebot
+				// }
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Burst
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Burst
+					ClassIcon support_gatebot
+				}
+				// TFBot
+				// {
+					// Template T_TFGateBot_Soldier_Burst
+					// ClassIcon support_gatebot
+				// }
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Escapeplan
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Escapeplan
+					ClassIcon support_gatebot
+				}
+				// TFBot
+				// {
+					// Template T_TFGateBot_Soldier_Escapeplan
+					// ClassIcon support_gatebot
+				// }
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Equalizer
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Equalizer
+					ClassIcon support_gatebot
+				}
+				// TFBot
+				// {
+					// Template T_TFGateBot_Soldier_Equalizer
+					// ClassIcon support_gatebot
+				// }
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Crit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Crit
+					ClassIcon support_gatebot
+				}
+				// TFBot
+				// {
+					// Template T_TFGateBot_Soldier_Crit
+					// ClassIcon support_gatebot
+				// }
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Charged
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Charged
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Mangler
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Mangler
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Bison
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Bison
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Samurai
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Samurai
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Warbox_Backup
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Warbox_Backup
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Crit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Crit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Crit_AlwaysFire
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Crit_AlwaysFire
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Detonator
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Detonator
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Phlog
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Phlog
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Phlog_AlwaysFire
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Phlog_AlwaysFire
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Phlog_Expert
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Phlog_Expert
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Manmelter
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Manmelter
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Dragon_Hard
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Dragon_Hard
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Gaspasser
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Gaspasser
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Gaspasser_FastCharge
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Gaspasser_FastCharge
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Gaspasser_Explosive
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Gaspasser_Explosive
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Powerjack
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Powerjack
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Powerjack_Big
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Powerjack_Big
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Volcano
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Volcano
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Shotgun_Expert
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Shotgun_Expert
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demoman_Crit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demoman_Crit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demoman_Spammer
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demoman_Spammer
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demoman_Spammer_Reload
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demoman_Spammer_Reload
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Barrage
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Barrage
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Burst_IronBomber
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Burst_IronBomber
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Blast
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Blast
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Charger
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Charger
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Charger_Expert
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Charger_Expert
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Loch
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Loch
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Loosecannon
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Loosecannon
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demoman_Stickybomber
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demoman_Stickybomber
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demoknight_Persian
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demoknight_Persian
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Caber
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Caber
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Caber_Hard
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Caber_Hard
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Caber_Rapid
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Caber_Rapid
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Crit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Crit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Natascha_Easy
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Natascha_Easy
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Natascha
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Natascha
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Brassbeast
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Brassbeast
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Deflector_Healonkill
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Deflector_Healonkill
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Booster_Easy
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Booster_Easy
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Booster_Expert
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Booster_Expert
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Heater
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Heater
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Rocket
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Rocket
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Bearweight
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Bearweight
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Bearfist
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Bearfist
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_ApocoFist
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_ApocoFist
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavyweapons_Heavyweight_Mega_Champ
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavyweapons_Heavyweight_Mega_Champ
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavyweapons_Steel_Conch
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavyweapons_Steel_Conch
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavyweapons_MinorFist
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavyweapons_MinorFist
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Gnome_Fixed
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Gnome_Fixed
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Shotgun_Scout
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Shotgun_Scout
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Kritzkrieg
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Kritzkrieg
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Shield_Quickfix
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Shield_Quickfix
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Shield_Uber
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Shield_Uber
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Battle
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Battle
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Crossbow
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Crossbow
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Crossbow_Big
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Crossbow_Big
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Uber_QuickFlash
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Medic_Uber_QuickFlash
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Bushwacka
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Bushwacka
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Jarate_Master_SlowCharge
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Jarate_Master_SlowCharge
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Jarate_Master
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Jarate_Master
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_SMG_Critboost
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_SMG_Critboost
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Huntsman_Crit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Huntsman_Crit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Huntsman_Bleed
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Huntsman_Bleed
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Enforcer
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Enforcer
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Enforcer_Revolver
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Enforcer_Revolver
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Ninja
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Ninja
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Revolver
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Revolver
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Ambassador
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Ambassador
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Fireproof
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Fireproof
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Sapper
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Sapper
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Sapper_EMP
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Spy_Sapper_EMP
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Australium
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Australium
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Australium
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Australium
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Australium
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Australium
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Australium
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demo_Australium
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demoknight_Australium
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Demoknight_Australium
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Australium
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Heavy_Australium
+					ClassIcon support_gatebot
+				}
 			}
 		}
 		
@@ -5451,12 +8432,12 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template T_TFBot_Giant_Scout_FAN
+					Template T_TFBot_Giant_Demo_Burst
 					ClassIcon support_giant
 				}
 				TFBot
 				{
-					Template T_TFBot_Giant_Scout_Baseball_Armored
+					Template T_TFBot_Giant_Demo_Burst
 					ClassIcon support_giant
 				}
 				TFBot
@@ -5471,6 +8452,21 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template T_TFBot_Giant_Scout_FAN
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Baseball_Armored
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_SlowBarrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
 					Template T_TFBot_Giant_Soldier_SlowBarrage
 					ClassIcon support_giant
 				}
@@ -5479,6 +8475,489 @@ WaveSchedule
 					Template T_TFBot_Giant_Heavyweapons_Shotgun
 					ClassIcon support_giant
 				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavyweapons_Shotgun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavyweapons_Shotgun
+					ClassIcon support_giant
+				}
+				///
+				///PYRI's CUSTOM ROBOTS
+				///
+				///
+				//PYRI'S CUSTOM BOTS
+				///
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_FAN_Armored
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_FAN_Armored
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_RapidFire
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Minicrit
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Bonk_Stun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Minicrit_Melee
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Minicrit_Melee
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Minicrit_Melee
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Minicrit_Stun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Minicrit_Stun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Minicrit_Stun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Stun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Stun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Stun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Stun_Spammer
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Stun_Spammer
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Stun_Spammer
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Nuke
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Nuke
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Nuke
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_ChargedBarrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_ChargedBarrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_ChargedBarrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Barrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Barrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Barrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_MajorBarrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_MajorBarrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_MajorBarrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_MajorCritBarrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_MajorCritBarrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_MajorCritBarrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Blackbox
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Blackbox
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Blackbox
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Mangler
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Mangler
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Mangler
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Shotgun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Shotgun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Shotgun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Escapeplan
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Escapeplan
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Escapeplan
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Equalizer
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Equalizer
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier_Equalizer
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Dragon
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Dragon
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Dragon
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Gaspasser
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Gaspasser
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Gaspasser
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Shotgun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Shotgun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Shotgun
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Spammer
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Spammer
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Spammer
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Barrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Barrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Barrage
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demoknight_Gold
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demoknight_Gold
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demoknight_Gold
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Nuker
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Nuker
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Nuker
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Steel
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Natascha
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Natascha
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Natascha
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Deflector_Airblast
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Deflector_Airblast
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Deflector_Airblast
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Booster
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Booster
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Booster
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Rocket
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Rocket
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Rocket
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Huntsman
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Huntsman
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Huntsman
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Huntsman_Bleed
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Huntsman_Bleed
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Huntsman_Bleed
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_SMG
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_SMG
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_SMG
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Jarate
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Jarate
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Jarate
+					ClassIcon support_giant
+				}
+			}
+		}
 			}
 		}
 		T_WaveSpawn_CalamityGiant_Gatebot
@@ -5610,6 +9089,26 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template T_TFGateBot_Giant_Soldier_SlowCritBarrage
+					ClassIcon support_giant_gatebot
+				}
+				//TFBot
+				//{
+					//Template T_TFGateBot_Giant_Soldier_SlowCritBarrage
+					//ClassIcon support_giant_gatebot
+				//}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_SlowBarrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_SlowBarrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
 					Template T_TFGateBot_Giant_Soldier_SlowBarrage
 					ClassIcon support_giant_gatebot
 				}
@@ -5620,7 +9119,37 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template T_TFGateBot_Giant_Heavyweapons_Deflector
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavyweapons_Deflector
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
 					Template T_TFGateBot_Giant_Heavyweapons_Shotgun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavyweapons_Shotgun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavyweapons_Shotgun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavyweapons_Shotgun_Crit
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavyweapons_Shotgun_Crit
 					ClassIcon support_giant_gatebot
 				}
 				TFBot
@@ -5640,17 +9169,37 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template T_TFGateBot_Giant_Soldier_BurstFire
+					Template T_TFGateBot_Giant_Soldier_Extended_Concheror_Crit
 					ClassIcon support_giant_gatebot
 				}
 				TFBot
 				{
-					Template T_TFGateBot_Giant_Soldier_BurstFire_Crit
+					Template T_TFGateBot_Giant_Soldier_Extended_Concheror_Crit
 					ClassIcon support_giant_gatebot
 				}
 				TFBot
 				{
 					Template T_TFGateBot_Giant_Demo_Burst
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Burst
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_AlwaysFire_Crit
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_AlwaysFire_Crit
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Burst_Crit
 					ClassIcon support_giant_gatebot
 				}
 				TFBot
@@ -5670,7 +9219,663 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template T_TFGateBot_Giant_Pyro_AlwaysFire_Crit
+					Template T_TFGateBot_Giant_Soldier_BurstFire
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_BurstFire_Crit
+					ClassIcon support_giant_gatebot
+				}
+				///
+				///VAVLE ROBOTS THAT ARENT GATEBOT
+				///
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Extended_Buff_Banner
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Extended_Buff_Banner
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Extended_Buff_Banner
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Extended_Battalion
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Extended_Battalion
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Extended_Battalion
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Crit
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Crit
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Crit
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_ScorchShot
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_ScorchShot
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_ScorchShot
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_ScorchShot_Fast
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_ScorchShot_Fast
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_ScorchShot_Fast
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Flare_Spammer
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Flare_Spammer
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Flare_Spammer
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Flare_Spammer_ScorchShot
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Flare_Spammer_ScorchShot
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Flare_Spammer_ScorchShot
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demoman
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demoman
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demoman
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_DemoMan_PrinceTavish
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_DemoMan_PrinceTavish
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_DemoMan_PrinceTavish
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavyweapons
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavyweapons
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavyweapons
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Boxing_Heavy
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Boxing_Heavy
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Boxing_Heavy
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_GRU
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_GRU
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_GRU
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_Melee
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_Bonk
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_Fast
+					ClassIcon support_giant_gatebot
+				}
+				///
+				//PYRI'S CUSTOM BOTS
+				///
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_FAN_Armored
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_FAN_Armored
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_RapidFire
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_Minicrit
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_Minicrit_Melee
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_Minicrit_Stun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_Bonk_Stun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Stun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Stun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Stun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Stun_Spammer
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Stun_Spammer
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Stun_Spammer
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Nuke
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Nuke
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Nuke
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_ChargedBarrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_ChargedBarrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_ChargedBarrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Barrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Barrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Barrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_MajorBarrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_MajorBarrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_MajorBarrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_MajorCritBarrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_MajorCritBarrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_MajorCritBarrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Blackbox
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Blackbox
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Blackbox
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Mangler
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Mangler
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Mangler
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Shotgun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Shotgun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Shotgun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Escapeplan
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Escapeplan
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Escapeplan
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Equalizer
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Equalizer
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Soldier_Equalizer
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Dragon
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Dragon
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Dragon
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Gaspasser
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Gaspasser
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Gaspasser
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Shotgun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Shotgun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Shotgun
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Spammer
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Spammer
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Spammer
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Barrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Barrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Barrage
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demoknight_Gold
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demoknight_Gold
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demoknight_Gold
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Nuker
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Nuker
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Nuker
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Steel
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Natascha
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Natascha
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Natascha
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Deflector_Airblast
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Deflector_Airblast
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Deflector_Airblast
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Booster
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Booster
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Booster
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Rocket
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Rocket
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Rocket
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Huntsman
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Huntsman
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Huntsman
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Huntsman_Bleed
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Huntsman_Bleed
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Huntsman_Bleed
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_SMG
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_SMG
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_SMG
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Jarate
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Jarate
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Jarate
 					ClassIcon support_giant_gatebot
 				}
 			}
