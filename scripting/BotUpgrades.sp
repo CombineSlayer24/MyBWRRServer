@@ -252,8 +252,8 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(Primary, "maxammo primary increased", 2.5);					// +150% Maximum Ammo
 			/** Medic Special Attributes */
 			TF2Attrib_SetByName(Primary, "mad milk syringes", 1.0);							// Syringes shoot MadMilk
-			TF2Attrib_SetByName(Secondary, "generate rage on heal", 2.0)						// Level 2 Shield (I know MvM TFBot Medics can use it, could Red TFBot Medics?)			
-			TF2Attrib_SetByName(Secondary, "increase buff duration", 1.25)					// +25% longer shield. (does this work?)
+			TF2Attrib_SetByName(Secondary, "generate rage on heal", 2.0);					// Level 2 Shield (I know MvM TFBot Medics can use it, could Red TFBot Medics?)			
+			TF2Attrib_SetByName(Secondary, "increase buff duration", 1.25);					// +25% longer shield. (does this work?)
 			/** Medic Secondary Attributes */
 			TF2Attrib_SetByName(Secondary, "ubercharge rate bonus", 2.0);					// +100% Faster Uber build-up
 			TF2Attrib_SetByName(Secondary, "heal rate bonus", 1.5);							// +50% Faser heal rate
@@ -395,7 +395,7 @@ void ApplyAttributesToClient(int client)
 		if (client == GetEntPropEnt(DemoShield, Prop_Data, "m_hOwnerEntity"))
 		{
 			TF2Attrib_SetByName(DemoShield, "damage force reduction", 0.1);				// +90% Push force when charging
-			TF2Attrib_SetByName(DemoShield, "charge recharge rate increased", 4.0);		// +300% Shield recharge rate
+			TF2Attrib_SetByName(DemoShield, "charge recharge rate increased", 8.0);		// +700% Shield recharge rate
 		}
 	}
 	/** Drink = Crit-a-Cola or Bonk! Atomic Punch */
