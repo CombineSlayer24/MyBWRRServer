@@ -116,6 +116,7 @@ void ApplyAttributesToClient(int client)
 	TF2Attrib_SetByName(client, "dmg taken from blast reduced", 0.25);						// +75% Dmg resistances from Blast
 	TF2Attrib_SetByName(client, "max health additive bonus", 50.0);							// +50 Additional health
 	TF2Attrib_SetByName(client, "ammo regen", 0.15);										// +15% Ammo regen
+	TF2Attrib_SetByName(client, "increase player capture value", 1.0);					// For maps with Caputre points like mvm_downtown
 	
 	switch (TF2_GetPlayerClass(client)) {
 		case TFClass_Scout: {
@@ -132,6 +133,7 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(Primary, "scattergun knockback mult", 1.75);					// +75% Knockback force
 			TF2Attrib_SetByName(Primary, "heal on hit for rapidfire", 5.0);					// Gain 5 HP per hit w/ primary
 			/** Scout Secondary Attributes */
+			TF2Attrib_SetByName(Secondary, "damage bonus", 1.15);							// +15% Damage bonus
 			TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
 			TF2Attrib_SetByName(Secondary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
 			TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 Point of Projectile Penetration
@@ -150,6 +152,7 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(Primary, "clip size upgrade atomic", 8.0);					// +8 Rockets (12 total)
 			TF2Attrib_SetByName(Primary, "Projectile speed increased", 1.2);				// +20% Faster projectile speed
 			/** Soldier Secondary Attributes */
+			TF2Attrib_SetByName(Secondary, "damage bonus", 1.15);							// +15% Damage bonus
 			TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
 			TF2Attrib_SetByName(Secondary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
 			TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 point of Projectile Penetration
@@ -166,6 +169,7 @@ void ApplyAttributesToClient(int client)
 			/** Pyro Special Attributes */
 			TF2Attrib_SetByName(Primary, "mult airblast refire time", 0.8);					// +20% Faster Airblast charge
 			/** Pyro Secondary Attributes */
+			TF2Attrib_SetByName(Secondary, "damage bonus", 1.15);							// +15% Damage bonus
 			TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
 			TF2Attrib_SetByName(Secondary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
 			TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 point of Projectile Penetration
@@ -202,6 +206,7 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(Primary, "projectile penetration heavy", 2.0);				// +2 Points of Projectiles penetration
 			TF2Attrib_SetByName(Primary, "minigun spinup time decreased", 0.8);				// +20% Faster minigun spin
 			/** HeavyWeapons Secondary Attributes */
+			TF2Attrib_SetByName(Secondary, "damage bonus", 1.15);							// +15% Damage bonus
 			TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
 			TF2Attrib_SetByName(Secondary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
 			TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 Point of Projectile Penetration
@@ -219,6 +224,7 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(Primary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
 			TF2Attrib_SetByName(Primary, "maxammo primary increased", 2.5);					// +150% Maximum Ammo
 			/** Engineer Secondary Attributes */
+			TF2Attrib_SetByName(Secondary, "damage bonus", 1.15);							// +15% Damage bonus
 			TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
 			TF2Attrib_SetByName(Secondary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
 			TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 Point of Projectile Penetration
@@ -238,6 +244,7 @@ void ApplyAttributesToClient(int client)
 		}
 		case TFClass_Medic: {
 			/** Medic Primary Attributes */
+			TF2Attrib_SetByName(Secondary, "damage bonus", 1.25);							// +25% Damage bonus
 			TF2Attrib_SetByName(Primary, "clip size bonus upgrade", 3.0);					// +200% Clip size bonus
 			TF2Attrib_SetByName(Primary, "fire rate bonus", 0.6);							// +40% Faster fire rate
 			TF2Attrib_SetByName(Primary, "faster reload rate", 0.4);							// +60% Faster reloading
@@ -245,12 +252,14 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(Primary, "maxammo primary increased", 2.5);					// +150% Maximum Ammo
 			/** Medic Special Attributes */
 			TF2Attrib_SetByName(Primary, "mad milk syringes", 1.0);							// Syringes shoot MadMilk
+			TF2Attrib_SetByName(Secondary, "generate rage on heal", 2.0)						// Level 2 Shield (I know MvM TFBot Medics can use it, could Red TFBot Medics?)			
+			TF2Attrib_SetByName(Secondary, "increase buff duration", 1.25)					// +25% longer shield. (does this work?)
 			/** Medic Secondary Attributes */
 			TF2Attrib_SetByName(Secondary, "ubercharge rate bonus", 2.0);					// +100% Faster Uber build-up
 			TF2Attrib_SetByName(Secondary, "heal rate bonus", 1.5);							// +50% Faser heal rate
 			TF2Attrib_SetByName(Secondary, "overheal expert", 3.0);							// +3 Points of Overheal Expert
 			TF2Attrib_SetByName(Secondary, "healing mastery", 3.0);							// +3 Points of Healing Mastery
-			TF2Attrib_SetByName(Secondary, "uber duration bonus", 6.0);						// +6 Extra seconds of Uber
+			TF2Attrib_SetByName(Secondary, "uber duration bonus", 4.0);						// +4 Extra seconds of Uber
 		}
 		case TFClass_Sniper: {
 			/** Sniper Primary Attributes */
@@ -263,6 +272,7 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(Primary, "explosive sniper shot", 3.0);						// +3 Points of Explosive Headshots
 			TF2Attrib_SetByName(Primary, "SRifle Charge rate increased", 1.5);				// +50% Faster scope charge
 			/** Sniper Secondary Attributes */
+			TF2Attrib_SetByName(Secondary, "damage bonus", 1.15);							// +15% Damage bonus
 			TF2Attrib_SetByName(Secondary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
 			TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 3.0);					// +200% Clip size bonus
 			TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 Point of Projectile Penetration
@@ -361,7 +371,7 @@ void ApplyAttributesToClient(int client)
 		if (client == GetEntPropEnt(GasPasser, Prop_Data, "m_hOwnerEntity"))
 		{
 			TF2Attrib_SetByName(GasPasser, "mult_item_meter_charge_rate", 0.4);				// +60% Recharge rate
-			TF2Attrib_SetByName(GasPasser, "weapon burn dmg increased", 2.5);				// +150% Afterburn Damage
+			TF2Attrib_SetByName(GasPasser, "weapon burn dmg increased", 3.25);				// +225% Afterburn Damage
 		}
 	}
 	/** CowMangler = Well, you know */
@@ -378,15 +388,26 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(CowMangler, "faster reload rate", 0.4);						// +60% Faster reloading
 		}
 	}
+	/** DemoShield = Demoman's Shields */
+	int DemoShield = -1;
+	while ((DemoShield = FindEntityByClassname(DemoShield, "TF_WEARABLE_DEMOSHIELD")) != -1)
+	{
+		if (client == GetEntPropEnt(DemoShield, Prop_Data, "m_hOwnerEntity"))
+		{
+			TF2Attrib_SetByName(DemoShield, "damage force reduction", 0.1);				// +90% Push force when charging
+			TF2Attrib_SetByName(DemoShield, "charge recharge rate increased", 4.0);		// +300% Shield recharge rate
+		}
+	}
 	/** Drink = Crit-a-Cola or Bonk! Atomic Punch */
-	//int Drink = -1;
-	//while ((Sandman = FindEntityByClassname(Drink, "TF_WEAPON_LUNCHBOX_DRINK")) != -1)
-	//{
-		//if (client == GetEntPropEnt(Drink, Prop_Data, "m_hOwnerEntity"))
-		//{
-			//TF2Attrib_SetByName(Drink, "effect bar recharge rate increased", 0.25);		// +75% Faster recharge rate
-		//}
-	//}
+	int Drink = -1;
+	while ((Sandman = FindEntityByClassname(Drink, "TF_WEAPON_LUNCHBOX_DRINK")) != -1)
+	{
+		if (client == GetEntPropEnt(Drink, Prop_Data, "m_hOwnerEntity"))
+		{
+			TF2Attrib_SetByName(Drink, "effect bar recharge rate increased", 0.25);		// +75% Faster recharge rate
+		}
+	}
+}
 	/** LunchBox = Heavy's Secondary editbles */
 	//int LunchBox = -1;
 	//while ((LunchBox = FindEntityByClassname(LunchBox, "TF_WEAPON_LUNCHBOX")) != -1)
@@ -408,14 +429,3 @@ void ApplyAttributesToClient(int client)
 			//TF2Attrib_SetByName(Flaregun, "faster reload rate", 0.4);						// +60% Faster reloading
 		//}
 	//}
-	/** DemoShield = Demoman's Shields */
-	//int DemoShield = -1;
-	//while ((DemoShield = FindEntityByClassname(DemoShield, "TF_WEARABLE_DEMOSHIELD")) != -1)
-	//{
-		//if (client == GetEntPropEnt(DemoShield, Prop_Data, "m_hOwnerEntity"))
-		//{
-			//TF2Attrib_SetByName(DemoShield, "damage force reduction", 0.1);				// +90% Push force when charging
-			//TF2Attrib_SetByName(DemoShield, "charge recharge rate increased", 4.0);		// +300% Shield recharge rate
-		//}
-	//}
-}
