@@ -64,6 +64,8 @@
 //T_TFBot_Soldier_Samurai								// Soldier w/ Half-Zatoichi
 //T_TFBot_Soldier_Samurai_NoJump						// Soldier w/ Half-Zatoichi, but doesn't jump.
 //T_TFBot_Soldier_Warbox_Backup							// Soldier w/ Black Box, Backup, 350HP
+//T_TFBot_Soldier_Burst_Pusher							// Blast Soldier but fires in burst
+//T_TFBot_Soldier_Burst_Pusher_Expert					// Blast Soldier but fires in burst, more difficult to deal with
 
 //T_TFBot_Giant_Soldier_Stun							// Giant Soldier that stuns players.
 //T_TFBot_Giant_Soldier_Stun_Spammer					// Giant Soldier that stuns players while shooting faster
@@ -1371,6 +1373,51 @@ WaveSchedule
 			{
 				"increase buff duration"	2.5
 			}
+		}
+		
+		T_TFBot_Soldier_Burst_Pusher
+		{
+			ClassIcon	soldier_libertylauncher
+			Health	200
+			Name	"Burst Fire Pusher"
+			Class	Soldier
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"HoldFireUntilFullReload"
+			ItemAttributes
+			{
+				ItemName	"the liberty launcher"
+				"damage causes airblast"	1
+				"damage bonus"	.45
+				"fire rate bonus"	0.1
+				"clip size upgrade atomic"	6
+				"faster reload rate"	0.6
+				"Blast radius decreased"	1.2
+			}
+			Item	"the liberty launcher"
+			Item	"jumper's jeepcap"
+		}
+		
+		T_TFBot_Soldier_Burst_Pusher_Expert
+		{
+			ClassIcon	soldier_libertylauncher
+			Health	200
+			Name	"Burst Fire Pusher"
+			Class	Soldier
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"HoldFireUntilFullReload"
+			ItemAttributes
+			{
+				ItemName	"the liberty launcher"
+				"damage causes airblast"	1
+				"fire rate bonus"	0.1
+				"clip size upgrade atomic"	10
+				"faster reload rate"	0.4
+				"Blast radius decreased"	1.3
+			}
+			Item	"the liberty launcher"
+			Item	"jumper's jeepcap"
 		}
 		
 		//Giant Soldier Templates

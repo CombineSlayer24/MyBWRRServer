@@ -83,6 +83,8 @@
 //T_TFGateBot_Soldier_Samurai								// Soldier w/ Half-Zatoichi
 //T_TFGateBot_Soldier_Samurai_NoJump						// Soldier w/ Half-Zatoichi, but doesn't jump.
 //T_TFGateBot_Soldier_Warbox_Backup							// Soldier w/ Black Box, Backup, 350HP
+//T_TFGateBot_Soldier_Burst_Pusher							// Blast Soldier but fires in burst
+//T_TFGateBot_Soldier_Burst_Pusher_Expert					// Blast Soldier but fires in burst, more difficult to deal with
 
 //T_TFGateBot_Giant_Soldier_Extended_Buff_Banner			// VALVe bot in gatebot
 //T_TFGateBot_Giant_Soldier_Extended_Battalion				// VALVe bot in gatebot
@@ -2905,6 +2907,118 @@ WaveSchedule
 					}
 					Skill Expert
 					MaxVisionRange	750
+				}
+			}
+		}
+		
+		T_TFGateBot_Soldier_Burst_Pusher
+		{
+			ClassIcon	soldier_libertylauncher
+			Health	200
+			Name	"Burst Fire Pusher"
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Soldier"
+					Item	"the liberty launcher"
+					WeaponRestrictions	PrimaryOnly
+					Attributes	"HoldFireUntilFullReload"
+					ItemAttributes
+					{
+						ItemName	"the liberty launcher"
+						"damage causes airblast"	1
+						"damage bonus"	.45
+						"fire rate bonus"	0.1
+						"clip size upgrade atomic"	6
+						"faster reload rate"	0.6
+						"Blast radius decreased"	1.2
+					}
+					Skill Expert
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Soldier"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Soldier"
+						"item style override" 1
+					}
+					Item	"the liberty launcher"
+					WeaponRestrictions	PrimaryOnly
+					Attributes	"HoldFireUntilFullReload"
+					ItemAttributes
+					{
+						ItemName	"the liberty launcher"
+						"damage causes airblast"	1
+						"damage bonus"	.45
+						"fire rate bonus"	0.1
+						"clip size upgrade atomic"	6
+						"faster reload rate"	0.6
+						"Blast radius decreased"	1.2
+					}
+					Skill Expert
+				}
+			}
+		}
+		
+		T_TFGateBot_Soldier_Burst_Pusher_Expert
+		{
+			ClassIcon	soldier_libertylauncher
+			Health	200
+			Name	"Burst Fire Pusher"
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Soldier"
+					Item	"the liberty launcher"
+					WeaponRestrictions	PrimaryOnly
+					Attributes	"HoldFireUntilFullReload"
+					ItemAttributes
+					{
+						ItemName	"the liberty launcher"
+						"damage causes airblast"	1
+						"fire rate bonus"	0.1
+						"clip size upgrade atomic"	10
+						"faster reload rate"	0.4
+						"Blast radius decreased"	1.3
+					}
+					Skill Expert
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Soldier"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Soldier"
+						"item style override" 1
+					}
+					Item	"the liberty launcher"
+					WeaponRestrictions	PrimaryOnly
+					Attributes	"HoldFireUntilFullReload"
+					ItemAttributes
+					{
+						ItemName	"the liberty launcher"
+						"damage causes airblast"	1
+						"fire rate bonus"	0.1
+						"clip size upgrade atomic"	10
+						"faster reload rate"	0.4
+						"Blast radius decreased"	1.3
+					}
+					Skill Expert
 				}
 			}
 		}
@@ -7543,6 +7657,12 @@ WaveSchedule
 						"damage bonus"	2.0
 						"fire rate bonus"	0.6
 					}
+					ItemAttributes
+					{
+						ItemName	"the warsworn helmet"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
 				}
 				RevertGateBotsBehavior
 				{
@@ -7562,6 +7682,12 @@ WaveSchedule
 						ItemName	"warrior's spirit"
 						"damage bonus"	2.0
 						"fire rate bonus"	0.6
+					}
+					ItemAttributes
+					{
+						ItemName	"the warsworn helmet"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
 					}
 				}
 			}
