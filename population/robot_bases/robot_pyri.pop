@@ -97,7 +97,7 @@
 //T_TFBot_Pyro_Dragon_Hard 								// Pyro w/ Dragon's Fury, more damage, more fire rate.
 //T_TFBot_Pyro_Gaspasser 								// Pyro w/ Gas-Passer.
 //T_TFBot_Pyro_Gaspasser_FastCharge 					// NEW, Recharges faster. (*)
-//T_TFBot_Pyro_Gaspasser_Explosive 						// Reworked (keeping the name same as Explosive)
+//T_TFBot_Pyro_Gaspasser_Explosive 						// Gas passer pyro that will deal intensive Afterburn DMG.
 //T_TFBot_Pyro_Melee									// Pyro melee restricted.
 //T_TFBot_Pyro_Powerjack								// Powerjacks have +35% Damage bonus.
 //T_TFBot_Pyro_Powerjack_Big							// 900HP Powerjack Pyro, +50 Damage bonus.
@@ -106,6 +106,8 @@
 //T_TFBot_Pyro_Volcano									// Big Pyro(650) w/ major +200% Damage bonus. Melee restricted.
 //T_TFBot_Pyro_Shotgun									// Normal Shotgun Pyro
 //T_TFBot_Pyro_Shotgun_Expert 							// Shotgun Pyro with stats
+//T_TFBot_Pyro_ScorchShot_Burst							// Scorchshot Pyro but shoots rapidly in burst succession
+//T_TFBot_Pyro_ScorchShot_Burst_Super					// Large version of shorchshot_burst but with Criticals
 
 //T_TFBot_Giant_Pyro_AlwaysFire							// Giant Pyro that Always Fires.
 //T_TFBot_Giant_Pyro_AlwaysFire_Crit					// Giant Pyro that Always Fires W/ Crits.
@@ -177,6 +179,7 @@
 //T_TFBot_Engineer_MiniSentry_Teleporter				// Engineer Builds mini sentries. Does teleport into the map, does build teleporter. 500HP.
 //T_TFBot_Engineer_MiniSentry_Battle					// Engineer Builds mini sentries. Does not teleport into the map, does not teleporter.
 //T_TFBot_Engineer_Texan								// Engineer, texasfied. Uses Widowmaker. Pair this bot in a squad (Squad leader must not be engie). Engineer with a PrimaryOnly restriction.
+//T_TFBot_Engineer_Shortcircuit							// Engineer with Short circuit. Pair this robot in a Squad for maximum effectiveness (Squad leader must not be engie)
 
 // Medic
 //T_TFBot_Medic_Melee 									// Medic equipped with Bonesaw.
@@ -2112,7 +2115,7 @@ WaveSchedule
 				ItemName "The Gas Passer"
 				//"item_meter_charge_rate"	20			// Old stats
 				//"explode_on_ignite" 1					// Old stats
-				"item_meter_charge_rate"	4
+				"item_meter_charge_rate"	6
 				"weapon burn time increased" 0.1
 				"weapon burn dmg increased" 15
 				"fire rate penalty" 4.0
@@ -2263,6 +2266,58 @@ WaveSchedule
 				"fire rate penalty"		2  // Was 1.5
 				"faster reload rate"	-0.8
 				"heal on kill"		75
+			}
+		}
+		
+		T_TFBot_Pyro_ScorchShot_Burst
+		{
+			Class Pyro
+			Name "Burst Pyro Pusher"
+			Skill Expert
+			ClassIcon pyro_scorch
+			Item "The Scorch Shot"
+			Item "Old Guadalajara"
+			WeaponRestrictions SecondaryOnly
+			ItemAttributes
+			{
+				ItemName "The Scorch Shot"
+				"projectile spread angle penalty"	7
+				"fire rate bonus" 0.25
+				"faster reload rate" 0.75
+				"Projectile speed increased" 0.5
+				"damage causes airblast"	1
+				"apply z velocity on damage"	150
+				"apply look velocity on damage"	150
+			}
+		}
+		
+		T_TFBot_Pyro_ScorchShot_Burst_Super
+		{
+			Class Pyro
+			Name "Burst Super Pyro Pusher"
+			Skill Expert
+			Health 650
+			Scale 1.3
+			ClassIcon pyro_scorch
+			Item "The Scorch Shot"
+			Item "Old Guadalajara"
+			Attributes AlwaysCrit
+			WeaponRestrictions SecondaryOnly
+			ItemAttributes
+			{
+				ItemName "The Scorch Shot"
+				"projectile spread angle penalty"	9
+				"fire rate bonus" 0.2
+				"faster reload rate" 0.6
+				"Projectile speed increased" 0.65
+				"damage causes airblast"	1
+				"apply z velocity on damage"	240
+				"apply look velocity on damage"	240
+			}
+			CharacterAttributes
+			{
+				"move speed penalty"	0.9
+				"head scale"	0.8
 			}
 		}
 		
@@ -3632,6 +3687,25 @@ WaveSchedule
 				"engineer sentry build rate multiplier"	1.35
 				"engy building health bonus"	1.2
 			}
+		}
+		
+		//Support Engineer - Maybe works?
+		T_TFBot_Engineer_Shortcircuit
+		{
+			Class Engineer
+			ClassIcon	engineer_shortcircuit_lite
+			Name "Short Circuit Engineer"
+			Skill Expert
+			Health 400
+			WeaponRestrictions	SecondaryOnly
+			MaxVisionRange 1200
+			ItemAttributes
+			{
+				ItemName	"the short circuit"
+				"electrical airblast DISPLAY ONLY"	1
+			}	
+			Item	"the short circuit"
+			Item	"the virtual reality headset"
 		}
 		
 		//Medic Templates
