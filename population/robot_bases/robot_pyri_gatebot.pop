@@ -478,7 +478,7 @@ WaveSchedule
 			Class Scout
 			Name "Armored Sandman Scout"
 			ClassIcon	scout_stun_armored_normal
-			Health 350
+			Health 400
 
 			EventChangeAttributes
 			{
@@ -495,8 +495,8 @@ WaveSchedule
 					Item	"the sandman"
 					CharacterAttributes
 					{
-						"move speed penalty"	0.95
-						"damage force reduction" 0.8
+						"move speed penalty"	0.92
+						"damage force reduction" 0.75
 					}
 				}
 				RevertGateBotsBehavior
@@ -512,8 +512,8 @@ WaveSchedule
 					Item	"the sandman"
 					CharacterAttributes
 					{
-						"move speed penalty"	0.95
-						"damage force reduction" 0.8
+						"move speed penalty"	0.92
+						"damage force reduction" 0.75
 					}
 				}
 			}
@@ -544,7 +544,7 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"move speed penalty"	0.75
-						"damage force reduction" 0.65
+						"damage force reduction" 0.5
 					}
 				}
 				RevertGateBotsBehavior
@@ -562,7 +562,7 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"move speed penalty"	0.75
-						"damage force reduction" 0.65
+						"damage force reduction" 0.5
 					}
 				}
 			}
@@ -593,7 +593,7 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"move speed penalty"	0.75
-						"damage force reduction" 0.65
+						"damage force reduction" 0.5
 					}
 					ItemAttributes
 					{
@@ -616,7 +616,7 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"move speed penalty"	0.75
-						"damage force reduction" 0.65
+						"damage force reduction" 0.5
 					}
 					ItemAttributes
 					{
@@ -5421,6 +5421,7 @@ WaveSchedule
 			{
 				Default
 				{
+					Tag bot_giant
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
 					BehaviorModifiers push			// having these will cause bots to run towards gates
@@ -5450,6 +5451,7 @@ WaveSchedule
 				RevertGateBotsBehavior
 				{
 					Item "MvM GateBot Light Pyro"
+					Tag bot_giant
 					ItemAttributes               // turn off light hat
 					{
 						ItemName "MvM GateBot Light Pyro"
