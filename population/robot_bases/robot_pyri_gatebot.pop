@@ -194,6 +194,8 @@
 //T_TFGateBot_Giant_Heavy_Deflector_Airblast				// Giant Deflector Heavy that pushes people away per attack.
 //T_TFGateBot_Giant_Heavy_Booster							// Gaint Heavy Booster, but more deadly, with +20% Damage bonus.
 //T_TFGateBot_Giant_Heavy_Rocket							// Rocket Heavy, +400% damage, and faster fire rate than smaller.
+//T_TFGateBot_Giant_HeavyShotgun_Slugshot					// Giant Heavy that fires one slug that deals lots of damage.
+//T_TFGateBot_Giant_HeavyShotgun_Hunter						// This Giant Shotgun Heavy means power. More DMG, slower reload.	
 
 //Engineer
 //T_TFGateBot_Engineer_Battle_Shotgun						// Pair this bot in a squad (Squad leader must not be engie). Engineer with a PrimaryOnly restriction.
@@ -8816,6 +8818,168 @@ WaveSchedule
 			}
 		}
 		
+		T_TFGateBot_Giant_HeavyShotgun_Slugshot
+		{
+			ClassIcon	heavy_shotgun_giant
+			Health	5500
+			Name	"Giant Slugshot Shotgun"
+			Class	Heavyweapons
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					ItemAttributes
+					{
+						ItemName "Commando Elite"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions SecondaryOnly
+					MaxVisionRange 1200
+					Attributes MiniBoss
+					Item	"The Family Business"
+					Item	"Siberian Tigerstripe"
+					Item	"Commando Elite"
+					ItemAttributes
+					{
+						ItemName	"The Family Business"
+						"fire rate bonus"	2.5
+						"bullets per shot bonus"	10
+						"weapon spread bonus"	0
+						"faster reload rate" 2.0
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.6
+						"damage force reduction"	0.5
+						"airblast vulnerability multiplier"	0.3
+						"override footstep sound set"	2
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					ItemAttributes
+					{
+						ItemName "Commando Elite"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					MaxVisionRange 1200
+					Attributes MiniBoss
+					Item	"The Family Business"
+					Item	"Siberian Tigerstripe"
+					Item	"Commando Elite"
+					ItemAttributes
+					{
+						ItemName	"The Family Business"
+						"fire rate bonus"	2.5
+						"bullets per shot bonus"	10
+						"weapon spread bonus"	0
+						"faster reload rate" 2.0
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.6
+						"damage force reduction"	0.5
+						"airblast vulnerability multiplier"	0.3
+						"override footstep sound set"	2
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Giant_HeavyShotgun_Slugshot
+		{
+			ClassIcon	heavy_shotgun_giant
+			Health	5000
+			Name	"Giant Heavy Hunter"
+			Class	Heavyweapons
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					ItemAttributes
+					{
+						ItemName "the outdoorsman"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions SecondaryOnly
+					MaxVisionRange 1200
+					Attributes MiniBoss
+					Item	"the outdoorsman"
+					Item	"the apparatchik's apparel"
+					ItemAttributes
+					{
+						ItemName	tf_weapon_shotgun_hwg
+						"fire rate bonus"	2.5
+						"bullets per shot bonus"	10
+						"faster reload rate"	1.5
+						"damage bonus"	2.0
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.7
+						"damage force reduction"	0.3
+						"airblast vulnerability multiplier"	0.3
+						"attack projectiles"	1
+						"override footstep sound set"	2
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					ItemAttributes
+					{
+						ItemName "the outdoorsman"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					MaxVisionRange 1200
+					Attributes MiniBoss
+					Item	"the outdoorsman"
+					Item	"the apparatchik's apparel"
+					ItemAttributes
+					{
+						ItemName	tf_weapon_shotgun_hwg
+						"fire rate bonus"	2.5
+						"bullets per shot bonus"	10
+						"faster reload rate"	1.5
+						"damage bonus"	2.0
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.7
+						"damage force reduction"	0.3
+						"airblast vulnerability multiplier"	0.3
+						"attack projectiles"	1
+						"override footstep sound set"	2
+					}
+				}
+			}
+		}
+
 		T_TFGateBot_Engineer_Battle_Shotgun
 		{
 			Class Engineer
