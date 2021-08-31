@@ -3869,6 +3869,21 @@ WaveSchedule
 					Template T_TFBot_Pyro_ScorchShot_Burst_Super
 					ClassIcon support_normal
 				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Barrage
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Barrage
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Barrage
+					ClassIcon support_normal
+				}
 			}
 		}
 		
@@ -7875,6 +7890,21 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFGateBot_Pyro_ScorchShot_Burst_Super
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Barrage
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Barrage
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Barrage
 					ClassIcon support_gatebot
 				}
 			}

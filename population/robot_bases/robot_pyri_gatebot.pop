@@ -73,6 +73,7 @@
 //T_TFGateBot_Soldier_Burst 								// Same as Giant counterpart.
 //T_TFGateBot_Soldier_Burst_Heal 							// Same as Burst Fire, but with heal on kills.
 //T_TFGateBot_Soldier_Burst_Backup							// Burstfire with Battalions banner.
+//T_TFGateBot_Soldier_Barrage								// Same as Giant counterpart.
 //T_TFGateBot_Soldier_Escapeplan							// Melee Soldier. Low HP, more speed.
 //T_TFGateBot_Soldier_Equalizer								// Melee Soldier. Low HP, more damage dealt
 //T_TFGateBot_Soldier_Shovel								// Soldier melee restricted.
@@ -647,10 +648,11 @@ WaveSchedule
 					Item "MvM GateBot Light Scout"
 					Skill Hard
 					Item	"crit-a-cola"
-					CharacterAttributes
+					ItemAttributes
 					{
+						ItemName	"crit-a-cola"
 						"effect bar recharge rate increased"	0.35
-						"mod_mark_attacker_for_death" 0
+						"deploy time increased" 0.5
 					}
 				}
 				RevertGateBotsBehavior
@@ -662,10 +664,11 @@ WaveSchedule
 						"item style override" 1
 					}
 					Item	"crit-a-cola"
-					CharacterAttributes
+					ItemAttributes
 					{
+						ItemName	"crit-a-cola"
 						"effect bar recharge rate increased"	0.35
-						"mod_mark_attacker_for_death" 0
+						"deploy time increased" 0.5
 					}
 					Skill Hard
 				}
@@ -691,10 +694,11 @@ WaveSchedule
 					Skill Expert
 					Item	"crit-a-cola"
 					Item	"The Soda Popper"
-					CharacterAttributes
+					ItemAttributes
 					{
+						ItemName	"crit-a-cola"
 						"effect bar recharge rate increased"	0.35
-						"mod_mark_attacker_for_death" 0
+						"deploy time increased" 0.5
 					}
 				}
 				RevertGateBotsBehavior
@@ -707,10 +711,11 @@ WaveSchedule
 					}
 					Item	"crit-a-cola"
 					Item	"The Soda Popper"
-					CharacterAttributes
+					ItemAttributes
 					{
+						ItemName	"crit-a-cola"
 						"effect bar recharge rate increased"	0.35
-						"mod_mark_attacker_for_death" 0
+						"deploy time increased" 0.5
 					}
 					Skill Expert
 				}
@@ -736,10 +741,11 @@ WaveSchedule
 					Skill Hard
 					Item	"crit-a-cola"
 					WeaponRestrictions MeleeOnly
-					CharacterAttributes
+					ItemAttributes
 					{
+						ItemName	"crit-a-cola"
 						"effect bar recharge rate increased"	0.35
-						"mod_mark_attacker_for_death" 0
+						"deploy time increased" 0.5
 					}
 				}
 				RevertGateBotsBehavior
@@ -751,10 +757,11 @@ WaveSchedule
 						"item style override" 1
 					}
 					Item	"crit-a-cola"
-					CharacterAttributes
+					ItemAttributes
 					{
+						ItemName	"crit-a-cola"
 						"effect bar recharge rate increased"	0.35
-						"mod_mark_attacker_for_death" 0
+						"deploy time increased" 0.5
 					}
 					Skill Hard
 					WeaponRestrictions MeleeOnly
@@ -785,7 +792,7 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"effect bar recharge rate increased"	0.35
-						"mod_mark_attacker_for_death" 0
+						"deploy time increased" 0.5
 					}
 				}
 				RevertGateBotsBehavior
@@ -803,7 +810,7 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"effect bar recharge rate increased"	0.35
-						"mod_mark_attacker_for_death" 0
+						"deploy time increased" 0.5
 					}
 				}
 			}
@@ -834,10 +841,11 @@ WaveSchedule
 						ItemName	"the sandman"
 						"effect bar recharge rate increased"	0.25
 					}
-					CharacterAttributes
+					ItemAttributes
 					{
+						ItemName	"crit-a-cola"
 						"effect bar recharge rate increased"	0.35
-						"mod_mark_attacker_for_death" 0
+						"deploy time increased" 0.5
 					}
 				}
 				RevertGateBotsBehavior
@@ -857,10 +865,11 @@ WaveSchedule
 						ItemName	"the sandman"
 						"effect bar recharge rate increased"	0.25
 					}
-					CharacterAttributes
+					ItemAttributes
 					{
+						ItemName	"crit-a-cola"
 						"effect bar recharge rate increased"	0.35
-						"mod_mark_attacker_for_death" 0
+						"deploy time increased" 0.5
 					}
 				}
 			}
@@ -886,6 +895,12 @@ WaveSchedule
 					WeaponRestrictions	MeleeOnly
 					Item	"bonk! atomic punch"
 					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName	"bonk! atomic punch"
+						"effect bar recharge rate increased"	0.65
+						"deploy time increased" 0.5
+					}
 				}
 				RevertGateBotsBehavior
 				{
@@ -899,6 +914,12 @@ WaveSchedule
 					WeaponRestrictions	MeleeOnly
 					Item	"bonk! atomic punch"
 					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName	"bonk! atomic punch"
+						"effect bar recharge rate increased"	0.65
+						"deploy time increased" 0.5
+					}
 				}
 			}
 		}
@@ -928,6 +949,12 @@ WaveSchedule
 						ItemName	"the sandman"
 						"effect bar recharge rate increased"	0.25
 					}
+					ItemAttributes
+					{
+						ItemName	"bonk! atomic punch"
+						"effect bar recharge rate increased"	0.65
+						"deploy time increased" 0.5
+					}
 				}
 				RevertGateBotsBehavior
 				{
@@ -945,6 +972,12 @@ WaveSchedule
 					{
 						ItemName	"the sandman"
 						"effect bar recharge rate increased"	0.25
+					}
+					ItemAttributes
+					{
+						ItemName	"bonk! atomic punch"
+						"effect bar recharge rate increased"	0.65
+						"deploy time increased" 0.5
 					}
 				}
 			}
@@ -2133,7 +2166,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"move speed penalty"	0.85
+						"move speed penalty"	0.9
 					}
 				}
 				RevertGateBotsBehavior
@@ -2158,7 +2191,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"move speed penalty"	0.85
+						"move speed penalty"	0.9
 					}
 				}
 			}
@@ -2169,7 +2202,7 @@ WaveSchedule
 			Class Soldier
 			Name "Burst Fire Soldier"
 			ClassIcon soldier_burstfire_normal
-			Scale 1.3
+			Scale 1.4
 			Health 900
 
 			EventChangeAttributes
@@ -2234,7 +2267,7 @@ WaveSchedule
 			Class Soldier
 			Name "Burst Fire Soldier"
 			ClassIcon soldier_burstfire_normal
-			Scale 1.3
+			Scale 1.4
 			Health 900
 
 			EventChangeAttributes
@@ -2301,7 +2334,7 @@ WaveSchedule
 			Class Soldier
 			Name "Burst Fire Soldier"
 			ClassIcon soldier_burstfire_normal
-			Scale 1.3
+			Scale 1.4
 			Health 900
 
 			EventChangeAttributes
@@ -2370,6 +2403,76 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"move speed penalty"	0.75
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Soldier_Barrage
+		{
+			ClassIcon	soldier_barrage_normal
+			Health	800
+			Name	"Barrage Soldier"
+			Scale	1.4
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Soldier"
+					Skill Expert
+					Attributes	HoldFireUntilFullReload
+					WeaponRestrictions PrimaryOnly
+					Tag bot_giant
+					Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+					ItemAttributes
+					{
+						ItemName	"Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+						"faster reload rate"	0.22
+						"fire rate bonus"	0.2
+						"damage bonus"	1.5
+						"projectile spread angle penalty"	5
+						"clip size upgrade atomic"	26.0
+					}
+					CharacterAttributes
+					{
+						"Projectile speed increased"	0.4
+						"move speed bonus"	0.8
+						"health regen" 10
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Soldier"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Soldier"
+						"item style override" 1
+					}
+					Skill Expert
+					Attributes	HoldFireUntilFullReload
+					WeaponRestrictions PrimaryOnly
+					Tag bot_giant
+					Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+					ItemAttributes
+					{
+						ItemName	"Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+						"faster reload rate"	0.22
+						"fire rate bonus"	0.2
+						"damage bonus"	1.5
+						"projectile spread angle penalty"	5
+						"clip size upgrade atomic"	26.0
+					}
+					CharacterAttributes
+					{
+						"Projectile speed increased"	0.4
+						"move speed bonus"	0.8
+						"health regen" 10
 					}
 				}
 			}
