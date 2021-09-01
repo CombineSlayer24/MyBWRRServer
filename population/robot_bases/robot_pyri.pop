@@ -4342,15 +4342,20 @@ WaveSchedule
 			Health 125
 			WeaponRestrictions	SecondaryOnly
 			Item	"Upgradeable TF_WEAPON_SMG"
+			ItemAttributes
+			{
+				ItemName	"Upgradeable TF_WEAPON_SMG"
+				"damage bonus"	1.25
+			}
 		}
 		
 		T_TFBot_Sniper_SMG_Critboost
 		{
 			Class Sniper
-			Name "Silent SMG Sniper"
+			Name "Skilled SMG Sniper"
 			ClassIcon sniper_smg
 			Skill Expert
-			Health 125
+			Health 150
 			WeaponRestrictions	SecondaryOnly
 			Item	"the cleaner's carbine"
 			Item	"letch's led"
@@ -4358,7 +4363,7 @@ WaveSchedule
 			{
 				ItemName	"the cleaner's carbine"
 				"critboost on kill" 3
-				"damage bonus"	1.5
+				"damage bonus"	1.6
 			}
 		}
 		

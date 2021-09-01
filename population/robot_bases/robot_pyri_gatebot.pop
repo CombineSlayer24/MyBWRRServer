@@ -9400,6 +9400,11 @@ WaveSchedule
 					Skill Hard
 					WeaponRestrictions SecondaryOnly
 					Item	"Upgradeable TF_WEAPON_SMG"
+					ItemAttributes
+					{
+						ItemName	"Upgradeable TF_WEAPON_SMG"
+						"damage bonus"	1.25
+					}
 				}
 				RevertGateBotsBehavior
 				{
@@ -9412,6 +9417,11 @@ WaveSchedule
 					Skill Hard
 					WeaponRestrictions SecondaryOnly
 					Item	"Upgradeable TF_WEAPON_SMG"
+					ItemAttributes
+					{
+						ItemName	"Upgradeable TF_WEAPON_SMG"
+						"damage bonus"	1.25
+					}
 				}
 			}
 		}
@@ -9419,7 +9429,7 @@ WaveSchedule
 		T_TFGateBot_Sniper_SMG_Critboost
 		{
 			Class Sniper
-			Name "Silent SMG Sniper"
+			Name "Skilled SMG Sniper"
 			ClassIcon sniper_smg
 
 			EventChangeAttributes
@@ -9439,7 +9449,7 @@ WaveSchedule
 					{
 						ItemName	"the cleaner's carbine"
 						"critboost on kill" 3
-						"damage bonus"	1.5
+						"damage bonus"	1.6
 					}
 				}
 				RevertGateBotsBehavior
@@ -9457,7 +9467,7 @@ WaveSchedule
 					{
 						ItemName	"the cleaner's carbine"
 						"critboost on kill" 3
-						"damage bonus"	1.5
+						"damage bonus"	1.6
 					}
 				}
 			}
