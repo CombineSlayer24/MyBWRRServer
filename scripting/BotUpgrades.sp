@@ -14,7 +14,7 @@ public Plugin myinfo =
 	name = "[TF2] MvM Bot Upgrades",
 	author = "pongo1231 (Original) + Pyri (Edited) + Anonymous Player/caxanga334 (Edited)",
 	description = "Gives TFBots (Fake Clients) on RED team upgrades suitable for Mann Vs Machine. Oringally by pongo1231, updated by Pyri and Anonymous Player.",
-	version = "1.2.4",
+	version = "1.2.5",
 	url = "N/A",
 };
 
@@ -112,7 +112,7 @@ void ApplyAttributesToClient(int client)
 	TF2Attrib_SetByName(client, "increased jump height", 1.40);								// +40% Higher jump
 	TF2Attrib_SetByName(client, "dmg taken from bullets reduced", 0.25);					// +75% Dmg resistances from Bullets
 	TF2Attrib_SetByName(client, "dmg taken from fire reduced", 0.5);						// +50% Dmg resistances from Fire
-	TF2Attrib_SetByName(client, "dmg taken from crit reduced", 0.1);						// +90% Dmg resistances from Critical Hits
+	TF2Attrib_SetByName(client, "dmg taken from crit reduced", 0.2);						// +80% Dmg resistances from Critical Hits
 	TF2Attrib_SetByName(client, "dmg taken from blast reduced", 0.25);						// +75% Dmg resistances from Blast
 	TF2Attrib_SetByName(client, "max health additive bonus", 50.0);							// +50 Additional health
 	TF2Attrib_SetByName(client, "ammo regen", 0.15);										// +15% Ammo regen
@@ -206,7 +206,7 @@ void ApplyAttributesToClient(int client)
 			TF2Attrib_SetByName(Primary, "projectile penetration heavy", 2.0);				// +2 Points of Projectiles penetration
 			TF2Attrib_SetByName(Primary, "minigun spinup time decreased", 0.8);				// +20% Faster minigun spin
 			/** HeavyWeapons Secondary Attributes */
-			TF2Attrib_SetByName(Secondary, "damage bonus", 1.15);							// +15% Damage bonus
+			TF2Attrib_SetByName(Secondary, "damage bonus", 1.3);							// +30% Damage bonus
 			TF2Attrib_SetByName(Secondary, "clip size bonus upgrade", 2.0);					// +100% Clip size bonus
 			TF2Attrib_SetByName(Secondary, "maxammo secondary increased", 2.5);				// +150% Maximum Ammo
 			TF2Attrib_SetByName(Secondary, "projectile penetration", 1.0);					// +1 Point of Projectile Penetration
@@ -370,8 +370,8 @@ void ApplyAttributesToClient(int client)
 	{
 		if (client == GetEntPropEnt(GasPasser, Prop_Data, "m_hOwnerEntity"))
 		{
-			TF2Attrib_SetByName(GasPasser, "mult_item_meter_charge_rate", 0.4);				// +60% Recharge rate
-			TF2Attrib_SetByName(GasPasser, "weapon burn dmg increased", 3.25);				// +225% Afterburn Damage
+			TF2Attrib_SetByName(GasPasser, "mult_item_meter_charge_rate", 0.2);				// +80% Recharge rate
+			TF2Attrib_SetByName(GasPasser, "weapon burn dmg increased", 4.0);				// +300% Afterburn Damage
 		}
 	}
 	/** CowMangler = Well, you know */
@@ -400,7 +400,7 @@ void ApplyAttributesToClient(int client)
 	}
 	/** Drink = Crit-a-Cola or Bonk! Atomic Punch */
 	int Drink = -1;
-	while ((Sandman = FindEntityByClassname(Drink, "TF_WEAPON_LUNCHBOX_DRINK")) != -1)
+	while ((Drink = FindEntityByClassname(Drink, "TF_WEAPON_LUNCHBOX_DRINK")) != -1)
 	{
 		if (client == GetEntPropEnt(Drink, Prop_Data, "m_hOwnerEntity"))
 		{
@@ -408,24 +408,3 @@ void ApplyAttributesToClient(int client)
 		}
 	}
 }
-	/** LunchBox = Heavy's Secondary editbles */
-	//int LunchBox = -1;
-	//while ((LunchBox = FindEntityByClassname(LunchBox, "TF_WEAPON_LUNCHBOX")) != -1)
-	//{
-		//if (client == GetEntPropEnt(LunchBox, Prop_Data, "m_hOwnerEntity"))
-		//{
-			//TF2Attrib_SetByName(LunchBox, "effect bar recharge rate increased", 0.35);	// +65% Faster recharge rate
-		//}
-	//}
-	/** Flaregun = Well, you know */
-	//int Flaregun = -1;
-	//while ((Flaregun = FindEntityByClassname(Flaregun, "TF_WEAPON_FLAREGUN")) != -1)
-	//{
-		//if (client == GetEntPropEnt(Flaregun, Prop_Data, "m_hOwnerEntity"))
-		//{
-			//TF2Attrib_SetByName(Flaregun, "maxammo secondary increased", 2.5);			// +150% Maximum Ammo
-			//TF2Attrib_SetByName(Flaregun, "heal on kill", 100.0);							// +100 HP per kill
-			//TF2Attrib_SetByName(Flaregun, "fire rate bonus", 0.6);						// +40% Faster fire rate
-			//TF2Attrib_SetByName(Flaregun, "faster reload rate", 0.4);						// +60% Faster reloading
-		//}
-	//}
