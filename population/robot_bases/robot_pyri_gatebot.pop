@@ -217,6 +217,7 @@
 //T_TFGateBot_Giant_Sniper_Huntsman_Bleed					// More dangerous variant of the Bowman
 //T_TFGateBot_Giant_Sniper_SMG								// Giant Sniper with SMG.
 //T_TFGateBot_Giant_Sniper_Jarate							// Giant Sniper with Jarate.
+//T_TFGateBot_Chief_Demoman_CaberTossin_Xtreme				// Chief Demoman that shoots cabers that pushes upon explosion (UNUSED BOSS FOR HOOVYDAM)
 WaveSchedule
 {
 	Templates
@@ -9431,6 +9432,7 @@ WaveSchedule
 			Class Sniper
 			Name "Skilled SMG Sniper"
 			ClassIcon sniper_smg
+			Health 150
 
 			EventChangeAttributes
 			{
@@ -9893,6 +9895,103 @@ WaveSchedule
 						"damage force reduction" 0.6
 						"move speed penalty" 0.7
 						"override footstep sound set" 6
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Chief_Demoman_CaberTossin_Xtreme
+		{
+			Class Demoman
+			ClassIcon	demo_caber_mega_blast_v2
+			Health	32000
+			Name	"Caber Tossin' Aotmic Blast"
+			Scale	1.9
+			
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Demoman"
+					WeaponRestrictions	PrimaryOnly
+					Attributes	MiniBoss
+					Attributes	HoldFireUntilFullReload
+					Attributes	UseBossHealthBar
+					Attributes	AlwaysCrit
+					Skill Expert
+					Tag bot_giant
+					ItemAttributes
+					{
+						ItemName	"tf_weapon_grenadelauncher"
+						"damage bonus" 0.2
+						"faster reload rate" 0.22
+						"fire rate bonus" 0.275
+						"Blast radius increased" 1.6
+						"clip size upgrade atomic" 11.0
+						"projectile spread angle penalty"	5
+						"Projectile speed increased"	1.15
+						"apply z velocity on damage"	300
+						"apply look velocity on damage"	300
+						"grenade not explode on impact" 1
+						"grenade no spin" 1
+						"fuse bonus" 1.875
+						"custom projectile model" "models/workshop/weapons/c_models/c_caber/c_caber.mdl"
+					}
+					CharacterAttributes
+					{
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"airblast vertical vulnerability multiplier" 0.1
+						"override footstep sound set" 3
+						"rage giving scale" 0.1
+						"move speed bonus" 0.28
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Demoman"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Demoman"
+						"item style override" 1
+					}
+					WeaponRestrictions	PrimaryOnly
+					Attributes	MiniBoss
+					Attributes	HoldFireUntilFullReload
+					Attributes	UseBossHealthBar
+					Attributes	AlwaysCrit
+					Skill Expert
+					Tag bot_giant
+					ItemAttributes
+					{
+						ItemName	"tf_weapon_grenadelauncher"
+						"damage bonus" 0.2
+						"faster reload rate" 0.22
+						"fire rate bonus" 0.275
+						"Blast radius increased" 1.6
+						"clip size upgrade atomic" 11.0
+						"projectile spread angle penalty"	5
+						"Projectile speed increased"	1.15
+						"apply z velocity on damage"	300
+						"apply look velocity on damage"	300
+						"grenade not explode on impact" 1
+						"grenade no spin" 1
+						"fuse bonus" 1.875
+						"custom projectile model" "models/workshop/weapons/c_models/c_caber/c_caber.mdl"
+					}
+					CharacterAttributes
+					{
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"airblast vertical vulnerability multiplier" 0.1
+						"override footstep sound set" 3
+						"rage giving scale" 0.1
+						"move speed bonus" 0.28
 					}
 				}
 			}
