@@ -493,10 +493,17 @@ WaveSchedule
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
-					Item "MvM GateBot Light Scout"
+					//Item "MvM GateBot Light Scout"
 					Skill Expert
 					WeaponRestrictions MeleeOnly
+					Item 	"Batter's Helmet"
 					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName "Batter's Helmet"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
 					CharacterAttributes
 					{
 						"move speed penalty"	0.92
@@ -505,15 +512,22 @@ WaveSchedule
 				}
 				RevertGateBotsBehavior
 				{
-					Item "MvM GateBot Light Scout"
-					ItemAttributes               // turn off light hat
-					{
-						ItemName "MvM GateBot Light Scout"
-						"item style override" 1
-					}
+					//Item "MvM GateBot Light Scout"
+					//ItemAttributes               // turn off light hat
+					//{
+						//ItemName "MvM GateBot Light Scout"
+						//"item style override" 1
+					//}
 					Skill Expert
 					WeaponRestrictions MeleeOnly
+					Item 	"Batter's Helmet"
 					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName "Batter's Helmet"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
 					CharacterAttributes
 					{
 						"move speed penalty"	0.92
@@ -540,11 +554,18 @@ WaveSchedule
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
-					Item "MvM GateBot Light Scout"
+					//Item "MvM GateBot Light Scout"
 					Skill Expert
 					Tag bot_giant
 					WeaponRestrictions MeleeOnly
+					Item 	"Batter's Helmet"
 					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName "Batter's Helmet"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
 					CharacterAttributes
 					{
 						"move speed penalty"	0.75
@@ -553,16 +574,23 @@ WaveSchedule
 				}
 				RevertGateBotsBehavior
 				{
-					Item "MvM GateBot Light Scout"
-					ItemAttributes               // turn off light hat
-					{
-						ItemName "MvM GateBot Light Scout"
-						"item style override" 1
-					}
+					//Item "MvM GateBot Light Scout"
+					//ItemAttributes               // turn off light hat
+					//{
+						//ItemName "MvM GateBot Light Scout"
+						//"item style override" 1
+					//}
 					Skill Expert
 					Tag bot_giant
 					WeaponRestrictions MeleeOnly
+					Item 	"Batter's Helmet"
 					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName "Batter's Helmet"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
 					CharacterAttributes
 					{
 						"move speed penalty"	0.75
@@ -589,11 +617,18 @@ WaveSchedule
 					BehaviorModifiers push			// having these will cause bots to run towards gates
 					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
 
-					Item "MvM GateBot Light Scout"
+					//Item "MvM GateBot Light Scout"
 					Tag bot_giant
 					Skill Expert
 					WeaponRestrictions MeleeOnly
+					Item 	"Batter's Helmet"
 					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName "Batter's Helmet"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
 					CharacterAttributes
 					{
 						"move speed penalty"	0.75
@@ -607,16 +642,23 @@ WaveSchedule
 				}
 				RevertGateBotsBehavior
 				{
-					Item "MvM GateBot Light Scout"
-					ItemAttributes               // turn off light hat
-					{
-						ItemName "MvM GateBot Light Scout"
-						"item style override" 1
-					}
+					//Item "MvM GateBot Light Scout"
+					//ItemAttributes               // turn off light hat
+					//{
+						//ItemName "MvM GateBot Light Scout"
+						//"item style override" 1
+					//}
 					Skill Expert
 					Tag bot_giant
 					WeaponRestrictions MeleeOnly
+					Item 	"Batter's Helmet"
 					Item	"the sandman"
+					ItemAttributes
+					{
+						ItemName "Batter's Helmet"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
 					CharacterAttributes
 					{
 						"move speed penalty"	0.75
