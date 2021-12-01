@@ -3884,6 +3884,66 @@ WaveSchedule
 					Template T_TFBot_Soldier_Barrage
 					ClassIcon support_normal
 				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_AlwaysFire_Upgraded
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_AlwaysFire_Upgraded
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_AlwaysFire_Upgraded
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Professional
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Professional
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Professional
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Sydney_Sleepy
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Sydney_Sleepy
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Sydney_Sleepy
+					ClassIcon support_normal
+				}
 			}
 		}
 		
@@ -5979,6 +6039,66 @@ WaveSchedule
 					Template T_TFBot_Pyro_ScorchShot_Burst
 					ClassIcon support_normal
 				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_AlwaysFire
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_AlwaysFire_Upgraded
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_AlwaysFire_Upgraded
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_AlwaysFire_Upgraded
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Professional
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Professional
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Professional
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Sydney_Sleepy
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Sydney_Sleepy
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Sydney_Sleepy
+					ClassIcon support_normal
+				}
 			}
 		}
 		
@@ -7905,6 +8025,66 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFGateBot_Soldier_Barrage
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_AlwaysFire
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_AlwaysFire
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_AlwaysFire
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_AlwaysFire_Upgraded
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_AlwaysFire_Upgraded
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_AlwaysFire_Upgraded
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Professional
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Professional
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Professional
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Sydney_Sleepy
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Sydney_Sleepy
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Sydney_Sleepy
 					ClassIcon support_gatebot
 				}
 			}

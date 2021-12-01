@@ -206,6 +206,10 @@
 //T_TFGateBot_Engineer_Buff_Banner							// Pair this bot in a squad (Squad leader must not be engie). Engineer with a PrimaryOnly restriction, uses Buff Banner.
 
 // Sniper
+//T_TFGateBot_Sniper_AlwaysFire								// Standard Sniper but will AlwaysFire
+//T_TFGateBot_Sniper_AlwaysFire_Upgrade						// Slight upgade, fires slightly fast, with visible tracer
+//T_TFGateBot_Sniper_Professional							// NOT TO BE CONFUSED WITH PRO SNIPER
+//T_TFBGateot_Sniper_Sydney_Sleepy							// Sydney Sleeper Sniper but slows targets down when hit
 //T_TFGateBot_Sniper_Bushwacka								// Sniper as Melee With Bushwacka 
 //T_TFGateBot_Sniper_Jarate_Master_SlowCharge				// An unused Sniper Template that VALVe made, but disabled, Jarate slow recharge
 //T_TFGateBot_Sniper_Jarate_Master							// An unused Sniper Template that VALVe made, but disabled, Jarate instant recharge
@@ -9369,6 +9373,200 @@ WaveSchedule
 						"increase buff duration"	9.0
 						"move speed bonus"	0.8
 						"deploy time increased" 0.5
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Sniper_AlwaysFire
+		{
+			ClassIcon	sniper
+			Health	125
+			Class	Sniper
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+					
+					Skill Hard
+					Item "MvM GateBot Light Sniper"
+					Attributes	"AlwaysFireWeapon"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Skill Hard
+					Attributes	"AlwaysFireWeapon"
+				}
+			}
+		}
+		
+		T_TFGateBot_Sniper_AlwaysFire_Upgrade
+		{
+			ClassIcon	sniper
+			Health	125
+			Class	Sniper
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+					
+					Skill Hard
+					Attributes	"AlwaysFireWeapon"
+					Item	"Rifleman's Regalia"
+					ItemAttributes
+					{
+						ItemName	tf_weapon_sniperrifle
+						"sniper fires tracer HIDDEN"	1
+						"damage bonus"	1.35
+						"fire rate bonus"	0.9
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Skill Hard
+					Attributes	"AlwaysFireWeapon"
+					Item	"Rifleman's Regalia"
+					ItemAttributes
+					{
+						ItemName	tf_weapon_sniperrifle
+						"sniper fires tracer HIDDEN"	1
+						"damage bonus"	1.35
+						"fire rate bonus"	0.9
+					}
+				}
+			}
+		}
+		
+		T_TFGateBot_Sniper_Professional
+		{
+			ClassIcon	sniper
+			Health	125
+			Name	"Professional Sniper"
+			Class	Sniper
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+					
+					Skill Hard
+					Attributes	"AlwaysFireWeapon"
+					Item	"the hitman's heatmaker"
+					Item "MvM GateBot Light Sniper"
+					Item	"starduster"
+					ItemAttributes
+					{
+						ItemName	"the hitman's heatmaker"
+						"sniper fires tracer HIDDEN"	1
+						"damage penalty"	0.75
+						"fire rate bonus"	0.8
+						"bleeding duration"	2
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Skill Hard
+					Attributes	"AlwaysFireWeapon"
+					ItemAttributes
+					{
+						ItemName	"the hitman's heatmaker"
+						"sniper fires tracer HIDDEN"	1
+						"damage penalty"	0.75
+						"fire rate bonus"	0.8
+						"bleeding duration"	2
+					}
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Item	"the hitman's heatmaker"
+					Item	"corona australis"
+				}
+			}
+		}
+		
+		T_TFGateBot_Sniper_Sydney_Sleepy
+		{
+			ClassIcon	sniper_sydneysleeper
+			Name	"Sleepy Sleeper Sniper"
+			Class	Sniper
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Skill Hard
+					Item	"the sydney sleeper"
+					Item	"darwin's danger shield"
+					Attributes	"AlwaysFireWeapon"
+					ItemAttributes
+					{
+						ItemName	"the sydney sleeper"
+						"damage penalty"	0.001
+						"faster reload rate"	0.7
+						"sniper fires tracer HIDDEN"	1
+						"slow enemy on hit major"	5
+					}
+					CharacterAttributes
+					{
+						"dmg taken from crit reduced"	0.3
+						"dmg taken from fire reduced"	0.001
+						"fire retardant"	1
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Skill Hard
+					Item	"the sydney sleeper"
+					Item	"darwin's danger shield"
+					Attributes	"AlwaysFireWeapon"
+					ItemAttributes
+					{
+						ItemName	"the sydney sleeper"
+						"damage penalty"	0.001
+						"faster reload rate"	0.7
+						"sniper fires tracer HIDDEN"	1
+						"slow enemy on hit major"	5
+					}
+					CharacterAttributes
+					{
+						"dmg taken from crit reduced"	0.3
+						"dmg taken from fire reduced"	0.001
+						"fire retardant"	1
 					}
 				}
 			}

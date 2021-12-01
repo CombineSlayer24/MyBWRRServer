@@ -188,6 +188,7 @@
 
 // Medic
 //T_TFBot_Medic_Melee 									// Medic equipped with Bonesaw.
+//T_TFBot_Medic_Overheal								// Fun
 //T_TFBot_Medic_Kritzkrieg								// Kritz Medic that can give 100% Critical ÜberCharge to Robots.
 //T_TFBot_Medic_Shield_Quickfix							// Medic with shield.
 //T_TFBot_Medic_Shield_Uber								// Medic with shield, can also deploy ÜberCharge
@@ -197,6 +198,7 @@
 //T_TFBot_Medic_Uber_QuickFlash							// Medic that gains uber rapidly quick, but only 4 seconds long.
 
 //T_TFBot_Giant_Medic_Battle
+//T_TFBot_Giant_Medic_Overheal							// Giant Medic with overheal abilites (not), just an excuse to make a non overhealing default giant medic
 //T_TFBot_Giant_Medic_Uber								// Giant Über Medic able to deploy a ÜberCharge
 //T_TFBot_Giant_Medic_Uber_Weak							// Giant Über Medic with less Health, slow Über build and no extended Über duration.
 //T_TFBot_Giant_Medic_Uber_Regen						// Giant Über Medic with Health Regen of 50.
@@ -208,9 +210,13 @@
 // Sniper
 //T_TFBot_Sniper_Expert 								// Sniper with Difficulty to Expert, 3000 Vision. Used in Missions only!
 //T_TFBot_Sniper_Pro 									// Sniper with AWPer Hand, +50% Damage bonus. 3000 Vision. Used in Missions only!
-//T_TFBot_Sniper_Gauntlet								// (THIS IS MEANT FOR ADV/EXPERT) Armored Sniper with 900 health, 2500 vision.
+//T_TFBot_Sniper_Gauntlet								// (THIS IS MEANT FOR ADV/EXPERT) Armored Sniper with 900 health, 2500 vision. Used in Missions only!
 //T_TFBot_Sniper_Bushwacka								// Sniper as Melee With Bushwacka 
 //T_TFBot_Sniper_Camper 								// Sniper able to regen health. Used in Missions only!
+//T_TFBot_Sniper_AlwaysFire								// Standard Sniper but will AlwaysFire
+//T_TFBot_Sniper_AlwaysFire_Upgrade						// Slight upgade, fires slightly fast, with visible tracer
+//T_TFBot_Sniper_Professional							// NOT TO BE CONFUSED WITH PRO SNIPER
+//T_TFBot_Sniper_Sydney_Sleepy							// Sydney Sleeper Sniper but slows targets down when hit
 //T_TFBot_Sniper_Jarate_Master_SlowCharge				// An unused Sniper Template that VALVe made, but disabled, Jarate slow recharge
 //T_TFBot_Sniper_Jarate_Master							// An unused Sniper Template that VALVe made, but disabled, Jarate instant recharge
 //T_TFBot_Sniper_SMG									// Sniper with SMG.
@@ -3862,6 +3868,36 @@ WaveSchedule
 			WeaponRestrictions	MeleeOnly
 		}
 		
+		T_TFBot_Medic_Overheal
+		{
+			Class Medic
+			Name "Overheal Medic"
+			ClassIcon medic
+			Skill Expert
+			Health 150
+			Item "The Quick-Fix"
+			Item "The Surgeon's Stahlhelm"
+			Attributes MiniBoss
+
+			ItemAttributes
+			{
+				ItemName "The Quick-Fix"
+				"ubercharge rate bonus" 0.01 // pretty much disables ubercharge
+				"overheal expert" 3
+				"overheal decay bonus" 0.6
+			}
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
+				"damage penalty" 0.1
+			}
+			CharacterAttributes
+			{
+				"heal rate bonus" 6
+				"health regen"	40
+			}
+		}
+		
 		T_TFBot_Medic_Kritzkrieg // Red can have Krit medics, Robots can have them as well.
 		{
 			Class Medic
@@ -4062,6 +4098,40 @@ WaveSchedule
 				"airblast vulnerability multiplier"	0.6
 			}
 		}
+		
+		T_TFBot_Giant_Medic_Overheal	// No insta heal bullshit
+		{
+			Class Medic
+			Name "Giant Overheal Medic"
+			ClassIcon medic_giant
+			Skill Expert
+			Health 4500
+			Item "The Quick-Fix"
+			Item "The Surgeon's Stahlhelm"
+			Attributes MiniBoss
+
+			ItemAttributes
+			{
+				ItemName "The Quick-Fix"
+				"ubercharge rate bonus" 0.01 // pretty much disables ubercharge
+				"overheal expert" 3
+				"overheal decay bonus" 0.6
+			}
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
+				"damage penalty" 0.1
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.6
+				"airblast vulnerability multiplier" 0.6
+				"heal rate bonus" 6
+				"health regen"	40
+			}
+		}
+		
 		T_TFBot_Giant_Medic_Uber
 		{
 			Class Medic
@@ -4305,6 +4375,82 @@ WaveSchedule
 				"move speed penalty"	0.8
 				"head scale"			0.8
 			}
+		}
+		
+		T_TFBot_Sniper_AlwaysFire
+		{
+			ClassIcon	sniper
+			Health	125
+			Name	Sniper
+			Class	Sniper
+			Skill	Hard
+			Attributes	"AlwaysFireWeapon"
+		}
+		
+		T_TFBot_Sniper_AlwaysFire_Upgrade
+		{
+			ClassIcon	sniper
+			Health	125
+			Name	Sniper
+			Class	Sniper
+			Skill	Hard
+			Attributes	"AlwaysFireWeapon"
+			Item	"Rifleman's Regalia"
+			ItemAttributes
+			{
+				ItemName	tf_weapon_sniperrifle
+				"sniper fires tracer HIDDEN"	1
+				"damage bonus"	1.35
+				"fire rate bonus"	0.9
+			}
+		}
+		
+		T_TFBot_Sniper_Professional		// NOT TO BE CONFUSED WITH PRO SNIPER
+		{
+			ClassIcon	sniper
+			Health	125
+			Name	"Professional Sniper"
+			Class	Sniper
+			Skill	Hard
+			Attributes	"AlwaysFireWeapon"
+			ItemAttributes
+			{
+				ItemName	"the hitman's heatmaker"
+				"sniper fires tracer HIDDEN"	1
+				"damage penalty"	0.75
+				"fire rate bonus"	0.8
+				"bleeding duration"	2
+			}
+			Item	"the hitman's heatmaker"
+			Item	"corona australis"
+			Item	"starduster"
+		}
+		
+		T_TFBot_Sniper_Sydney_Sleepy
+		{
+			ClassIcon	sniper_sydneysleeper
+			Health	125
+			Name	"Sleepy Sleeper Sniper"
+			Class	Sniper
+			Skill	Hard
+			Attributes	"AlwaysFireWeapon"
+			ItemAttributes
+			{
+				ItemName	"the sydney sleeper"
+				"damage penalty"	0.001
+				"faster reload rate"	0.7
+				"sniper fires tracer HIDDEN"	1
+				"slow enemy on hit major"	5
+			}
+			CharacterAttributes
+			{
+				"dmg taken from crit reduced"	0.3
+				"dmg taken from fire reduced"	0.001
+				"fire retardant"	1
+			}
+			Item	"the sydney sleeper"
+			Item	"darwin's danger shield"
+			Item	"desert marauder"
 		}
 		
 		T_TFBot_Sniper_Bushwacka
