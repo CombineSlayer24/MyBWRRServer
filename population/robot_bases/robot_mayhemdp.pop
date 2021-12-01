@@ -8933,6 +8933,21 @@ WaveSchedule
 					Template T_TFBot_Giant_HeavyShotgun_Hunter
 					ClassIcon support_giant
 				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Blast
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Blast
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Blast
+					ClassIcon support_giant
+				}
 			}
 		}
 		T_WaveSpawn_CalamityGiant_Gatebot
@@ -9881,6 +9896,21 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFBot_Giant_HeavyShotgun_Hunter
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Blast
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Blast
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Blast
 					ClassIcon support_giant_gatebot
 				}
 			}
@@ -10921,6 +10951,21 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFBot_Giant_HeavyShotgun_Hunter
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Blast
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Blast
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Blast
 					ClassIcon support_giant
 				}
 			}

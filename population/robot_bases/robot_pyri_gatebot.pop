@@ -161,6 +161,7 @@
 //T_TFGateBot_Giant_DemoMan_PrinceTavish
 //T_TFGateBot_Giant_Demoknight_Gold 						// Golden bot that Gray Mann has to offer.
 //T_TFGateBot_Giant_Demo_Nuker 								// Miniture form of Sir Nukesalot but less beefy.
+//T_TFGateBot_Giant_Demo_Blast								// Burst Fire Giant Blast Demo.
 
 // Heavy
 //T_TFGateBot_Heavy_Expert									// Expert Difficulty Heavy
@@ -7326,6 +7327,86 @@ WaveSchedule
 			}
 		}
 		
+		T_TFGateBot_Giant_Demo_Nuker
+		{
+			Class Demoman
+			Name "Giant Blast Demo"
+			ClassIcon demo_blast_giant
+			Health 3300
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Demoman"
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions	PrimaryOnly
+					Attributes HoldFireUntilFullReload
+					Attributes	MiniBoss
+					Item "hazard headgear"
+					Item "blast blocker"
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"faster reload rate" 0.5 
+						"fire rate bonus" 0.1
+						"damage causes airblast"	1
+						"clip size upgrade atomic" 7.0
+						"projectile spread angle penalty" 5
+						"Projectile speed increased"	1.5
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"damage force reduction"	0.5
+						"airblast vulnerability multiplier"	0.5
+						"override footstep sound set"	4
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "hazard headgear"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "hazard headgear"
+						"set item tint RGB"	15185211 // australium gold
+						"attach particle effect"	64 // Sulphurous
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions	PrimaryOnly
+					Attributes HoldFireUntilFullReload
+					Attributes	MiniBoss
+					Item "hazard headgear"
+					Item "blast blocker"
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"faster reload rate" 0.5 
+						"fire rate bonus" 0.1
+						"damage causes airblast"	1
+						"clip size upgrade atomic" 7.0
+						"projectile spread angle penalty" 5
+						"Projectile speed increased"	1.5
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"damage force reduction"	0.5
+						"airblast vulnerability multiplier"	0.5
+						"override footstep sound set"	4
+					}
+				}
+			}
+		}
+		
+		
 		T_TFGateBot_Heavy_Expert
 		{
 			Class Heavyweapons
@@ -9312,7 +9393,6 @@ WaveSchedule
 					Skill Hard
 					WeaponRestrictions MeleeOnly
 					Item "Darwin's Danger Shield"
-					Item "Ol' Snaggletooth"
 					Item "The Bushwacka"
 				}
 				RevertGateBotsBehavior
@@ -9326,7 +9406,6 @@ WaveSchedule
 					Skill Hard
 					WeaponRestrictions MeleeOnly
 					Item "Darwin's Danger Shield"
-					Item "Ol' Snaggletooth"
 					Item "The Bushwacka"
 				}
 			}

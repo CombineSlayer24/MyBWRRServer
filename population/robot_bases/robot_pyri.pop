@@ -141,6 +141,7 @@
 //T_TFBot_Giant_Demo_Barrage_Old 						// Only difference is the Cosmetic set.
 //T_TFBot_Giant_Demoknight_Gold 						// Golden bot that Gray Mann has to offer.
 //T_TFBot_Giant_Demo_Nuker 								// Miniture form of Sir Nukesalot but less beefy.
+//T_TFBot_Giant_Demo_Blast								// Burst Fire Giant Blast Demo.
 
 // Heavy
 //T_TFBot_Heavy_Easy									// Easy Difficulty Heavy
@@ -233,12 +234,12 @@
 //T_TFBot_Spy_Sapper_EMP								// Spy's sapper will deal very little damage, however it's even more harder to destory. Sapper only.
 
 // Special/Misc Robot Templates
-//T_TFBot_Scout_Australium								// *
-//T_TFBot_Soldier_Australium							// *
-//T_TFBot_Pyro_Australium								// *
-//T_TFBot_Demo_Australium								// *
-//T_TFBot_Demoknight_Australium							// Custom Icon not by me.
-//T_TFBot_Heavy_Australium								// *
+//T_TFBot_Scout_Australium
+//T_TFBot_Soldier_Australium
+//T_TFBot_Pyro_Australium
+//T_TFBot_Demo_Australium
+//T_TFBot_Demoknight_Australium
+//T_TFBot_Heavy_Australium
 
 // Bosses
 //T_TFBot_Chief_Demo_Barrage
@@ -3037,6 +3038,37 @@ WaveSchedule
 				"damage causes airblast"	1
 				"Blast radius increased"	2.0
 				"use large smoke explosion"	1
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction"	0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"	4
+			}
+		}
+		
+		T_TFBot_Giant_Demo_Blast
+		{
+			Class Demoman
+			Name "Giant Blast Demo"
+			ClassIcon demo_blast_giant
+			Health 3300
+			Skill Expert
+			WeaponRestrictions PrimaryOnly
+			Attributes MiniBoss
+			Attributes HoldFireUntilFullReload
+			Item "hazard headgear"
+			Item "blast blocker"
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_GRENADELAUNCHER"
+				"faster reload rate" 0.5 
+				"fire rate bonus" 0.1
+				"damage causes airblast"	1
+				"clip size upgrade atomic" 7.0
+				"projectile spread angle penalty" 5
+				"Projectile speed increased"	1.5
 			}
 			CharacterAttributes
 			{
