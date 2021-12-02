@@ -4387,7 +4387,7 @@ WaveSchedule
 			Attributes	"AlwaysFireWeapon"
 		}
 		
-		T_TFBot_Sniper_AlwaysFire_Upgrade
+		T_TFBot_Sniper_AlwaysFire_Upgraded
 		{
 			ClassIcon	sniper
 			Health	125
@@ -5113,7 +5113,7 @@ WaveSchedule
 				"override footstep sound set"	2
 				"airblast vertical vulnerability multiplier"	0.1
 				"rage giving scale"	0.05				// lowest rage given towards soldiers
-				"health regen"	250
+				"health regen"	75						// why 250? I aint vavle, wtf? nerf it
 			}
 			Item	"traffic cone"
 		}
