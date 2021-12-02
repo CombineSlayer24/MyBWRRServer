@@ -1,0 +1,593 @@
+#base robot_giant.pop
+#base robot_standard.pop
+#base robot_gatebot.pop	
+#base robot_mayhemdp.pop
+
+population
+{
+	StartingCurrency	6000
+	RespawnWaveTime	1
+	CanBotsAttackWhileInSpawnRoom	no
+
+	Mission
+	{
+		Objective Sniper
+
+		InitialCooldown 10
+		Where spawnbot_support
+		Where spawnbot_mensch_giant
+		Where spawnbot
+		Where spawnbot_upper
+		Where spawnbot_garage
+		Where spawnbot_mensch
+		Where spawnbot_trainstation
+		BeginAtWave 1
+		RunForThisManyWaves 1
+		CooldownTime 25
+		DesiredCount 6
+	    TFBot
+	    {
+	        Template T_TFBot_Sniper
+	    }
+	}
+
+	// Mission
+	// {
+		// Objective	Engineer
+		// Where	spawnbot
+		// BeginAtWave	1
+		// RunForThisManyWaves	1
+		// InitialCooldown	40
+		// CooldownTime	30
+		// DesiredCount	2
+		// TFBot
+		// {
+			// Template	T_TFBot_Engineer_Sentry_Teleporter
+		// }
+	// }
+	
+	Wave
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		DoneOutput					
+		{
+			Target wave_finished_relay
+			Action trigger
+		}
+		WaitWhenDone 65
+		Checkpoint Yes
+		
+		WaveSpawn
+		{
+			TotalCurrency	75
+			TotalCount	100
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	9999
+			WaitBetweenSpawns	9999
+			Where	spawnbot_main0
+			Where	spawnbot_main1_slow
+			Where	spawnbot_main1
+			Where	spawnbot_main2
+			Where	spawnbot_upper0
+			Squad
+			{
+				TFBot
+				{
+					Class Sniper
+					WeaponRestrictions	MeleeOnly
+					ClassIcon sniper_jarate
+				}
+			}
+		}
+		WaveSpawn
+		{
+			TotalCurrency	75
+			TotalCount	50
+			MaxActive	1
+			SpawnCount	1
+			WaitBeforeStarting	9999
+			WaitBetweenSpawns	9999
+			Where	spawnbot_main0
+			Where	spawnbot_main1_slow
+			Where	spawnbot_main1
+			Where	spawnbot_main2
+			Where	spawnbot_upper0
+			Squad
+			{
+				TFBot
+				{
+					Class Soldier
+					WeaponRestrictions	MeleeOnly
+					ClassIcon sniper_smg_giant
+					Attributes MiniBoss
+				}
+			}
+		}
+		
+		WaveSpawn
+		{
+			TotalCurrency	75
+			TotalCount	50
+			MaxActive	3
+			SpawnCount	1
+			WaitBeforeStarting	30
+			WaitBetweenSpawns	25
+			Support 1
+			Where spawnbot
+			Where spawnbot_garage_giant
+			Where spawnbot_mensch_giant
+			RandomChoice
+			{
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Huntsman
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Huntsman
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Huntsman
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Huntsman_Bleed
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Huntsman_Bleed
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Huntsman_Bleed
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_SMG
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_SMG
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_SMG
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Jarate
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Jarate
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Sniper_Jarate
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Huntsman
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Huntsman
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Huntsman
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Huntsman_Bleed
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Huntsman_Bleed
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Huntsman_Bleed
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_SMG
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_SMG
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_SMG
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Jarate
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Jarate
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Sniper_Jarate
+					ClassIcon support_giant_gatebot
+				}
+			}
+		}
+		WaveSpawn
+		{
+			TotalCurrency	2000
+			TotalCount	500
+			MaxActive 12
+			SpawnCount	2
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	1
+			Support 1
+			RandomSpawn 1
+			Where spawnbot_support
+			Where spawnbot_mensch_giant
+			Where spawnbot
+			Where spawnbot_elevator
+			Where spawnbot_upper
+			Where spawnbot_garage
+			Where spawnbot_garage_giant
+			Where spawnbot_mensch
+			Where spawnbot_trainstation
+			RandomChoice
+			{				
+				TFBot
+				{
+					ClassIcon	sniper
+					Health	125
+					Name	"Professional Sniper"
+					Class	Sniper
+					Skill	Hard
+					Attributes	"AlwaysFireWeapon"
+					ItemAttributes
+					{
+						ItemName	"the hitman's heatmaker"
+						"sniper fires tracer HIDDEN"	1
+						"damage penalty"	0.75
+						"fire rate bonus"	0.8
+						"bleeding duration"	2
+					}
+					Item	"the hitman's heatmaker"
+					Item	"corona australis"
+					Item	"starduster"
+				}
+				TFBot
+				{
+					ClassIcon	sniper
+					Health	125
+					Name	"Professional Sniper"
+					Class	Sniper
+					Skill	Hard
+					Attributes	"AlwaysFireWeapon"
+					ItemAttributes
+					{
+						ItemName	"the hitman's heatmaker"
+						"sniper fires tracer HIDDEN"	1
+						"damage penalty"	0.75
+						"fire rate bonus"	0.8
+						"bleeding duration"	2
+					}
+					Item	"the hitman's heatmaker"
+					Item	"corona australis"
+					Item	"starduster"
+				}
+				TFBot
+				{
+					ClassIcon	sniper
+					Health	125
+					Name	"Sleepy Sleeper Sniper"
+					Class	Sniper
+					Skill	Hard
+					Attributes	"AlwaysFireWeapon"
+					ItemAttributes
+					{
+						ItemName	"the sydney sleeper"
+						"damage penalty"	0.001
+						"faster reload rate"	0.7
+						"sniper fires tracer HIDDEN"	1
+						"slow enemy on hit major"	5
+					}
+					CharacterAttributes
+					{
+						"dmg taken from crit reduced"	0.3
+						"dmg taken from fire reduced"	0.001
+						"fire retardant"	1
+					}
+					Item	"the sydney sleeper"
+					Item	"darwin's danger shield"
+					Item	"desert marauder"
+				}
+				TFBot
+				{
+					ClassIcon	sniper
+					Health	125
+					Name	"Sleepy Sleeper Sniper"
+					Class	Sniper
+					Skill	Hard
+					Attributes	"AlwaysFireWeapon"
+					ItemAttributes
+					{
+						ItemName	"the sydney sleeper"
+						"damage penalty"	0.001
+						"faster reload rate"	0.7
+						"sniper fires tracer HIDDEN"	1
+						"slow enemy on hit major"	5
+					}
+					CharacterAttributes
+					{
+						"dmg taken from crit reduced"	0.3
+						"dmg taken from fire reduced"	0.001
+						"fire retardant"	1
+					}
+					Item	"the sydney sleeper"
+					Item	"darwin's danger shield"
+					Item	"desert marauder"
+				}
+
+				TFBot
+				{
+					ClassIcon	sniper
+					Health	125
+					Name	Sniper
+					Class	Sniper
+					Skill	Hard
+					Attributes	"AlwaysFireWeapon"
+				}
+				TFBot
+				{
+					ClassIcon	sniper
+					Health	125
+					Name	Sniper
+					Class	Sniper
+					Skill	Hard
+					Attributes	"AlwaysFireWeapon"
+				}
+				TFBot
+				{
+					ClassIcon	sniper
+					Health	125
+					Name	Sniper
+					Class	Sniper
+					Skill	Hard
+					Attributes	"AlwaysFireWeapon"
+					ItemAttributes
+					{
+						ItemName	tf_weapon_sniperrifle
+						"fire rate penalty"	1.25
+						"damage penalty"	0.8
+					}
+				}
+				TFBot
+				{
+					ClassIcon	sniper
+					Health	125
+					Name	Sniper
+					Class	Sniper
+					Skill	Hard
+					Attributes	"AlwaysFireWeapon"
+					ItemAttributes
+					{
+						ItemName	tf_weapon_sniperrifle
+						"fire rate penalty"	1.25
+						"damage penalty"	0.8
+					}
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Class Sniper
+					Skill Easy
+					ClassIcon support_normal
+					WeaponRestrictions MeleeOnly
+				}
+				TFBot
+				{
+					Class Sniper
+					Skill Easy
+					ClassIcon support_normal
+					WeaponRestrictions MeleeOnly
+				}
+				TFBot
+				{
+					Class Sniper
+					Skill Easy
+					ClassIcon support_normal
+					WeaponRestrictions MeleeOnly
+				}
+				TFBot
+				{
+					Class Sniper
+					Skill Hard
+					Name "SMG Sniper"
+					ClassIcon support_normal
+					WeaponRestrictions SecondaryOnly
+				}
+				TFBot
+				{
+					Class Sniper
+					Skill Hard
+					Name "SMG Sniper"
+					ClassIcon support_normal
+					WeaponRestrictions SecondaryOnly
+				}
+				TFBot
+				{
+					Class Sniper
+					Skill Hard
+					Name "SMG Sniper"
+					ClassIcon support_normal
+					WeaponRestrictions SecondaryOnly
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Bushwacka
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Bushwacka
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Jarate_Master_SlowCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Jarate_Master_SlowCharge
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Jarate_Master
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Jarate_Master
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_SMG_Critboost
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_SMG_Critboost
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman_Crit
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman_Bleed
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Sniper_Huntsman_Bleed
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Bushwacka
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Bushwacka
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Jarate_Master_SlowCharge
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Jarate_Master_SlowCharge
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Jarate_Master
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Jarate_Master
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_SMG_Critboost
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_SMG_Critboost
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Huntsman_Crit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Huntsman_Crit
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Huntsman_Bleed
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Sniper_Huntsman_Bleed
+					ClassIcon support_gatebot
+				}
+			}
+		}
+	}
+}
