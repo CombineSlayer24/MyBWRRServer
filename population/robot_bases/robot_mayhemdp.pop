@@ -8398,6 +8398,18 @@ WaveSchedule
 				}
 				TFBot
 				{
+					Template T_TFBot_Chief_Pyro_PyriBot
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Chief_Soldier_Capt_Luanch
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
 					Template T_TFBot_Giant_Soldier
 					ClassIcon support_giant
 				}
