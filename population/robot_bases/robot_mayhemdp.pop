@@ -8314,7 +8314,86 @@ WaveSchedule
 			{
 				TFBot
 				{
-					Template T_TFBot_Giant_Soldier
+					Template T_TFBot_Chief_Gauntlet
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Chief_Soldier
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Chief_Soldier_SlowCrit
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Chief_Soldier_RocketPush
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Chief_Soldier_Atomic
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Chief_Demo_Atomic
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Metalbeard
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Chief_Soldier_Extended_Concheror
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Chief_Demo_Barrage
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Chief_Pyro_Blast
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Chief_Scout_Buckshot
+					Health 10000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Chief_Soldier_RocketPush_RapidFire
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Chief_Soldier_Generic
+					Health 20000
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Chief_Demoman_Generic
+					Health 20000
 					ClassIcon support_giant
 				}
 				TFBot
@@ -8327,6 +8406,12 @@ WaveSchedule
 					Template T_TFBot_Giant_Soldier
 					ClassIcon support_giant
 				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Soldier
+					ClassIcon support_giant
+				}
+
 				TFBot
 				{
 					Template T_TFBot_Giant_Pyro
