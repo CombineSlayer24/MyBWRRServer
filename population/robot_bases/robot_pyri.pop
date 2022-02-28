@@ -30,7 +30,7 @@
 //T_TFBot_Scout_Fast									// Giant version of Super Scout.
 
 //T_TFBot_Giant_Scout_Slow								// An edit of the unused Giant Scout, 20% slower, scattergun upgraded.
-//T_TFBot_Giant_Scout_Melee	_Slow						// Melee restricted giant scout
+//T_TFBot_Giant_Scout_Melee_Slow						// Melee restricted giant scout
 //T_TFBot_Giant_Scout_FAN_Armored						// Armored version of FAN, 3000HP, slower movement speed.
 //T_TFBot_Giant_Scout_RapidFire							// On steroids, beefy version of normal Rapid Fire Scout.
 //T_TFBot_Giant_Scout_Marker							// Pretty useless Giant of Scout, Super Scout and Fan-O-War merge.
@@ -211,6 +211,7 @@
 
 // Sniper
 //T_TFBot_Sniper_Expert 								// Sniper with Difficulty to Expert, 3000 Vision. Used in Missions only!
+//T_TFBot_Sniper_DirectHit								// Sniper that uses the Direct Hit instead of Sniper. Used in Missions only!
 //T_TFBot_Sniper_Pro 									// Sniper with AWPer Hand, +50% Damage bonus. 3000 Vision. Used in Missions only!
 //T_TFBot_Sniper_Gauntlet								// (THIS IS MEANT FOR ADV/EXPERT) Armored Sniper with 900 health, 2500 vision. Used in Missions only!
 //T_TFBot_Sniper_Bushwacka								// Sniper as Melee With Bushwacka 
@@ -4383,6 +4384,26 @@ WaveSchedule
 			Skill Expert
 			Health 125
 			MaxVisionRange 3000
+		}
+		
+		T_TFBot_Sniper_DirectHit // Missions only
+		{
+			Class Sniper
+			Name Sniper
+			ClassIcon sniper
+			Skill Expert
+			Health 175
+			MaxVisionRange 3000
+			Item	"the direct hit"
+			ItemAttributes
+			{
+				ItemName	"the direct hit"
+				"damage bonus" 2.35
+				"fire rate bonus" 1.4
+				"faster reload rate" 0.25
+				"Blast radius increased" 1.6
+				"deploy time increased" 0.5
+			}
 		}
 		
 		T_TFBot_Sniper_Pro
