@@ -6,8 +6,8 @@
 // Valve's bots that aren't gatebots
 //T_TFGateBot_Scout_Bonk
 //T_TFGateBot_Scout_Shortstop
-//T_TFGateBot_Giant_Scout
-//T_TFGateBot_Giant_Scout_Melee								// Melee restricted giant scout
+//T_TFGateBot_Giant_Scout_Slow
+//T_TFGateBot_Giant_Scout_Melee	_Slow						// Melee restricted giant scout
 //T_TFGateBot_Giant_Scout_Bonk								// Made this bot use Bonk only once
 //T_TFGateBot_Giant_Scout_Fast
 //T_TFGateBot_Soldier_Extended_Buff_Banner
@@ -1177,7 +1177,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFGateBot_Giant_Scout
+		T_TFGateBot_Giant_Scout_Slow
 		{
 			Class Scout
 			Name "Giant Scout"
@@ -1198,6 +1198,13 @@ WaveSchedule
 					Skill Expert
 					Attributes MiniBoss
 					WeaponRestrictions PrimaryOnly
+					Item	"Upgradeable TF_WEAPON_SCATTERGUN"
+					ItemAttributes
+					{
+						ItemName	"Upgradeable TF_WEAPON_SCATTERGUN"
+						"fire rate bonus"	1.25
+						"faster reload rate"	1.3
+					}
 					CharacterAttributes
 					{
 						"move speed bonus"	0.8
@@ -1218,6 +1225,13 @@ WaveSchedule
 					Skill Expert
 					Attributes MiniBoss
 					WeaponRestrictions PrimaryOnly
+					Item	"Upgradeable TF_WEAPON_SCATTERGUN"
+					ItemAttributes
+					{
+						ItemName	"Upgradeable TF_WEAPON_SCATTERGUN"
+						"fire rate bonus"	1.25
+						"faster reload rate"	1.3
+					}
 					CharacterAttributes
 					{
 						"move speed bonus"	0.8
@@ -1229,7 +1243,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFGateBot_Giant_Scout_Melee
+		T_TFGateBot_Giant_Scout_Melee_Slow
 		{
 			Class Scout
 			Name "Giant Scout"
@@ -1250,6 +1264,12 @@ WaveSchedule
 					Skill Expert
 					Attributes MiniBoss
 					WeaponRestrictions MeleeOnly
+					ItemAttributes
+					{
+						ItemName	tf_weapon_bat
+						"fire rate bonus"	1.25
+						"damage bonus"	1.35
+					}
 					CharacterAttributes
 					{
 						"move speed bonus"	0.8
@@ -1270,6 +1290,12 @@ WaveSchedule
 					Skill Expert
 					Attributes MiniBoss
 					WeaponRestrictions MeleeOnly
+					ItemAttributes
+					{
+						ItemName	tf_weapon_bat
+						"fire rate bonus"	1.25
+						"damage bonus"	1.35
+					}
 					CharacterAttributes
 					{
 						"move speed bonus"	0.8
@@ -7331,7 +7357,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFGateBot_Giant_Demo_Nuker
+		T_TFGateBot_Giant_Demo_Blast
 		{
 			Class Demoman
 			Name "Giant Blast Demo"
@@ -9411,7 +9437,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFGateBot_Sniper_AlwaysFire_Upgrade
+		T_TFGateBot_Sniper_AlwaysFire_Upgraded
 		{
 			ClassIcon	sniper
 			Health	125
