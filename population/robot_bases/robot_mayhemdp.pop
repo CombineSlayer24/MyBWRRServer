@@ -6099,6 +6099,81 @@ WaveSchedule
 					Template T_TFBot_Sniper_Sydney_Sleepy
 					ClassIcon support_normal
 				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Marker_Tagger
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Marker_Tagger
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Scout_Marker_Tagger
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Spammer_Small
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Spammer_Small
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Spammer_Small
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Burst_Small
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Burst_Small
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Soldier_Burst_Small
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Backburner
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Backburner
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Backburner
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Flareheal
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Flareheal
+					ClassIcon support_normal
+				}
+				TFBot
+				{
+					Template T_TFBot_Pyro_Flareheal
+					ClassIcon support_normal
+				}
 			}
 		}
 		
@@ -8087,6 +8162,81 @@ WaveSchedule
 					Template T_TFGateBot_Sniper_Sydney_Sleepy
 					ClassIcon support_gatebot
 				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Marker_Tagger
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Marker_Tagger
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Scout_Marker_Tagger
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Spammer_Small
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Spammer_Small
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Spammer_Small
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Burst_Small
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Burst_Small
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Soldier_Burst_Small
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Backburner
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Backburner
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Backburner
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Flareheal
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Flareheal
+					ClassIcon support_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Pyro_Flareheal
+					ClassIcon support_gatebot
+				}
 			}
 		}
 		
@@ -9225,6 +9375,96 @@ WaveSchedule
 					Template T_TFBot_Giant_Demo_Blast
 					ClassIcon support_giant
 				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Slow
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Slow
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Slow
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Melee_Slow
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Melee_Slow
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Melee_Slow
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Flareheal
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Flareheal
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Flareheal
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Loch_Normal
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Loch_Normal
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Loch_Normal
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Loch_Expert
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Loch_Expert
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Loch_Expert
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Healonhit
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Healonhit
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Healonhit
+					ClassIcon support_giant
+				}
 			}
 		}
 		T_WaveSpawn_CalamityGiant_Gatebot
@@ -10188,6 +10428,96 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFGateBot_Giant_Demo_Blast
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_Slow
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_Slow
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_Slow
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_Melee_Slow
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_Melee_Slow
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Scout_Melee_Slow
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Flareheal
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Flareheal
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Pyro_Flareheal
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Loch_Normal
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Loch_Normal
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Loch_Normal
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Loch_Expert
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Loch_Expert
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Demo_Loch_Expert
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Healonhit
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Healonhit
+					ClassIcon support_giant_gatebot
+				}
+				TFBot
+				{
+					Template T_TFGateBot_Giant_Heavy_Healonhit
 					ClassIcon support_giant_gatebot
 				}
 			}
@@ -11243,6 +11573,96 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFBot_Giant_Demo_Blast
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Slow
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Slow
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Slow
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Melee_Slow
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Melee_Slow
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Scout_Melee_Slow
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Flareheal
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Flareheal
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Pyro_Flareheal
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Loch_Normal
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Loch_Normal
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Loch_Normal
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Loch_Expert
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Loch_Expert
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Demo_Loch_Expert
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Healonhit
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Healonhit
+					ClassIcon support_giant
+				}
+				TFBot
+				{
+					Template T_TFBot_Giant_Heavy_Healonhit
 					ClassIcon support_giant
 				}
 			}
