@@ -15,6 +15,7 @@
 //T_TFBot_Scout_Baseball_Armored						// Same as Giant Armored Sandman, but smaller.
 //T_TFBot_Scout_Baseball_Armored_Spammer 				// Same as Giant Armored Sandman, but smaller and rapidly fires baseball's at enemies.
 //T_TFBot_Scout_Marker									// Fan-O-War Scout.
+//T_TFBot_Scout_Marker_Tagger							// Sandman Scout that will mark enemies.
 //T_TFBot_Scout_MiniCrit_Scattergun						// Scout with Crit-A-Cola, uses Scattergun.
 //T_TFBot_Scout_MiniCrit								// Scout with Crit-A-Cola, uses Soda Popper.
 //T_TFBot_Scout_MiniCrit_Melee							// Scout with Crit-A-Cola, Melee restricted.
@@ -39,6 +40,7 @@
 //T_TFBot_Giant_Scout_Minicrit_Stun						// Giant from of MiniCrit Stun Scout, MeleeOnly, 1600HP.
 //T_TFBot_Giant_Scout_Bonk_Stun							// Giant from of Bonk Stun Scout, MeleeOnly, 1600HP.
 //T_TFBot_Giant_Scout_Shortstop							// Similar to Shortstop Scout, but Giant form.
+//T_TFBot_Giant_Scout_Milk								// Giant Scout with 1200HP, uses milk, mobber.
 
 // Soldier
 //T_TFBot_Soldier_Easy									// Easy Difficulty Soldier.
@@ -52,7 +54,9 @@
 //T_TFBot_Soldier_Concheror_Trio 						// Used in groups. Buff, Backup and Conch, 400% buff duration.
 //T_TFBot_Soldier_Battalion_Trio						// Used in groups. Buff, Backup and Conch, 400% buff duration.
 //T_TFBot_Soldier_Spammer							 	// Same as Giant counterpart.
+//T_TFBot_Soldier_Spammer_Small							// Small variant, no HP boost.
 //T_TFBot_Soldier_Burst 								// Same as Giant counterpart.
+//T_TFBot_Soldier_Burst_Small							// Small variant, no HP boost.
 //T_TFBot_Soldier_Burst_Heal 							// Same as Burst Fire, but with heal on kills.
 //T_TFBot_Soldier_Burst_Backup							// Burstfire with Battalions banner.
 //T_TFBot_Soldier_Escapeplan							// Melee Soldier. Low HP, more speed.
@@ -99,6 +103,7 @@
 //T_TFBot_Pyro_Manmelter								// Pyro w/ Manmelter, basically a ThirdDegree from a range.
 //T_TFBot_Pyro_Dragon 									// Pyro w/ Dragon's Fury, less damage, less fire rate.
 //T_TFBot_Pyro_Dragon_Hard 								// Pyro w/ Dragon's Fury, more damage, more fire rate.
+//T_TFGBot_Pyro_Backburner								// Pyri w/ Backburner. Moves +50% faster, no airblast.
 //T_TFBot_Pyro_Gaspasser 								// Pyro w/ Gas-Passer.
 //T_TFBot_Pyro_Gaspasser_FastCharge 					// NEW, Recharges faster. (*)
 //T_TFBot_Pyro_Gaspasser_Explosive 						// Gas passer pyro that will deal intensive Afterburn DMG.
@@ -110,6 +115,7 @@
 //T_TFBot_Pyro_Volcano									// Big Pyro(650) w/ major +200% Damage bonus. Melee restricted.
 //T_TFBot_Pyro_Shotgun									// Normal Shotgun Pyro
 //T_TFBot_Pyro_Shotgun_Expert 							// Shotgun Pyro with stats
+//T_TFBot_Pyro_Flareheal								// Flare Pyro that deals less damage, but heals fully on hit.
 //T_TFBot_Pyro_ScorchShot_Burst							// Scorchshot Pyro but shoots rapidly in burst succession
 //T_TFBot_Pyro_ScorchShot_Burst_Super					// Large version of shorchshot_burst but with Criticals
 
@@ -118,6 +124,7 @@
 //T_TFBot_Giant_Pyro_Dragon 							// Giant Pyro equipped w/ Dragon's Fury.
 //T_TFBot_Giant_Pyro_Gaspasser							// Giant Pyro with Gas Passer. HHmmm
 //T_TFBot_Giant_Pyro_Shotgun 							// Giant Shotgun Pyro.
+//T_TFBot_Giant_Pyro_Flareheal							// Giant Flare Pyro that heals upon hit.
 
 // Demoman
 //T_TFBot_Demoman_Normal								// Normal Difficulty Demoman
@@ -138,6 +145,8 @@
 //T_TFBot_Demo_Caber_Hard 								// Uses Boots and Shield to gain advantage. 
 //T_TFBot_Demo_Caber_Rapid 								// Similar to Caber Hard but rapidly charges.
 
+//T_TFBot_Giant_Demo_Loch_Normal						// Giant Loch-N-Load Demo. Normal difficult, less accurate.
+//T_TFBot_Giant_Demo_Loch_Expert						// Giant Loch-N-Load Demo. Expert difficult, more accurate.
 //T_TFBot_Giant_Demo_Spammer 							// Improved variant to the original Giant counterpart.
 //T_TFBot_Giant_Demo_Barrage 							// NEW. Similar to the Colonel Barrage, but in Demo form.
 //T_TFBot_Giant_Demo_Barrage_Old 						// Only difference is the Cosmetic set.
@@ -173,6 +182,7 @@
 //T_TFBot_Giant_Heavy_Steel								// Giant Heavy Gauntlet. 10,000HP, Minor Chief boss. Walking Tank, literally.
 //T_TFBot_Giant_Heavy_Natascha							// Gaint Natascha Heavy can Grab players more efficiently than small ones.
 //T_TFBot_Giant_Heavy_Deflector_Airblast				// Giant Deflector Heavy that pushes people away per attack.
+//T_TFBot_Giant_Heavy_Healonhit							// Giant Heavy that heals on kill and on hit. (uses different hat for gatebot)
 //T_TFBot_Giant_Heavy_Booster							// Gaint Heavy Booster, but more deadly, with +20% Damage bonus.
 //T_TFBot_Giant_Heavy_Rocket							// Rocket Heavy, +400% damage, and faster fire rate than smaller.
 //T_TFBot_Giant_HeavyShotgun_Slugshot					// Giant Heavy that fires one slug that deals lots of damage.
@@ -455,10 +465,28 @@ WaveSchedule
 			Class Scout
 			Name "Fan-O-War Scout"
 			ClassIcon scout_fanowar
-			Skill Expert
+			Skill Hard
 			Health 125
 			WeaponRestrictions	MeleeOnly
 			Item 	"the fan o'war"
+		}
+		
+		T_TFBot_Scout_Marker_Sandman
+		{
+			ClassIcon	scout_stun
+			Name	"Marker Scout"
+			Class	Scout
+			Skill	Expert
+			WeaponRestrictions	MeleeOnly
+			ItemAttributes
+			{
+				ItemName	"the sandman"
+				"effect bar recharge rate increased"	0.25
+				"mark for death"	1
+			}
+			Item	"the sandman"
+			Item	"batter's helmet"
+			Item	"the boston boom-bringer"
 		}
 		
 		T_TFBot_Scout_MiniCrit_Scattergun
@@ -997,6 +1025,43 @@ WaveSchedule
 			Item	"the milkman"
 		}
 		
+		T_TFBot_Giant_Scout_Milk
+		{
+			ClassIcon	scout_milk_giant
+			Health	1200
+			Name	"Giant Shortstop Scout"
+			Class	Scout
+			Skill	Expert
+			Attributes	"MiniBoss"
+			BehaviorModifiers mobber
+			WeaponRestrictions	SecondaryOnly
+			ItemAttributes
+			{
+				ItemName	"the shortstop"
+				"faster reload rate"	-0.8
+				"fire rate bonus"	0.9
+			}
+			ItemAttributes
+			{
+				ItemName "Mad Milk"
+				"applies snare effect" 0.35
+				"effect bar recharge rate increased"	0.35
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	1.3
+				"damage force reduction"	0.7
+				"airblast vulnerability multiplier"	0.7
+				"effect bar recharge rate increased"	0.6
+				"override footstep sound set"	5
+			}
+			Item	"the shortstop"
+			Item	"mad milk"
+			Item	"the holy mackerel"
+			Item	"bonk boy"
+			Item	"the milkman"
+		}
+		
 		//Soldier Templates
 		T_TFBot_Soldier_Easy
 		{
@@ -1148,6 +1213,24 @@ WaveSchedule
 			}
 		}
 		
+		T_TFBot_Soldier_Spammer_Small //Same as Giant counterpart.
+		{
+			Class Soldier
+			Name "Rapid Fire Soldier"
+			ClassIcon soldier_spammer_normal
+			Skill Expert
+			Attributes	HoldFireUntilFullReload
+			WeaponRestrictions PrimaryOnly
+			Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+			ItemAttributes
+			{
+				ItemName	 "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+				"Projectile speed increased"	0.65
+				"faster reload rate"	-0.8
+				"fire rate bonus"	0.5
+			}
+		}
+		
 		T_TFBot_Soldier_Burst //Same as Giant counterpart.
 		{
 			Class Soldier
@@ -1170,6 +1253,25 @@ WaveSchedule
 			CharacterAttributes
 			{
 				"move speed penalty"	0.75 // Was 0.6
+			}
+		}
+		
+		T_TFBot_Soldier_Burst_Small //Same as Giant counterpart.
+		{
+			Class Soldier
+			Name "Burst Fire Soldier"
+			ClassIcon soldier_burstfire_normal
+			Skill Expert
+			Attributes	HoldFireUntilFullReload
+			WeaponRestrictions PrimaryOnly
+			Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+			ItemAttributes
+			{
+				ItemName	"Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+				"Projectile speed increased"	0.65
+				"faster reload rate"	0.6
+				"fire rate bonus"	0.1
+				"clip size upgrade atomic"	5.0
 			}
 		}
 		
@@ -2146,6 +2248,21 @@ WaveSchedule
 			}
 		}
 		
+		T_TFBot_Pyro_Backburner
+		{
+			ClassIcon	pyro
+			Name	"Backburner Pyro"
+			Class	Pyro
+			Skill	Hard
+			WeaponRestrictions	PrimaryOnly
+			CharacterAttributes
+			{
+				"move speed bonus"	1.5
+				"airblast disabled" 1
+			}
+			Item	"the backburner"
+		}
+		
 		T_TFBot_Pyro_Gaspasser //NEW
 		{
 			Class Pyro
@@ -2378,6 +2495,25 @@ WaveSchedule
 			}
 		}
 		
+		T_TFBot_Pyro_Flareheal
+		{
+			Name "Flareheal Pyro"
+			Class Pyro
+			Skill Hard
+			Health 175
+			ClassIcon pyro_flareheal
+			WeaponRestrictions SecondaryOnly
+			Item "The Detonator"
+			Item	"Firewall Helmet"
+			ItemAttributes
+			{
+				ItemName "The Detonator"
+				"damage penalty" 0.50
+				"faster reload rate" 0.50
+				"heal on hit for slowfire" 175
+			}
+		}
+		
 		T_TFBot_Pyro_ScorchShot_Burst
 		{
 			Class Pyro
@@ -2571,6 +2707,34 @@ WaveSchedule
 				"damage force reduction"	0.6
 				"airblast vulnerability multiplier"	0.6
 				"override footstep sound set"	6
+			}
+		}
+		
+		T_TFBot_Giant_Pyro_Flareheal
+		{
+			Name "Giant Flareheal Pyro"
+			Class Pyro
+			Skill Expert
+			Health 3000
+			ClassIcon pyro_flareheal_giant
+			WeaponRestrictions SecondaryOnly
+			Item "The Detonator"
+			Item	"Firewall Helmet"
+			Attributes MiniBoss
+			ItemAttributes
+			{
+				ItemName "The Detonator"
+				"damage bonus" 1.25
+				"damage causes airblast" 1
+				"faster reload rate" 1.3
+				"heal on hit for rapidfire" 750
+			}
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.6
+				"damage force reduction" 0.6
+				"move speed bonus" 0.5
+				"override footstep sound set" 6
 			}
 		}
 		
@@ -2929,6 +3093,62 @@ WaveSchedule
 		}
 		
 		//Giant Demoman Templates
+		T_TFBot_Giant_Demo_Loch_Normal
+		{
+			ClassIcon	demo_loch_giant
+			Health	3300
+			Name	"Giant Loch Demo"
+			Class	Demoman
+			Skill	Normal
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"HoldFireUntilFullReload"
+			Attributes	"MiniBoss"
+			ItemAttributes
+			{
+				ItemName	"the loch-n-load"
+				"faster reload rate"	-0.4
+				"fire rate bonus"	0.75
+				"damage bonus"	2.0
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction"	0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"	4
+			}
+			Item	"the loch-n-load"
+			Item	"scotch bonnet"
+		}
+
+		T_TFBot_Giant_Demo_Loch_Expert
+		{
+			ClassIcon	demo_loch_giant
+			Health	3300
+			Name	"Giant Loch Demo"
+			Class	Demoman
+			Skill	Expert
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"HoldFireUntilFullReload"
+			Attributes	"MiniBoss"
+			ItemAttributes
+			{
+				ItemName	"the loch-n-load"
+				"faster reload rate"	-0.4
+				"fire rate bonus"	0.75
+				"damage bonus"	2.0
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction"	0.5
+				"airblast vulnerability multiplier"	0.5
+				"override footstep sound set"	4
+			}
+			Item	"the loch-n-load"
+			Item	"scotch bonnet"
+		}
+		
 		T_TFBot_Giant_Demo_Spammer //Improved variant to the original Giant counterpart.
 		{
 			Class Demoman
@@ -3638,6 +3858,35 @@ WaveSchedule
 				"airblast vertical vulnerability multiplier"	0.3
 				"damage force reduction"	0.3
 			}
+		}
+		
+		T_TFBot_Giant_Heavy_Healonhit
+		{
+			ClassIcon	heavy_healonkill_giant
+			Health	5000
+			Name	"Giant Heal-on-Hit Heavy"
+			Class	HeavyWeapons
+			Skill	Expert
+			MaxVisionRange	1200
+			WeaponRestrictions	PrimaryOnly
+			Attributes	"MiniBoss"
+			Attributes	"UseBossHealthBar"
+			ItemAttributes
+			{
+				ItemName	tf_weapon_minigun
+				"damage bonus"	1.2
+				"heal on hit for rapidfire"	200
+				"heal on kill"	5000
+				"fire rate bonus"	0.8
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction"	0.3
+				"airblast vulnerability multiplier"	0.3
+				"override footstep sound set"	2
+			}
+			Item	"the warsworn helmet"
 		}
 		
 		T_TFBot_Giant_Heavy_Booster
