@@ -3106,6 +3106,7 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName	"the loch-n-load"
+				"Projectile speed increased"	1.0
 				"faster reload rate"	-0.4
 				"fire rate bonus"	0.75
 				"damage bonus"	2.0
@@ -3134,6 +3135,7 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName	"the loch-n-load"
+				"Projectile speed increased"	1.0
 				"faster reload rate"	-0.4
 				"fire rate bonus"	0.75
 				"damage bonus"	2.0

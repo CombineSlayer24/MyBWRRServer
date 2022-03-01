@@ -6,8 +6,8 @@
 // Valve's bots that aren't gatebots
 //T_TFGateBot_Scout_Bonk
 //T_TFGateBot_Scout_Shortstop
-//T_TFGateBot_Giant_Scout_Slow
-//T_TFGateBot_Giant_Scout_Melee	_Slow						// Melee restricted giant scout
+//T_TFGateBot_Giant_Scout									// VALVe bot in gatebot
+//T_TFGateBot_Giant_Scout_Melee								// Melee restricted Giant Scout.
 //T_TFGateBot_Giant_Scout_Bonk								// Made this bot use Bonk only once
 //T_TFGateBot_Giant_Scout_Fast
 //T_TFGateBot_Soldier_Extended_Buff_Banner
@@ -49,8 +49,8 @@
 //T_TFGsteBot_Scout_Fast									// Giant version of Super Scout.
 //T_TFGateBot_Scout_Shortstop								// VALVe bot in gatebot
 
-//T_TFGateBot_Giant_Scout									// VALVe bot in gatebot
-//T_TFGateBot_Giant_Scout_Melee								// Melee restricted Giant Scout.
+//T_TFGateBot_Giant_Scout_Slow
+//T_TFGateBot_Giant_Scout_Melee_Slow						// Melee restricted giant scout
 //T_TFGateBot_Giant_Scout_Bonk								// VALVe bot in gatebot
 //T_TFGateBot_Giant_Scout_Fast								// VALVe bot in gatebot
 //T_TFGateBot_Giant_Scout_FAN_Armored						// Armored version of FAN, 3000HP, slower movement speed.
@@ -7297,6 +7297,7 @@ WaveSchedule
 					ItemAttributes
 					{
 						ItemName	"the loch-n-load"
+						"Projectile speed increased"	1.0
 						"faster reload rate"	-0.4
 						"fire rate bonus"	0.75
 						"damage bonus"	2.0
@@ -7326,6 +7327,7 @@ WaveSchedule
 					ItemAttributes
 					{
 						ItemName	"the loch-n-load"
+						"Projectile speed increased"	1.0
 						"faster reload rate"	-0.4
 						"fire rate bonus"	0.75
 						"damage bonus"	2.0
