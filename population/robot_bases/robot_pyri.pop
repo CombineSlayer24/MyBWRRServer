@@ -4016,7 +4016,6 @@ WaveSchedule
 		}
 		
 		//Engineer Templates
-		
 		T_TFBot_Engineer_Battle_Shotgun
 		{
 			ClassIcon	engineer
@@ -4160,7 +4159,6 @@ WaveSchedule
 		}
 		
 		//Medic Templates
-		
 		T_TFBot_Medic_Melee
 		{
 			Class Medic
@@ -4369,7 +4367,6 @@ WaveSchedule
 		}
 		
 		//Giant Medic Templates
-		
 		T_TFBot_Giant_Medic_Battle
 		{
 			Class Medic
@@ -4675,7 +4672,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Sniper_Gauntlet
+		T_TFBot_Sniper_Gauntlet // Screw this template
 		{
 			Class Sniper
 			Name "Bulky Sniper"
