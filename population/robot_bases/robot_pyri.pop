@@ -369,7 +369,7 @@ WaveSchedule
 			Item 	"The Force-a-Nature"
 		}
 		
-		T_TFBot_Scout_RapidFire // DO NOT OVERUSE / DO NOT USE IN LARGE GROUPS
+		T_TFBot_Scout_RapidFire // DO NOT USE IN LARGE GROUPS
 		{
 			Class Scout
 			Name "Rapid Fire Scout"
@@ -659,7 +659,7 @@ WaveSchedule
 			Skill Normal
 			Health 125
 			WeaponRestrictions SecondaryOnly
-			Attributes AlwaysFireWeapon
+			//Attributes AlwaysFireWeapon
 			Item	"the shortstop"
 			Item	"mad milk"
 			Item	"the holy mackerel"
@@ -4823,7 +4823,7 @@ WaveSchedule
 			Item "The Bushwacka"
 			Item "Desert Marauder"
 			WeaponRestrictions SecondaryOnly
-			Attributes	AlwaysFireWeapon
+			//Attributes	AlwaysFireWeapon
 			CharacterAttributes
 			{
 				"effect bar recharge rate increased" 0.05
@@ -5225,6 +5225,7 @@ WaveSchedule
 				"is australium item"	1
 				"item style override"	1
 				"loot rarity" 	1
+				"airblast disabled"	1
 			}
 			ItemAttributes
 			{
