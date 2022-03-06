@@ -10238,7 +10238,7 @@ WaveSchedule
 					Item "MvM GateBot Light Sniper"
 					Skill Easy
 					WeaponRestrictions SecondaryOnly
-					Attributes	AlwaysFireWeapon
+					//Attributes	AlwaysFireWeapon
 					Item "Jarate"
 					Item "The Bushwacka"
 					CharacterAttributes
@@ -10256,7 +10256,7 @@ WaveSchedule
 					}
 					Skill Easy
 					WeaponRestrictions SecondaryOnly
-					Attributes	AlwaysFireWeapon
+					//Attributes	AlwaysFireWeapon
 					Item "Jarate"
 					Item "The Bushwacka"
 					CharacterAttributes
