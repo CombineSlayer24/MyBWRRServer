@@ -9151,7 +9151,7 @@ WaveSchedule
 		{
 			Class Heavyweapons
 			ClassIcon	heavy_steelfist_giant
-			Health	10000
+			Health	7500
 			Name	"Giant Steel Gauntlet"
 			
 			

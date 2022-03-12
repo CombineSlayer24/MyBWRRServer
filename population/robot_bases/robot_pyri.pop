@@ -3775,7 +3775,7 @@ WaveSchedule
 		T_TFBot_Giant_Heavy_Steel
 		{
 			ClassIcon	heavy_steelfist_giant
-			Health	10000
+			Health	7500
 			Name	"Giant Steel Gauntlet"
 			Class	HeavyWeapons
 			Skill	Expert
