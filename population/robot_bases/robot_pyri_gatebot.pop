@@ -5835,6 +5835,7 @@ WaveSchedule
 		{
 			Class Pyro
 			Name "Burst Super Pyro Pusher"
+			ClassIcon pyro_scorch
 			Health 650
 			Scale 1.3
 
