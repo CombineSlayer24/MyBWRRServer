@@ -3246,6 +3246,7 @@ WaveSchedule
 		
 		T_TFGateBot_Soldier_Burst_Pusher
 		{
+			Class Soldier
 			ClassIcon	soldier_libertylauncher
 			Health	200
 			Name	"Burst Fire Pusher"
@@ -3303,6 +3304,7 @@ WaveSchedule
 		
 		T_TFGateBot_Soldier_Burst_Pusher_Expert
 		{
+			Class Soldier
 			ClassIcon	soldier_libertylauncher
 			Health	200
 			Name	"Burst Fire Pusher"
