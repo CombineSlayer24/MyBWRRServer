@@ -4,28 +4,28 @@
 //Custom icons that are made by me, are marked with (*)
 
 // Valve's bots that aren't gatebots
-//T_TFGateBot_Scout_Bonk
-//T_TFGateBot_Scout_Shortstop
-//T_TFGateBot_Giant_Scout									// VALVe bot in gatebot
-//T_TFGateBot_Giant_Scout_Melee								// Melee restricted Giant Scout.
+//T_TFGateBot_Giant_Scout									// Nothing special
+//T_TFGateBot_Scout_Bonk                                    // Nothing speical
+//T_TFGateBot_Scout_Shortstop                               // Nothing speical
+//T_TFGateBot_Giant_Scout									// Nothing special
 //T_TFGateBot_Giant_Scout_Bonk								// Made this bot use Bonk only once
-//T_TFGateBot_Giant_Scout_Fast
-//T_TFGateBot_Soldier_Extended_Buff_Banner
-//T_TFGateBot_Giant_Soldier_Extended_Buff_Banner
-//T_TFGateBot_Giant_Soldier_Extended_Battalion
-//T_TFGateBot_Giant_Soldier_Crit
+//T_TFGateBot_Giant_Scout_Fast                              // Nothing special
+//T_TFGateBot_Soldier_Extended_Buff_Banner                  // Nothing special
+//T_TFGateBot_Giant_Soldier_Extended_Buff_Banner            // Nothing special
+//T_TFGateBot_Giant_Soldier_Extended_Battalion              // Nothing special
+//T_TFGateBot_Giant_Soldier_Crit                            // Nothing special
 //T_TFGateBot_Pyro_ScorchShot								// Uses custom icon
 //T_TFGateBot_Pyro_ScorchShot_Fast							// Uses custom icon
 //T_TFGateBot_Giant_Pyro_Flare_Spammer						// Renamed to Giant Detonator Pyro, with icon change
 //T_TFGateBot_Giant_Pyro_Flare_Spammer_ScorchShot			// Renamed to Giant ScorchShot Pyro, with icon change
-//T_TFGateBot_Demoknight
-//T_TFGateBot_Giant_Demoman
-//T_TFGateBot_Giant_DemoMan_PrinceTavish
-//T_TFGateBot_Heavyweapons_Heavyweight_Champ
-//T_TFGateBot_Heavyweapons_Heavyweight_Champ_Fast
-//T_TFGateBot_Giant_Heavyweapons
-//T_TFGateBot_Giant_Boxing_Heavy
-//T_TFGateBot_Sniper_Huntsman
+//T_TFGateBot_Demoknight                                    // Nothing special
+//T_TFGateBot_Giant_Demoman                                 // Nothing special
+//T_TFGateBot_Giant_DemoMan_PrinceTavish                    // Nothing special
+//T_TFGateBot_Heavyweapons_Heavyweight_Champ                // Nothing special
+//T_TFGateBot_Heavyweapons_Heavyweight_Champ_Fast           // Nothing special
+//T_TFGateBot_Giant_Heavyweapons                            // Nothing special
+//T_TFGateBot_Giant_Boxing_Heavy                            // Nothing special
+//T_TFGateBot_Sniper_Huntsman                               // Nothing special
 
 // Scout
 //T_TFGateBot_Scout_Easy									// Easy Difficulty Scout.
@@ -47,12 +47,13 @@
 //T_TFGateBot_Scout_Bonk_Stun_FastCharge					// Scout with Bonk, Uses Sandman.
 //T_TFGateBot_Scout_Cleaver 								// A Scout welding a Clever.
 //T_TFGsteBot_Scout_Fast									// Giant version of Super Scout.
-//T_TFGateBot_Scout_Shortstop								// VALVe bot in gatebot
+//T_TFGateBot_Scout_Shortstop								// Nothing special
 
-//T_TFGateBot_Giant_Scout_Slow
-//T_TFGateBot_Giant_Scout_Melee_Slow						// Melee restricted giant scout
-//T_TFGateBot_Giant_Scout_Bonk								// VALVe bot in gatebot
-//T_TFGateBot_Giant_Scout_Fast								// VALVe bot in gatebot
+
+//T_TFGateBot_Giant_Scout_Slow                              // -20% less movement speed
+//T_TFGateBot_Giant_Scout_Melee_Slow						// Melee restricted giant scout, -20% less movement speed
+//T_TFGateBot_Giant_Scout_Bonk								// Only uses Bonk! once
+//T_TFGateBot_Giant_Scout_Fast								// Nothing special
 //T_TFGateBot_Giant_Scout_FAN_Armored						// Armored version of FAN, 3000HP, slower movement speed.
 //T_TFGateBot_Giant_Scout_RapidFire							// On steroids, beefy version of normal Rapid Fire Scout.
 //T_TFGateBot_Giant_Scout_Minicrit							// Giant form of MiniCrit Scout, PrimaryOnly, 1600HP.
@@ -180,13 +181,13 @@
 //T_TFGateBot_Heavy_Deflector 								// Uses in Mannworks but Template is disabled for unknown reasons.
 //T_TFGateBot_Heavy_Deflector_Healonkill 					// Similar to it's Giant counterpart.
 //T_TFGateBot_Heavy_Booster_Easy							// 600 Vision, less time for crits/speed, low health gain per kill. Meant for easy.
-//T_TFGateBot_Heavy_Booster_Expert 			--WARNING!--	// (THIS IS MEANT FOR ADV/EXPERT) Gains health, speed and crits upon kill.
+//T_TFGateBot_Heavy_Booster_Expert 			            	// (ADV/EXPERT) Gains health, speed and crits upon kill.
 //T_TFGateBot_Heavy_Heater 									// Similar to Giant counterpart.
 //T_TFGateBot_Heavy_Rocket 									// A special form of Heavy Bot that fires Rockets at enemies.
 //T_TFGateBot_Heavy_Bearweight 								// Heavy that uses Warrior Spirit.
 //T_TFGateBot_Heavy_Bearfist								// Heavy that uses Warrior Spirit, but bigger and 900 Healthpool.
 //T_TFGateBot_Heavy_ApocoFist								// Saints Row 3 Killbane robot. Uses Apoco-Fists.
-//T_TFGateBot_Heavyweapons_Melee							// Melee Heavy. (Intended for support)
+//T_TFGateBot_Heavyweapons_Melee							// Melee Heavy. (cool icon, Intended for support)
 //T_TFGateBot_Heavyweapons_Heavyweight_Champ				// Heavy Champ gatebot
 //T_TFGateBot_Heavyweapons_Heavyweight_Champ_Fast			// Heavy Champ gatebot
 //T_TFGateBot_Heavyweapons_Heavyweight_Mega_Champ			// Steel Gauntlet Heavy Champ
@@ -208,7 +209,7 @@
 //T_TFGateBot_Giant_HeavyShotgun_Slugshot					// Giant Heavy that fires one slug that deals lots of damage.
 //T_TFGateBot_Giant_HeavyShotgun_Hunter						// This Giant Shotgun Heavy means power. More DMG, slower reload.	
 
-//Engineer
+//Engineer (WARNING THESE ARE SUPER FINICKY AND ARE GIMMICKS)
 //T_TFGateBot_Engineer_Battle_Shotgun						// Pair this bot in a squad (Squad leader must not be engie). Engineer with a PrimaryOnly restriction.
 //T_TFGateBot_Engineer_Widowmaker							// Uses Widowmaker. Pair this bot in a squad (Squad leader must not be engie). Engineer with a PrimaryOnly restriction.
 //T_TFGateBot_Engineer_Conch								// Pair this bot in a squad (Squad leader must not be engie). Engineer with a PrimaryOnly restriction, uses Conch.
@@ -1220,6 +1221,70 @@ WaveSchedule
 				}
 			}
 		}
+
+		T_TFGateBot_Giant_Scout
+		{
+			Class Scout
+			Name "Giant Scout"
+			ClassIcon scout_giant
+			Health 1600
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Tag bot_giant
+					Skill Expert
+					Attributes MiniBoss
+					WeaponRestrictions PrimaryOnly
+					Item	"Upgradeable TF_WEAPON_SCATTERGUN"
+					ItemAttributes
+					{
+						ItemName	"Upgradeable TF_WEAPON_SCATTERGUN"
+						"fire rate bonus"	1.25
+						"faster reload rate"	1.3
+					}
+					CharacterAttributes
+					{
+						"damage force reduction" 0.7
+						"airblast vulnerability multiplier" 0.7
+						"override footstep sound set" 5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					Attributes MiniBoss
+					WeaponRestrictions PrimaryOnly
+					Item	"Upgradeable TF_WEAPON_SCATTERGUN"
+					ItemAttributes
+					{
+						ItemName	"Upgradeable TF_WEAPON_SCATTERGUN"
+						"fire rate bonus"	1.25
+						"faster reload rate"	1.3
+					}
+					CharacterAttributes
+					{
+						"damage force reduction" 0.7
+						"airblast vulnerability multiplier" 0.7
+						"override footstep sound set" 5
+					}
+				}
+			}
+		}
 		
 		T_TFGateBot_Giant_Scout_Slow
 		{
@@ -1279,6 +1344,68 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"move speed bonus"	0.8
+						"damage force reduction" 0.7
+						"airblast vulnerability multiplier" 0.7
+						"override footstep sound set" 5
+					}
+				}
+			}
+		}
+
+        T_TFGateBot_Giant_Scout_Melee
+		{
+			Class Scout
+			Name "Giant Scout"
+			ClassIcon scout_giant
+			Health 1600
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Scout"
+					Tag bot_giant
+					Skill Expert
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					ItemAttributes
+					{
+						ItemName	tf_weapon_bat
+						"fire rate bonus"	1.25
+						"damage bonus"	1.35
+					}
+					CharacterAttributes
+					{
+						"damage force reduction" 0.7
+						"airblast vulnerability multiplier" 0.7
+						"override footstep sound set" 5
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Scout"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Scout"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					Attributes MiniBoss
+					WeaponRestrictions MeleeOnly
+					ItemAttributes
+					{
+						ItemName	tf_weapon_bat
+						"fire rate bonus"	1.25
+						"damage bonus"	1.35
+					}
+					CharacterAttributes
+					{
 						"damage force reduction" 0.7
 						"airblast vulnerability multiplier" 0.7
 						"override footstep sound set" 5
