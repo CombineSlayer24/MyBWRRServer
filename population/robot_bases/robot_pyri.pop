@@ -5363,7 +5363,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Chief_Demo_Hellfire
+		T_TFBot_Chief_Demo_Hellfire // I want to scrap this badly, but i don't want to break missions that may have this boss
 		{
 			ClassIcon	demo_bomber
 			Health	60000
