@@ -1141,7 +1141,7 @@ WaveSchedule
 					Skill Hard
 					WeaponRestrictions	MeleeOnly
 					Item	"the holy mackerel"
-					Item	"bonk boy"
+					//Item	"bonk boy" // Doesn't make the gatebot hat appear
 					ItemAttributes
 					{
 						ItemName	"the holy mackerel"
@@ -1164,7 +1164,7 @@ WaveSchedule
 					Skill Hard
 					WeaponRestrictions	MeleeOnly
 					Item	"the holy mackerel"
-					Item	"bonk boy"
+					//Item	"bonk boy" // Doesn't make the gatebot hat appear
 					ItemAttributes
 					{
 						ItemName	"the holy mackerel"
