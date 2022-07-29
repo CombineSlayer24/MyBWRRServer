@@ -734,7 +734,7 @@ WaveSchedule
 		T_TFBot_Scout_Fast
 		{
 			ClassIcon	scout_fast
-			Health	175
+			Health	125
 			Name	"Fast Scout"
 			Class	Scout
 			Skill	Hard
@@ -748,8 +748,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
-				"move speed bonus"	1.6
-				"dmg taken from bullets increased"	1.25
+				"move speed bonus"	1.35
 			}
 		}
 		

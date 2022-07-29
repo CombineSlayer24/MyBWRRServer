@@ -1126,7 +1126,6 @@ WaveSchedule
 			Class Scout
 			ClassIcon	scout_fast
 			Name	"Fast Scout"
-			Health	175
 
 			EventChangeAttributes
 			{
@@ -1149,8 +1148,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"move speed bonus"	1.6
-						"dmg taken from bullets increased"	1.25
+						"move speed bonus"	1.35
 					}
 				}
 				RevertGateBotsBehavior
@@ -1172,8 +1170,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"move speed bonus"	1.6
-						"dmg taken from bullets increased"	1.25
+						"move speed bonus"	1.35
 					}
 				}
 			}
