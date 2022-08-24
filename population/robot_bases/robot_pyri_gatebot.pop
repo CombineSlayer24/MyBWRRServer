@@ -9823,7 +9823,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFGateBot_Giant_HeavyShotgun_Slugshot
+		T_TFGateBot_Giant_HeavyShotgun_Hunter
 		{
 			ClassIcon	heavy_shotgun_giant
 			Health	5000
