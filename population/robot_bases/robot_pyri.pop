@@ -62,7 +62,7 @@
 //T_TFBot_Soldier_Escapeplan							// Melee Soldier. Low HP, more speed.
 //T_TFBot_Soldier_Equalizer								// Melee Soldier. Low HP, more damage dealt
 //T_TFBot_Soldier_Barrage								// Giant version of Barrage soldier into small.
-//T_TFBot_Soldier_Barrage_Elite							// 900 HP, 10JP regen.
+//T_TFBot_Soldier_Barrage_Elite							// 900 HP, 10HP regen.
 //T_TFBot_Soldier_Shovel								// Soldier melee restricted.
 //T_TFBot_Soldier_Crit 									// Crit variant from Ghost Town.
 //T_TFBot_Soldier_Charged 								// Same as Giant counterpart.
@@ -254,6 +254,7 @@
 
 // Special/Misc Robot Templates
 //T_TFBot_Scout_Australium
+//T_TFBot_Sniper_Australium
 //T_TFBot_Soldier_Australium
 //T_TFBot_Pyro_Australium
 //T_TFBot_Demo_Australium
@@ -268,6 +269,7 @@
 //T_TFBot_Chief_Soldier_RocketPush_RapidFire
 //T_TFBot_Chief_Soldier_Generic
 //T_TFBot_Chief_Demoman_Generic
+//T_TFBot_Halloween_SpawnBoss_Hatman					// Officer Spy's custom Halloween Boss enemy (Special plugin is required for this to work)
 //Begin Robot Pop
 WaveSchedule
 {
@@ -5179,6 +5181,34 @@ WaveSchedule
 			}
 		}
 		
+		T_TFBot_Sniper_Australium
+		{
+			Class Scout
+			Name "Australium Sniper"
+			ClassIcon sniper // find gold icon
+			Skill Expert
+			Health 125
+			//WeaponRestrictions PrimaryOnly
+			Item "Upgradeable TF_WEAPON_SNIPERRIFLE"
+			Item "Batter's Helmet"
+			ItemAttributes
+			{
+				ItemName	"Upgradeable TF_WEAPON_SNIPERRIFLE"
+				"damage bonus"	1.5
+				"is australium item"	1
+				"item style override"	1
+				"loot rarity"	1
+				"fire rate bonus"	0.65 // Was 0.65
+				"sniper fires tracer"	1
+			}
+			//ItemAttributes	//SET COSMETICS LATER
+			//{
+				//ItemName	"Batter's Helmet"
+				//"set item tint RGB"	15185211
+				//"attach particle effect"	14
+			//}
+		}
+		
 		T_TFBot_Soldier_Australium
 		{
 			Class Soldier
@@ -5663,6 +5693,16 @@ WaveSchedule
 				"rage giving scale" 0.1
 				"move speed bonus" 0.3
 			}
+		}
+
+        T_TFBot_Halloween_SpawnBoss_Hatman // documentation will be provided later
+		{
+			Class Sniper
+			Name "TFBOT_BOSS_HATMAN"
+			ClassIcon boss_hatman
+			Scale 1.0
+			Attributes IgnoreFlag
+			Attributes MiniBoss
 		}
 	}
 }
