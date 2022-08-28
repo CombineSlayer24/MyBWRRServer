@@ -154,6 +154,9 @@
 //T_TFBot_Giant_Demo_Nuker 								// Miniture form of Sir Nukesalot but less beefy.
 //T_TFBot_Giant_Demo_Blast								// Burst Fire Giant Blast Demo.
 
+// DEMO SENTRYBUSTERS
+//T_TFBot_SentryBuster_Grapple							// Sentrybuster that uses GRAPPLE HOOK
+
 // Heavy
 //T_TFBot_Heavy_Easy									// Easy Difficulty Heavy
 //T_TFBot_Heavy											// Normal Difficulty Heavy
@@ -3357,6 +3360,25 @@ WaveSchedule
 				"damage force reduction"	0.5
 				"airblast vulnerability multiplier"	0.5
 				"override footstep sound set"	4
+			}
+		}
+		
+		// DEMO SENTRYBUSTERS
+		
+		T_TFBot_SentryBuster_Grapple
+		{
+			Template   T_TFBot_SentryBuster
+			Name       "Grapple Buster"
+			Item   "TF_WEAPON_GRAPPLINGHOOK"
+			Attributes   AlwaysFireWeapon
+			Attributes   AutoJump
+			AutoJumpMin  4
+			AutoJumpMax  4
+			ItemAttributes 
+			{
+				ItemName   "TF_WEAPON_GRAPPLINGHOOK"
+				"is_passive_weapon"     1
+				"cancel falling damage" 1
 			}
 		}
 		
