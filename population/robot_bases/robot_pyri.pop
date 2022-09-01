@@ -81,8 +81,6 @@
 //T_TFBot_Giant_Soldier_ChargedBarrage					// Charged variant of Colonel Barrage.
 //T_TFBot_Giant_Soldier_Barrage							// Giant Soldier that fires a barrage of rockets, Minor variant to Colonel Barrage/Major.
 //T_TFBot_Giant_Soldier_SlowCritBarrage					// Non gatebot version of Major Crits (Colonel Barrage, but with crits)
-//T_TFBot_Giant_Soldier_MajorBarrage					// Giant Soldier w/ 5000 HP. Fires all 40 rockets at once.
-//T_TFBot_Giant_Soldier_MajorCritBarrage				// Crit version.
 //T_TFBot_Giant_Soldier_Blackbox						// Minor variant to Major Crits  (Chief)
 //T_TFBot_Giant_Soldier_Mangler							// Giant Soldier w/ Mangler, ingites players on hit.
 //T_TFBot_Giant_Soldier_Shotgun							// Giant Soldier w/ Shotgun. Almost like Heavy Shotgun.
@@ -1821,69 +1819,6 @@ WaveSchedule
 				"override footstep sound set" 3
 				"airblast vertical vulnerability multiplier" 0.1				
 				"Projectile speed increased" 0.35
-			}
-		}
-		
-		T_TFBot_Giant_Soldier_MajorBarrage	// Fires all 50 rockets
-		{
-			Class Soldier
-			Name "Major Barrage"
-			ClassIcon    soldier_barrage
-			Skill Expert
-			Health 5000
-			WeaponRestrictions    PrimaryOnly
-			Attributes		HoldFireUntilFullReload
-            Attributes		MiniBoss
-            ItemAttributes
-			{
-				ItemName	tf_weapon_rocketlauncher
-				"faster reload rate"	0.35
-				"fire rate bonus"	-3
-				"Projectile speed decreased"	0.4
-				"clip size upgrade atomic"	36.0
-				"projectile spread angle penalty"	15
-				"Blast radius decreased"	0.6
-			}
-			CharacterAttributes
-			{
-				"move speed bonus"	0.5
-				"damage bonus"		1.35
-				"health regen"		20
-				"damage force reduction"	0.4
-				"airblast vulnerability multiplier"		0.4
-				"override footstep sound set"	3
-			}
-		}
-		
-		T_TFBot_Giant_Soldier_MajorCritBarrage	// Fires all 50 crockets
-		{
-			Class Soldier
-			Name "Major Crits Barrage"
-			ClassIcon    soldier_barrage
-			Skill Expert
-			Health 5000
-			WeaponRestrictions    PrimaryOnly
-			Attributes		AlwaysCrit
-			Attributes		HoldFireUntilFullReload
-            Attributes		MiniBoss
-            ItemAttributes
-			{
-				ItemName	tf_weapon_rocketlauncher
-				"faster reload rate"	0.22
-				"fire rate bonus"	-3
-				"Projectile speed decreased"	0.4
-				"clip size upgrade atomic"	36.0
-				"projectile spread angle penalty"	15
-				"Blast radius decreased"	0.6
-			}
-			CharacterAttributes
-			{
-				"move speed bonus"	0.5
-				"damage bonus"		1.35
-				"health regen"		20
-				"damage force reduction"	0.4
-				"airblast vulnerability multiplier"		0.4
-				"override footstep sound set"	3
 			}
 		}
 		
@@ -5717,14 +5652,14 @@ WaveSchedule
 			}
 		}
 
-        T_TFBot_Halloween_SpawnBoss_Hatman // documentation will be provided later
-		{
-			Class Sniper
-			Name "TFBOT_BOSS_HATMAN"
-			ClassIcon boss_hatman
-			Scale 1.0
-			Attributes IgnoreFlag
-			Attributes MiniBoss
-		}
+        // T_TFBot_Halloween_SpawnBoss_Hatman // documentation will be provided later
+		// {
+		// 	Class Sniper
+		// 	Name "TFBOT_BOSS_HATMAN"
+		// 	ClassIcon boss_hatman
+		// 	Scale 1.0
+		// 	Attributes IgnoreFlag
+		// 	Attributes MiniBoss
+		// }
 	}
 }
