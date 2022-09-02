@@ -5434,7 +5434,7 @@ WaveSchedule
 		
 		T_TFBot_Sniper_Australium
 		{
-			Class Scout
+			Class Sniper
 			Name "Australium Sniper"
 			ClassIcon sniper // find gold icon
 			Skill Expert
