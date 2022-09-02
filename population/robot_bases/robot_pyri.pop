@@ -168,6 +168,9 @@
 //T_TFBot_Heavy_Easy									// Easy Difficulty Heavy
 //T_TFBot_Heavy											// Normal Difficulty Heavy
 //T_TFBot_Heavy_Crit 									// Same variant from Ghost Town/Mannhattan.
+//T_TFBot_Heavy_Buff									// Heavy w/ Buff
+//T_TFBot_Heavy_Backup									// Heavy w/ backup
+//T_TFBot_Heavy_Conch									// Heavy w/ Conch
 //T_TFBot_Heavy_Natascha_Easy							// Slowy slows Red players in the process, but doesn't grab them.
 //T_TFBot_Heavy_Natascha 								// Slowy grabs Red Players, slowing them in the process.
 //T_TFBot_Heavy_Brassbeast								// Uses Brassbeast, gold statue ragdoll effect.
@@ -187,6 +190,7 @@
 //T_TFBot_Heavy_Gnome_Fixed 							// Used in Decoy but template remains disabled.
 //T_TFBot_Heavy_Shotgun_NoAttributes 					// Stock attributes.
 //T_TFBot_Heavy_Shotgun_Scout 							// Heavy w/ Shotgun, +100% movement speed.
+//T_TFBot_Heavy_Armored									// Standard Heavy with 900 HP, W/ Minigun
 
 //T_TFBot_Giant_Heavy_GRU								// Giant version of Fast Heavyweight Champ.
 //T_TFBot_Giant_Heavy_Steel								// Giant Heavy Gauntlet. 10,000HP, Minor Chief boss. Walking Tank, literally.
@@ -3540,6 +3544,51 @@ WaveSchedule
 				"damage bonus"	1.5
 			}
 		}
+
+		T_TFBot_Heavy_Buff
+		{
+			ClassIcon	heavy_buff_lite
+			Name	"Extended Buff Heavy"
+			Class	HeavyWeapons
+			Skill	Normal
+			Attributes SpawnWithFullCharge
+			CharacterAttributes 
+			{
+				"increase buff duration" 9
+				"deploy time increased" 0.5
+			}
+			Item "The Buff Banner"
+		}
+
+		T_TFBot_Heavy_Backup
+		{
+			ClassIcon	heavy_backup_lite
+			Name	"Extended Backup Heavy"
+			Class	Heavyweapons
+			Skill	Normal
+			Attributes SpawnWithFullCharge
+			CharacterAttributes 
+			{
+				"increase buff duration" 9
+				"deploy time increased" 0.5
+			}
+			Item "The Battalion's Backup"
+		}
+
+		T_TFBot_Heavy_Conch
+		{
+			ClassIcon	heavy_conch_lite
+			Name	"Extended Conch Heavy"
+			Class	Heavyweapons
+			Skill	Normal
+			Attributes SpawnWithFullCharge
+			CharacterAttributes 
+			{
+				"increase buff duration" 9
+				"deploy time increased" 0.5
+			}
+			Item "The Concheror"
+		}
 		
 		T_TFBot_Heavy_Natascha_Easy //Slows down RED enemy, minor slowdown.
 		{
@@ -3891,6 +3940,16 @@ WaveSchedule
 			{
 				"move speed bonus"	1.6
 			}
+		}
+
+		T_TFBot_Heavy_Armored 
+		{
+			ClassIcon	heavy_armored
+			Name	"Armored Heavy"
+			Class	HeavyWeapons
+			Skill	Hard
+			Health	900
+			Scale	1.5
 		}
 		
 		//Giant Heavy Templates

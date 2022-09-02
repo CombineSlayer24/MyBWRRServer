@@ -179,6 +179,9 @@
 // Heavy
 //T_TFGateBot_Heavy_Expert									// Expert Difficulty Heavy
 //T_TFGateBot_Heavy_Crit									// Ghost Town variant
+//T_TFGateBot_Heavy_Buff									// Heavy w/ Buff
+//T_TFGateBot_Heavy_Backup									// Heavy w/ backup
+//T_TFGateBot_Heavy_Conch									// Heavy w/ Conch
 //T_TFGateBot_Heavy_Natascha_Easy							// Slowy slows Red players in the process, but doesn't grab them.
 //T_TFGateBot_Heavy_Natascha 								// Slowy grabbs Red Players, slowing them in the process.
 //T_TFGateBot_Heavy_Brassbeast								// Uses Brassbeast, gold statue ragdoll effect.
@@ -200,6 +203,7 @@
 //T_TFGateBot_Heavy_Gnome_Fixed 							// Used in Decoy but template remains disabled.
 //T_TFGateBot_Heavy_Shotgun_NoAttributes 					// Stock attributes.
 //T_TFGateBot_Heavy_Shotgun_Scout 							// Heavy w/ Shotgun, +100% movement speed.
+//T_TFGateBot_Heavy_Armored									// Standard Heavy with 900 HP, W/ Minigun
 
 //T_TFGateBot_Giant_Heavyweapons							// Gatebot version of standard Giant Heavy
 //T_TFGateBot_Giant_Boxing_Heavy							// Giant version of Heavyweight Champ
@@ -8242,7 +8246,6 @@ WaveSchedule
 			}
 		}
 		
-		
 		T_TFGateBot_Heavy_Expert
 		{
 			Class Heavyweapons
@@ -8313,6 +8316,141 @@ WaveSchedule
 						ItemName	"Upgradeable TF_WEAPON_MINIGUN"
 						"damage bonus"	1.5
 					}
+				}
+			}
+		}
+
+		T_TFGateBot_Heavy_Buff
+		{
+			ClassIcon	heavy_buff_lite
+			Name	"Extended Buff Heavy"
+			Class Heavyweapons
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Heavy"
+					Skill Normal
+					Attributes SpawnWithFullCharge
+					CharacterAttributes 
+					{
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+					}
+					Item "The Buff Banner"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Heavy"
+						"item style override" 1
+					}
+					Skill Normal
+					Attributes SpawnWithFullCharge
+					CharacterAttributes 
+					{
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+					}
+					Item "The Buff Banner"
+				}
+			}
+		}
+
+		T_TFGateBot_Heavy_Backup
+		{
+			ClassIcon	heavy_backup_lite
+			Name	"Extended Backup Heavy"
+			Class Heavyweapons
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Heavy"
+					Skill Normal
+					Attributes SpawnWithFullCharge
+					CharacterAttributes 
+					{
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+					}
+					Item "The Battalion's Backup"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Heavy"
+						"item style override" 1
+					}
+					Skill Normal
+					Attributes SpawnWithFullCharge
+					CharacterAttributes 
+					{
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+					}
+					Item "The Battalion's Backup"
+				}
+			}
+		}
+
+		T_TFGateBot_Heavy_Buff
+		{
+			ClassIcon	heavy_conch_lite
+			Name	"Extended Conch Heavy"
+			Class Heavyweapons
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Heavy"
+					Skill Normal
+					Attributes SpawnWithFullCharge
+					CharacterAttributes 
+					{
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+					}
+					Item "The Concheror"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Heavy"
+						"item style override" 1
+					}
+					Skill Normal
+					Attributes SpawnWithFullCharge
+					CharacterAttributes 
+					{
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+					}
+					Item "The Concheror"
 				}
 			}
 		}
@@ -9287,6 +9425,39 @@ WaveSchedule
 					{
 						"move speed bonus"	1.6
 					}
+				}
+			}
+		}
+
+		T_TFGateBot_Heavy_Armored
+		{
+			Class Heavyweapons
+			ClassIcon	heavy_armored
+			Name	"Armored Heavy"
+			Health	900
+			Scale	1.5
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Heavy"
+					Skill Hard
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Heavy"
+						"item style override" 1
+					}
+					Skill Hard
 				}
 			}
 		}
