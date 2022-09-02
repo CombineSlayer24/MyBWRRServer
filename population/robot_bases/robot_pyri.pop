@@ -91,6 +91,9 @@
 //T_TFBot_Pyro_Easy										// Easy Difficulty Pyro.
 //T_TFBot_Pyro_Normal_AlwaysFire						// Always Fire Normal Pyro.
 //T_TFBot_Pyro_Hard										// Hard Difficulty Pyro.
+//T_TFBot_Pyro_Buff										// Pyro w/ Buff Banner.
+//T_TFBot_Pyro_Backup									// Pyro w/ Battalions Backup.
+//T_TFBot_Pyro_Conch									// Pyro w/ Concheror.
 //T_TFBot_Pyro_Crit										// Same variant from Ghost Town.
 //T_TFBot_Pyro_Crit_AlwaysFire							// Same variant from Ghost Town.
 //T_TFBot_Pyro_Detonator								// Flare Pyro, but with the Detonator.
@@ -101,7 +104,7 @@
 //T_TFBot_Pyro_Manmelter								// Pyro w/ Manmelter, basically a ThirdDegree from a range.
 //T_TFBot_Pyro_Dragon 									// Pyro w/ Dragon's Fury, less damage, less fire rate.
 //T_TFBot_Pyro_Dragon_Hard 								// Pyro w/ Dragon's Fury, more damage, more fire rate.
-//T_TFGBot_Pyro_Backburner								// Pyri w/ Backburner. Moves +50% faster, no airblast.
+//T_TFBot_Pyro_Backburner								// Pyri w/ Backburner. Moves +50% faster, no airblast.
 //T_TFBot_Pyro_Gaspasser 								// Pyro w/ Gas-Passer.
 //T_TFBot_Pyro_Gaspasser_FastCharge 					// NEW, Recharges faster. (*)
 //T_TFBot_Pyro_Gaspasser_Explosive 						// Gas passer pyro that will deal intensive Afterburn DMG.
@@ -127,6 +130,9 @@
 // Demoman
 //T_TFBot_Demoman_Normal								// Normal Difficulty Demoman
 //T_TFBot_Demoman_Hard									// Hard Difficulty Demoman
+//T_TFBot_Demo_Buff										// Demo w/ Buff
+//T_TFBot_Demo_Backup									// Demo w/ backup
+//T_TFBot_Demo_Conch									// Demo w/ Conch
 //T_TFBot_Demoman_Crit 									// Same variant from Ghost Town.
 //T_TFBot_Demoman_Spammer 								// Similar to it's Giant counterpart.
 //T_TFBot_Demoman_Spammer_Reload						// Similar to it's Giant counterpart.
@@ -143,6 +149,9 @@
 //T_TFBot_Demo_Caber_Hard 								// Uses Boots and Shield to gain advantage. 
 //T_TFBot_Demo_Caber_Rapid 								// Similar to Caber Hard but rapidly charges.
 
+//T_TFBot_Giant_Demo_Buff								// Giant Type 1 Demoman w/ Buff
+//T_TFBot_Giant_Demo_Backup								// Giant Type 1 Demoman w/ Backup
+//T_TFBot_Giant_Demo_Conch								// Giant Type 1 Demoman w/ Conch
 //T_TFBot_Giant_Demo_Loch_Normal						// Giant Loch-N-Load Demo. Normal difficult, less accurate.
 //T_TFBot_Giant_Demo_Loch_Expert						// Giant Loch-N-Load Demo. Expert difficult, more accurate.
 //T_TFBot_Giant_Demo_Spammer 							// Improved variant to the original Giant counterpart.
@@ -237,9 +246,11 @@
 //T_TFBot_Sniper_SMG_Critboost							// Sniper with Cleaners Carbine, DMG bonus w/ crits on kill.
 //T_TFBot_Sniper_Huntsman_Crit							// Crit version of Bowman.
 //T_TFBot_Sniper_Huntsman_Bleed 						// More dangerous variant of the Bowman.
+//T_TFBot_Sniper_Huntsman_Pusher						// Knockback variant of Bowman.
 
 //T_TFBot_Giant_Sniper_Huntsman 						// Similar to the Small counterpart.
 //T_TFBot_Giant_Sniper_Huntsman_Bleed					// More dangerous variant of the Bowman
+//T_TFBot_Giant_Sniper_Huntsman_Pusher 					// Knockback variant of Bowman.
 //T_TFBot_Giant_Sniper_SMG								// Giant Sniper with SMG.
 //T_TFBot_Giant_Sniper_Jarate
 
@@ -1991,6 +2002,51 @@ WaveSchedule
 			Health 175
 			Item "Upgradeable TF_WEAPON_FLAMETHROWER"
 		}
+
+		T_TFBot_Pyro_Buff
+		{
+			ClassIcon	pyro_buff
+			Name	"Extended Buff Pyro"
+			Class	Pyro
+			Skill	Normal
+			Attributes SpawnWithFullCharge
+			CharacterAttributes 
+			{
+				"increase buff duration" 9
+				"deploy time increased" 0.5
+			}
+			Item "The Buff Banner"
+		}
+
+		T_TFBot_Pyro_Backup
+		{
+			ClassIcon	pyro_backup
+			Name	"Extended Backup Pyro"
+			Class	Pyro
+			Skill	Normal
+			Attributes SpawnWithFullCharge
+			CharacterAttributes 
+			{
+				"increase buff duration" 9
+				"deploy time increased" 0.5
+			}
+			Item "The Battalion's Backup"
+		}
+
+		T_TFBot_Pyro_Conch
+		{
+			ClassIcon	pyro_conch
+			Name	"Extended Conch Pyro"
+			Class	Pyro
+			Skill	Normal
+			Attributes SpawnWithFullCharge
+			CharacterAttributes 
+			{
+				"increase buff duration" 9
+				"deploy time increased" 0.5
+			}
+			Item "The Concheror"
+		}
 		
 		T_TFBot_Pyro_Crit //Same variant from Ghost Town.
 		{
@@ -2695,6 +2751,51 @@ WaveSchedule
 			Skill Hard
 			Health 175
 		}
+
+		T_TFBot_Demo_Buff
+		{
+			ClassIcon	demo_buff_lite
+			Name	"Extended Buff Demoman"
+			Class	Demoman
+			Skill	Normal
+			Attributes SpawnWithFullCharge
+			CharacterAttributes 
+			{
+				"increase buff duration" 9
+				"deploy time increased" 0.5
+			}
+			Item "The Buff Banner"
+		}
+
+		T_TFBot_Demo_Backup
+		{
+			ClassIcon	demo_backup_lite
+			Name	"Extended Backup Demoman"
+			Class	Demoman
+			Skill	Normal
+			Attributes SpawnWithFullCharge
+			CharacterAttributes 
+			{
+				"increase buff duration" 9
+				"deploy time increased" 0.5
+			}
+			Item "The Battalion's Backup"
+		}
+
+		T_TFBot_Demo_Conch
+		{
+			ClassIcon	demo_conch_lite
+			Name	"Extended Conch Demoman"
+			Class	Demoman
+			Skill	Normal
+			Attributes SpawnWithFullCharge
+			CharacterAttributes 
+			{
+				"increase buff duration" 9
+				"deploy time increased" 0.5
+			}
+			Item "The Concheror"
+		}
 		
 		T_TFBot_Demoman_Crit //Same variant from Ghost Town.
 		{
@@ -3032,6 +3133,94 @@ WaveSchedule
 		}
 		
 		//Giant Demoman Templates
+
+		T_TFBot_Giant_Demo_Buff
+		{
+			Class Demoman
+			Name "Giant Buff Banner Demoman"
+			ClassIcon demo_buff_lite_giant
+			Skill Expert
+			Health 3300
+			WeaponRestrictions PrimaryOnly
+			Attributes HoldFireUntilFullReload
+			Attributes MiniBoss
+			Attributes SpawnWithFullCharge
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_GRENADELAUNCHER"
+				"faster reload rate" -0.4
+				"fire rate bonus" 0.75
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.5
+				"airblast vulnerability multiplier" 0.5
+				"override footstep sound set" 4
+				"increase buff duration" 9
+				"deploy time increased" 0.5
+			}
+			Item "The Buff Banner"
+		}
+
+		T_TFBot_Giant_Demo_Backup
+		{
+			Class Demoman
+			Name "Giant Battalion Demoman"
+			ClassIcon demo_backup_lite_giant
+			Skill Expert
+			Health 3300
+			WeaponRestrictions PrimaryOnly
+			Attributes HoldFireUntilFullReload
+			Attributes MiniBoss
+			Attributes SpawnWithFullCharge
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_GRENADELAUNCHER"
+				"faster reload rate" -0.4
+				"fire rate bonus" 0.75
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.5
+				"airblast vulnerability multiplier" 0.5
+				"override footstep sound set" 4
+				"increase buff duration" 9
+				"deploy time increased" 0.5
+			}
+			Item "The Battalion's Backup"
+		}
+
+		T_TFBot_Giant_Demo_Conch
+		{
+			Class Demoman
+			Name "Giant Concheror Demoman"
+			ClassIcon demo_conch_lite_giant
+			Skill Expert
+			Health 3300
+			WeaponRestrictions PrimaryOnly
+			Attributes HoldFireUntilFullReload
+			Attributes MiniBoss
+			Attributes SpawnWithFullCharge
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_GRENADELAUNCHER"
+				"faster reload rate" -0.4
+				"fire rate bonus" 0.75
+			}
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.5
+				"airblast vulnerability multiplier" 0.5
+				"override footstep sound set" 4
+				"increase buff duration" 9
+				"deploy time increased" 0.5
+			}
+			Item "The Concheror"
+		}
+
 		T_TFBot_Giant_Demo_Loch_Normal
 		{
 			ClassIcon	demo_loch_giant
@@ -4857,6 +5046,25 @@ WaveSchedule
 				"bleeding duration" 3
 			}
 		}
+
+		T_TFBot_Sniper_Huntsman_Pusher
+		{
+			Class Sniper
+			Name "Pusher Bowman"
+			Skill Hard
+			ClassIcon sniper_bow_blast
+			WeaponRestrictions PrimaryOnly
+			Item "The Huntsman"
+
+			ItemAttributes
+			{
+				ItemName "The Huntsman"
+				"damage penalty" 0.25
+				"fire rate bonus"	0.5
+				"faster reload rate"	0.2
+				"damage causes airblast"	1
+			}
+		}
 		
 		//Giant Sniper Templates
 		T_TFBot_Giant_Sniper_Huntsman //Similar to the Small counterpart.
@@ -4877,7 +5085,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
-				"head scale"	0.7
+				"head scale"	0.8
 				"airblast vulnerability multiplier" 0.6
 				"damage force reduction" 0.6
 				"move speed penalty" 0.6
@@ -4905,12 +5113,39 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
-				"head scale"	0.7
+				"head scale"	0.8
 				"airblast vulnerability multiplier" 0.6
 				"damage force reduction" 0.6
 				"move speed penalty" 0.6
 				"override footstep sound set" 6
 			}
+		}
+
+		T_TFBot_Giant_Sniper_Huntsman_Pusher
+		{
+			ClassIcon	sniper_bow_blast_giant
+			Health	3000
+			Name	"Giant Pusher Bowman"
+			Class	Sniper
+			Skill	Expert
+			Attributes	"MiniBoss"
+			ItemAttributes
+			{
+				ItemName	"the huntsman"
+				"damage penalty" 0.5
+				"fire rate bonus"	0.2
+				"faster reload rate"	0.2
+				"damage causes airblast"	1
+			}
+			CharacterAttributes
+			{
+				"move speed bonus" 0.6
+				"damage force reduction" 0.6
+				"airblast vulnerability multiplier" 0.6
+				"override footstep sound set" 7
+				"head scale" 0.8
+			}
+			Item	"the huntsman"
 		}
 		
 		T_TFBot_Giant_Sniper_SMG
@@ -4933,7 +5168,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
-				"head scale"	0.7
+				"head scale"	0.8
 				"airblast vulnerability multiplier" 0.6
 				"damage force reduction" 0.6
 				"move speed penalty" 0.7
@@ -4961,7 +5196,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
-				"head scale"	0.65
+				"head scale"	0.8
 				"airblast vulnerability multiplier" 0.6
 				"damage force reduction" 0.4
 				"move speed penalty" 0.7

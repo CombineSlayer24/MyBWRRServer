@@ -107,6 +107,9 @@
 
 // Pyro
 //T_TFGateBot_Pyro_Easy										// Easy Difficulty Pyro.
+//T_TFGateBot_Pyro_Buff										// Pyro w/ Buff Banner.
+//T_TFGateBot_Pyro_Backup									// Pyro w/ Battalions Backup.
+//T_TFGateBot_Pyro_Conch									// Pyro w/ Concheror.
 //T_TFGateBot_Pyro_Crit										// Same variant from Ghost Town.
 //T_TFGateBot_Pyro_Crit_AlwaysFire							// Same variant from Ghost Town.
 //T_TFGateBot_Pyro_Detonator								// Flare Pyro, but with the Detonator.
@@ -161,6 +164,9 @@
 //T_TFGateBot_Demo_Caber_Rapid 								// Similar to Caber Hard but rapidly charges.
 
 //T_TFGateBot_Giant_Demoman
+//T_TFGateBot_Giant_Demo_Buff								// Giant Type 1 Demoman w/ Buff
+//T_TFGateBot_Giant_Demo_Backup								// Giant Type 1 Demoman w/ Backup
+//T_TFGateBot_Giant_Demo_Conch								// Giant Type 1 Demoman w/ Conch
 //T_TFGateBot_Giant_Demo_Loch_Normal						// Giant Loch-N-Load Demo. Normal difficult, less accurate.
 //T_TFGateBot_Giant_Demo_Loch_Expert						// Giant Loch-N-Load Demo. Expert difficult, more accurate.
 //T_TFGateBot_Giant_Demo_Spammer 							// Improved variant to the original Giant counterpart.
@@ -225,9 +231,11 @@
 //T_TFGateBot_Sniper_SMG_Critboost							// Sniper with Cleaners Carbine, DMG bonus w/ crits on kill.
 //T_TFGateBot_Sniper_Huntsman_Crit							// Crit version of Bowman.
 //T_TFGateBot_Sniper_Huntsman_Bleed 						// More dangerous variant of the Bowman.
+//T_TFGateBot_Sniper_Huntsman_Pusher 						// Knockback variant of Bowman.
 
 //T_TFGateBot_Giant_Sniper_Huntsman 						// Similar to the Small counterpart.
 //T_TFGateBot_Giant_Sniper_Huntsman_Bleed					// More dangerous variant of the Bowman
+//T_TFGateBot_Giant_Sniper_Huntsman_Pusher 					// Knockback variant of Bowman.
 //T_TFGateBot_Giant_Sniper_SMG								// Giant Sniper with SMG.
 //T_TFGateBot_Giant_Sniper_Jarate							// Giant Sniper with Jarate.
 //T_TFGateBot_Chief_Demoman_CaberTossin_Xtreme				// Chief Demoman that shoots cabers that pushes upon explosion (UNUSED BOSS FOR HOOVYDAM)
@@ -4452,6 +4460,153 @@ WaveSchedule
 				}
 			}
 		}
+
+		T_TFGateBot_Pyro_Buff
+		{
+			Class Pyro
+			ClassIcon	pyro_buff
+			Name	"Extended Buff Pyro"
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Pyro"
+					Skill Normal
+					Attributes SpawnWithFullCharge
+
+					CharacterAttributes
+					{
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+						"airblast disabled" 1 		// Screw airblast
+					}
+					Item "The Buff Banner"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Pyro"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Pyro"
+						"item style override" 1
+					}
+					Skill Normal
+					Attributes SpawnWithFullCharge
+
+					CharacterAttributes
+					{
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+						//"airblast disabled" 1 		// Screw airblast
+					}
+					Item "The Buff Banner"
+				}
+			}
+		}
+
+		T_TFGateBot_Pyro_Backup
+		{
+			Class Pyro
+			ClassIcon	pyro_backup
+			Name	"Extended Backup Pyro"
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Pyro"
+					Skill Normal
+					Attributes SpawnWithFullCharge
+
+					CharacterAttributes
+					{
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+						"airblast disabled" 1 		// Screw airblast
+					}
+					Item "The Battalion's Backup"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Pyro"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Pyro"
+						"item style override" 1
+					}
+					Skill Normal
+					Attributes SpawnWithFullCharge
+
+					CharacterAttributes
+					{
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+						//"airblast disabled" 1 		// Screw airblast
+					}
+					Item "The Battalion's Backup"
+				}
+			}
+		}
+
+		T_TFGateBot_Pyro_Conch
+		{
+			Class Pyro
+			ClassIcon	pyro_conch
+			Name	"Extended Conch Pyro"
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank		// having these will cause bots to run towards gates
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag 			// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Pyro"
+					Skill Normal
+					Attributes SpawnWithFullCharge
+
+					CharacterAttributes
+					{
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+						"airblast disabled" 1 		// Screw airblast
+					}
+					Item "The Concheror"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Pyro"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Pyro"
+						"item style override" 1
+					}
+					Skill Normal
+					Attributes SpawnWithFullCharge
+
+					CharacterAttributes
+					{
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+						//"airblast disabled" 1 		// Screw airblast
+					}
+					Item "The Concheror"
+				}
+			}
+		}
 		
 		T_TFGateBot_Pyro_Crit
 		{
@@ -7234,6 +7389,228 @@ WaveSchedule
 						"airblast vulnerability multiplier" 0.4
 						"override footstep sound set" 4
 					}
+				}
+			}
+		}
+
+		T_TFGateBot_Giant_Demoman_Buff
+		{
+			Class Demoman
+			Name "Giant Buff Banner Demoman"
+			ClassIcon demo_buff_lite_giant
+			Health 3300
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Demoman"
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Attributes MiniBoss
+					Attributes HoldFireUntilFullReload
+					Attributes SpawnWithFullCharge
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"faster reload rate" -0.4
+						"fire rate bonus" 0.75
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"override footstep sound set" 4
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+					}
+					Item "The Buff Banner"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Demoman"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Demoman"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Attributes MiniBoss
+					Attributes HoldFireUntilFullReload
+					Attributes SpawnWithFullCharge
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"faster reload rate" -0.4
+						"fire rate bonus" 0.75
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"override footstep sound set" 4
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+					}
+					Item "The Buff Banner"
+				}
+			}
+		}
+
+		T_TFGateBot_Giant_Demoman_Buff
+		{
+			Class Demoman
+			Name "Giant Battalion Demoman"
+			ClassIcon demo_backup_lite_giant
+			Health 3300
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Demoman"
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Attributes MiniBoss
+					Attributes HoldFireUntilFullReload
+					Attributes SpawnWithFullCharge
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"faster reload rate" -0.4
+						"fire rate bonus" 0.75
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"override footstep sound set" 4
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+					}
+					Item "The Battalion's Backup"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Demoman"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Demoman"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Attributes MiniBoss
+					Attributes HoldFireUntilFullReload
+					Attributes SpawnWithFullCharge
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"faster reload rate" -0.4
+						"fire rate bonus" 0.75
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"override footstep sound set" 4
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+					}
+					Item "The Battalion's Backup"
+				}
+			}
+		}
+
+		T_TFGateBot_Giant_Demoman_Buff
+		{
+			Class Demoman
+			Name "Giant Concheror Demoman"
+			ClassIcon demo_conch_lite_giant
+			Health 3300
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Demoman"
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Attributes MiniBoss
+					Attributes HoldFireUntilFullReload
+					Attributes SpawnWithFullCharge
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"faster reload rate" -0.4
+						"fire rate bonus" 0.75
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"override footstep sound set" 4
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+					}
+					Item "The Concheror"
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Demoman"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Demoman"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Attributes MiniBoss
+					Attributes HoldFireUntilFullReload
+					Attributes SpawnWithFullCharge
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_GRENADELAUNCHER"
+						"faster reload rate" -0.4
+						"fire rate bonus" 0.75
+					}
+					CharacterAttributes
+					{
+						"move speed bonus"	0.5
+						"damage force reduction" 0.4
+						"airblast vulnerability multiplier" 0.4
+						"override footstep sound set" 4
+						"increase buff duration" 9
+						"deploy time increased" 0.5
+					}
+					Item "The Concheror"
 				}
 			}
 		}
@@ -10465,6 +10842,57 @@ WaveSchedule
 				}
 			}
 		}
+
+		T_TFGateBot_Sniper_Huntsman_Pusher
+		{
+			Class Sniper
+			Name "Pusher Bowman"
+			ClassIcon sniper_bow_blast
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+					Item "The Huntsman"
+					ItemAttributes
+					{
+						ItemName "The Huntsman"
+						"damage penalty" 0.25
+						"fire rate bonus"	0.5
+						"faster reload rate"	0.2
+						"damage causes airblast"	1
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Skill Hard
+					WeaponRestrictions PrimaryOnly
+					Item "The Huntsman"
+					ItemAttributes
+					{
+						ItemName "The Huntsman"
+						"damage penalty" 0.25
+						"fire rate bonus"	0.5
+						"faster reload rate"	0.2
+						"damage causes airblast"	1
+					}
+				}
+			}
+		}
 		
 		T_TFGateBot_Giant_Sniper_Huntsman
 		{
@@ -10497,7 +10925,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"head scale"	0.7
+						"head scale"	0.8
 						"airblast vulnerability multiplier" 0.6
 						"damage force reduction" 0.6
 						"move speed penalty" 0.6
@@ -10526,7 +10954,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"head scale"	0.7
+						"head scale"	0.8
 						"airblast vulnerability multiplier" 0.6
 						"damage force reduction" 0.6
 						"move speed penalty" 0.6
@@ -10539,7 +10967,7 @@ WaveSchedule
 		T_TFGateBot_Giant_Sniper_Huntsman_Bleed
 		{
 			Class Sniper
-			Name "Giant Bowman"
+			Name "Giant Bleed Bowman"
 			ClassIcon sniper_huntsman_bleed_giant
 			Health 3000
 
@@ -10569,7 +10997,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"head scale"	0.7
+						"head scale"	0.8
 						"airblast vulnerability multiplier" 0.6
 						"damage force reduction" 0.6
 						"move speed penalty" 0.6
@@ -10600,7 +11028,79 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"head scale"	0.7
+						"head scale"	0.8
+						"airblast vulnerability multiplier" 0.6
+						"damage force reduction" 0.6
+						"move speed penalty" 0.6
+						"override footstep sound set" 6
+					}
+				}
+			}
+		}
+
+		T_TFGateBot_Giant_Sniper_Huntsman_Pusher
+		{
+			Class Sniper
+			Name "Giant Pusher Bowman"
+			ClassIcon	sniper_bow_blast_giant
+			Health 3000
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					Tag nav_prefer_gate1_flank	// having these will cause bots to run towards gates
+					Tag bot_gatebot				// having these will cause bots to run towards gates
+					BehaviorModifiers push		// having these will cause bots to run towards gates
+					Attributes IgnoreFlag		// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Sniper"
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Attributes	MiniBoss
+					Item	"the huntsman"
+					ItemAttributes
+					{
+						ItemName	"the huntsman"
+						"damage penalty" 0.5
+						"fire rate bonus"	0.2
+						"faster reload rate"	0.2
+						"damage causes airblast"	1
+					}
+					CharacterAttributes
+					{
+						"head scale"	0.8
+						"airblast vulnerability multiplier" 0.6
+						"damage force reduction" 0.6
+						"move speed penalty" 0.6
+						"override footstep sound set" 6
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Sniper"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Sniper"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions PrimaryOnly
+					Attributes	MiniBoss
+					Item	"the huntsman"
+					ItemAttributes
+					{
+						ItemName	"the huntsman"
+						"damage penalty" 0.5
+						"fire rate bonus"	0.2
+						"faster reload rate"	0.2
+						"damage causes airblast"	1
+					}
+					CharacterAttributes
+					{
+						"head scale"	0.8
 						"airblast vulnerability multiplier" 0.6
 						"damage force reduction" 0.6
 						"move speed penalty" 0.6
@@ -10610,7 +11110,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFGateBot_Giant_Sniper_SMG
+		T_TFGateBot_Giant_Sniper_Jarate
 		{
 			Class Sniper
 			Name "Giant SMG Sniper"
@@ -10641,7 +11141,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"head scale"	0.7
+						"head scale"	0.8
 						"airblast vulnerability multiplier" 0.6
 						"damage force reduction" 0.6
 						"move speed penalty" 0.7
@@ -10670,7 +11170,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"head scale"	0.7
+						"head scale"	0.8
 						"airblast vulnerability multiplier" 0.6
 						"damage force reduction" 0.6
 						"move speed penalty" 0.7
@@ -10680,7 +11180,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFGateBot_Giant_Sniper_Jarate
+		T_TFGateBot_Giant_Sniper_SMG
 		{
 			Class Sniper
 			Name "Giant Jarate Warrior"
@@ -10712,7 +11212,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"head scale"	0.7
+						"head scale"	0.8
 						"airblast vulnerability multiplier" 0.6
 						"damage force reduction" 0.6
 						"move speed penalty" 0.7
@@ -10742,7 +11242,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"head scale"	0.7
+						"head scale"	0.8
 						"airblast vulnerability multiplier" 0.6
 						"damage force reduction" 0.6
 						"move speed penalty" 0.7
