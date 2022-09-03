@@ -193,7 +193,8 @@
 //T_TFBot_Heavy_Armored									// Standard Heavy with 900 HP, W/ Minigun
 
 //T_TFBot_Giant_Heavy_GRU								// Giant version of Fast Heavyweight Champ.
-//T_TFBot_Giant_Heavy_Steel								// Giant Heavy Gauntlet. 10,000HP, Minor Chief boss. Walking Tank, literally.
+//T_TFBot_Giant_Heavy_Steel								// Giant Heavy Gauntlet. 7500HP, Minor Chief boss. Walking Tank, literally.
+//T_TFBot_Giant_Heavy_Steel_Type2						// Giant Heavy Gauntlet. 5000HP. Not a "Miniboss"
 //T_TFBot_Giant_Heavy_Natascha							// Gaint Natascha Heavy can Grab players more efficiently than small ones.
 //T_TFBot_Giant_Heavy_Deflector_Airblast				// Giant Deflector Heavy that pushes people away per attack.
 //T_TFBot_Giant_Heavy_Healonhit							// Giant Heavy that heals on kill and on hit. (uses different hat for gatebot)
@@ -4004,6 +4005,32 @@ WaveSchedule
 			}
 			Item	"fists of steel"
 			Item	"war head"
+		}
+
+		T_TFBot_Giant_Heavy_Steel_Type2
+		{
+			ClassIcon	heavy_steelfist_giant
+			Health	5000
+			Name	"Giant Steel Gauntlet"
+			Class	HeavyWeapons
+			Skill	Expert
+			WeaponRestrictions	MeleeOnly
+			//Attributes	UseBossHealthBar
+			Attributes	MiniBoss
+			ItemAttributes
+			{
+				ItemName	"fists of steel"
+				"damage bonus"	1.25
+				"fire rate penalty"	1.25
+			}
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier"	0.3
+				"damage force reduction"	0.3
+				"move speed bonus"	0.5
+				"override footstep sound set"	2
+			}
+			Item	"fists of steel"
 		}
 		
 		T_TFBot_Giant_Heavy_Natascha

@@ -209,6 +209,7 @@
 //T_TFGateBot_Giant_Boxing_Heavy							// Giant version of Heavyweight Champ
 //T_TFGateBot_Giant_Heavy_GRU								// Giant version of Fast Heavyweight Champ.
 //T_TFGateBot_Giant_Heavy_Steel								// Giant Heavy Gauntlet. 10,000HP, Minor Chief boss. Walking Tank, literally.
+//T_TFGateBot_Giant_Heavy_Steel_Type2						// Giant Heavy Gauntlet. 5000HP. Not a "Miniboss"
 //T_TFGateBot_Giant_Heavy_Natascha							// Gaint Natascha Heavy can Grab players more efficiently than small ones.
 //T_TFGateBot_Giant_Heavy_Deflector_Airblast				// Giant Deflector Heavy that pushes people away per attack.
 //T_TFGateBot_Giant_Heavy_Healonhit							// Giant Heavy that heals on kill and on hit. (uses different hat for gatebot)
@@ -9730,6 +9731,74 @@ WaveSchedule
 						"airblast vulnerability multiplier"	0.3
 						"damage force reduction"	0.3
 						"move speed bonus"	0.3
+						"override footstep sound set"	2
+					}
+				}
+			}
+		}
+
+		T_TFGateBot_Giant_Heavy_Steel_Type2
+		{
+			Class Heavyweapons
+			ClassIcon	heavy_steelfist_giant
+			Health	5000
+			Name	"Giant Steel Gauntlet"
+			
+			
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Heavy"
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions MeleeOnly
+					Attributes	MiniBoss
+					Item	"fists of steel"
+					ItemAttributes
+					{
+						ItemName	"fists of steel"
+						"damage bonus"	1.25
+						"fire rate penalty"	1.25
+					}
+					CharacterAttributes
+					{
+						"airblast vulnerability multiplier"	0.3
+						"damage force reduction"	0.3
+						"move speed bonus"	0.5
+						"override footstep sound set"	2
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Heavy"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Heavy"
+						"item style override" 1
+					}
+					Tag bot_giant
+					Skill Expert
+					WeaponRestrictions MeleeOnly
+					Attributes	MiniBoss
+					Item	"fists of steel"
+					ItemAttributes
+					{
+						ItemName	"fists of steel"
+						"damage bonus"	1.25
+						"fire rate penalty"	1.25
+					}
+					CharacterAttributes
+					{
+						"airblast vulnerability multiplier"	0.3
+						"damage force reduction"	0.3
+						"move speed bonus"	0.5
 						"override footstep sound set"	2
 					}
 				}
