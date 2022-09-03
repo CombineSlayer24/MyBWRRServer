@@ -3093,7 +3093,7 @@ WaveSchedule
 		T_TFBot_Demo_Caber_Hard //Uses Boots and Shield to gain advantage. 
 		{
 			Class Demoman
-			Name "Caber Demo"
+			Name "Charging Caber Demo"
 			ClassIcon demo_caber
 			Skill Hard
 			Health 175
@@ -3111,7 +3111,7 @@ WaveSchedule
 		T_TFBot_Demo_Caber_Rapid //Similar to Caber Hard but rapidly charges.
 		{
 			Class Demoman
-			Name "Caber Demo"
+			Name "Volatile Caber Demo"
 			ClassIcon demo_rapidcaber
 			Skill Expert
 			Health 125

@@ -7216,7 +7216,7 @@ WaveSchedule
 		T_TFGateBot_Demo_Caber_Hard
 		{
 			Class Demoman
-			Name "Caber Demo"
+			Name "Charging Caber Demo"
 			ClassIcon demo_caber
 
 			EventChangeAttributes
@@ -7265,7 +7265,7 @@ WaveSchedule
 		T_TFGateBot_Demo_Caber_Rapid
 		{
 			Class Demoman
-			Name "Caber Demo"
+			Name "Volatile Caber Demo"
 			ClassIcon demo_rapidcaber
 			Health 125
 
