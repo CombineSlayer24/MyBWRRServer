@@ -3311,7 +3311,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Giant_Demo_Barrage //NEW. Similar to the Colonel Barrage, but in Demo form.
+		T_TFBot_Giant_Demo_Barrage
 		{
 			Class Demoman
 			Name "Giant Barrage Demo"
@@ -4606,7 +4606,7 @@ WaveSchedule
 			Name "Giant Battle Medic"
 			ClassIcon medic_needle
 			Skill Expert
-			Health 5000
+			Health 3000
 			WeaponRestrictions	PrimaryOnly
 			Attributes	MiniBoss
 			Attributes	AlwaysFireWeapon
