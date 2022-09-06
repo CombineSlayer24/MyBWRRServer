@@ -6581,7 +6581,7 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"move speed penalty" 0.8
-						"health regen" 10.0
+						//"health regen" 10.0
 					}
 				}
 				RevertGateBotsBehavior
@@ -6605,7 +6605,7 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"move speed penalty" 0.8
-						"health regen" 10.0
+						//"health regen" 10.0
 					}
 				}
 			}
@@ -6643,7 +6643,7 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"move speed penalty" 0.8
-						"health regen" 5
+						//"health regen" 5
 					}
 				}
 				RevertGateBotsBehavior
@@ -6667,7 +6667,7 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"move speed penalty" 0.8
-						"health regen" 5
+						//"health regen" 5
 					}
 				}
 			}
@@ -6719,7 +6719,7 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"move speed penalty"  0.75
-						"health regen" 	20.0
+						//"health regen" 	20.0
 					}
 				}
 				RevertGateBotsBehavior
@@ -6757,7 +6757,7 @@ WaveSchedule
 					CharacterAttributes
 					{
 						"move speed penalty"  0.75
-						"health regen" 	20.0
+						//"health regen" 	20.0
 					}
 				}
 			}
