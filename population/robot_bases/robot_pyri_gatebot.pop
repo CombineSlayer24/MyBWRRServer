@@ -68,6 +68,8 @@
 //T_TFGateBot_Soldier_Shotgun_Expert						// Soldier w/ Shotgun stats.
 //T_TFGateBot_Soldier_Directhit_Normal						// Soldier w/ the Direct-Hir, Normal Difficulty.
 //T_TFGateBot_Soldier_Directhit_Expert 						// Uses Buff Banner w/ Direct Hit, has +800% buff duration.
+//T_TFGateBot_Soldier_Stun									// Soldier that stuns players on hit.
+//T_TFGateBot_Soldier_Stun_Spammer							// Soldier that stuns players on hit, rapidfire.
 //T_TFGateBot_Soldier_Buff_Banner_Trio 						// Used in groups. Buff, Backup and Conch, 400% buff duration.
 //T_TFGateBot_Soldier_Concheror_Trio 						// Used in groups. Buff, Backup and Conch, 400% buff duration.
 //T_TFGateBot_Soldier_Battalion_Trio						// Used in groups. Buff, Backup and Conch, 400% buff duration.
@@ -2251,6 +2253,102 @@ WaveSchedule
 					}
 					Attributes	SpawnWithFullCharge
 					Skill Normal
+				}
+			}
+		}
+
+		T_TFGateBot_Soldier_Stun
+		{
+			Class Soldier
+			ClassIcon soldier_stun
+			Name "Stunner Soldier"
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Soldier"
+					Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+					Skill Hard
+					ItemAttributes
+					{
+						ItemName	 "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+						"damage bonus" 0.8
+						"rocket specialist" 1
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Soldier"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Soldier"
+						"item style override" 1
+					}
+					Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+					Skill Hard
+					ItemAttributes
+					{
+						ItemName	 "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+						"damage bonus" 0.8
+						"rocket specialist" 1
+					}
+				}
+			}
+		}
+
+		T_TFGateBot_Soldier_Stun_Spammer
+		{
+			Class Soldier
+			ClassIcon soldier_stun
+			Name "Rapid Stunner Soldier"
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Soldier"
+					Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+					Skill Expert
+					ItemAttributes
+					{
+						ItemName	 "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+						"Projectile speed increased"	0.65
+						"faster reload rate"	-0.8
+						"fire rate bonus"	0.5
+						"rocket specialist" 1
+						"damage bonus" 0.8
+					}
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Soldier"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Soldier"
+						"item style override" 1
+					}
+					Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+					Skill Expert
+					ItemAttributes
+					{
+						ItemName	 "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
+						"Projectile speed increased"	0.65
+						"faster reload rate"	-0.8
+						"fire rate bonus"	0.5
+						"rocket specialist" 1
+						"damage bonus" 0.8
+					}
 				}
 			}
 		}
