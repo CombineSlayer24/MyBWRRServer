@@ -1114,7 +1114,8 @@ WaveSchedule
 		{
 			Class Soldier
 			Name "Shotgun Soldier"
-			ClassIcon shotgun_nys
+			//ClassIcon shotgun_nys
+			ClassIcon heavy_shotgun
 			Skill Normal
 			Health 200
 			WeaponRestrictions	SecondaryOnly
@@ -1124,7 +1125,8 @@ WaveSchedule
 		{
 			Class Soldier
 			Name "Shotgun Soldier"
-			ClassIcon shotgun_nys
+			//ClassIcon shotgun_nys
+			ClassIcon heavy_shotgun
 			Skill Expert
 			Health 200
 			WeaponRestrictions	SecondaryOnly
@@ -1943,7 +1945,8 @@ WaveSchedule
 		{
 			Class Soldier
 			Name "Giant Shotgun Soldier"
-			ClassIcon	shotgun_nys_giant
+			//ClassIcon	shotgun_nys_giant
+			ClassIcon heavy_shotgun_giant
 			Skill Expert
 			Health 3800
 			WeaponRestrictions	SecondaryOnly
@@ -2508,7 +2511,8 @@ WaveSchedule
 		{
 			Class Pyro
 			Name "Shotgun Pyro"
-			ClassIcon shotgun_nys
+			//ClassIcon shotgun_nys
+			ClassIcon heavy_shotgun
 			Skill Normal
 			Health 175
 			WeaponRestrictions	SecondaryOnly
@@ -2518,7 +2522,8 @@ WaveSchedule
 		{
 			Class Pyro
 			Name "Shotgun Pyro"
-			ClassIcon shotgun_nys
+			//ClassIcon shotgun_nys
+			ClassIcon heavy_shotgun
 			Skill Expert
 			Health 175
 			WeaponRestrictions	SecondaryOnly
@@ -2725,7 +2730,8 @@ WaveSchedule
 		{
 			Class Pyro
 			Name "Giant Shotgun Pyro"
-			ClassIcon shotgun_nys_giant
+			//ClassIcon shotgun_nys_giant
+			ClassIcon heavy_shotgun_giant
 			Skill Expert
 			Health 3000
 			WeaponRestrictions	SecondaryOnly
@@ -4228,7 +4234,7 @@ WaveSchedule
 		
 		T_TFBot_Giant_HeavyShotgun_Slugshot
 		{
-			ClassIcon	heavy_shotgun_giant
+			ClassIcon	heavy_shotgun_accurate_lite
 			Health	5500
 			Name	"Giant Slugshot Shotgun"
 			Class	HeavyWeapons
@@ -4240,7 +4246,7 @@ WaveSchedule
 			{
 				ItemName	"The Family Business"
 				"fire rate bonus"	2.5
-				"bullets per shot bonus"	10
+				"bullets per shot bonus"	5
 				"weapon spread bonus"	0
 				"faster reload rate" 2.0
 			}
