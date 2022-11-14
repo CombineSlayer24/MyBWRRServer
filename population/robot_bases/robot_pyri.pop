@@ -119,7 +119,7 @@
 //T_TFBot_Pyro_Shotgun									// Normal Shotgun Pyro
 //T_TFBot_Pyro_Shotgun_Expert 							// Shotgun Pyro with stats
 //T_TFBot_Pyro_Flareheal								// Flare Pyro that deals less damage, but heals fully on hit.
-//T_TFBot_Pyro_ScorchShot_Burst							// Scorchshot Pyro but shoots rapidly in burst succession
+//T_TFBot_Pyro_ScorchShot_Burst							// Scorchshot Pyro but shoots rapidly in burst fire
 //T_TFBot_Pyro_ScorchShot_Burst_Super					// Large version of shorchshot_burst but with Criticals
 
 //T_TFBot_Giant_Pyro_AlwaysFire							// Giant Pyro that Always Fires.
@@ -135,8 +135,9 @@
 //T_TFBot_Demo_Buff										// Demo w/ Buff
 //T_TFBot_Demo_Backup									// Demo w/ backup
 //T_TFBot_Demo_Conch									// Demo w/ Conch
-//T_TFBot_Demoman_Crit 									// Same variant from Ghost Town.
-//T_TFBot_Demoman_Spammer 								// Similar to it's Giant counterpart.
+//T_TFBot_Demoman_Crit									// Same variant from Ghost Town.
+//T_TFBot_Demoman_RapidFire								// Fires faster than Demoman_Spammer.
+//T_TFBot_Demoman_Spammer								// Similar to it's Giant counterpart.
 //T_TFBot_Demoman_Spammer_Reload						// Similar to it's Giant counterpart.
 //T_TFBot_Demo_Barrage									// Similar to the Giant version of Barrage, just less in stats.
 //T_TFBot_Demo_Burst_IronBomber 						// Same as the Burst Fire Demo, but with IB.
@@ -1903,6 +1904,7 @@ WaveSchedule
 				"Projectile speed decreased"	0.4
 				"fire rate penalty"	1.8
 				"faster reload rate"	1.4
+				"Blast radius increased"	1.25
 				"heal on kill"	1600
 			}
 			CharacterAttributes
@@ -2868,7 +2870,22 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Demoman_Spammer //Similar to it's Giant counterpart.
+		T_TFBot_Demoman_RapidFire
+		{
+			ClassIcon	demo_spammer
+			Name	"Rapid Fire Demo"
+			Class	Demoman
+			Skill	Hard
+			Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
+			ItemAttributes
+			{
+				ItemName	"Upgradeable TF_WEAPON_GRENADELAUNCHER"
+				"fire rate bonus"	0.5
+				"faster reload rate"	-0.8
+			}
+		}
+
+		T_TFBot_Demoman_Spammer
 		{
 			Class Demoman
 			Name "Spammer Demo"
@@ -2885,14 +2902,9 @@ WaveSchedule
 				"faster reload rate"  -0.5
 				"fire rate bonus"  0.7
 			}
-			CharacterAttributes
-			{
-				"move speed penalty" 0.8
-				//"health regen" 10.0
-			}
 		}
 		
-		T_TFBot_Demoman_Spammer_Reload //Similar to it's Giant counterpart.
+		T_TFBot_Demoman_Spammer_Reload
 		{
 			Class Demoman
 			Name "Spammer Demo"
@@ -2911,11 +2923,6 @@ WaveSchedule
 				"faster reload rate"  0.25
 				"fire rate bonus"  0.7
 			}
-			CharacterAttributes
-			{
-				"move speed penalty" 0.8
-				//"health regen" 5
-			}
 		}
 		
 		T_TFBot_Demo_Barrage
@@ -2924,8 +2931,8 @@ WaveSchedule
 			Name "Barrage Demo"
 			ClassIcon demo_scatter
 			Skill Expert
-			Scale 1.45
-			Health 750
+			Scale 1.3
+			Health 650
 			Attributes	HoldFireUntilFullReload
 			WeaponRestrictions	PrimaryOnly
 			Item "hazard headgear"
@@ -2950,14 +2957,9 @@ WaveSchedule
 				ItemName	"blast blocker"
 				"set item tint RGB"	12073019
 			}
-			CharacterAttributes
-			{
-				"move speed penalty"  0.75
-				//"health regen" 	20.0
-			}
 		}
 		
-		T_TFBot_Demo_Burst_IronBomber //NEW. Same as the Burst Fire Demo, but with IB.
+		T_TFBot_Demo_Burst_IronBomber
 		{
 			Class Demoman
 			Name "Burst Fire Demo"
@@ -2976,7 +2978,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Demo_Blast //Similar to the Blast Soldier.
+		T_TFBot_Demo_Blast
 		{
 			Class Demoman
 			Name "Blast Demo"
@@ -3001,7 +3003,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Demo_Charger //Demo that uses Grenade Launcher and Shield.
+		T_TFBot_Demo_Charger
 		{
 			Class Demoman
 			Name "Charging Demo"
@@ -3011,7 +3013,7 @@ WaveSchedule
 			Item	"the chargin' targe"
 		}
 		
-		T_TFBot_Demo_Charger_Expert //NEW. Similar to Charger Demo, but very rapidly charging.
+		T_TFBot_Demo_Charger_Expert
 		{
 			Class Demoman
 			Name "Charging Demo"
@@ -3057,7 +3059,7 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName	"the loose cannon"
-				"grenade launcher mortar mode"	0 // dont know if its -2
+				"grenade launcher mortar mode"	0
 				"damage causes airblast"	1
 				"damage bonus"	1.35
 				"fire rate penalty" 1.2
@@ -3069,13 +3071,13 @@ WaveSchedule
 			Class Demoman
 			Skill Easy
 			ClassIcon demo_sticky
-			Name "Stickybomber Demo"
+			Name "Stickybomb Demo"
 			Attributes HoldFireUntilFullReload
 			WeaponRestrictions SecondaryOnly
 			ItemAttributes
 			{
 				ItemName "TF_WEAPON_GRENADELAUNCHER"
-				"is_passive_weapon" 1						// Makes Stickybomb launcher use GL animations
+				"is_passive_weapon" 1
 				"override projectile type" 15
 				"faster reload rate" 1.2
 			}
@@ -3087,13 +3089,12 @@ WaveSchedule
 				"fire rate bonus" 0.85
 				"projectile spread angle penalty" 5
 				"max pipebombs increased" -7
-				"mod max primary clip override" 4
+				//"mod max primary clip override" 4
 				"faster reload rate" 0.5
-				"self dmg push force decreased" 0.01
 			}
 		}
 		
-		T_TFBot_Demoknight_Persian //Used in Rottenburg but no template exists.
+		T_TFBot_Demoknight_Persian
 		{
 			Class Demoman
 			Name "Persian Demoknight"
@@ -3134,7 +3135,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Demo_Caber_Hard //Uses Boots and Shield to gain advantage. 
+		T_TFBot_Demo_Caber_Hard
 		{
 			Class Demoman
 			Name "Charging Caber Demo"
@@ -3152,7 +3153,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Demo_Caber_Rapid //Similar to Caber Hard but rapidly charges.
+		T_TFBot_Demo_Caber_Rapid
 		{
 			Class Demoman
 			Name "Volatile Caber Demo"
@@ -3167,7 +3168,7 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName	"the ullapool caber"
-				"damage bonus"	3.5 // Was 100
+				"damage bonus"	3.5
 				"blast dmg to self increased"	100
 			}
 			ItemAttributes
@@ -3328,7 +3329,7 @@ WaveSchedule
 			Item	"scotch bonnet"
 		}
 		
-		T_TFBot_Giant_Demo_Spammer //Improved variant to the original Giant counterpart.
+		T_TFBot_Giant_Demo_Spammer
 		{
 			Class Demoman
 			Name "Giant Spammer Demoman"
@@ -3397,44 +3398,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Giant_Demo_Barrage_Old // Only difference is the Cosmetic set.
-		{
-			Class Demoman
-			Name "Giant Barrage Demo"
-			ClassIcon demo_scatter_giant
-			Skill Expert
-			Health 3500
-			Attributes	AlwaysFireWeapon
-			Attributes  HoldFireUntilFullReload
-			Attributes	MiniBoss
-			WeaponRestrictions	PrimaryOnly
-			Item 	"the hurt locher"								// Old comsetic set
-			Item	"scotch bonnet"									// Old cosmetic set
-			Item	"Upgradeable TF_WEAPON_GRENADELAUNCHER"
-			ItemAttributes
-			{
-				ItemName	"Upgradeable TF_WEAPON_GRENADELAUNCHER"
-				"fire rate penalty"	6
-				"Blast radius increased"   1.25
-				"Projectile speed increased"   1.4
-				"clip size upgrade atomic"	8.0
-				"fuse bonus"	1.85
-				"auto fires full clip all at once"	1
-				"grenade no spin" 	1
-				"damage penalty" 	0.5
-				"faster reload rate" 	-2
-				"projectile spread angle penalty"	5
-			}
-			CharacterAttributes
-			{
-				"move speed penalty"	0.45
-				"damage force reduction"	0.5
-				"airblast vulnerability multiplier"	0.5
-				"override footstep sound set"	4
-			}
-		}
-		
-		T_TFBot_Giant_Demoknight_Gold //Golden bot that Gray Mann has to offer.
+		T_TFBot_Giant_Demoknight_Gold
 		{
 			Class Demoman
 			Name "Giant Golden Demo"
@@ -3468,10 +3432,10 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Giant_Demo_Nuker //Miniture form of Sir Nukesalot but less beefy.
+		T_TFBot_Giant_Demo_Nuker
 		{
 			Class Demoman
-			Name "Giant Nuke Lobber"
+			Name "Giant Nukesalot"
 			ClassIcon demo_atomic_giant
 			Skill Expert
 			Health 4200
@@ -3559,7 +3523,7 @@ WaveSchedule
 		T_TFBot_Heavy_Easy
 		{
 			Class Heavyweapons
-			Name Heavy
+			Name HeavyWeapon
 			ClassIcon heavy
 			Skill Easy
 			Health 300
@@ -3568,7 +3532,7 @@ WaveSchedule
 		T_TFBot_Heavy
 		{
 			Class Heavyweapons
-			Name Heavy
+			Name HeavyWeapons
 			ClassIcon heavy
 			Skill Normal
 			Health 300
@@ -3635,7 +3599,7 @@ WaveSchedule
 			Item "The Concheror"
 		}
 		
-		T_TFBot_Heavy_Natascha_Easy //Slows down RED enemy, minor slowdown.
+		T_TFBot_Heavy_Natascha_Easy
 		{
 			Class Heavyweapons
 			Name "Natascha Heavy"
@@ -3645,7 +3609,7 @@ WaveSchedule
 			Item	"natascha"
 		}
 		
-		T_TFBot_Heavy_Natascha //Slows down RED enemy.
+		T_TFBot_Heavy_Natascha
 		{
 			Class Heavyweapons
 			Name "Natascha Heavy"
@@ -3684,13 +3648,9 @@ WaveSchedule
 				"set item tint RGB"		15185211
 				"attach particle effect"	16
 			}
-			//CharacterAttributes
-			//{
-				//"move speed penalty"	0.8
-			//}
 		}
 		
-		T_TFBot_Heavy_Deflector //Uses in Mannworks but Template isn't in the Official robot.pop.
+		T_TFBot_Heavy_Deflector
 		{
 			Class HeavyWeapons
 			Name "Deflector Heavy"
@@ -3708,7 +3668,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Heavy_Deflector_Healonkill //Similar to it's Giant counterpart.
+		T_TFBot_Heavy_Deflector_Healonkill
 		{
 			Class HeavyWeapons
 			Name "Deflector Heavy"
@@ -3727,7 +3687,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Heavy_Booster_Easy //Gains health, speed and crits upon kill. 
+		T_TFBot_Heavy_Booster_Easy
 		{
 			Class HeavyWeapons
 			Name "Booster Heavy"
@@ -3742,12 +3702,12 @@ WaveSchedule
 			{
 				ItemName	"Upgradeable TF_WEAPON_MINIGUN"
 				"critboost on kill" 3
-				"heal on kill" 75  // Was 300
+				"heal on kill" 75
 				"speed_boost_on_kill" 3
 			}
 		}
 		
-		T_TFBot_Heavy_Booster_Expert //Gains health, speed and crits upon kill.
+		T_TFBot_Heavy_Booster_Expert
 		{
 			Class HeavyWeapons
 			Name "Booster Heavy"
@@ -3764,12 +3724,12 @@ WaveSchedule
 				ItemName	"Upgradeable TF_WEAPON_MINIGUN"
 				"damage bonus" 1.1
 				"critboost on kill" 5
-				"heal on kill" 150  // Was 300
+				"heal on kill" 300
 				"speed_boost_on_kill" 5
 			}
 		}
 		
-		T_TFBot_Heavy_Heater //Similar to Giant counterpart.
+		T_TFBot_Heavy_Heater
 		{
 			Class HeavyWeapons
 			Name "Heater Heavy"
@@ -3863,7 +3823,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
-				"health regen"	15
+				"health regen"	10
 			}
 		}
 		
@@ -3967,7 +3927,7 @@ WaveSchedule
 			WeaponRestrictions SecondaryOnly
 		}
 		
-		T_TFBot_Heavy_Shotgun_Scout // Heavy w/ Shotgun, +60% movement speed.
+		T_TFBot_Heavy_Shotgun_Scout
 		{
 			ClassIcon	heavy_shotgun
 			Health	225
@@ -3983,7 +3943,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
-				"move speed bonus"	1.6
+				"move speed bonus"	1.5
 			}
 		}
 
@@ -4059,7 +4019,6 @@ WaveSchedule
 			Class	HeavyWeapons
 			Skill	Expert
 			WeaponRestrictions	MeleeOnly
-			//Attributes	UseBossHealthBar
 			Attributes	MiniBoss
 			ItemAttributes
 			{
@@ -4185,7 +4144,7 @@ WaveSchedule
 				ItemName "Upgradeable TF_WEAPON_MINIGUN"
 				"damage bonus"	1.2
 				"critboost on kill" 5
-				"heal on kill" 800 // Was 1000
+				"heal on kill" 800
 				"speed_boost_on_kill" 5
 			}
 			CharacterAttributes
@@ -4460,7 +4419,7 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName "The Quick-Fix"
-				"ubercharge rate bonus" 0.01 // pretty much disables ubercharge
+				"ubercharge rate bonus" 0.01
 				"overheal expert" 3
 				"overheal decay bonus" 0.6
 			}
@@ -4475,7 +4434,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Medic_Kritzkrieg // Red can have Krit medics, Robots can have them as well.
+		T_TFBot_Medic_Kritzkrieg
 		{
 			Class Medic
 			Name "Kritzkrieg Medic"
@@ -4655,7 +4614,6 @@ WaveSchedule
 			Attributes	MiniBoss
 			Attributes	AlwaysFireWeapon
 			Item	"berliner's bucket helm"
-			//Item	"the virus doctor"
 			Item	"the byte'd beak"
 			ItemAttributes
 			{
@@ -4675,7 +4633,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Giant_Medic_Overheal	// No insta heal bullshit
+		T_TFBot_Giant_Medic_Overheal
 		{
 			Class Medic
 			Name "Giant Overheal Medic"
@@ -4689,7 +4647,7 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName "The Quick-Fix"
-				"ubercharge rate bonus" 0.01 // pretty much disables ubercharge
+				"ubercharge rate bonus" 0.01
 				"overheal expert" 3
 				"overheal decay bonus" 0.6
 			}
@@ -4795,7 +4753,7 @@ WaveSchedule
 				"move speed bonus"	0.5
 				"damage force reduction"	0.6
 				"airblast vulnerability multiplier"	0.6
-				"health regen"	50
+				"health regen"	20
 			}
 		}
 		
@@ -4949,7 +4907,7 @@ WaveSchedule
 			}
 		}
 		
-		T_TFBot_Sniper_Gauntlet // Screw this template
+		T_TFBot_Sniper_Gauntlet
 		{
 			Class Sniper
 			Name "Bulky Sniper"
@@ -5293,7 +5251,7 @@ WaveSchedule
 				ItemName "Upgradeable TF_WEAPON_SMG"
 				"fire rate bonus" 0.47
 				"damage bonus" 1.4
-				"clip size bonus" 2.44		// 61 Clip size (Tried to get it around 60, need more tinkering)
+				"clip size bonus" 2.44
 				"spread penalty" 1.15
 			}
 			CharacterAttributes
@@ -5512,7 +5470,6 @@ WaveSchedule
 			Health 125
 			//WeaponRestrictions PrimaryOnly
 			Item "Upgradeable TF_WEAPON_SNIPERRIFLE"
-			Item "Batter's Helmet"
 			ItemAttributes
 			{
 				ItemName	"Upgradeable TF_WEAPON_SNIPERRIFLE"
@@ -5525,7 +5482,7 @@ WaveSchedule
 			}
 			//ItemAttributes	//SET COSMETICS LATER
 			//{
-				//ItemName	"Batter's Helmet"
+				//ItemName	" "
 				//"set item tint RGB"	15185211
 				//"attach particle effect"	14
 			//}
@@ -5730,13 +5687,13 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName	tf_weapon_grenadelauncher
-				"damage bonus"	2.25		// was 6.0
+				"damage bonus"	3
 				"faster reload rate"	0.9
 				"clip size upgrade atomic"	8.0
 				"Projectile speed increased"	2.0
 				"use large smoke explosion"	1
 				"damage causes airblast"	1
-				"fire rate bonus"	0.70
+				"fire rate bonus"	0.7
 				"fuse bonus"	1.5
 				"attach particle effect"	2
 				"Set DamageType Ignite"	1
@@ -5760,7 +5717,7 @@ WaveSchedule
 		T_TFBot_Chief_Pyro_Blast
 		{
 			ClassIcon	pyro_giant
-			Health	20000								// never ever give a pyro 75,000
+			Health	20000
 			Name	"Chief Blastback Pyro"
 			Scale	1.9
 			Class	Pyro
@@ -5772,19 +5729,19 @@ WaveSchedule
 			{
 				ItemName	tf_weapon_flamethrower
 				"damage bonus"	1.3
-				"airblast pushback scale"	3			// This will send RED players flying back
-				"weapon burn time increased"	2		// Burn damage, why not
-				"weapon burn dmg increased"	2.5			// Burn damage, why not
+				"airblast pushback scale"	3
+				"weapon burn time increased"	2
+				"weapon burn dmg increased"	2.5
 			}
 			CharacterAttributes
 			{
-				"move speed penalty"	0.32			// was 0.2, pyro moves like a snail
+				"move speed penalty"	0.32
 				"damage force reduction"	0.3
 				"airblast vulnerability multiplier"	0.3
 				"override footstep sound set"	2
 				"airblast vertical vulnerability multiplier"	0.1
-				"rage giving scale"	0.05				// lowest rage given towards soldiers
-				"health regen"	75						// why 250? I aint vavle, wtf? nerf it
+				"rage giving scale"	0.15
+				"health regen"	75
 			}
 			Item	"traffic cone"
 		}
@@ -5839,8 +5796,8 @@ WaveSchedule
 		
 		T_TFBot_Chief_Scout_Buckshot
 		{
-			ClassIcon	scout_giant				// scout_giant 
-			Health	10000						// Was 12,500
+			ClassIcon	scout_giant
+			Health	10000
 			Name	"Chief Boston Buckshot"
 			Scale	1.9
 			Class	Scout
@@ -5853,9 +5810,9 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName	"tf_weapon_scattergun"
-				"damage penalty"	0.6			// was 1.5, lowered for "bullets per shot bonus" set to +800%
-				"fire rate penalty"		3.75	// was 2
-				"bullets per shot bonus"	9	// was 12
+				"damage penalty"	0.6
+				"fire rate penalty"		3.75
+				"bullets per shot bonus"	9
 				"faster reload rate"	1.85
 				"spread penalty" 	1.6
 				"clip size penalty"		0.7
@@ -5882,7 +5839,6 @@ WaveSchedule
 			ClassIcon soldier_libertylauncher
 			Attributes MiniBoss
 			Attributes UseBossHealthBar
-			//Attributes HoldFireUntilFullReload
 			Health 60000
 			Scale 1.8
 			Name "Chief Blaster Soldier"
@@ -5912,7 +5868,7 @@ WaveSchedule
 		T_TFBot_Chief_Soldier_Generic
 		{
 			ClassIcon	soldier_giant
-			Health	24000
+			Health	40000
 			Name	"Chief Soldier"
 			Scale	1.9
 			Class	Soldier
@@ -5986,7 +5942,7 @@ WaveSchedule
 		T_TFBot_Chief_Demoman_Generic
 		{
 			ClassIcon	demo_giant
-			Health	25000
+			Health	32000
 			Name	"Chief Demoman"
 			Scale	1.9
 			Class	Demoman
@@ -6016,15 +5972,5 @@ WaveSchedule
 				"move speed bonus" 0.3
 			}
 		}
-
-        // T_TFBot_Halloween_SpawnBoss_Hatman // documentation will be provided later
-		// {
-		// 	Class Sniper
-		// 	Name "TFBOT_BOSS_HATMAN"
-		// 	ClassIcon boss_hatman
-		// 	Scale 1.0
-		// 	Attributes IgnoreFlag
-		// 	Attributes MiniBoss
-		// }
 	}
 }

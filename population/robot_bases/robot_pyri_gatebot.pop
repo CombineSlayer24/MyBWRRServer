@@ -150,6 +150,7 @@
 // Demoman
 //T_TFGateBot_Demoman_Expert								// Expert Difficulty Demoman
 //T_TFGateBot_Demoman_Crit 									// Same variant from Ghost Town.
+//T_TFGateBot_Demoman_RapidFire								// Fires faster than Demoman_Spammer.
 //T_TFGateBot_Demoman_Spammer 								// Similar to it's Giant counterpart.
 //T_TFGateBot_Demoman_Spammer_Reload						// Similar to it's Giant counterpart.
 //T_TFGateBot_Demo_Barrage									// Similar to the Giant version of Barrage, just less in stats.
@@ -4218,6 +4219,7 @@ WaveSchedule
 						"Projectile speed decreased"	0.4
 						"fire rate penalty"	1.8
 						"faster reload rate"	1.4
+						"Blast radius increased"	3.0
 						"heal on kill"	1600
 					}
 					CharacterAttributes
@@ -4254,6 +4256,7 @@ WaveSchedule
 						"Projectile speed decreased"	0.4
 						"fire rate penalty"	1.8
 						"faster reload rate"	1.4
+						"Blast radius increased"	3.0
 						"heal on kill"	1600
 					}
 					CharacterAttributes
@@ -6653,6 +6656,51 @@ WaveSchedule
 			}
 		}
 		
+		T_TFGateBot_Demoman_RapidFire
+		{
+			Class Demoman
+			Name "Rapid Fire Demo"
+			ClassIcon demo_spammer
+
+			EventChangeAttributes
+			{
+				Default
+				{
+					BehaviorModifiers push			// having these will cause bots to run towards gates
+					Attributes IgnoreFlag			// having these will cause bots to run towards gates
+					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
+					Tag bot_gatebot 				// having these will cause bots to run towards gates
+
+					Item "MvM GateBot Light Demoman"
+					Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
+					ItemAttributes
+					{
+						ItemName	"Upgradeable TF_WEAPON_GRENADELAUNCHER"
+						"faster reload rate"  -0.8
+						"fire rate bonus"  0.5
+					}
+					Skill Hard
+				}
+				RevertGateBotsBehavior
+				{
+					Item "MvM GateBot Light Demoman"
+					ItemAttributes               // turn off light hat
+					{
+						ItemName "MvM GateBot Light Demoman"
+						"item style override" 1
+					}
+					Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
+					ItemAttributes
+					{
+						ItemName	"Upgradeable TF_WEAPON_GRENADELAUNCHER"
+						"faster reload rate"  -0.8
+						"fire rate bonus"  0.5
+					}
+					Skill Hard
+				}
+			}
+		}
+
 		T_TFGateBot_Demoman_Spammer
 		{
 			Class Demoman
@@ -6682,11 +6730,6 @@ WaveSchedule
 						"faster reload rate"  -0.5
 						"fire rate bonus"  0.7
 					}
-					CharacterAttributes
-					{
-						"move speed penalty" 0.8
-						//"health regen" 10.0
-					}
 				}
 				RevertGateBotsBehavior
 				{
@@ -6705,11 +6748,6 @@ WaveSchedule
 						ItemName	"Upgradeable TF_WEAPON_GRENADELAUNCHER"
 						"faster reload rate"  -0.5
 						"fire rate bonus"  0.7
-					}
-					CharacterAttributes
-					{
-						"move speed penalty" 0.8
-						//"health regen" 10.0
 					}
 				}
 			}
@@ -6744,11 +6782,6 @@ WaveSchedule
 						"faster reload rate"  0.25
 						"fire rate bonus"  0.7
 					}
-					CharacterAttributes
-					{
-						"move speed penalty" 0.8
-						//"health regen" 5
-					}
 				}
 				RevertGateBotsBehavior
 				{
@@ -6768,11 +6801,6 @@ WaveSchedule
 						"faster reload rate"  0.25
 						"fire rate bonus"  0.7
 					}
-					CharacterAttributes
-					{
-						"move speed penalty" 0.8
-						//"health regen" 5
-					}
 				}
 			}
 		}
@@ -6782,8 +6810,8 @@ WaveSchedule
 			Class Demoman
 			Name "Barrage Demo"
 			ClassIcon demo_scatter
-			Scale 1.45
-			Health 750
+			Scale 1.3
+			Health 650
 			
 			EventChangeAttributes
 			{
@@ -6820,11 +6848,6 @@ WaveSchedule
 						ItemName	"blast blocker"
 						"set item tint RGB"	12073019
 					}
-					CharacterAttributes
-					{
-						"move speed penalty"  0.75
-						//"health regen" 	20.0
-					}
 				}
 				RevertGateBotsBehavior
 				{
@@ -6857,11 +6880,6 @@ WaveSchedule
 					{
 						ItemName	"blast blocker"
 						"set item tint RGB"	12073019
-					}
-					CharacterAttributes
-					{
-						"move speed penalty"  0.75
-						//"health regen" 	20.0
 					}
 				}
 			}
@@ -7155,6 +7173,7 @@ WaveSchedule
 		{
 			Class Demoman
 			ClassIcon demo_sticky
+			Name "Stickybomb Demo"
 
 			EventChangeAttributes
 			{
@@ -7182,11 +7201,10 @@ WaveSchedule
 						"stickybomb charge rate" -1
 						"sticky arm time bonus" 2
 						"fire rate bonus" 0.85
-						"projectile spread angle penalty" 5
+						"projectile spread angle penalty" 3
 						"max pipebombs increased" -7
-						"mod max primary clip override" 4
+						//"mod max primary clip override" 4
 						"faster reload rate" 0.5
-						"self dmg push force decreased" 0.01
 					}
 				}
 				RevertGateBotsBehavior
@@ -7215,9 +7233,8 @@ WaveSchedule
 						"fire rate bonus" 0.85
 						"projectile spread angle penalty" 5
 						"max pipebombs increased" -7
-						"mod max primary clip override" 4
+						//"mod max primary clip override" 4
 						"faster reload rate" 0.5
-						"self dmg push force decreased" 0.01
 					}
 				}
 			}
@@ -8824,7 +8841,7 @@ WaveSchedule
 					{
 						ItemName	"Upgradeable TF_WEAPON_MINIGUN"
 						"critboost on kill" 3
-						"heal on kill" 75  // Was 300
+						"heal on kill" 75
 						"speed_boost_on_kill" 3
 					}
 				}
@@ -8845,7 +8862,7 @@ WaveSchedule
 					{
 						ItemName	"Upgradeable TF_WEAPON_MINIGUN"
 						"critboost on kill" 3
-						"heal on kill" 75  // Was 300
+						"heal on kill" 75
 						"speed_boost_on_kill" 3
 					}
 				}
@@ -8883,7 +8900,7 @@ WaveSchedule
 					{
 						ItemName	"Upgradeable TF_WEAPON_MINIGUN"
 						"critboost on kill" 5
-						"heal on kill" 150  // Was 300
+						"heal on kill" 300
 						"speed_boost_on_kill" 5
 					}
 				}
@@ -8905,7 +8922,7 @@ WaveSchedule
 					{
 						ItemName	"Upgradeable TF_WEAPON_MINIGUN"
 						"critboost on kill" 5
-						"heal on kill" 150  // Was 300
+						"heal on kill" 300
 						"speed_boost_on_kill" 5
 					}
 				}
@@ -9159,7 +9176,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"health regen"	15
+						"health regen"	10
 					}
 				}
 				RevertGateBotsBehavior
@@ -9183,7 +9200,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"health regen"	15
+						"health regen"	10
 					}
 				}
 			}
@@ -9508,7 +9525,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"move speed bonus"	1.6
+						"move speed bonus"	1.5
 					}
 				}
 				RevertGateBotsBehavior
@@ -9528,7 +9545,7 @@ WaveSchedule
 					}
 					CharacterAttributes
 					{
-						"move speed bonus"	1.6
+						"move speed bonus"	1.5
 					}
 				}
 			}
