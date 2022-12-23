@@ -1544,7 +1544,7 @@ WaveSchedule
 		
 		T_TFBot_Soldier_Paratrooper
 		{
-			Name "Pararooper Soldier"
+			Name "ParaTrooper Soldier"
 			Class Soldier
 			Skill Hard
 			ClassIcon soldier_parachute
@@ -5251,7 +5251,7 @@ WaveSchedule
 				ItemName "Upgradeable TF_WEAPON_SMG"
 				"fire rate bonus" 0.47
 				"damage bonus" 1.4
-				"clip size bonus" 2.44
+				"clip size bonus" 2.42
 				"spread penalty" 1.15
 			}
 			CharacterAttributes
