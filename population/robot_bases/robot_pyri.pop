@@ -4709,7 +4709,7 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName	tf_weapon_medigun
-				"heal rate bonus"	200
+				"heal rate bonus"	2
 				"ubercharge rate bonus"	1
 				"uber duration bonus"  8
 			}
@@ -4751,7 +4751,7 @@ WaveSchedule
 				"move speed bonus"	0.5
 				"damage force reduction"	0.6
 				"airblast vulnerability multiplier"	0.6
-				"heal rate bonus"	25
+				"heal rate bonus"	2
 				"bot medic uber health threshold"	5000
 			}
 		}
