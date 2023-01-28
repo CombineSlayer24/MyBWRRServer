@@ -228,7 +228,6 @@
 //T_TFBot_Medic_Uber_QuickFlash							// Medic that gains uber rapidly quick, but only 4 seconds long.
 
 //T_TFBot_Giant_Medic_Battle
-//T_TFBot_Giant_Medic_Overheal							// Giant Medic with overheal abilites (not), just an excuse to make a non overhealing default giant medic
 //T_TFBot_Giant_Medic_Uber								// Giant Über Medic able to deploy a ÜberCharge
 //T_TFBot_Giant_Medic_Uber_Weak							// Giant Über Medic with less Health, slow Über build and no extended Über duration.
 //T_TFBot_Giant_Medic_Uber_Regen						// Giant Über Medic with Health Regen of 50.
@@ -4414,7 +4413,6 @@ WaveSchedule
 			Health 150
 			Item "The Quick-Fix"
 			Item "The Surgeon's Stahlhelm"
-			Attributes MiniBoss
 
 			ItemAttributes
 			{
@@ -4632,40 +4630,7 @@ WaveSchedule
 				"airblast vulnerability multiplier"	0.6
 			}
 		}
-		
-		T_TFBot_Giant_Medic_Overheal
-		{
-			Class Medic
-			Name "Giant Overheal Medic"
-			ClassIcon medic_giant
-			Skill Expert
-			Health 4500
-			Item "The Quick-Fix"
-			Item "The Surgeon's Stahlhelm"
-			Attributes MiniBoss
 
-			ItemAttributes
-			{
-				ItemName "The Quick-Fix"
-				"ubercharge rate bonus" 0.01
-				"overheal expert" 3
-				"overheal decay bonus" 0.6
-			}
-			ItemAttributes
-			{
-				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
-				"damage penalty" 0.1
-			}
-			CharacterAttributes
-			{
-				"move speed bonus"	0.5
-				"damage force reduction" 0.6
-				"airblast vulnerability multiplier" 0.6
-				"heal rate bonus" 6
-				"health regen"	40
-			}
-		}
-		
 		T_TFBot_Giant_Medic_Uber
 		{
 			Class Medic
