@@ -2319,7 +2319,7 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName "The Gas Passer"
-				"item_meter_charge_rate"	8
+				"item_meter_charge_rate"	8	// 8 SECOND RECHARGE TIME!
 			}
 			ItemAttributes
 			{
@@ -4112,7 +4112,7 @@ WaveSchedule
 			{
 				ItemName	tf_weapon_minigun
 				"damage bonus"	1.2
-				"heal on hit for rapidfire"	200
+				"heal on hit for rapidfire"	15
 				"heal on kill"	5000
 				"fire rate bonus"	0.8
 			}
