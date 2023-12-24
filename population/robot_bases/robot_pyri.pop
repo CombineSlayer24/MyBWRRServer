@@ -4585,7 +4585,7 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName	tf_weapon_medigun
-				"uber duration bonus"	-6
+				"uber duration bonus"	-6.0
 				"ubercharge rate bonus"	14
 			}
 			ItemAttributes
